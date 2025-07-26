@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1027357144552026520}
   - component: {fileID: 2686751737766623570}
   - component: {fileID: 8124958250363862666}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Balde pollo
   m_TagString: Ammo
   m_Icon: {fileID: 0}

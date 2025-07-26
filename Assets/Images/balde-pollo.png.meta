@@ -186,7 +186,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      balde-pollo_0: -2207247358294090123
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - CameraZone
   - Ammo
+  - Bucket
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Enemy
   - Bullet
   - CameraZone
-  - 
+  - Bucket
   - 
   - 
   - 
