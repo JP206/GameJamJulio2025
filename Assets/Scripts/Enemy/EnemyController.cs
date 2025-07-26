@@ -4,30 +4,40 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed;
 
-    Transform playerTransform;
+    private Transform playerTransform;
 
     void Start()
     {
-        // logica para encontrar playerTransform
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            playerTransform = player.transform;
+        }
     }
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed);
+        if (playerTransform != null)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // ajustar el nombre del tag
         if (collision.CompareTag("Bullet"))
         {
             gameObject.SetActive(false);
         }
 
-        // ajustar el nombre del tag
         if (collision.CompareTag("Player"))
         {
-            // logica de sacarle vida
+            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(1);
+            }
         }
     }
+
 }
