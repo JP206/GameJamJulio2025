@@ -7,6 +7,9 @@ public class GunController : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 10f, bulletAmmo;
     [SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] AudioClip gunshot1, gunshot2, gunshot3, emptyGunshot, eat1, eat2, eat3;
+    [SerializeField] AudioSource audioSource1, audioSource2;
+
 
     private void Update()
     {
@@ -34,10 +37,12 @@ public class GunController : MonoBehaviour
 
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.linearVelocity = fireDirection * bulletSpeed;
+
+            audioSource1.PlayOneShot(GetShotSound());
         }
         else
         {
-            // sonido de que no puede disparar
+            audioSource1.PlayOneShot(emptyGunshot);
         }
     }
 
@@ -47,6 +52,42 @@ public class GunController : MonoBehaviour
         {
             bulletAmmo += 10;
             ammoText.text = "Ammo: " + bulletAmmo.ToString();
+
+            audioSource2.PlayOneShot(GetEatSound());
         }
+    }
+
+    private AudioClip GetShotSound()
+    {
+        int random = Random.Range(0, 3);
+
+        switch (random)
+        {
+            case 0:
+                return gunshot1;
+            case 1:
+                return gunshot2;
+            case 2:
+                return gunshot3;
+        }
+
+        return null;
+    }
+
+    private AudioClip GetEatSound()
+    {
+        int random = Random.Range(0, 3);
+
+        switch (random)
+        {
+            case 0:
+                return eat1;
+            case 1:
+                return eat2;
+            case 2:
+                return eat3;
+        }
+
+        return null;
     }
 }

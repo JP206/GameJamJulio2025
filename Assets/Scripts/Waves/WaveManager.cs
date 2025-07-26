@@ -6,6 +6,7 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] TextMeshProUGUI roundText, killCountText;
+    [SerializeField] AudioSource audioSource;
 
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
@@ -25,6 +26,7 @@ public class WaveManager : MonoBehaviour
 
         if (deadEnemies == enemiesToSpawn)
         {
+            audioSource.Stop();
             StartCoroutine(TimeBetweenWaves());
         }
     }
@@ -80,6 +82,8 @@ public class WaveManager : MonoBehaviour
                 RandomizePosition(galloInstance.transform);
             }
         }
+
+        audioSource.Play();
     }
 
     void RandomizePosition(Transform transform)
