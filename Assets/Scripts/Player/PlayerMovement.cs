@@ -2,28 +2,46 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Adjust this value in the Inspector
+    public float moveSpeed = 5f;
+
     private Rigidbody2D rb;
     private Vector2 movementInput;
+
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        // Get input from horizontal and vertical axes
-        movementInput.x = Input.GetAxisRaw("Horizontal");
-        movementInput.y = Input.GetAxisRaw("Vertical");
-
-        // Normalize the vector to prevent faster diagonal movement
-        movementInput.Normalize();
+        HandleInput();
+        HandleSpriteFlip();
     }
 
     void FixedUpdate()
     {
-        // Apply movement using Rigidbody2D velocity
+        MovePlayer();
+    }
+
+    private void HandleInput()
+    {
+        movementInput.x = Input.GetAxisRaw("Horizontal");
+        movementInput.y = Input.GetAxisRaw("Vertical");
+        movementInput.Normalize();
+    }
+
+    private void MovePlayer()
+    {
         rb.linearVelocity = movementInput * moveSpeed;
+    }
+
+    private void HandleSpriteFlip()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        spriteRenderer.flipX = mousePos.x < transform.position.x;
     }
 }
