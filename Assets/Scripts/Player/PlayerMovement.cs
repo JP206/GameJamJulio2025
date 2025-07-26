@@ -9,10 +9,13 @@ public class PlayerMovement : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] AudioSource movementAudio;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        movementAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -36,6 +39,18 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         rb.linearVelocity = movementInput * moveSpeed;
+
+        if (movementInput.x == 0 && movementInput.y == 0)
+        {
+            if (movementAudio.isPlaying)
+                movementAudio.Pause();
+        }
+        else
+        {
+            if (!movementAudio.isPlaying)
+                movementAudio.Play();
+        }
+
     }
 
     private void HandleSpriteFlip()

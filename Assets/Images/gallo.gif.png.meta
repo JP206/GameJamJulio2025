@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 379704f9bfeba5c4fb27c255485e6270
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5649037272228358870
+    second: gallo.gif_0
+  - first:
+      213: -4499339301753444022
+    second: gallo.gif_1
+  - first:
+      213: -2197238881316798844
+    second: gallo.gif_2
+  - first:
+      213: -3502844379988352661
+    second: gallo.gif_3
+  - first:
+      213: -7754663695937049548
+    second: gallo.gif_4
+  - first:
+      213: -6346795675803684319
+    second: gallo.gif_5
+  - first:
+      213: -4498476009450859162
+    second: gallo.gif_6
+  - first:
+      213: 6661724842689959296
+    second: gallo.gif_7
+  - first:
+      213: 23410668251785402
+    second: gallo.gif_8
+  - first:
+      213: 2782726377881626085
+    second: gallo.gif_9
+  - first:
+      213: -8162123261902444288
+    second: gallo.gif_10
+  - first:
+      213: -8120004751943537034
+    second: gallo.gif_11
+  - first:
+      213: 4626559519607244197
+    second: gallo.gif_12
+  - first:
+      213: -1695985714513458996
+    second: gallo.gif_13
+  - first:
+      213: 6031413763517642433
+    second: gallo.gif_14
+  - first:
+      213: -5076417587491408778
+    second: gallo.gif_15
+  - first:
+      213: 4411274441466575216
+    second: gallo.gif_16
+  - first:
+      213: -7216168673931852847
+    second: gallo.gif_17
+  - first:
+      213: -7859258456778260491
+    second: gallo.gif_18
+  - first:
+      213: -6645995798875614595
+    second: gallo.gif_19
+  - first:
+      213: 3996889756719630298
+    second: gallo.gif_20
+  - first:
+      213: -453550500800020320
+    second: gallo.gif_21
+  - first:
+      213: -6289707951615005141
+    second: gallo.gif_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gallo.gif_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2180
+        width: 296
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6daec1e1879656e40800000000000000
+      internalID: 5649037272228358870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_1
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 2184
+        width: 296
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49280b5eb22f81c0800000000000000
+      internalID: -4499339301753444022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2184
+        width: 296
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e7f6001e6d181e0800000000000000
+      internalID: -2197238881316798844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 2169
+        width: 325
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6122536895636fc0800000000000000
+      internalID: -3502844379988352661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 2165
+        width: 331
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ced0b5476e16490800000000000000
+      internalID: -7754663695937049548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1651
+        width: 332
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1227cb9a5f6abe7a0800000000000000
+      internalID: -6346795675803684319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_6
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1651
+        width: 333
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 665901247e33291c0800000000000000
+      internalID: -4498476009450859162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1651
+        width: 332
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0851ee7f273337c50800000000000000
+      internalID: 6661724842689959296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 1657
+        width: 352
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab82a15f0eb235000800000000000000
+      internalID: 23410668251785402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1661
+        width: 355
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e56ebca5ea3e9620800000000000000
+      internalID: 2782726377881626085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_10
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1151
+        width: 356
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0092a5953205abe80800000000000000
+      internalID: -8162123261902444288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_11
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 1151
+        width: 356
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67eebe123b2ff4f80800000000000000
+      internalID: -8120004751943537034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1153
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5446ade57d43040800000000000000
+      internalID: 4626559519607244197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_13
+      rect:
+        serializedVersion: 2
+        x: 1613
+        y: 1155
+        width: 362
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8c9467af5a678e0800000000000000
+      internalID: -1695985714513458996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_14
+      rect:
+        serializedVersion: 2
+        x: 2131
+        y: 1154
+        width: 360
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6fed3bcd2e3b350800000000000000
+      internalID: 6031413763517642433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_15
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 635
+        width: 356
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6747706a911fc89b0800000000000000
+      internalID: -5076417587491408778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_16
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 629
+        width: 348
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079ff5a8bbef73d30800000000000000
+      internalID: 4411274441466575216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 625
+        width: 338
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d38dfee2d40bdb90800000000000000
+      internalID: -7216168673931852847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_18
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 624
+        width: 324
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff3fbdd21e4ee290800000000000000
+      internalID: -7859258456778260491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_19
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 624
+        width: 315
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72d74d680ea4c3a0800000000000000
+      internalID: -6645995798875614595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 112
+        width: 302
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7cbabae0ec77730800000000000000
+      internalID: 3996889756719630298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_21
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 115
+        width: 297
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a04d18f83aa4b9f0800000000000000
+      internalID: -453550500800020320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gallo.gif_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 120
+        width: 295
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ea90b31f776b8a0800000000000000
+      internalID: -6289707951615005141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gallo.gif_0: 5649037272228358870
+      gallo.gif_1: -4499339301753444022
+      gallo.gif_10: -8162123261902444288
+      gallo.gif_11: -8120004751943537034
+      gallo.gif_12: 4626559519607244197
+      gallo.gif_13: -1695985714513458996
+      gallo.gif_14: 6031413763517642433
+      gallo.gif_15: -5076417587491408778
+      gallo.gif_16: 4411274441466575216
+      gallo.gif_17: -7216168673931852847
+      gallo.gif_18: -7859258456778260491
+      gallo.gif_19: -6645995798875614595
+      gallo.gif_2: -2197238881316798844
+      gallo.gif_20: 3996889756719630298
+      gallo.gif_21: -453550500800020320
+      gallo.gif_22: -6289707951615005141
+      gallo.gif_3: -3502844379988352661
+      gallo.gif_4: -7754663695937049548
+      gallo.gif_5: -6346795675803684319
+      gallo.gif_6: -4498476009450859162
+      gallo.gif_7: 6661724842689959296
+      gallo.gif_8: 23410668251785402
+      gallo.gif_9: 2782726377881626085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
