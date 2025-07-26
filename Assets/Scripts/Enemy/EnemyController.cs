@@ -5,6 +5,7 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed, invulnerabilityTime = 2f, flashInterval = 0.1f;
     [SerializeField] int damage, maxHp, currentHp;
+    [SerializeField] private ParticleSystem hitEffect;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -24,12 +25,22 @@ public class EnemyController : MonoBehaviour
         {
             playerTransform = player.transform;
         }
+
+        if (hitEffect == null)
+        {
+            hitEffect = GetComponentInChildren<ParticleSystem>();
+        }
     }
 
     private void OnEnable()
     {
         isDead = false;
         currentHp = maxHp;
+
+        if (hitEffect != null)
+        {
+            hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        }
     }
 
     public void SetWaveManager(WaveManager _waveManager)
@@ -42,7 +53,7 @@ public class EnemyController : MonoBehaviour
         if (playerTransform && !isDead)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
-            
+
             float distanceToPlayer = transform.position.x - playerTransform.position.x;
             spriteRenderer.flipX = distanceToPlayer < 0;
         }
@@ -111,11 +122,21 @@ public class EnemyController : MonoBehaviour
         waveManager.NotifyDeath();
         animator.SetTrigger("Death");
 
-        yield return null;
+        if (hitEffect != null)
+        {
+            hitEffect.transform.parent = null;
+            hitEffect.gameObject.SetActive(true);
+            hitEffect.transform.position = transform.position;
+            hitEffect.Play();
+        }
 
+        yield return null;
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
-        yield return new WaitForSeconds(0.2f);
+        if (hitEffect != null)
+        {
+            yield return new WaitForSeconds(hitEffect.main.duration);
+        }
 
         gameObject.SetActive(false);
     }
