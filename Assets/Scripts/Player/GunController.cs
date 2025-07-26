@@ -9,7 +9,7 @@ public class GunController : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText;
     [SerializeField] AudioClip gunshot1, gunshot2, gunshot3, emptyGunshot, eat1, eat2, eat3;
     [SerializeField] AudioSource audioSource1, audioSource2;
-
+    [SerializeField] float chickenRangeOrigin = 0.2f,  chickenRangeEnd = 0.4f;
 
     private void Update()
     {
@@ -28,6 +28,9 @@ public class GunController : MonoBehaviour
 
             GameObject bullet = BulletPool.Instance.GetBullet();
             bullet.transform.position = firePoint.position;
+
+            float randomScale = Random.Range(chickenRangeOrigin, chickenRangeEnd);
+            bullet.transform.localScale = new Vector3(randomScale, randomScale, 1f);
 
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 fireDirection = (mousePos - (Vector2)firePoint.position).normalized;

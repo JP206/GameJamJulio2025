@@ -70,6 +70,13 @@ public class EnemyController : MonoBehaviour
                 audioSource.PlayOneShot(GethitSound());
                 currentHp--;
 
+                if (hitEffect != null)
+                {
+                    hitEffect.gameObject.SetActive(true);
+                    hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                    hitEffect.Play();
+                }
+
                 if (currentHp <= 0)
                 {
                     StartCoroutine(Death());
@@ -127,9 +134,8 @@ public class EnemyController : MonoBehaviour
 
         if (hitEffect != null)
         {
-            hitEffect.transform.parent = null;
             hitEffect.gameObject.SetActive(true);
-            hitEffect.transform.position = transform.position;
+            hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
             hitEffect.Play();
         }
 
@@ -150,12 +156,9 @@ public class EnemyController : MonoBehaviour
 
         switch (random)
         {
-            case 0:
-                return hit1;
-            case 1:
-                return hit2;
-            case 2:
-                return hit3;
+            case 0: return hit1;
+            case 1: return hit2;
+            case 2: return hit3;
         }
 
         return null;
