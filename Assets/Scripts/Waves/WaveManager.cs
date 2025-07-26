@@ -1,12 +1,14 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
+    [SerializeField] TextMeshProUGUI roundText, killCountText;
 
     EnemyPool enemyPool;
-    int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3;
+    int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
 
     void Start()
     {
@@ -18,6 +20,8 @@ public class WaveManager : MonoBehaviour
     public void NotifyDeath()
     {
         deadEnemies++;
+        killCount++;
+        killCountText.text = "Kill count: " + killCount.ToString();
 
         if (deadEnemies == enemiesToSpawn)
         {
@@ -48,6 +52,7 @@ public class WaveManager : MonoBehaviour
     void StartWave()
     {
         deadEnemies = 0;
+        roundText.text = "Round: " + round.ToString();
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {
@@ -65,6 +70,14 @@ public class WaveManager : MonoBehaviour
                 bossInstance.GetComponent<EnemyController>().SetWaveManager(this);
                 bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
                 RandomizePosition(bossInstance.transform);
+            }
+        
+            for (int i = 0; i < (int) (bossesToSpawn / 3); i++)
+            {
+                GameObject galloInstance = enemyPool.GetGallo();
+                galloInstance.GetComponent<EnemyController>().SetWaveManager(this);
+                galloInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+                RandomizePosition(galloInstance.transform);
             }
         }
     }
