@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] int damage;
 
     private Transform playerTransform;
 
@@ -35,7 +36,7 @@ public class EnemyController : MonoBehaviour
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(1);
+                playerHealth.TakeDamage(damage);
             }
         }
     }

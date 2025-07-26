@@ -253,6 +253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  invulnerabilityTime: 2
+  flashInterval: 0.1
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!60 &7435336261546131180
 PolygonCollider2D:
   m_ObjectHideFlags: 0
