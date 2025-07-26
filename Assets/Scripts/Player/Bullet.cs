@@ -20,7 +20,6 @@ public class Bullet : MonoBehaviour
         }
     }
 
-
     private void Disable()
     {
         BulletPool.Instance.ReturnBullet(gameObject);
@@ -28,6 +27,11 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
+
         BulletPool.Instance.ReturnBullet(gameObject);
     }
 }
