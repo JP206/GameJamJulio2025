@@ -7,14 +7,15 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float invulnerabilityTime = 2f;
     [SerializeField] private float flashInterval = 0.1f;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip hit1, hit2, hit3;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip hit1, hit2, hit3;
+    [SerializeField] private GameObject deathEffectPrefab;
 
     private int currentHealth;
     private bool isInvulnerable = false;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
 
-    public UnityEvent<int, int> OnHealthChanged; // (currentHealth, maxHealth)
+    public UnityEvent<int, int> OnHealthChanged;
 
     public int MaxHealth => maxHealth;
     public int CurrentHealth => currentHealth;
@@ -22,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         currentHealth = maxHealth;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
 
         if (OnHealthChanged == null)
             OnHealthChanged = new UnityEvent<int, int>();
@@ -40,7 +41,14 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Destroy(gameObject);
+            if (deathEffectPrefab != null)
+            {
+                GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+                ParticleSystem ps = effect.GetComponent<ParticleSystem>();
+                if (ps != null) ps.Play();
+            }
+
+            StartCoroutine(Death());
             return;
         }
 
@@ -51,21 +59,21 @@ public class PlayerHealth : MonoBehaviour
     {
         isInvulnerable = true;
 
-        spriteRenderer.color = Color.red;
+        _spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
 
         while (elapsed < invulnerabilityTime)
         {
-            spriteRenderer.color = Color.white;
+            _spriteRenderer.color = Color.white;
             yield return new WaitForSeconds(flashInterval / 2f);
-            spriteRenderer.color = Color.clear;
+            _spriteRenderer.color = Color.clear;
             yield return new WaitForSeconds(flashInterval / 2f);
             elapsed += flashInterval;
         }
 
-        spriteRenderer.color = Color.white;
+        _spriteRenderer.color = Color.white;
         isInvulnerable = false;
     }
 
@@ -75,14 +83,17 @@ public class PlayerHealth : MonoBehaviour
 
         switch (random)
         {
-            case 0:
-                return hit1;
-            case 1:
-                return hit2;
-            case 2:
-                return hit3;
+            case 0: return hit1;
+            case 1: return hit2;
+            case 2: return hit3;
         }
 
         return null;
+    }
+
+    private IEnumerator Death()
+    {
+        yield return new WaitForSeconds(0.1f);
+        gameObject.SetActive(false);
     }
 }
