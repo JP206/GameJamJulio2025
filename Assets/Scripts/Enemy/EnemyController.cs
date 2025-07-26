@@ -5,6 +5,8 @@ public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed, invulnerabilityTime = 2f, flashInterval = 0.1f;
     [SerializeField] int damage, maxHp, currentHp;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip hit1, hit2, hit3;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -54,6 +56,7 @@ public class EnemyController : MonoBehaviour
         {
             if (!isInvulnerable && !isDead)
             {
+                audioSource.PlayOneShot(GethitSound());
                 currentHp--;
 
                 if (currentHp <= 0)
@@ -118,5 +121,22 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
 
         gameObject.SetActive(false);
+    }
+
+    private AudioClip GethitSound()
+    {
+        int random = Random.Range(0, 3);
+
+        switch (random)
+        {
+            case 0:
+                return hit1;
+            case 1:
+                return hit2;
+            case 2:
+                return hit3;
+        }
+
+        return null;
     }
 }

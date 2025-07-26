@@ -7,6 +7,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float invulnerabilityTime = 2f;
     [SerializeField] private float flashInterval = 0.1f;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip hit1, hit2, hit3;
 
     private int currentHealth;
     private bool isInvulnerable = false;
@@ -30,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isInvulnerable) return;
 
+        audioSource.PlayOneShot(GethitSound());
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
@@ -64,5 +67,22 @@ public class PlayerHealth : MonoBehaviour
 
         spriteRenderer.color = Color.white;
         isInvulnerable = false;
+    }
+
+    private AudioClip GethitSound()
+    {
+        int random = Random.Range(0, 3);
+
+        switch (random)
+        {
+            case 0:
+                return hit1;
+            case 1:
+                return hit2;
+            case 2:
+                return hit3;
+        }
+
+        return null;
     }
 }
