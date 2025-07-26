@@ -11,11 +11,13 @@ public class EnemyController : MonoBehaviour
     private bool isInvulnerable = false, isDead = false;
     private Animator animator;
     private WaveManager waveManager;
+    private Collider2D collider;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider2D>();
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player)
@@ -84,6 +86,7 @@ public class EnemyController : MonoBehaviour
         isInvulnerable = true;
 
         spriteRenderer.color = Color.red;
+        collider.enabled = false;
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
@@ -99,6 +102,7 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.white;
         isInvulnerable = false;
+        collider.enabled = true;
     }
 
     private IEnumerator Death()

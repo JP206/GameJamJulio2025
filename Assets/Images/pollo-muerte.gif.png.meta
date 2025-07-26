@@ -736,7 +736,30 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pollo-muerte.gif_0: 5789506627252281023
+      pollo-muerte.gif_1: 3239956295414371875
+      pollo-muerte.gif_10: -8095206118023971015
+      pollo-muerte.gif_11: 923526846595946136
+      pollo-muerte.gif_12: -2224467115451921511
+      pollo-muerte.gif_13: 2411877082632154173
+      pollo-muerte.gif_14: -141369499352758707
+      pollo-muerte.gif_15: 3337984745769421231
+      pollo-muerte.gif_16: 8979411604064977497
+      pollo-muerte.gif_17: 8474430294989021208
+      pollo-muerte.gif_18: 4445506386001789401
+      pollo-muerte.gif_19: -6332251072022063069
+      pollo-muerte.gif_2: -6113532124338167364
+      pollo-muerte.gif_20: 7353260927360611978
+      pollo-muerte.gif_21: 224330904722482800
+      pollo-muerte.gif_22: -5153962749999505999
+      pollo-muerte.gif_3: -1709084714668507372
+      pollo-muerte.gif_4: -4637216794330527768
+      pollo-muerte.gif_5: -4216047698390133880
+      pollo-muerte.gif_6: -7118907573968668355
+      pollo-muerte.gif_7: 5972297959782191521
+      pollo-muerte.gif_8: -6035903937051835162
+      pollo-muerte.gif_9: -6559776813335472599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
