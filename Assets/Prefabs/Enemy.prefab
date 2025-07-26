@@ -231,7 +231,8 @@ MonoBehaviour:
   invulnerabilityTime: 2
   flashInterval: 0.1
   damage: 1
-  hp: 1
+  maxHp: 1
+  currentHp: 0
 --- !u!95 &8865718491923839502
 Animator:
   serializedVersion: 7

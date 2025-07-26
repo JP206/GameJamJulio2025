@@ -4,11 +4,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     [SerializeField] float speed, invulnerabilityTime = 2f, flashInterval = 0.1f;
-    [SerializeField] int damage, hp;
+    [SerializeField] int damage, maxHp, currentHp;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
-    private bool isInvulnerable = false;
+    private bool isInvulnerable = false, isDead = false;
     private Animator animator;
     private WaveManager waveManager;
 
@@ -24,6 +24,12 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        isDead = false;
+        currentHp = maxHp;
+    }
+
     public void SetWaveManager(WaveManager _waveManager)
     {
         waveManager = _waveManager;
@@ -31,7 +37,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform)
+        if (playerTransform && !isDead)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
             
@@ -44,14 +50,13 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("Bullet"))
         {
-            if (!isInvulnerable)
+            if (!isInvulnerable && !isDead)
             {
-                hp--;
+                currentHp--;
 
-                if (hp <= 0)
+                if (currentHp <= 0)
                 {
-                    waveManager.NotifyDeath();
-                    gameObject.SetActive(false);
+                    StartCoroutine(Death());
                 }
                 else
                 {
@@ -62,11 +67,14 @@ public class EnemyController : MonoBehaviour
 
         if (collision.CompareTag("Player"))
         {
-            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            if (!isDead)
             {
-                animator.SetTrigger("Attack");
-                playerHealth.TakeDamage(damage);
+                PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+                if (playerHealth != null)
+                {
+                    animator.SetTrigger("Attack");
+                    playerHealth.TakeDamage(damage);
+                }
             }
         }
     }
@@ -91,5 +99,20 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.white;
         isInvulnerable = false;
+    }
+
+    private IEnumerator Death()
+    {
+        isDead = true;
+        waveManager.NotifyDeath();
+        animator.SetTrigger("Death");
+
+        yield return null;
+
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+        yield return new WaitForSeconds(0.2f);
+
+        gameObject.SetActive(false);
     }
 }
