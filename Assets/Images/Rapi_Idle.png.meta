@@ -1,0 +1,1106 @@
+fileFormatVersion: 2
+guid: 9ac78f9096fc7784e8fa8723144325a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4186456889452743031
+    second: Rapi_Idle_0
+  - first:
+      213: -6650252614750116630
+    second: Rapi_Idle_1
+  - first:
+      213: 3029649992900044311
+    second: Rapi_Idle_2
+  - first:
+      213: 7413008100792961699
+    second: Rapi_Idle_3
+  - first:
+      213: 4684525436707818073
+    second: Rapi_Idle_4
+  - first:
+      213: 833559976395658630
+    second: Rapi_Idle_5
+  - first:
+      213: 2859459895987714413
+    second: Rapi_Idle_6
+  - first:
+      213: -7096769590308865826
+    second: Rapi_Idle_7
+  - first:
+      213: -6589451186060542996
+    second: Rapi_Idle_8
+  - first:
+      213: 3669827044164279550
+    second: Rapi_Idle_9
+  - first:
+      213: -4333084711550966853
+    second: Rapi_Idle_10
+  - first:
+      213: -5803148969085441401
+    second: Rapi_Idle_11
+  - first:
+      213: -970928724235484759
+    second: Rapi_Idle_12
+  - first:
+      213: -1757693928956311423
+    second: Rapi_Idle_13
+  - first:
+      213: -4043805433257915063
+    second: Rapi_Idle_14
+  - first:
+      213: 2780749673801308490
+    second: Rapi_Idle_15
+  - first:
+      213: 7605949160052676670
+    second: Rapi_Idle_16
+  - first:
+      213: -1031711371423213270
+    second: Rapi_Idle_17
+  - first:
+      213: -980847795708359243
+    second: Rapi_Idle_18
+  - first:
+      213: 6573827308632695140
+    second: Rapi_Idle_19
+  - first:
+      213: -8671189990956950921
+    second: Rapi_Idle_20
+  - first:
+      213: 1938087685254750019
+    second: Rapi_Idle_21
+  - first:
+      213: -4240155977274993698
+    second: Rapi_Idle_22
+  - first:
+      213: -4998249828915347961
+    second: Rapi_Idle_23
+  - first:
+      213: 4066069510036229356
+    second: Rapi_Idle_24
+  - first:
+      213: 8592602868049277665
+    second: Rapi_Idle_25
+  - first:
+      213: -1311107180239998804
+    second: Rapi_Idle_26
+  - first:
+      213: 6639276477730227347
+    second: Rapi_Idle_27
+  - first:
+      213: 7604731021742347256
+    second: Rapi_Idle_28
+  - first:
+      213: -2588940414722973857
+    second: Rapi_Idle_29
+  - first:
+      213: 5378222626266591266
+    second: Rapi_Idle_30
+  - first:
+      213: -7273271996760675504
+    second: Rapi_Idle_31
+  - first:
+      213: 5671663990756554010
+    second: Rapi_Idle_32
+  - first:
+      213: 3840562683575357178
+    second: Rapi_Idle_33
+  - first:
+      213: -9180495537917670982
+    second: Rapi_Idle_34
+  - first:
+      213: 7718967989994258328
+    second: Rapi_Idle_35
+  - first:
+      213: 2956683016023977712
+    second: Rapi_Idle_36
+  - first:
+      213: 3684396207881775215
+    second: Rapi_Idle_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rapi_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2645
+        width: 456
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77941533c58491a30800000000000000
+      internalID: 4186456889452743031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2645
+        width: 455
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4e43f3b7e85b3a0800000000000000
+      internalID: -6650252614750116630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 2645
+        width: 456
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7166294ed9a7b0a20800000000000000
+      internalID: 3029649992900044311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 2645
+        width: 455
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa8bd4879b40e660800000000000000
+      internalID: 7413008100792961699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 2645
+        width: 456
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a4044a017c20140800000000000000
+      internalID: 4684525436707818073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 2645
+        width: 455
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685db04d166619b00800000000000000
+      internalID: 833559976395658630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 3097
+        y: 2645
+        width: 456
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69b2d510a7dea720800000000000000
+      internalID: 2859459895987714413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2133
+        width: 455
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed878dc68a5338d90800000000000000
+      internalID: -7096769590308865826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 2133
+        width: 456
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cebb5160f019d84a0800000000000000
+      internalID: -6589451186060542996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 2133
+        width: 455
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc988ac048dde230800000000000000
+      internalID: 3669827044164279550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 2133
+        width: 456
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb3245a996acdd3c0800000000000000
+      internalID: -4333084711550966853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 2133
+        width: 456
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78aecfe42c2177fa0800000000000000
+      internalID: -5803148969085441401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 2582
+        y: 2133
+        width: 456
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a188b138719682f0800000000000000
+      internalID: -970928724235484759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 2133
+        width: 456
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188c2bc2faa6b97e0800000000000000
+      internalID: -1757693928956311423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1621
+        width: 456
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d0ed9226481e7c0800000000000000
+      internalID: -4043805433257915063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1621
+        width: 455
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49d5346815379620800000000000000
+      internalID: 2780749673801308490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1621
+        width: 454
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38de988672cd8960800000000000000
+      internalID: 7605949160052676670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1621
+        width: 455
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29969359ff9ea1f0800000000000000
+      internalID: -1031711371423213270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 1621
+        width: 454
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd041660245362f0800000000000000
+      internalID: -980847795708359243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 1621
+        width: 453
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46160d98b1dea3b50800000000000000
+      internalID: 6573827308632695140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_20
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1621
+        width: 453
+        height: 349
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a961925aeb9a780800000000000000
+      internalID: -8671189990956950921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1109
+        width: 451
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f1b273b7875ea10800000000000000
+      internalID: 1938087685254750019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_22
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1109
+        width: 452
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3564e9a90f725c0800000000000000
+      internalID: -4240155977274993698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1109
+        width: 452
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ef7d03346a2aab0800000000000000
+      internalID: -4998249828915347961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1109
+        width: 453
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec81c92da49d6830800000000000000
+      internalID: 4066069510036229356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_25
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 1109
+        width: 452
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2741e68ce0f3770800000000000000
+      internalID: 8592602868049277665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_26
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 1109
+        width: 453
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca0b45357f20ecde0800000000000000
+      internalID: -1311107180239998804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_27
+      rect:
+        serializedVersion: 2
+        x: 3113
+        y: 1109
+        width: 452
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39487b4b7c2732c50800000000000000
+      internalID: 6639276477730227347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_28
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 597
+        width: 453
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3985b929e698960800000000000000
+      internalID: 7604731021742347256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_29
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 597
+        width: 453
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fd8cbd86c321cd0800000000000000
+      internalID: -2588940414722973857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_30
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 597
+        width: 453
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220b699cbf843aa40800000000000000
+      internalID: 5378222626266591266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_31
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 597
+        width: 453
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ba84687a5201b90800000000000000
+      internalID: -7273271996760675504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_32
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 597
+        width: 453
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a153b6e895cc5be40800000000000000
+      internalID: 5671663990756554010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_33
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 597
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe412c996b6c4530800000000000000
+      internalID: 3840562683575357178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_34
+      rect:
+        serializedVersion: 2
+        x: 3103
+        y: 597
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9cb58d2f3589080800000000000000
+      internalID: -9180495537917670982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_35
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 85
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ff7347d784f1b60800000000000000
+      internalID: 7718967989994258328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_36
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 85
+        width: 455
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe2a83b98f380920800000000000000
+      internalID: 2956683016023977712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rapi_Idle_37
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 85
+        width: 455
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68e69e84da912330800000000000000
+      internalID: 3684396207881775215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
