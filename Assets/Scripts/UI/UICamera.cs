@@ -22,7 +22,7 @@ public class UICamera : MonoBehaviour
         transform.position = GetTargetPosition();
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         CheckPlayerDirection();
 
