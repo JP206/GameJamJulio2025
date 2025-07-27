@@ -11,7 +11,7 @@ public class EnemyController : MonoBehaviour
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
-    private bool isInvulnerable = false, isDead = false;
+    private bool isInvulnerable = false, isDead = false, celebrating = false;
     private Animator animator;
     private WaveManager waveManager;
     private Collider2D collider;
@@ -52,7 +52,7 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        if (playerTransform && !isDead)
+        if (playerTransform && !isDead && !celebrating)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
 
@@ -162,5 +162,11 @@ public class EnemyController : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void Celebrate()
+    {
+        celebrating = true;
+        animator.SetTrigger("Celebration");
     }
 }

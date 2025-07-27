@@ -162,6 +162,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -398,7 +411,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      festejo.gif_0: 1404631413129600598
+      festejo.gif_1: -389557425902385023
+      festejo.gif_2: -217625056594298935
+      festejo.gif_3: 3479864523966218615
+      festejo.gif_4: 7189697411781727460
+      festejo.gif_5: -2339466711497777173
+      festejo.gif_6: 3589035325375005540
+      festejo.gif_7: -2606084673888319958
+      festejo.gif_8: 2608492409752326379
+      festejo.gif_9: -7344695393700478050
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
