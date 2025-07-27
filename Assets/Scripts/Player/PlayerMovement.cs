@@ -66,6 +66,10 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer.flipX = mousePos.x < transform.position.x;
     }
 
+    /// <summary>
+    /// true si mira a la derecha
+    /// </summary>
+    /// <returns></returns>
     public bool GetFacingForward()
     {
         if (movementInput.x > 0)

@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hit1, hit2, hit3;
     [SerializeField] private ParticleSystem hitEffect;
+    [SerializeField] bool gallo;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -108,6 +109,10 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.red;
         collider.enabled = false;
+
+        if (gallo)
+            animator.SetTrigger("GetHit");
+
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
