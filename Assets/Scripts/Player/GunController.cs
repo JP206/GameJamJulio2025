@@ -10,6 +10,12 @@ public class GunController : MonoBehaviour
     [SerializeField] AudioClip gunshot1, emptyGunshot, eat1, eat2, eat3;
     [SerializeField] AudioSource audioSource1, audioSource2;
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
+    Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -44,6 +50,9 @@ public class GunController : MonoBehaviour
             rb.linearVelocity = fireDirection * bulletSpeed;
 
             audioSource1.PlayOneShot(gunshot1);
+
+            if (animator.GetBool("isRunning"))
+                animator.SetTrigger("fire");
         }
         else
         {

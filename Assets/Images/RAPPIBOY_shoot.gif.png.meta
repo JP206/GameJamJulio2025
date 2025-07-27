@@ -180,6 +180,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -548,7 +561,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RAPPIBOY_shoot.gif_0: 3153507707574356183
+      RAPPIBOY_shoot.gif_1: -9208998868225947638
+      RAPPIBOY_shoot.gif_10: -494302057661293405
+      RAPPIBOY_shoot.gif_11: -4911076504797119610
+      RAPPIBOY_shoot.gif_12: -3888524927507989738
+      RAPPIBOY_shoot.gif_13: 6037393358666105820
+      RAPPIBOY_shoot.gif_14: 9095203587728046374
+      RAPPIBOY_shoot.gif_15: 6879235458354967635
+      RAPPIBOY_shoot.gif_2: 4086869890762085233
+      RAPPIBOY_shoot.gif_3: 4467727784037131440
+      RAPPIBOY_shoot.gif_4: 3285965137967348829
+      RAPPIBOY_shoot.gif_5: 4178836695991702335
+      RAPPIBOY_shoot.gif_6: -375110875142604331
+      RAPPIBOY_shoot.gif_7: 4244386151303290040
+      RAPPIBOY_shoot.gif_8: 8855587043616656735
+      RAPPIBOY_shoot.gif_9: 1524608658774721568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
