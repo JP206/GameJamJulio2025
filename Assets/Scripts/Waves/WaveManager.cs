@@ -33,7 +33,12 @@ public class WaveManager : MonoBehaviour
         if (deadEnemies == enemiesToSpawn)
         {
             audioSource.Stop();
-            musicSource.Stop();
+
+            if (!BossesAlive())
+            {
+                musicSource.Stop();
+            }
+
             StartCoroutine(TimeBetweenWaves());
         }
     }
@@ -91,15 +96,28 @@ public class WaveManager : MonoBehaviour
                 RandomizePosition(galloInstance.transform);
             }
 
-            musicSource.clip = bossMusic;
+            if (!musicSource.isPlaying)
+            {
+                musicSource.clip = bossMusic;
+            }
         }
         else
         {
-            musicSource.clip = waveMusic;
+            if (!musicSource.isPlaying)
+            {
+                musicSource.clip = waveMusic;
+            }
         }
 
-        musicSource.Play();
-        audioSource.Play();
+        if (!musicSource.isPlaying)
+        {
+            musicSource.Play();
+        }
+
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
     }
 
     void RandomizePosition(Transform transform)
@@ -108,5 +126,20 @@ public class WaveManager : MonoBehaviour
         float randomY = Random.Range(0, 3f);
 
         transform.position = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
+    }
+
+    bool BossesAlive()
+    {
+        EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
+
+        foreach (EnemyController enemy in enemies)
+        {
+            if (enemy.tag.Equals("Boss"))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
