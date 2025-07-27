@@ -375,6 +375,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2173,7 +2186,88 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barra-de-vida.gif_0: -818257925743703641
+      barra-de-vida.gif_1: -2961109456436403773
+      barra-de-vida.gif_10: -7819720939787848430
+      barra-de-vida.gif_11: 6317978920759752755
+      barra-de-vida.gif_12: -6633996213031684175
+      barra-de-vida.gif_13: 1927801936574282761
+      barra-de-vida.gif_14: 890679067674170339
+      barra-de-vida.gif_15: 460668285951549886
+      barra-de-vida.gif_16: -8397553657292714364
+      barra-de-vida.gif_17: -3598061971971374838
+      barra-de-vida.gif_18: 3301390574910629336
+      barra-de-vida.gif_19: 5252144751888690100
+      barra-de-vida.gif_2: -1552259436515016615
+      barra-de-vida.gif_20: 4667882426733291373
+      barra-de-vida.gif_21: 4819462483487155942
+      barra-de-vida.gif_22: 2553278832108961517
+      barra-de-vida.gif_23: 6339466841472413130
+      barra-de-vida.gif_24: 3659549694141394132
+      barra-de-vida.gif_25: 398614821475745202
+      barra-de-vida.gif_26: 5681200441820412182
+      barra-de-vida.gif_27: 666144305841457742
+      barra-de-vida.gif_28: 7294449658618392277
+      barra-de-vida.gif_29: -2289778311011623317
+      barra-de-vida.gif_3: 3791911378005045044
+      barra-de-vida.gif_30: 8923345483105085321
+      barra-de-vida.gif_31: 4750751554873913075
+      barra-de-vida.gif_32: 6789290099943049501
+      barra-de-vida.gif_33: 2279102155148026898
+      barra-de-vida.gif_34: 8395555749561595875
+      barra-de-vida.gif_35: 5760731326803205799
+      barra-de-vida.gif_36: 5705905235293369086
+      barra-de-vida.gif_37: 8619847602631790170
+      barra-de-vida.gif_38: -2501112178149384677
+      barra-de-vida.gif_39: 5394018100630978086
+      barra-de-vida.gif_4: -8583432654829248586
+      barra-de-vida.gif_40: -1882242125751348051
+      barra-de-vida.gif_41: 5046416107927705485
+      barra-de-vida.gif_42: -1680483910604864716
+      barra-de-vida.gif_43: -6409537269888887529
+      barra-de-vida.gif_44: -1796735672967481690
+      barra-de-vida.gif_45: -6245731576684170416
+      barra-de-vida.gif_46: -7725669358546580263
+      barra-de-vida.gif_47: 2832930783716446901
+      barra-de-vida.gif_48: 1548285633471148550
+      barra-de-vida.gif_49: -3370150369683450835
+      barra-de-vida.gif_5: -8178481079431489182
+      barra-de-vida.gif_50: 6900392924528863529
+      barra-de-vida.gif_51: 3338524324193194596
+      barra-de-vida.gif_52: -181959634992340728
+      barra-de-vida.gif_53: 4948214214981620111
+      barra-de-vida.gif_54: 2213894366919247427
+      barra-de-vida.gif_55: -2330158179790482156
+      barra-de-vida.gif_56: -2467731115448856414
+      barra-de-vida.gif_57: -5464789966748149055
+      barra-de-vida.gif_58: 4135529222555646784
+      barra-de-vida.gif_59: 6460663716197658182
+      barra-de-vida.gif_6: 2815187184340648347
+      barra-de-vida.gif_60: -5788929215687213167
+      barra-de-vida.gif_61: -6981059250317903588
+      barra-de-vida.gif_62: 1151243991604942448
+      barra-de-vida.gif_63: 5532131420886420704
+      barra-de-vida.gif_64: -626906748912934269
+      barra-de-vida.gif_65: 7508293313656298225
+      barra-de-vida.gif_66: -8792770344235468350
+      barra-de-vida.gif_67: -1623663571803654730
+      barra-de-vida.gif_68: 890380261541745695
+      barra-de-vida.gif_69: -8938099607955580362
+      barra-de-vida.gif_7: -3574890495011169477
+      barra-de-vida.gif_70: -3750600030696540544
+      barra-de-vida.gif_71: 2453580091611471859
+      barra-de-vida.gif_72: 6612994231993803405
+      barra-de-vida.gif_73: 182777046472369680
+      barra-de-vida.gif_74: 5867943455167669033
+      barra-de-vida.gif_75: 4024755099944615623
+      barra-de-vida.gif_76: -148659420729169010
+      barra-de-vida.gif_77: 1651576351568775918
+      barra-de-vida.gif_78: 2277901387182267394
+      barra-de-vida.gif_79: -4829834788243941150
+      barra-de-vida.gif_8: 8818735922736589045
+      barra-de-vida.gif_80: -5610570597769222858
+      barra-de-vida.gif_9: -8771489861661460463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,18 +6,18 @@ public class GunController : MonoBehaviour
 {
     [SerializeField] private Transform firePoint;
     [SerializeField] private float bulletSpeed = 10f, bulletAmmo;
-    [SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] TextMeshProUGUI ammoText, ammoTextShade;
     [SerializeField] AudioClip gunshot1, emptyGunshot, eat1, eat2, eat3;
     [SerializeField] AudioSource audioSource1, audioSource2;
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
     Animator animator;
-    UIAnimation ammoAnimation;
+    UIAnimation uiAnimation;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
 
-        ammoAnimation = ammoText.gameObject.GetComponent<UIAnimation>();
+        uiAnimation = FindAnyObjectByType<UIAnimation>();
     }
 
     private void Update()
@@ -69,7 +69,8 @@ public class GunController : MonoBehaviour
         {
             bulletAmmo += 10;
             ammoText.text = "Ammo: " + bulletAmmo.ToString();
-            ammoAnimation.Animation(ammoText);
+            ammoTextShade.text = ammoText.text;
+            uiAnimation.Animation(ammoText, ammoTextShade);
 
             audioSource2.PlayOneShot(GetEatSound());
         }
