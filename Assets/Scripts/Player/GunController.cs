@@ -12,12 +12,15 @@ public class GunController : MonoBehaviour
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
     Animator animator;
     UIAnimation uiAnimation;
+    PlayerMovement playerMovement;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
 
         uiAnimation = FindAnyObjectByType<UIAnimation>();
+
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -55,7 +58,16 @@ public class GunController : MonoBehaviour
             audioSource1.PlayOneShot(gunshot1);
 
             if (animator.GetBool("isRunning"))
-                animator.SetTrigger("fire");
+            {
+                if (playerMovement.GetFacingForward())
+                {
+                    animator.SetTrigger("fire");
+                }
+                else
+                {
+                    animator.SetTrigger("FireBackwards");
+                }
+            }
         }
         else
         {
