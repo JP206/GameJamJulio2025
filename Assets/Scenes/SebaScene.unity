@@ -5870,6 +5870,7 @@ GameObject:
   - component: {fileID: 662284377}
   - component: {fileID: 662284379}
   - component: {fileID: 662284378}
+  - component: {fileID: 662284380}
   m_Layer: 5
   m_Name: ammo text
   m_TagString: Untagged
@@ -5995,6 +5996,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662284376}
   m_CullTransparentMesh: 1
+--- !u!114 &662284380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662284376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1191e1d2fcab7b64791ab537d853267e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &664824721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6360,6 +6373,7 @@ GameObject:
   - component: {fileID: 700836148}
   - component: {fileID: 700836150}
   - component: {fileID: 700836149}
+  - component: {fileID: 700836151}
   m_Layer: 5
   m_Name: kill count text
   m_TagString: Untagged
@@ -6406,7 +6420,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Kill count:'
+  m_text: 'Kill count: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22592578d478a0e4d884b9c121ca0358, type: 2}
   m_sharedMaterial: {fileID: -534527821715430474, guid: 22592578d478a0e4d884b9c121ca0358, type: 2}
@@ -6485,6 +6499,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700836147}
   m_CullTransparentMesh: 1
+--- !u!114 &700836151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700836147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1191e1d2fcab7b64791ab537d853267e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &701309335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7205,6 +7231,7 @@ GameObject:
   - component: {fileID: 770810450}
   - component: {fileID: 770810452}
   - component: {fileID: 770810451}
+  - component: {fileID: 770810453}
   m_Layer: 5
   m_Name: round text
   m_TagString: Untagged
@@ -7251,7 +7278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Round:'
+  m_text: 'Round: 1'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 22592578d478a0e4d884b9c121ca0358, type: 2}
   m_sharedMaterial: {fileID: -534527821715430474, guid: 22592578d478a0e4d884b9c121ca0358, type: 2}
@@ -7330,6 +7357,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770810449}
   m_CullTransparentMesh: 1
+--- !u!114 &770810453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770810449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1191e1d2fcab7b64791ab537d853267e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &779034058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19822,6 +19861,18 @@ PrefabInstance:
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 662284378}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: m_SortingOrder
       value: -3
