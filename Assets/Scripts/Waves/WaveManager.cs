@@ -5,20 +5,19 @@ using UnityEngine;
 public class WaveManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
-    [SerializeField] TextMeshProUGUI roundText, killCountText;
+    [SerializeField] TextMeshProUGUI roundText, roundTextShade, killCountText, killCountTextShade;
     [SerializeField] AudioSource audioSource, musicSource;
     [SerializeField] AudioClip waveMusic, bossMusic;
 
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
-    UIAnimation killCountAnimation, roundAnimation;
+    UIAnimation uiAnimation;
 
     void Start()
     {
         enemyPool = GetComponent<EnemyPool>();
 
-        killCountAnimation = killCountText.gameObject.GetComponent<UIAnimation>();
-        roundAnimation = roundText.gameObject.GetComponent<UIAnimation>();
+        uiAnimation = FindAnyObjectByType<UIAnimation>();
 
         StartWave();
     }
@@ -28,7 +27,8 @@ public class WaveManager : MonoBehaviour
         deadEnemies++;
         killCount++;
         killCountText.text = "Kill count: " + killCount.ToString();
-        killCountAnimation.Animation(killCountText);
+        killCountTextShade.text = killCountText.text;
+        uiAnimation.Animation(killCountText, killCountTextShade);
 
         if (deadEnemies == enemiesToSpawn)
         {
@@ -62,7 +62,8 @@ public class WaveManager : MonoBehaviour
     {
         deadEnemies = 0;
         roundText.text = "Round: " + round.ToString();
-        roundAnimation.Animation(roundText);
+        roundTextShade.text = roundText.text;
+        uiAnimation.Animation(roundText, roundTextShade);
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {

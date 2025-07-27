@@ -14,27 +14,30 @@ public class UIAnimation : MonoBehaviour
     private readonly Quaternion originalRotation = Quaternion.identity, leftRotation = Quaternion.Euler(0f, 0f, 15f),
         rightRotation = Quaternion.Euler(0f, 0f, -15f);
 
-    public void Animation(TextMeshProUGUI text)
+    public void Animation(TextMeshProUGUI text, TextMeshProUGUI textShade)
     {
         if (!running)
         {
-            StartCoroutine(animation(text));
+            StartCoroutine(animation(text, textShade));
         }
     }
 
-    IEnumerator animation(TextMeshProUGUI text)
+    IEnumerator animation(TextMeshProUGUI text, TextMeshProUGUI textShade)
     {
         running = true;
 
         ChangeTextColor(text);
+
         float time = 0;
         int random = Random.Range(0, 2);
         Quaternion targetRotation = (random == 1) ? leftRotation : rightRotation;
 
         while (time < duration)
         {
-            transform.localScale = Vector2.Lerp(originalScale, targetScale, time);
-            transform.rotation = Quaternion.Lerp(originalRotation, targetRotation, time);
+            text.transform.localScale = Vector2.Lerp(originalScale, targetScale, time);
+            text.transform.rotation = Quaternion.Lerp(originalRotation, targetRotation, time);
+            textShade.transform.localScale = Vector2.Lerp(originalScale, targetScale, time);
+            textShade.transform.rotation = Quaternion.Lerp(originalRotation, targetRotation, time);
             yield return null;
             time += Time.deltaTime;
         }
@@ -43,14 +46,18 @@ public class UIAnimation : MonoBehaviour
 
         while (time < duration)
         {
-            transform.localScale = Vector2.Lerp(targetScale, originalScale, time);
-            transform.rotation = Quaternion.Lerp(targetRotation, originalRotation, time);
+            text.transform.localScale = Vector2.Lerp(targetScale, originalScale, time);
+            text.transform.rotation = Quaternion.Lerp(targetRotation, originalRotation, time);
+            textShade.transform.localScale = Vector2.Lerp(targetScale, originalScale, time);
+            textShade.transform.rotation = Quaternion.Lerp(targetRotation, originalRotation, time);
             yield return null;
             time += Time.deltaTime;
         }
 
-        transform.rotation = originalRotation;
-        transform.localScale = originalScale;
+        text.transform.rotation = originalRotation;
+        text.transform.localScale = originalScale;
+        textShade.transform.rotation = originalRotation;
+        textShade.transform.localScale = originalScale;
 
         ResetTextoColor(text);
 
