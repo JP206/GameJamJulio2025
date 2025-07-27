@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementInput;
 
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
+    private bool animFlag = false;
 
     [SerializeField] AudioSource movementAudio;
 
@@ -16,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         movementAudio = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -44,13 +47,24 @@ public class PlayerMovement : MonoBehaviour
         {
             if (movementAudio.isPlaying)
                 movementAudio.Pause();
+
+            if (animFlag)
+            {
+                animator.SetTrigger("Idle");
+                animFlag = false;
+            }
         }
         else
         {
             if (!movementAudio.isPlaying)
                 movementAudio.Play();
-        }
 
+            if (!animFlag)
+            {
+                animator.SetTrigger("Run");
+                animFlag = true;
+            }
+        }
     }
 
     private void HandleSpriteFlip()
