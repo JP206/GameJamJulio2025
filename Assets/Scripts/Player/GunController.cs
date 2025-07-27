@@ -9,10 +9,12 @@ public class GunController : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText;
     [SerializeField] AudioClip gunshot1, emptyGunshot, eat1, eat2, eat3;
     [SerializeField] AudioSource audioSource1, audioSource2;
-    [SerializeField] float chickenRangeOrigin = 0.2f,  chickenRangeEnd = 0.4f;
+    [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
 
     private void Update()
     {
+        if (IntroCinematicManager.IsCinematicPlaying) return;
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             FireBullet();
