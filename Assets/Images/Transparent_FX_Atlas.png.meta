@@ -348,7 +348,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Transparent_FX_Atlas_0: -4131617876466443459
+      Transparent_FX_Atlas_1: 6442838295872732953
+      Transparent_FX_Atlas_2: -3852869467521069888
+      Transparent_FX_Atlas_3: -5628699620366454604
+      Transparent_FX_Atlas_4: -5812529585028860665
+      Transparent_FX_Atlas_5: -5194779116102034048
+      Transparent_FX_Atlas_6: 8581759854202857381
+      Transparent_FX_Atlas_7: 7624144103434931325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
