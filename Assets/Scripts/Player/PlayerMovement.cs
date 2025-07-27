@@ -57,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleSpriteFlip()
     {
+        if (IntroCinematicManager.IsCinematicPlaying) return;
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         spriteRenderer.flipX = mousePos.x < transform.position.x;
     }

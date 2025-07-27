@@ -1,8 +1,11 @@
-﻿﻿using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class IntroCinematicManager : MonoBehaviour
 {
+    public static bool IsCinematicPlaying { get; private set; } = true;
+
     [Header("References")]
     public GameObject player;
     public GameObject waveManager;
@@ -12,10 +15,12 @@ public class IntroCinematicManager : MonoBehaviour
     public GameObject cinematicCanvas;
 
     [Header("Cinematic Settings")]
-    public float moveSpeed = 5f;
-    public float delayBeforeEnable = 1f;
+    public float moveSpeed = 10f;
+    public float delayBeforeEnable = 2f;
 
     private PlayerMovement playerMovement;
+    private GunController gunController;
+    private PlayerInput playerInput;
 
     void Start()
     {
@@ -25,8 +30,20 @@ public class IntroCinematicManager : MonoBehaviour
         ulCanvas.SetActive(false);
 
         playerMovement = player.GetComponent<PlayerMovement>();
+        gunController = player.GetComponent<GunController>();
+        playerInput = player.GetComponent<PlayerInput>();
+
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        if (gunController != null)
+            gunController.enabled = false;
+
+        if (playerInput != null)
+            playerInput.enabled = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
         player.transform.position = entryPoint.position;
 
@@ -48,11 +65,22 @@ public class IntroCinematicManager : MonoBehaviour
 
         waveManager.SetActive(true);
         ulCanvas.SetActive(true);
+
         if (playerMovement != null)
             playerMovement.enabled = true;
 
+        if (gunController != null)
+            gunController.enabled = true;
+
+        if (playerInput != null)
+            playerInput.enabled = true;
+
         if (cinematicCanvas != null) cinematicCanvas.SetActive(false);
 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        IsCinematicPlaying = false;
         Destroy(gameObject);
     }
 
