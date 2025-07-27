@@ -9,9 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    private bool animFlag = false;
 
-    [SerializeField] AudioSource movementAudio;
+    [SerializeField] private AudioSource movementAudio;
 
     void Start()
     {
@@ -25,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleInput();
         HandleSpriteFlip();
+        HandleAnimation();
     }
 
     void FixedUpdate()
     {
-        MovePlayer();
+        rb.linearVelocity = movementInput * moveSpeed;
     }
 
     private void HandleInput()
@@ -39,38 +39,25 @@ public class PlayerMovement : MonoBehaviour
         movementInput.Normalize();
     }
 
-    private void MovePlayer()
+    private void HandleAnimation()
     {
-        rb.linearVelocity = movementInput * moveSpeed;
+        bool isWalking = movementInput.sqrMagnitude > 0;
 
-        if (movementInput.x == 0 && movementInput.y == 0)
+        animator.SetBool("isRunning", isWalking);
+
+        if (isWalking && !movementAudio.isPlaying)
         {
-            if (movementAudio.isPlaying)
-                movementAudio.Pause();
-
-            if (animFlag)
-            {
-                animator.SetTrigger("Idle");
-                animFlag = false;
-            }
+            movementAudio.Play();
         }
-        else
+        else if (!isWalking && movementAudio.isPlaying)
         {
-            if (!movementAudio.isPlaying)
-                movementAudio.Play();
-
-            if (!animFlag)
-            {
-                animator.SetTrigger("Run");
-                animFlag = true;
-            }
+            movementAudio.Pause();
         }
     }
 
     private void HandleSpriteFlip()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
         spriteRenderer.flipX = mousePos.x < transform.position.x;
     }
 }
