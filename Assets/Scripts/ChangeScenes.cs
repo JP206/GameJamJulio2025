@@ -53,7 +53,6 @@ public class ChangeScenes : MonoBehaviour
             objectToActivate.SetActive(true);
     }
 
-    // NUEVO: llama a un objeto precargado desde el Inspector
     public void AnimateAndActivateFromSerialized(GameObject buttonObject)
     {
         StartCoroutine(AnimateAndActivate(buttonObject, objectToActivateAfterAnimation));
