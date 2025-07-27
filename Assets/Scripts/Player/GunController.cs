@@ -13,6 +13,8 @@ public class GunController : MonoBehaviour
     Animator animator;
     UIAnimation uiAnimation;
     PlayerMovement playerMovement;
+    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight;
+    SpriteRenderer spriteRenderer;
 
     private void Start()
     {
@@ -21,6 +23,11 @@ public class GunController : MonoBehaviour
         uiAnimation = FindAnyObjectByType<UIAnimation>();
 
         playerMovement = GetComponent<PlayerMovement>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        shootParticlesLeft.Stop();
+        shootParticlesRight.Stop();
     }
 
     private void Update()
@@ -67,6 +74,17 @@ public class GunController : MonoBehaviour
                 {
                     animator.SetTrigger("FireBackwards");
                 }
+            }
+
+            if (!spriteRenderer.flipX)
+            {
+                shootParticlesRight.Stop();
+                shootParticlesRight.Play();
+            }
+            else
+            {
+                shootParticlesLeft.Stop();
+                shootParticlesLeft.Play();
             }
         }
         else

@@ -1,64 +1,46 @@
 fileFormatVersion: 2
-guid: f85f4bc753222c14fb58340f4b868f5f
+guid: 790da0d30bc22414c868cc0eb8489178
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 281364503248509531
-    second: pollotachoanim.gif_0
+      213: 107134046033527735
+    second: gallo-get-hit.gif_0
   - first:
-      213: 7019601970661440946
-    second: pollotachoanim.gif_1
+      213: -4702996921195879874
+    second: gallo-get-hit.gif_1
   - first:
-      213: -3891773099854157253
-    second: pollotachoanim.gif_2
+      213: -6940162508656344624
+    second: gallo-get-hit.gif_2
   - first:
-      213: 1985385365846710370
-    second: pollotachoanim.gif_3
+      213: -6632829101928285055
+    second: gallo-get-hit.gif_3
   - first:
-      213: 1977427667336958466
-    second: pollotachoanim.gif_4
+      213: 1529951436498849104
+    second: gallo-get-hit.gif_4
   - first:
-      213: -286897538079329207
-    second: pollotachoanim.gif_5
+      213: 3759263611932049417
+    second: gallo-get-hit.gif_5
   - first:
-      213: -3932367064455890053
-    second: pollotachoanim.gif_6
+      213: 6446428317487424362
+    second: gallo-get-hit.gif_6
   - first:
-      213: -7474020507881327542
-    second: pollotachoanim.gif_7
+      213: 4562122644448113409
+    second: gallo-get-hit.gif_7
   - first:
-      213: 6652569980216764818
-    second: pollotachoanim.gif_8
+      213: 6926157744612687831
+    second: gallo-get-hit.gif_8
   - first:
-      213: -7273022104510896402
-    second: pollotachoanim.gif_9
+      213: 3909993787927080930
+    second: gallo-get-hit.gif_9
   - first:
-      213: -5944898905056848499
-    second: pollotachoanim.gif_10
+      213: 1285550439510216723
+    second: gallo-get-hit.gif_10
   - first:
-      213: -6650589428012215960
-    second: pollotachoanim.gif_11
+      213: 8366655128285382116
+    second: gallo-get-hit.gif_11
   - first:
-      213: -96633393937132438
-    second: pollotachoanim.gif_12
-  - first:
-      213: -5415810937166205187
-    second: pollotachoanim.gif_13
-  - first:
-      213: 5249924102677489569
-    second: pollotachoanim.gif_14
-  - first:
-      213: 6273215638753754596
-    second: pollotachoanim.gif_15
-  - first:
-      213: -4073446980161538827
-    second: pollotachoanim.gif_16
-  - first:
-      213: 8217303311464008662
-    second: pollotachoanim.gif_17
-  - first:
-      213: -6712064599029048668
-    second: pollotachoanim.gif_18
+      213: -1418544542980071897
+    second: gallo-get-hit.gif_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -151,7 +133,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -177,7 +159,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -206,13 +188,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pollotachoanim.gif_0
+      name: gallo-get-hit.gif_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2301
-        width: 474
-        height: 737
+        x: 93
+        y: 1143
+        width: 332
+        height: 346
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5a1884668b97e300800000000000000
-      internalID: 281364503248509531
+      spriteID: 7b3cd25e8dd9c7100800000000000000
+      internalID: 107134046033527735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_1
+      name: gallo-get-hit.gif_1
       rect:
         serializedVersion: 2
-        x: 509
-        y: 2302
-        width: 476
-        height: 734
+        x: 608
+        y: 1148
+        width: 311
+        height: 349
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +225,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bd38e50dc2aa6160800000000000000
-      internalID: 7019601970661440946
+      spriteID: e322d5cb7399bbeb0800000000000000
+      internalID: -4702996921195879874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_2
+      name: gallo-get-hit.gif_2
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 2302
-        width: 477
-        height: 732
+        x: 1119
+        y: 1152
+        width: 319
+        height: 350
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3aa5c43cf4adf9c0800000000000000
-      internalID: -3891773099854157253
+      spriteID: 0d10e0c08f69faf90800000000000000
+      internalID: -6940162508656344624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_3
+      name: gallo-get-hit.gif_3
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 2302
-        width: 479
-        height: 729
+        x: 1622
+        y: 1152
+        width: 345
+        height: 348
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2685d81a8718d8b10800000000000000
-      internalID: 1985385365846710370
+      spriteID: 18cf0b3f21573f3a0800000000000000
+      internalID: -6632829101928285055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_4
+      name: gallo-get-hit.gif_4
       rect:
         serializedVersion: 2
-        x: 2006
-        y: 2302
-        width: 481
-        height: 727
+        x: 1914
+        y: 1372
+        width: 55
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20216a09cfb317b10800000000000000
-      internalID: 1977427667336958466
+      spriteID: 05dcc18b9ba7b3510800000000000000
+      internalID: 1529951436498849104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_5
+      name: gallo-get-hit.gif_5
       rect:
         serializedVersion: 2
-        x: 2506
-        y: 2302
-        width: 482
-        height: 725
+        x: 85
+        y: 639
+        width: 312
+        height: 347
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 944f8db853cb40cf0800000000000000
-      internalID: -286897538079329207
+      spriteID: 900034e66569b2430800000000000000
+      internalID: 3759263611932049417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_6
+      name: gallo-get-hit.gif_6
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1537
-        width: 484
-        height: 722
+        x: 455
+        y: 887
+        width: 32
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,20 +335,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7b39ac4dfc6d69c0800000000000000
-      internalID: -3932367064455890053
+      spriteID: a636bdd6660567950800000000000000
+      internalID: 6446428317487424362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_7
+      name: gallo-get-hit.gif_7
       rect:
         serializedVersion: 2
-        x: 504
-        y: 1537
-        width: 485
-        height: 721
+        x: 648
+        y: 631
+        width: 303
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -375,20 +357,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a44bfb772f1f64890800000000000000
-      internalID: -7474020507881327542
+      spriteID: 103781cbf5aef4f30800000000000000
+      internalID: 4562122644448113409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_8
+      name: gallo-get-hit.gif_8
       rect:
         serializedVersion: 2
-        x: 1003
-        y: 1538
-        width: 487
-        height: 717
+        x: 1161
+        y: 630
+        width: 300
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,20 +379,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2996f32762da25c50800000000000000
-      internalID: 6652569980216764818
+      spriteID: 7dfb5f9b5c7ae1060800000000000000
+      internalID: 6926157744612687831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_9
+      name: gallo-get-hit.gif_9
       rect:
         serializedVersion: 2
-        x: 1503
-        y: 1538
-        width: 488
-        height: 715
+        x: 1664
+        y: 623
+        width: 311
+        height: 368
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -419,20 +401,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee660191ee8011b90800000000000000
-      internalID: -7273022104510896402
+      spriteID: 2efa06352a6134630800000000000000
+      internalID: 3909993787927080930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_10
+      name: gallo-get-hit.gif_10
       rect:
         serializedVersion: 2
-        x: 2003
-        y: 1538
-        width: 487
-        height: 717
+        x: 432
+        y: 781
+        width: 30
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -441,20 +423,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d855a7a71f97f7da0800000000000000
-      internalID: -5944898905056848499
+      spriteID: 3109ad7405137d110800000000000000
+      internalID: 1285550439510216723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_11
+      name: gallo-get-hit.gif_11
       rect:
         serializedVersion: 2
-        x: 2504
-        y: 1537
-        width: 485
-        height: 721
+        x: 388
+        y: 708
+        width: 12
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,20 +445,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8611d5cc62c54b3a0800000000000000
-      internalID: -6650589428012215960
+      spriteID: 4e586afb2845c1470800000000000000
+      internalID: 8366655128285382116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pollotachoanim.gif_12
+      name: gallo-get-hit.gif_12
       rect:
         serializedVersion: 2
-        x: 5
-        y: 772
-        width: 484
-        height: 722
+        x: 117
+        y: 109
+        width: 324
+        height: 369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -485,140 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a64dfe0b070b8aef0800000000000000
-      internalID: -96633393937132438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_13
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 772
-        width: 482
-        height: 725
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dfe688795ac27d4b0800000000000000
-      internalID: -5415810937166205187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_14
-      rect:
-        serializedVersion: 2
-        x: 1006
-        y: 772
-        width: 481
-        height: 727
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a76ad5f72a7bd840800000000000000
-      internalID: 5249924102677489569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_15
-      rect:
-        serializedVersion: 2
-        x: 1507
-        y: 772
-        width: 479
-        height: 729
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4edb753f260fe0750800000000000000
-      internalID: 6273215638753754596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_16
-      rect:
-        serializedVersion: 2
-        x: 2008
-        y: 772
-        width: 478
-        height: 732
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5f47518bd853877c0800000000000000
-      internalID: -4073446980161538827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_17
-      rect:
-        serializedVersion: 2
-        x: 2509
-        y: 772
-        width: 476
-        height: 734
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6db047b13d9b90270800000000000000
-      internalID: 8217303311464008662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pollotachoanim.gif_18
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 6
-        width: 474
-        height: 737
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4aa16692fc4f9d2a0800000000000000
-      internalID: -6712064599029048668
+      spriteID: 72e9a910141505ce0800000000000000
+      internalID: -1418544542980071897
       vertices: []
       indices: 
       edges: []
@@ -636,26 +486,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pollotachoanim.gif_0: 281364503248509531
-      pollotachoanim.gif_1: 7019601970661440946
-      pollotachoanim.gif_10: -5944898905056848499
-      pollotachoanim.gif_11: -6650589428012215960
-      pollotachoanim.gif_12: -96633393937132438
-      pollotachoanim.gif_13: -5415810937166205187
-      pollotachoanim.gif_14: 5249924102677489569
-      pollotachoanim.gif_15: 6273215638753754596
-      pollotachoanim.gif_16: -4073446980161538827
-      pollotachoanim.gif_17: 8217303311464008662
-      pollotachoanim.gif_18: -6712064599029048668
-      pollotachoanim.gif_2: -3891773099854157253
-      pollotachoanim.gif_3: 1985385365846710370
-      pollotachoanim.gif_4: 1977427667336958466
-      pollotachoanim.gif_5: -286897538079329207
-      pollotachoanim.gif_6: -3932367064455890053
-      pollotachoanim.gif_7: -7474020507881327542
-      pollotachoanim.gif_8: 6652569980216764818
-      pollotachoanim.gif_9: -7273022104510896402
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
