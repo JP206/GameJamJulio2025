@@ -54,6 +54,11 @@ public class PlayerHealth : MonoBehaviour
                 enemy.Celebrate();
             }
 
+            // Mostrar Game Over después de 1s (sin pausar)
+            UICanvasManager uiManager = Object.FindFirstObjectByType<UICanvasManager>();
+            if (uiManager != null)
+                uiManager.TriggerGameOver();
+
             StartCoroutine(Death());
             return;
         }
