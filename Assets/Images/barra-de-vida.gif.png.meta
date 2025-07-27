@@ -1,0 +1,2181 @@
+fileFormatVersion: 2
+guid: c1c37719d901ab1499dfc11996d53b6b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -818257925743703641
+    second: barra-de-vida.gif_0
+  - first:
+      213: -2961109456436403773
+    second: barra-de-vida.gif_1
+  - first:
+      213: -1552259436515016615
+    second: barra-de-vida.gif_2
+  - first:
+      213: 3791911378005045044
+    second: barra-de-vida.gif_3
+  - first:
+      213: -8583432654829248586
+    second: barra-de-vida.gif_4
+  - first:
+      213: -8178481079431489182
+    second: barra-de-vida.gif_5
+  - first:
+      213: 2815187184340648347
+    second: barra-de-vida.gif_6
+  - first:
+      213: -3574890495011169477
+    second: barra-de-vida.gif_7
+  - first:
+      213: 8818735922736589045
+    second: barra-de-vida.gif_8
+  - first:
+      213: -8771489861661460463
+    second: barra-de-vida.gif_9
+  - first:
+      213: -7819720939787848430
+    second: barra-de-vida.gif_10
+  - first:
+      213: 6317978920759752755
+    second: barra-de-vida.gif_11
+  - first:
+      213: -6633996213031684175
+    second: barra-de-vida.gif_12
+  - first:
+      213: 1927801936574282761
+    second: barra-de-vida.gif_13
+  - first:
+      213: 890679067674170339
+    second: barra-de-vida.gif_14
+  - first:
+      213: 460668285951549886
+    second: barra-de-vida.gif_15
+  - first:
+      213: -8397553657292714364
+    second: barra-de-vida.gif_16
+  - first:
+      213: -3598061971971374838
+    second: barra-de-vida.gif_17
+  - first:
+      213: 3301390574910629336
+    second: barra-de-vida.gif_18
+  - first:
+      213: 5252144751888690100
+    second: barra-de-vida.gif_19
+  - first:
+      213: 4667882426733291373
+    second: barra-de-vida.gif_20
+  - first:
+      213: 4819462483487155942
+    second: barra-de-vida.gif_21
+  - first:
+      213: 2553278832108961517
+    second: barra-de-vida.gif_22
+  - first:
+      213: 6339466841472413130
+    second: barra-de-vida.gif_23
+  - first:
+      213: 3659549694141394132
+    second: barra-de-vida.gif_24
+  - first:
+      213: 398614821475745202
+    second: barra-de-vida.gif_25
+  - first:
+      213: 5681200441820412182
+    second: barra-de-vida.gif_26
+  - first:
+      213: 666144305841457742
+    second: barra-de-vida.gif_27
+  - first:
+      213: 7294449658618392277
+    second: barra-de-vida.gif_28
+  - first:
+      213: -2289778311011623317
+    second: barra-de-vida.gif_29
+  - first:
+      213: 8923345483105085321
+    second: barra-de-vida.gif_30
+  - first:
+      213: 4750751554873913075
+    second: barra-de-vida.gif_31
+  - first:
+      213: 6789290099943049501
+    second: barra-de-vida.gif_32
+  - first:
+      213: 2279102155148026898
+    second: barra-de-vida.gif_33
+  - first:
+      213: 8395555749561595875
+    second: barra-de-vida.gif_34
+  - first:
+      213: 5760731326803205799
+    second: barra-de-vida.gif_35
+  - first:
+      213: 5705905235293369086
+    second: barra-de-vida.gif_36
+  - first:
+      213: 8619847602631790170
+    second: barra-de-vida.gif_37
+  - first:
+      213: -2501112178149384677
+    second: barra-de-vida.gif_38
+  - first:
+      213: 5394018100630978086
+    second: barra-de-vida.gif_39
+  - first:
+      213: -1882242125751348051
+    second: barra-de-vida.gif_40
+  - first:
+      213: 5046416107927705485
+    second: barra-de-vida.gif_41
+  - first:
+      213: -1680483910604864716
+    second: barra-de-vida.gif_42
+  - first:
+      213: -6409537269888887529
+    second: barra-de-vida.gif_43
+  - first:
+      213: -1796735672967481690
+    second: barra-de-vida.gif_44
+  - first:
+      213: -6245731576684170416
+    second: barra-de-vida.gif_45
+  - first:
+      213: -7725669358546580263
+    second: barra-de-vida.gif_46
+  - first:
+      213: 2832930783716446901
+    second: barra-de-vida.gif_47
+  - first:
+      213: 1548285633471148550
+    second: barra-de-vida.gif_48
+  - first:
+      213: -3370150369683450835
+    second: barra-de-vida.gif_49
+  - first:
+      213: 6900392924528863529
+    second: barra-de-vida.gif_50
+  - first:
+      213: 3338524324193194596
+    second: barra-de-vida.gif_51
+  - first:
+      213: -181959634992340728
+    second: barra-de-vida.gif_52
+  - first:
+      213: 4948214214981620111
+    second: barra-de-vida.gif_53
+  - first:
+      213: 2213894366919247427
+    second: barra-de-vida.gif_54
+  - first:
+      213: -2330158179790482156
+    second: barra-de-vida.gif_55
+  - first:
+      213: -2467731115448856414
+    second: barra-de-vida.gif_56
+  - first:
+      213: -5464789966748149055
+    second: barra-de-vida.gif_57
+  - first:
+      213: 4135529222555646784
+    second: barra-de-vida.gif_58
+  - first:
+      213: 6460663716197658182
+    second: barra-de-vida.gif_59
+  - first:
+      213: -5788929215687213167
+    second: barra-de-vida.gif_60
+  - first:
+      213: -6981059250317903588
+    second: barra-de-vida.gif_61
+  - first:
+      213: 1151243991604942448
+    second: barra-de-vida.gif_62
+  - first:
+      213: 5532131420886420704
+    second: barra-de-vida.gif_63
+  - first:
+      213: -626906748912934269
+    second: barra-de-vida.gif_64
+  - first:
+      213: 7508293313656298225
+    second: barra-de-vida.gif_65
+  - first:
+      213: -8792770344235468350
+    second: barra-de-vida.gif_66
+  - first:
+      213: -1623663571803654730
+    second: barra-de-vida.gif_67
+  - first:
+      213: 890380261541745695
+    second: barra-de-vida.gif_68
+  - first:
+      213: -8938099607955580362
+    second: barra-de-vida.gif_69
+  - first:
+      213: -3750600030696540544
+    second: barra-de-vida.gif_70
+  - first:
+      213: 2453580091611471859
+    second: barra-de-vida.gif_71
+  - first:
+      213: 6612994231993803405
+    second: barra-de-vida.gif_72
+  - first:
+      213: 182777046472369680
+    second: barra-de-vida.gif_73
+  - first:
+      213: 5867943455167669033
+    second: barra-de-vida.gif_74
+  - first:
+      213: 4024755099944615623
+    second: barra-de-vida.gif_75
+  - first:
+      213: -148659420729169010
+    second: barra-de-vida.gif_76
+  - first:
+      213: 1651576351568775918
+    second: barra-de-vida.gif_77
+  - first:
+      213: 2277901387182267394
+    second: barra-de-vida.gif_78
+  - first:
+      213: -4829834788243941150
+    second: barra-de-vida.gif_79
+  - first:
+      213: -5610570597769222858
+    second: barra-de-vida.gif_80
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: barra-de-vida.gif_0
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 12174
+        width: 1198
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9066970c6f4a4f0800000000000000
+      internalID: -818257925743703641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_1
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1ee0453a608e6d0800000000000000
+      internalID: -2961109456436403773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_2
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95046474444457ae0800000000000000
+      internalID: -1552259436515016615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_3
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fa0c1de439f9430800000000000000
+      internalID: 3791911378005045044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_4
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf1a673a7581e880800000000000000
+      internalID: -8583432654829248586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_5
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2699b3a2ac2308e80800000000000000
+      internalID: -8178481079431489182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_6
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 12362
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b914bd224dd811720800000000000000
+      internalID: 2815187184340648347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 12077
+        width: 1099
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b50fd0900736ec0800000000000000
+      internalID: -3574890495011169477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8e0ba1991726a70800000000000000
+      internalID: 8818735922736589045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1187ab4b178654680800000000000000
+      internalID: -8771489861661460463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_10
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215f2456c35ca7390800000000000000
+      internalID: -7819720939787848430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_11
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3387a46ba58fda750800000000000000
+      internalID: 6317978920759752755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_12
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7b5f8b79f4fe3a0800000000000000
+      internalID: -6633996213031684175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_13
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cf1dab5ade0ca10800000000000000
+      internalID: 1927801936574282761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_14
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 11282
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3589d94e35c5c00800000000000000
+      internalID: 890679067674170339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_15
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb12e678d5f946600800000000000000
+      internalID: 460668285951549886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_16
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e09cad075e57b80800000000000000
+      internalID: -8397553657292714364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_17
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a010ec823bd111ec0800000000000000
+      internalID: -3598061971971374838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_18
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5ee528c35e0dd20800000000000000
+      internalID: 3301390574910629336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_19
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbe14523dd53e840800000000000000
+      internalID: 5252144751888690100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_20
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67e9bae556a7c040800000000000000
+      internalID: 4667882426733291373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_21
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 10202
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6e298189b22e240800000000000000
+      internalID: 4819462483487155942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_22
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deef068e1911f6320800000000000000
+      internalID: 2553278832108961517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_23
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acda45f118f4af750800000000000000
+      internalID: 6339466841472413130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_24
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dcef25ce0559c230800000000000000
+      internalID: 3659549694141394132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_25
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd7444711a288500800000000000000
+      internalID: 398614821475745202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_26
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6197f7893bda7de40800000000000000
+      internalID: 5681200441820412182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_27
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a44de77be9e3900800000000000000
+      internalID: 666144305841457742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_28
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 9122
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de2bed11571b3560800000000000000
+      internalID: 7294449658618392277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_29
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e12c502c21930e0800000000000000
+      internalID: -2289778311011623317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_30
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987a090607716db70800000000000000
+      internalID: 8923345483105085321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_31
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fee46c5e5f0ee140800000000000000
+      internalID: 4750751554873913075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_32
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d198e2cef57683e50800000000000000
+      internalID: 6789290099943049501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_33
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214ec6cb55ff0af10800000000000000
+      internalID: 2279102155148026898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_34
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e77b900971038470800000000000000
+      internalID: 8395555749561595875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_35
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 8042
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aed19cbe9a32ff40800000000000000
+      internalID: 5760731326803205799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_36
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2f3bf84927f2f40800000000000000
+      internalID: 5705905235293369086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_37
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eced489b9df9770800000000000000
+      internalID: 8619847602631790170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_38
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e9006b9b34a4dd0800000000000000
+      internalID: -2501112178149384677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_39
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ef22042e66bda40800000000000000
+      internalID: 5394018100630978086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_40
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4905952cee0e5e0800000000000000
+      internalID: -1882242125751348051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_41
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8717dd86b8780640800000000000000
+      internalID: 5046416107927705485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_42
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 6962
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43343a179c8bda8e0800000000000000
+      internalID: -1680483910604864716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_43
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71555adefcfbc07a0800000000000000
+      internalID: -6409537269888887529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_44
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a63089cc66b017e0800000000000000
+      internalID: -1796735672967481690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_45
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053bc49e834b259a0800000000000000
+      internalID: -6245731576684170416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_46
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc06b796a8e8c490800000000000000
+      internalID: -7725669358546580263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_47
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b210bcc987905720800000000000000
+      internalID: 2832930783716446901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_48
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60273e9949d9c7510800000000000000
+      internalID: 1548285633471148550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_49
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 5882
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24dd573812da31d0800000000000000
+      internalID: -3370150369683450835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_50
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92969251ece13cf50800000000000000
+      internalID: 6900392924528863529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_51
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46259814f22d45e20800000000000000
+      internalID: 3338524324193194596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_52
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80162d01dac897df0800000000000000
+      internalID: -181959634992340728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_53
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81948c9c969ba440800000000000000
+      internalID: 4948214214981620111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_54
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346c57e623559be10800000000000000
+      internalID: 2213894366919247427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_55
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4151e1f2b7d99afd0800000000000000
+      internalID: -2330158179790482156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_56
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 4802
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a01e7600abd0cdd0800000000000000
+      internalID: -2467731115448856414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_57
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca9bdb9a7a2924b0800000000000000
+      internalID: -5464789966748149055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_58
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b3dacbae9546930800000000000000
+      internalID: 4135529222555646784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_59
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e67397b63e8a950800000000000000
+      internalID: 6460663716197658182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_60
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f3515ac8799afa0800000000000000
+      internalID: -5788929215687213167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_61
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19b8dc599b4e1f90800000000000000
+      internalID: -6981059250317903588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_62
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0765a619f4a0aff00800000000000000
+      internalID: 1151243991604942448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_63
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 3722
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec46b0873416cc40800000000000000
+      internalID: 5532131420886420704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_64
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382efb322a7cc47f0800000000000000
+      internalID: -626906748912934269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_65
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fa9ce5fcf0d23860800000000000000
+      internalID: 7508293313656298225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_66
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9714045fdc9f580800000000000000
+      internalID: -8792770344235468350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_67
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5b6ef75969779e0800000000000000
+      internalID: -1623663571803654730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_68
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14173461244b5c00800000000000000
+      internalID: 890380261541745695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_69
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63adfbc33cd75f380800000000000000
+      internalID: -8938099607955580362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_70
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 2642
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08673c3c42133fbc0800000000000000
+      internalID: -3750600030696540544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_71
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ffd87cf71edc0220800000000000000
+      internalID: 2453580091611471859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_72
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82a2b3873316cb50800000000000000
+      internalID: 6612994231993803405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_73
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016a41061ca598200800000000000000
+      internalID: 182777046472369680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_74
+      rect:
+        serializedVersion: 2
+        x: 6095
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923e8579b7f1f6150800000000000000
+      internalID: 5867943455167669033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_75
+      rect:
+        serializedVersion: 2
+        x: 8015
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cef328707dcad730800000000000000
+      internalID: 4024755099944615623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_76
+      rect:
+        serializedVersion: 2
+        x: 9935
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8b2ce26b0bdfedf0800000000000000
+      internalID: -148659420729169010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_77
+      rect:
+        serializedVersion: 2
+        x: 11855
+        y: 1562
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea41baf0f39be610800000000000000
+      internalID: 1651576351568775918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_78
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 482
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c5e582e3bbc9f10800000000000000
+      internalID: 2277901387182267394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_79
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 482
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e855e289daf8fcb0800000000000000
+      internalID: -4829834788243941150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barra-de-vida.gif_80
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 482
+        width: 1100
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 635e6b474cf3322b0800000000000000
+      internalID: -5610570597769222858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
