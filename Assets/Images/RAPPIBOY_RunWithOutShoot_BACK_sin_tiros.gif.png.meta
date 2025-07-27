@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 20ce0fb40a56cb343850edd082f2f7b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3898614696290257116
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_0
+  - first:
+      213: -3674406639137187786
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_1
+  - first:
+      213: -4435656792577737210
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_2
+  - first:
+      213: 3791271385451115983
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_3
+  - first:
+      213: 3981533479738816665
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_4
+  - first:
+      213: 3770194779001967317
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_5
+  - first:
+      213: -8794155783436917306
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_6
+  - first:
+      213: 3336575299774715089
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_7
+  - first:
+      213: 4847796726460902701
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_8
+  - first:
+      213: -8556922404192601702
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_9
+  - first:
+      213: 4848097130949282227
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_10
+  - first:
+      213: -1986345305267578636
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_11
+  - first:
+      213: 496770042320794945
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_12
+  - first:
+      213: -8736633808801606469
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_13
+  - first:
+      213: 1811023049929055993
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_14
+  - first:
+      213: 5283471458346150969
+    second: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1585
+        width: 461
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd88f781969aa1630800000000000000
+      internalID: 3898614696290257116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_1
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1597
+        width: 463
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63814e921a2e10dc0800000000000000
+      internalID: -3674406639137187786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 1580
+        width: 465
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60efad4f5a16172c0800000000000000
+      internalID: -4435656792577737210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1582
+        width: 462
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5bae0fc3d4d9430800000000000000
+      internalID: 3791271385451115983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1071
+        width: 460
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9983821da9f314730800000000000000
+      internalID: 3981533479738816665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_5
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 1070
+        width: 458
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2d1781d2c625430800000000000000
+      internalID: 3770194779001967317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_6
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1066
+        width: 457
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5abcc88e1e4f580800000000000000
+      internalID: -8794155783436917306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1065
+        width: 459
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d41a65ae85ed4e20800000000000000
+      internalID: 3336575299774715089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 557
+        width: 460
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2de0002075d64340800000000000000
+      internalID: 4847796726460902701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_9
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 576
+        width: 460
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99b48fe864bf3980800000000000000
+      internalID: -8556922404192601702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_10
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 558
+        width: 461
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b982de77a6e74340800000000000000
+      internalID: 4848097130949282227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 556
+        width: 461
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8d24e08751f64e0800000000000000
+      internalID: -1986345305267578636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 42
+        width: 461
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1453693b8b1e4e600800000000000000
+      internalID: 496770042320794945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_13
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 44
+        width: 464
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb456bde6dd31c680800000000000000
+      internalID: -8736633808801606469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_14
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 47
+        width: 466
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fed0136edb022910800000000000000
+      internalID: 1811023049929055993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_RunWithOutShoot_BACK_sin_tiros.gif_15
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 47
+        width: 464
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c23af5c49a25940800000000000000
+      internalID: 5283471458346150969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

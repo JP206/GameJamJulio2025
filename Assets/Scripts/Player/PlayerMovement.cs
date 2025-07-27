@@ -43,7 +43,10 @@ public class PlayerMovement : MonoBehaviour
     {
         bool isWalking = movementInput.sqrMagnitude > 0;
 
-        animator.SetBool("isRunning", isWalking);
+        bool facingForward = GetFacingForward();
+
+        animator.SetBool("isRunning", facingForward && isWalking);
+        animator.SetBool("isRunningBackwards", !facingForward && isWalking);
 
         if (isWalking && !movementAudio.isPlaying)
         {

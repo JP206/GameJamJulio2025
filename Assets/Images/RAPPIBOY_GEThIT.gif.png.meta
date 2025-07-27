@@ -1,0 +1,1119 @@
+fileFormatVersion: 2
+guid: c0c4fb5f5f7a62443884bd6870682aca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2233096730988772775
+    second: RAPPIBOY_GEThIT.gif_0
+  - first:
+      213: 4355374846646866679
+    second: RAPPIBOY_GEThIT.gif_1
+  - first:
+      213: -2520739878645000990
+    second: RAPPIBOY_GEThIT.gif_2
+  - first:
+      213: -1561365091925549360
+    second: RAPPIBOY_GEThIT.gif_3
+  - first:
+      213: 1497460322021500775
+    second: RAPPIBOY_GEThIT.gif_4
+  - first:
+      213: 3996823451005995124
+    second: RAPPIBOY_GEThIT.gif_5
+  - first:
+      213: 534986284690697366
+    second: RAPPIBOY_GEThIT.gif_6
+  - first:
+      213: -7695784320733195025
+    second: RAPPIBOY_GEThIT.gif_7
+  - first:
+      213: -11339378796333100
+    second: RAPPIBOY_GEThIT.gif_8
+  - first:
+      213: -8978695627255112361
+    second: RAPPIBOY_GEThIT.gif_9
+  - first:
+      213: -1547555139336350872
+    second: RAPPIBOY_GEThIT.gif_10
+  - first:
+      213: -1675336503009924077
+    second: RAPPIBOY_GEThIT.gif_11
+  - first:
+      213: -841474720203315378
+    second: RAPPIBOY_GEThIT.gif_12
+  - first:
+      213: -4779706923494973915
+    second: RAPPIBOY_GEThIT.gif_13
+  - first:
+      213: 8272486640334945150
+    second: RAPPIBOY_GEThIT.gif_14
+  - first:
+      213: -6144806514789552123
+    second: RAPPIBOY_GEThIT.gif_15
+  - first:
+      213: 3967872645915180351
+    second: RAPPIBOY_GEThIT.gif_16
+  - first:
+      213: -7565673933150357026
+    second: RAPPIBOY_GEThIT.gif_17
+  - first:
+      213: -6972522959729446157
+    second: RAPPIBOY_GEThIT.gif_18
+  - first:
+      213: -6520858392149277040
+    second: RAPPIBOY_GEThIT.gif_19
+  - first:
+      213: -6210957890875100441
+    second: RAPPIBOY_GEThIT.gif_20
+  - first:
+      213: -4301107327123541717
+    second: RAPPIBOY_GEThIT.gif_21
+  - first:
+      213: 2407953566638576388
+    second: RAPPIBOY_GEThIT.gif_22
+  - first:
+      213: -1701445817292426288
+    second: RAPPIBOY_GEThIT.gif_23
+  - first:
+      213: -4346117749279224238
+    second: RAPPIBOY_GEThIT.gif_24
+  - first:
+      213: 102168976523172411
+    second: RAPPIBOY_GEThIT.gif_25
+  - first:
+      213: 2054993902046014235
+    second: RAPPIBOY_GEThIT.gif_26
+  - first:
+      213: -4533433046169244305
+    second: RAPPIBOY_GEThIT.gif_27
+  - first:
+      213: 3409384172675554723
+    second: RAPPIBOY_GEThIT.gif_28
+  - first:
+      213: -8638318710078404416
+    second: RAPPIBOY_GEThIT.gif_29
+  - first:
+      213: 6217000274809073400
+    second: RAPPIBOY_GEThIT.gif_30
+  - first:
+      213: 2003355937054816015
+    second: RAPPIBOY_GEThIT.gif_31
+  - first:
+      213: -7729917556285791720
+    second: RAPPIBOY_GEThIT.gif_32
+  - first:
+      213: -8117610857330598237
+    second: RAPPIBOY_GEThIT.gif_33
+  - first:
+      213: 9195175882857368907
+    second: RAPPIBOY_GEThIT.gif_34
+  - first:
+      213: -7327923422110550057
+    second: RAPPIBOY_GEThIT.gif_35
+  - first:
+      213: -1020742275274991294
+    second: RAPPIBOY_GEThIT.gif_36
+  - first:
+      213: 1317604037574281804
+    second: RAPPIBOY_GEThIT.gif_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2645
+        width: 456
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9520458ca527201e0800000000000000
+      internalID: -2233096730988772775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_1
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2645
+        width: 452
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2de06e856617c30800000000000000
+      internalID: 4355374846646866679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2645
+        width: 450
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e414329f68840dd0800000000000000
+      internalID: -2520739878645000990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 2645
+        width: 448
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de151ba8bae45ae0800000000000000
+      internalID: -1561365091925549360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 2645
+        width: 448
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767655f9a3c08c410800000000000000
+      internalID: 1497460322021500775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_5
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 2645
+        width: 448
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478c92ba0c1977730800000000000000
+      internalID: 3996823451005995124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_6
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 2645
+        width: 447
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ce1b20137ac6700800000000000000
+      internalID: 534986284690697366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2133
+        width: 447
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe45dae2fe4133590800000000000000
+      internalID: -7695784320733195025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_8
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 2133
+        width: 449
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7fed225e6b7dff0800000000000000
+      internalID: -11339378796333100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_9
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2133
+        width: 451
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d1b1fe5e3456380800000000000000
+      internalID: -8978695627255112361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_10
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 2133
+        width: 453
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863d681dccaf58ae0800000000000000
+      internalID: -1547555139336350872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_11
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 2133
+        width: 454
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c29daa35200c8e0800000000000000
+      internalID: -1675336503009924077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_12
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 2133
+        width: 457
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e476fc6433b7254f0800000000000000
+      internalID: -841474720203315378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_13
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 2133
+        width: 459
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e5b9680e11badb0800000000000000
+      internalID: -4779706923494973915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_14
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1621
+        width: 457
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b345615c6cdc270800000000000000
+      internalID: 8272486640334945150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_15
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1621
+        width: 455
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5007678080349baa0800000000000000
+      internalID: -6144806514789552123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_16
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 1621
+        width: 454
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d73c51627b01730800000000000000
+      internalID: 3967872645915180351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_17
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1621
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9f32874a3510790800000000000000
+      internalID: -7565673933150357026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_18
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1621
+        width: 455
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f232156f4f9c3f90800000000000000
+      internalID: -6972522959729446157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_19
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 1621
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096415167d14185a0800000000000000
+      internalID: -6520858392149277040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_20
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 1621
+        width: 455
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2fa7f84be3ec9a0800000000000000
+      internalID: -6210957890875100441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1109
+        width: 456
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21b8f99ca56f44c0800000000000000
+      internalID: -4301107327123541717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_22
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1109
+        width: 452
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403902fc205ca6120800000000000000
+      internalID: 2407953566638576388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_23
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1109
+        width: 450
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3f5b73b004368e0800000000000000
+      internalID: -1701445817292426288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_24
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1109
+        width: 448
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e013a0fec7fa3c0800000000000000
+      internalID: -4346117749279224238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_25
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 1109
+        width: 448
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a9ab0942afa6100800000000000000
+      internalID: 102168976523172411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_26
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1109
+        width: 448
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1beb0be01ec48c10800000000000000
+      internalID: 2054993902046014235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_27
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 1109
+        width: 447
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6da016e9a20611c0800000000000000
+      internalID: -4533433046169244305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_28
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 597
+        width: 447
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad5a2367d0905f20800000000000000
+      internalID: 3409384172675554723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_29
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 597
+        width: 449
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c88a25a6e68e1880800000000000000
+      internalID: -8638318710078404416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_30
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 597
+        width: 451
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe20849fc8374650800000000000000
+      internalID: 6217000274809073400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_31
+      rect:
+        serializedVersion: 2
+        x: 1582
+        y: 597
+        width: 453
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0772da4c995dcb10800000000000000
+      internalID: 2003355937054816015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_32
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 597
+        width: 454
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812a78affe0d9b490800000000000000
+      internalID: -7729917556285791720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_33
+      rect:
+        serializedVersion: 2
+        x: 2610
+        y: 597
+        width: 457
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae94f72fe3785f80800000000000000
+      internalID: -8117610857330598237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_34
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 597
+        width: 459
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4dc3f05fb3db9f70800000000000000
+      internalID: 9195175882857368907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_35
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 85
+        width: 457
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7f5dbf87cfd4a90800000000000000
+      internalID: -7327923422110550057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_36
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 85
+        width: 455
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249920b0f4895d1f0800000000000000
+      internalID: -1020742275274991294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_GEThIT.gif_37
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 85
+        width: 454
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a4c3624e1194210800000000000000
+      internalID: 1317604037574281804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

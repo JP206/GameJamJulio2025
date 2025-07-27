@@ -14,6 +14,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     private bool isInvulnerable = false;
     private SpriteRenderer _spriteRenderer;
+    private Animator animator;
 
     public UnityEvent<int, int> OnHealthChanged;
 
@@ -29,6 +30,11 @@ public class PlayerHealth : MonoBehaviour
             OnHealthChanged = new UnityEvent<int, int>();
     }
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public void TakeDamage(int amount)
     {
         if (isInvulnerable) return;
@@ -36,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
         audioSource.PlayOneShot(GethitSound());
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        animator.SetTrigger("GetHit");
 
         OnHealthChanged.Invoke(currentHealth, maxHealth);
 
