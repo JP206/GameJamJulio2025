@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (UICanvasManager.IsGamePausedOrOver) return;
+
         HandleInput();
         HandleSpriteFlip();
         HandleAnimation();
@@ -29,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (UICanvasManager.IsGamePausedOrOver) return;
+
         rb.linearVelocity = movementInput * moveSpeed;
     }
 

@@ -32,6 +32,7 @@ public class GunController : MonoBehaviour
 
     private void Update()
     {
+        if (UICanvasManager.IsGamePausedOrOver) return;
         if (IntroCinematicManager.IsCinematicPlaying) return;
 
         if (Mouse.current.leftButton.wasPressedThisFrame)

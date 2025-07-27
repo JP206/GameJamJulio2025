@@ -486,7 +486,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gallo-get-hit.gif_0: 107134046033527735
+      gallo-get-hit.gif_1: -4702996921195879874
+      gallo-get-hit.gif_10: 1285550439510216723
+      gallo-get-hit.gif_11: 8366655128285382116
+      gallo-get-hit.gif_12: -1418544542980071897
+      gallo-get-hit.gif_2: -6940162508656344624
+      gallo-get-hit.gif_3: -6632829101928285055
+      gallo-get-hit.gif_4: 1529951436498849104
+      gallo-get-hit.gif_5: 3759263611932049417
+      gallo-get-hit.gif_6: 6446428317487424362
+      gallo-get-hit.gif_7: 4562122644448113409
+      gallo-get-hit.gif_8: 6926157744612687831
+      gallo-get-hit.gif_9: 3909993787927080930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

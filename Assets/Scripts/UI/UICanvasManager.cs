@@ -16,6 +16,8 @@ public class UICanvasManager : MonoBehaviour
 
     private bool isPaused = false;
 
+    public static bool IsGamePausedOrOver { get; private set; }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !gameOverCanvas.activeSelf)
@@ -29,6 +31,8 @@ public class UICanvasManager : MonoBehaviour
         isPaused = !isPaused;
         pauseCanvas.SetActive(isPaused);
         Time.timeScale = isPaused ? 0f : 1f;
+
+        IsGamePausedOrOver = isPaused;
     }
 
     public void ResumeGame()
@@ -39,12 +43,14 @@ public class UICanvasManager : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f;
+        IsGamePausedOrOver = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ReturnToMenu()
     {
         Time.timeScale = 1f;
+        IsGamePausedOrOver = false;
         SceneManager.LoadScene("MainMenu");
     }
 
@@ -58,6 +64,7 @@ public class UICanvasManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         gameOverCanvas.SetActive(true);
+        IsGamePausedOrOver = true;
 
         if (fadePanel != null)
         {
