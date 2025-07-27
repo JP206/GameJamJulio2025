@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: 58c612aacf098844f870900cae99a2ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1639778854266673861
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_0
+  - first:
+      213: -1527036993043233667
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_1
+  - first:
+      213: 8589294271230403848
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_2
+  - first:
+      213: 4353510122539267717
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_3
+  - first:
+      213: 7926872028479857115
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_4
+  - first:
+      213: 3301980389753178967
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_5
+  - first:
+      213: -3453871183976945530
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_6
+  - first:
+      213: -830867576846811738
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_7
+  - first:
+      213: 8255108182807359283
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_8
+  - first:
+      213: 4628515026430605503
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_9
+  - first:
+      213: -5209932422288418270
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_10
+  - first:
+      213: -1667579316169645565
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_11
+  - first:
+      213: -1727602680306943871
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_12
+  - first:
+      213: -9124213801472775156
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_13
+  - first:
+      213: -5329204340984297358
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_14
+  - first:
+      213: -8493986288731092388
+    second: RAPPIBOY_shootFINAL_REVERSE.gif_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1585
+        width: 462
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35ec39e1d55e39e0800000000000000
+      internalID: -1639778854266673861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1597
+        width: 454
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7407c602ffdecae0800000000000000
+      internalID: -1527036993043233667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1580
+        width: 447
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8056cf3b1ad433770800000000000000
+      internalID: 8589294271230403848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1582
+        width: 463
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586350cf366ca6c30800000000000000
+      internalID: 4353510122539267717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1071
+        width: 480
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1a58d8c18e10e60800000000000000
+      internalID: 7926872028479857115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1070
+        width: 458
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75b4b8a7badf2dd20800000000000000
+      internalID: 3301980389753178967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_6
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1066
+        width: 437
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688a81325726110d0800000000000000
+      internalID: -3453871183976945530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 1065
+        width: 460
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adf7aa475a2874f0800000000000000
+      internalID: -830867576846811738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 557
+        width: 483
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f27a2a729009270800000000000000
+      internalID: 8255108182807359283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_9
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 576
+        width: 469
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb834f3c4e9cb3040800000000000000
+      internalID: 4628515026430605503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_10
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 558
+        width: 454
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a55b9b01a92b7b0800000000000000
+      internalID: -5209932422288418270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 556
+        width: 466
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3026be872719bd8e0800000000000000
+      internalID: -1667579316169645565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 42
+        width: 479
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188ba47f3825608e0800000000000000
+      internalID: -1727602680306943871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_13
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 44
+        width: 462
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0caf74c3e7406180800000000000000
+      internalID: -9124213801472775156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_14
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 47
+        width: 445
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278492023ecda06b0800000000000000
+      internalID: -5329204340984297358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootFINAL_REVERSE.gif_15
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 47
+        width: 464
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a0525397c4f1a80800000000000000
+      internalID: -8493986288731092388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
