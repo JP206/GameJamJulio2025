@@ -62,4 +62,16 @@ public class PlayerMovement : MonoBehaviour
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         spriteRenderer.flipX = mousePos.x < transform.position.x;
     }
+
+    public bool GetFacingForward()
+    {
+        if (movementInput.x > 0)
+        {
+            return !spriteRenderer.flipX;
+        }
+        else
+        {
+            return spriteRenderer.flipX;
+        }
+    }
 }

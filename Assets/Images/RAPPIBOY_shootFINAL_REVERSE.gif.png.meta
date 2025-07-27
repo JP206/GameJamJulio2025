@@ -180,6 +180,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -548,7 +561,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RAPPIBOY_shootFINAL_REVERSE.gif_0: -1639778854266673861
+      RAPPIBOY_shootFINAL_REVERSE.gif_1: -1527036993043233667
+      RAPPIBOY_shootFINAL_REVERSE.gif_10: -5209932422288418270
+      RAPPIBOY_shootFINAL_REVERSE.gif_11: -1667579316169645565
+      RAPPIBOY_shootFINAL_REVERSE.gif_12: -1727602680306943871
+      RAPPIBOY_shootFINAL_REVERSE.gif_13: -9124213801472775156
+      RAPPIBOY_shootFINAL_REVERSE.gif_14: -5329204340984297358
+      RAPPIBOY_shootFINAL_REVERSE.gif_15: -8493986288731092388
+      RAPPIBOY_shootFINAL_REVERSE.gif_2: 8589294271230403848
+      RAPPIBOY_shootFINAL_REVERSE.gif_3: 4353510122539267717
+      RAPPIBOY_shootFINAL_REVERSE.gif_4: 7926872028479857115
+      RAPPIBOY_shootFINAL_REVERSE.gif_5: 3301980389753178967
+      RAPPIBOY_shootFINAL_REVERSE.gif_6: -3453871183976945530
+      RAPPIBOY_shootFINAL_REVERSE.gif_7: -830867576846811738
+      RAPPIBOY_shootFINAL_REVERSE.gif_8: 8255108182807359283
+      RAPPIBOY_shootFINAL_REVERSE.gif_9: 4628515026430605503
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
