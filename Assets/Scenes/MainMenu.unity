@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ba1715da38e4e4195640e6cb2d6a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeSceneChange: 1
+  objectToActivateAfterAnimation: {fileID: 0}
 --- !u!114 &201276984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +248,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: b94bcde827fe3bc40b77441f8efc0d5e, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 201276983}
+        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
+        m_MethodName: AnimateOnly
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 201276981}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -535,6 +549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ba1715da38e4e4195640e6cb2d6a9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeSceneChange: 0.5
+  objectToActivateAfterAnimation: {fileID: 0}
 --- !u!114 &459940348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +605,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: SebaScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 459940347}
+        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
+        m_MethodName: AnimateOnly
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 459940344}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 459940346}
@@ -1138,6 +1166,7 @@ GameObject:
   - component: {fileID: 1218808156}
   - component: {fileID: 1218808155}
   - component: {fileID: 1218808154}
+  - component: {fileID: 1218808158}
   - component: {fileID: 1218808157}
   m_Layer: 5
   m_Name: Credits button
@@ -1209,13 +1238,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1487519158}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1218808158}
+        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
+        m_MethodName: AnimateOnly
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1218808152}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1228,6 +1257,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: b94bcde827fe3bc40b77441f8efc0d5e, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1218808158}
+        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
+        m_MethodName: AnimateAndActivateFromSerialized
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1487519158}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1368,6 +1409,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1218808158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218808152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ba1715da38e4e4195640e6cb2d6a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeSceneChange: 0.5
+  objectToActivateAfterAnimation: {fileID: 1487519158}
 --- !u!1 &1427345037
 GameObject:
   m_ObjectHideFlags: 0
