@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         movementInput.Normalize();
     }
 
-    private void HandleAnimation()
+    public void HandleAnimation()
     {
         bool isWalking = movementInput.sqrMagnitude > 0;
 
