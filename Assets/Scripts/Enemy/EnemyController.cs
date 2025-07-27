@@ -131,6 +131,7 @@ public class EnemyController : MonoBehaviour
         isDead = true;
         waveManager.NotifyDeath();
         animator.SetTrigger("Death");
+        transform.GetChild(0).gameObject.SetActive(false);
 
         if (hitEffect != null)
         {
