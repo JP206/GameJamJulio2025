@@ -240,7 +240,7 @@ MonoBehaviour:
   hit1: {fileID: 8300000, guid: c1e5ad2597af11a45921cc2ed387f4ad, type: 3}
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
-  hitEffect: {fileID: 2461996748128539681}
+  hitEffect: {fileID: 5681052743055253591, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
 --- !u!95 &4876284025771854229
 Animator:
   serializedVersion: 7
@@ -444,11 +444,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
---- !u!198 &2461996748128539681 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5681052743055253591, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
-  m_PrefabInstance: {fileID: 7853683607012865142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5478711150620651692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2374990620402402522, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}

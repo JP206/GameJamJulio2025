@@ -18,6 +18,10 @@ public class IntroCinematicManager : MonoBehaviour
     public float moveSpeed = 10f;
     public float delayBeforeEnable = 2f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSourcePedidosYa;
+    [SerializeField] private AudioClip clipPedidosYa;
+
     private PlayerMovement playerMovement;
     private GunController gunController;
     private PlayerInput playerInput;
@@ -55,6 +59,12 @@ public class IntroCinematicManager : MonoBehaviour
         Animator animator = player.GetComponent<Animator>();
         if (animator != null)
             animator.SetBool("isRunning", true);
+
+        yield return new WaitForSeconds(0.5f);
+        if (audioSourcePedidosYa != null && clipPedidosYa != null)
+        {
+            audioSourcePedidosYa.PlayOneShot(clipPedidosYa);
+        }
 
         yield return MoveToPosition(player.transform, targetPoint.position);
 
