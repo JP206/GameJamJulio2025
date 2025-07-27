@@ -48,6 +48,12 @@ public class PlayerHealth : MonoBehaviour
                 if (ps != null) ps.Play();
             }
 
+            EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
+            foreach (EnemyController enemy in enemies)
+            {
+                enemy.Celebrate();
+            }
+
             StartCoroutine(Death());
             return;
         }

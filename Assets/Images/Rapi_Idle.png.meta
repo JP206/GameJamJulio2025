@@ -246,6 +246,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1098,7 +1111,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Rapi_Idle_0: 4186456889452743031
+      Rapi_Idle_1: -6650252614750116630
+      Rapi_Idle_10: -4333084711550966853
+      Rapi_Idle_11: -5803148969085441401
+      Rapi_Idle_12: -970928724235484759
+      Rapi_Idle_13: -1757693928956311423
+      Rapi_Idle_14: -4043805433257915063
+      Rapi_Idle_15: 2780749673801308490
+      Rapi_Idle_16: 7605949160052676670
+      Rapi_Idle_17: -1031711371423213270
+      Rapi_Idle_18: -980847795708359243
+      Rapi_Idle_19: 6573827308632695140
+      Rapi_Idle_2: 3029649992900044311
+      Rapi_Idle_20: -8671189990956950921
+      Rapi_Idle_21: 1938087685254750019
+      Rapi_Idle_22: -4240155977274993698
+      Rapi_Idle_23: -4998249828915347961
+      Rapi_Idle_24: 4066069510036229356
+      Rapi_Idle_25: 8592602868049277665
+      Rapi_Idle_26: -1311107180239998804
+      Rapi_Idle_27: 6639276477730227347
+      Rapi_Idle_28: 7604731021742347256
+      Rapi_Idle_29: -2588940414722973857
+      Rapi_Idle_3: 7413008100792961699
+      Rapi_Idle_30: 5378222626266591266
+      Rapi_Idle_31: -7273271996760675504
+      Rapi_Idle_32: 5671663990756554010
+      Rapi_Idle_33: 3840562683575357178
+      Rapi_Idle_34: -9180495537917670982
+      Rapi_Idle_35: 7718967989994258328
+      Rapi_Idle_36: 2956683016023977712
+      Rapi_Idle_37: 3684396207881775215
+      Rapi_Idle_4: 4684525436707818073
+      Rapi_Idle_5: 833559976395658630
+      Rapi_Idle_6: 2859459895987714413
+      Rapi_Idle_7: -7096769590308865826
+      Rapi_Idle_8: -6589451186060542996
+      Rapi_Idle_9: 3669827044164279550
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
