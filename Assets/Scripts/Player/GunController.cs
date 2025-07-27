@@ -11,10 +11,13 @@ public class GunController : MonoBehaviour
     [SerializeField] AudioSource audioSource1, audioSource2;
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
     Animator animator;
+    UIAnimation ammoAnimation;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        ammoAnimation = ammoText.gameObject.GetComponent<UIAnimation>();
     }
 
     private void Update()
@@ -66,6 +69,7 @@ public class GunController : MonoBehaviour
         {
             bulletAmmo += 10;
             ammoText.text = "Ammo: " + bulletAmmo.ToString();
+            ammoAnimation.Animation(ammoText);
 
             audioSource2.PlayOneShot(GetEatSound());
         }

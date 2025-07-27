@@ -11,10 +11,14 @@ public class WaveManager : MonoBehaviour
 
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
+    UIAnimation killCountAnimation, roundAnimation;
 
     void Start()
     {
         enemyPool = GetComponent<EnemyPool>();
+
+        killCountAnimation = killCountText.gameObject.GetComponent<UIAnimation>();
+        roundAnimation = roundText.gameObject.GetComponent<UIAnimation>();
 
         StartWave();
     }
@@ -24,6 +28,7 @@ public class WaveManager : MonoBehaviour
         deadEnemies++;
         killCount++;
         killCountText.text = "Kill count: " + killCount.ToString();
+        killCountAnimation.Animation(killCountText);
 
         if (deadEnemies == enemiesToSpawn)
         {
@@ -57,6 +62,7 @@ public class WaveManager : MonoBehaviour
     {
         deadEnemies = 0;
         roundText.text = "Round: " + round.ToString();
+        roundAnimation.Animation(roundText);
 
         for (int i = 0; i < enemiesToSpawn; i++)
         {
