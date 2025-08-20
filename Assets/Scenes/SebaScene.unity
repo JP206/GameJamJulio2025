@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -533,6 +537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -58.25
@@ -598,6 +606,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -940,6 +952,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1650,6 +1666,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -2775,6 +2795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54.5
@@ -2914,6 +2938,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3361,6 +3389,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -3824,6 +3856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.09
@@ -3889,6 +3925,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4171,6 +4211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473990900}
     m_Modifications:
+    - target: {fileID: 7843812801592061601, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8350776694640027259, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
       propertyPath: m_LocalPosition.x
       value: -19.37
@@ -4410,6 +4454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -4557,6 +4605,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -4858,6 +4910,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -5404,6 +5460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -54.7
@@ -5850,6 +5910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -5959,6 +6023,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -6571,6 +6639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -6678,10 +6750,6 @@ PrefabInstance:
     - target: {fileID: 3736473067087356506, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_Name
       value: Fountain (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7739,6 +7807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -8051,6 +8123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -8296,9 +8372,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 414624824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tables
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8750,21 +8826,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473990900}
     m_Modifications:
-    - target: {fileID: 2505780228435713486, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 12.56
-      objectReference: {fileID: 0}
     - target: {fileID: 3429833112861164836, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_Name
       value: Refuerzos (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.83190006
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.89904004
       objectReference: {fileID: 0}
     - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8805,14 +8869,6 @@ PrefabInstance:
     - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8673312607441677975, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1118776680351502394, guid: b8a6c81030967ec498ab0ab6ceb483da, type: 3}
-    - target: {fileID: 8673312607441677975, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9176,6 +9232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -9271,80 +9331,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 9152225028748856064, guid: d372726544a9f4d4fb8183059d2810e7, type: 3}
   m_PrefabInstance: {fileID: 463817017}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &464493807
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1428689209}
-    m_Modifications:
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -43.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7806267
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.62499756
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -77.364
-      objectReference: {fileID: 0}
-    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_Name
-      value: Silla (70)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1421a2025f7443046931de915d9ac599, type: 3}
---- !u!4 &464493808 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2104809866140574635, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-  m_PrefabInstance: {fileID: 464493807}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &466393724
 GameObject:
@@ -9514,7 +9500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473990900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stores
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9998,10 +9984,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain (9)
       objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40
@@ -10465,6 +10447,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -10943,6 +10929,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -11737,6 +11727,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -12641,6 +12635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.86
@@ -12742,6 +12740,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -13095,6 +13097,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -13220,7 +13226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14366667, y: 0.09148148}
-  m_AnchoredPosition: {x: -18, y: -31.5}
+  m_AnchoredPosition: {x: -18, y: -31.49997}
   m_SizeDelta: {x: -177.254, y: -76.520004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662284378
@@ -13337,6 +13343,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13903,6 +13913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -14153,7 +14167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14366667, y: 0.09148148}
-  m_AnchoredPosition: {x: -25.700073, y: -21.400024}
+  m_AnchoredPosition: {x: -25.700073, y: -21.399994}
   m_SizeDelta: {x: -174.254, y: -75.520004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697269362
@@ -14339,7 +14353,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 40
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14481,6 +14495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.5
@@ -14582,6 +14600,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -14940,6 +14962,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -15527,6 +15553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -15847,7 +15877,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
+  m_fontSize: 40
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16161,6 +16191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -16367,6 +16401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -16516,6 +16554,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -16793,6 +16835,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17432,6 +17478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -17579,6 +17629,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17960,6 +18014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -18112,6 +18170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -18186,6 +18248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -18259,6 +18325,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -18556,6 +18626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -18691,6 +18765,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -18970,6 +19048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -19114,6 +19196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -19224,6 +19310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -19297,6 +19387,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -19674,6 +19768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -19814,6 +19912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -19887,6 +19989,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -19987,6 +20093,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.09
@@ -20046,9 +20156,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1074707495}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Fountains
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20201,6 +20311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -20348,6 +20462,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -20803,6 +20921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.52
@@ -21048,6 +21170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 47.5
@@ -21149,6 +21275,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -21788,6 +21918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -21821,6 +21955,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22782,6 +22920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -22897,6 +23039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -22970,6 +23116,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -23301,10 +23451,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
       value: 39.5
@@ -23481,6 +23627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -23642,6 +23792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -23679,6 +23833,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23887,9 +24045,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1274824252}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Scene elements
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24283,6 +24441,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (76)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -24708,18 +24870,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473990900}
     m_Modifications:
-    - target: {fileID: 7843812801592061601, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350776694640027259, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.86652005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8350776694640027259, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.91896003
-      objectReference: {fileID: 0}
     - target: {fileID: 8350776694640027259, guid: 5b357280dc4cb4148b9805a1574f2569, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.23
@@ -24974,6 +25124,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
@@ -25388,6 +25542,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -25535,6 +25693,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -25761,6 +25923,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -26211,6 +26377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -26285,6 +26455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -26358,6 +26532,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -26877,6 +27055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -26970,9 +27152,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1428689209}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Chairs
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27006,7 +27188,6 @@ Transform:
   - {fileID: 1888414433}
   - {fileID: 1361010766}
   - {fileID: 2028367665}
-  - {fileID: 464493808}
   - {fileID: 2060039940}
   - {fileID: 588335138}
   - {fileID: 226351857}
@@ -27883,6 +28064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.1
@@ -28295,6 +28480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.09
@@ -28575,6 +28764,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.3
@@ -28676,6 +28869,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -28783,7 +28980,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 40
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29175,6 +29372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -29284,6 +29485,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -29689,6 +29894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -29800,6 +30009,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30411,6 +30624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -30456,6 +30673,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
@@ -31403,6 +31624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -31629,6 +31854,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -31803,10 +32032,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40
@@ -31908,18 +32133,6 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32403,6 +32616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.03
@@ -32551,6 +32768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -32624,6 +32845,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32952,6 +33177,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -33933,6 +34162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -34193,6 +34426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.35
@@ -34295,6 +34532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -34363,6 +34604,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -35081,6 +35326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -35111,21 +35360,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 473990900}
     m_Modifications:
-    - target: {fileID: 2505780228435713486, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 12.56
-      objectReference: {fileID: 0}
     - target: {fileID: 3429833112861164836, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_Name
       value: Refuerzos
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8916
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.97164005
       objectReference: {fileID: 0}
     - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35166,14 +35403,6 @@ PrefabInstance:
     - target: {fileID: 4312387531386295930, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8673312607441677975, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -1118776680351502394, guid: b8a6c81030967ec498ab0ab6ceb483da, type: 3}
-    - target: {fileID: 8673312607441677975, guid: df6fe144090dcb1448093313f4f5a2cd, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35417,7 +35646,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.1
+  m_fontSize: 40
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -35769,6 +35998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.93
@@ -36087,6 +36320,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -36933,10 +37170,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.43999863
@@ -37233,6 +37466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -37416,6 +37653,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -37638,6 +37879,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -37934,6 +38179,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -38589,6 +38838,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -38736,6 +38989,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -39215,6 +39472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.664103
@@ -39449,6 +39710,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -39522,6 +39787,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -39607,6 +39876,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -39955,6 +40228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mesa (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.01
@@ -40057,6 +40334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -40130,6 +40411,10 @@ PrefabInstance:
     - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_Name
       value: Silla (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
@@ -40413,6 +40698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -40458,6 +40747,10 @@ PrefabInstance:
     - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_Name
       value: Mesa (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3815239313691147596, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5487557102426500948, guid: d946bc118d1c98749ab4f6090abf1b1a, type: 3}
       propertyPath: m_LocalScale.x
@@ -40933,14 +41226,6 @@ PrefabInstance:
       value: Ketchup (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5643948659209882882, guid: 17bbefbde0400aa4d938d7264a299db2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8992615
-      objectReference: {fileID: 0}
-    - target: {fileID: 5643948659209882882, guid: 17bbefbde0400aa4d938d7264a299db2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.9541311
-      objectReference: {fileID: 0}
-    - target: {fileID: 5643948659209882882, guid: 17bbefbde0400aa4d938d7264a299db2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.0458
       objectReference: {fileID: 0}
@@ -40979,10 +41264,6 @@ PrefabInstance:
     - target: {fileID: 5643948659209882882, guid: 17bbefbde0400aa4d938d7264a299db2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354357464151145486, guid: 17bbefbde0400aa4d938d7264a299db2, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -41239,10 +41520,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 6052575745457530117, guid: 114735a0c60833c43879a42d6486f391, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7615385721476548695, guid: 114735a0c60833c43879a42d6486f391, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40
@@ -41345,6 +41622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Silla (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3342272604168019313, guid: 1421a2025f7443046931de915d9ac599, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6363427500533726773, guid: 1421a2025f7443046931de915d9ac599, type: 3}
       propertyPath: m_FlipX
       value: 0
@@ -41433,6 +41714,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 612369648012575426, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 612369648012575426, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 612369648012575426, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.1
       objectReference: {fileID: 0}
@@ -41472,14 +41761,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1496190197362317361, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496190197362317361, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: moveSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1992006275716427199, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: ammoText
       value: 
       objectReference: {fileID: 697269362}
     - target: {fileID: 1992006275716427199, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: gunshot1
+      value: 
+      objectReference: {fileID: 8300000, guid: af7c868f903e9b147b92c541ad055151, type: 3}
+    - target: {fileID: 1992006275716427199, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: bulletSpeed
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992006275716427199, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: ammoTextShade
       value: 
       objectReference: {fileID: 662284378}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_SortingOrder
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881484323175022134, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6409284759071084016, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6409284759071084016, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: deathEffectPrefab
       value: 

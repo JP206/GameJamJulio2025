@@ -241,6 +241,10 @@ MonoBehaviour:
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 5681052743055253591, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
+  obstacleCheckDistance: 2
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!95 &8865718491923839502
 Animator:
   serializedVersion: 7
@@ -289,7 +293,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!82 &5000945482114857073
 AudioSource:
   m_ObjectHideFlags: 0

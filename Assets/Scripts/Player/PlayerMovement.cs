@@ -85,4 +85,9 @@ public class PlayerMovement : MonoBehaviour
             return spriteRenderer.flipX;
         }
     }
+    public Vector2 GetVelocity()
+    {
+        return rb.linearVelocity;
+    }
+
 }

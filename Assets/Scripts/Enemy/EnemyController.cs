@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -16,12 +16,22 @@ public class EnemyController : MonoBehaviour
     private Animator animator;
     private WaveManager waveManager;
     private Collider2D collider;
+    private Rigidbody2D rb;
+
+    private Vector2 avoidanceDirection = Vector2.zero;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
+
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player)
@@ -51,11 +61,19 @@ public class EnemyController : MonoBehaviour
         waveManager = _waveManager;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        if (playerTransform && !isDead && !celebrating)
+        if (playerTransform && !isDead && !celebrating && rb != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, speed * Time.deltaTime);
+            Vector2 direction = (playerTransform.position - transform.position).normalized;
+
+            if (avoidanceDirection != Vector2.zero)
+            {
+                direction = Vector2.Lerp(direction, avoidanceDirection, 0.5f);
+            }
+
+            Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
+            rb.MovePosition(newPosition);
 
             float distanceToPlayer = transform.position.x - playerTransform.position.x;
             spriteRenderer.flipX = distanceToPlayer < 0;
@@ -100,6 +118,23 @@ public class EnemyController : MonoBehaviour
                     playerHealth.TakeDamage(damage);
                 }
             }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Building"))
+        {
+            Vector2 awayFromBuilding = (transform.position - collision.transform.position).normalized;
+            avoidanceDirection = awayFromBuilding;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Building"))
+        {
+            avoidanceDirection = Vector2.zero;
         }
     }
 
