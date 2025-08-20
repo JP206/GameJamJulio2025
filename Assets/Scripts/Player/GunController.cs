@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class GunController : MonoBehaviour
 {
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float bulletSpeed = 10f, bulletAmmo;
+    [SerializeField] private float bulletSpeed = 15f, bulletAmmo;
     [SerializeField] TextMeshProUGUI ammoText, ammoTextShade;
     [SerializeField] AudioClip gunshot1, emptyGunshot, eat1, eat2, eat3;
     [SerializeField] AudioSource audioSource1, audioSource2;
@@ -17,9 +17,7 @@ public class GunController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-
         uiAnimation = FindAnyObjectByType<UIAnimation>();
-
         playerMovement = GetComponent<PlayerMovement>();
     }
 
@@ -53,7 +51,18 @@ public class GunController : MonoBehaviour
             bullet.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.linearVelocity = fireDirection * bulletSpeed;
+
+            Vector2 playerVel = playerMovement.GetVelocity();
+            float projection = Vector2.Dot(playerVel, fireDirection);
+
+            if (projection > 0)
+            {
+                rb.linearVelocity = fireDirection * (bulletSpeed + projection);
+            }
+            else
+            {
+                rb.linearVelocity = fireDirection * bulletSpeed;
+            }
 
             audioSource1.PlayOneShot(gunshot1);
 
@@ -94,12 +103,9 @@ public class GunController : MonoBehaviour
 
         switch (random)
         {
-            case 0:
-                return eat1;
-            case 1:
-                return eat2;
-            case 2:
-                return eat3;
+            case 0: return eat1;
+            case 1: return eat2;
+            case 2: return eat3;
         }
 
         return null;

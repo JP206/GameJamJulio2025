@@ -242,6 +242,10 @@ MonoBehaviour:
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 8111620041780958951}
+  raycastDistance: 1.5
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!95 &5704902333742304642
 Animator:
   serializedVersion: 7

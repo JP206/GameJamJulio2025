@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  invulnerabilityTime: 2
+  invulnerabilityTime: 1
   flashInterval: 0.1
   damage: 2
   maxHp: 5
@@ -241,6 +241,10 @@ MonoBehaviour:
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 5681052743055253591, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
+  raycastDistance: 1.5
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!95 &4876284025771854229
 Animator:
   serializedVersion: 7

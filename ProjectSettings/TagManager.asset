@@ -10,6 +10,7 @@ TagManager:
   - Ammo
   - Bucket
   - Boss
+  - Building
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Bullet
   - CameraZone
   - Bucket
-  - 
+  - Building
   - 
   - 
   - 

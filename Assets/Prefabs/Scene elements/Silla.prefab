@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6363427500533726773}
   - component: {fileID: 8650931817406331574}
   - component: {fileID: 7147334195760912080}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Silla
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

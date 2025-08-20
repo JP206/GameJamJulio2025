@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1839507723747418342}
   - component: {fileID: 2457793125788117451}
   - component: {fileID: 5885099108550492918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesa
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
