@@ -547,7 +547,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
+<<<<<<< Updated upstream
   m_SortingOrder: 1
+=======
+  m_SortingOrder: 2
+>>>>>>> Stashed changes
   m_Sprite: {fileID: 4186456889452743031, guid: 9ac78f9096fc7784e8fa8723144325a3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -571,7 +575,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd130d8c714cb154a87f2410fb5836c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   moveSpeed: 5
+=======
+  moveSpeed: 8
+>>>>>>> Stashed changes
   movementAudio: {fileID: 3719874449319423518}
 --- !u!114 &1992006275716427199
 MonoBehaviour:
@@ -586,7 +594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 5553396692453926509}
-  bulletSpeed: 12
+  bulletSpeed: 16
   bulletAmmo: 20
   ammoText: {fileID: 0}
   gunshot1: {fileID: 8300000, guid: b94bcde827fe3bc40b77441f8efc0d5e, type: 3}
