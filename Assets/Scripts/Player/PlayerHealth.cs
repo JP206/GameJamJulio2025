@@ -113,4 +113,16 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         gameObject.SetActive(false);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Life"))
+        {
+            int healAmount = Mathf.RoundToInt(maxHealth * 0.15f);
+            currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
+
+            OnHealthChanged.Invoke(currentHealth, maxHealth);
+
+        }
+    }
+
 }

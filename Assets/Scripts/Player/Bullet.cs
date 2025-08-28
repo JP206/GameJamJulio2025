@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
 
         IgnorePlayerCollision();
         IgnoreConfinerCollision();
+        IgnoreAllAmmoCollisions();
     }
 
     private void Disable()
@@ -20,12 +21,14 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("Ammo")) return;
+
         BulletPool.Instance.ReturnBullet(gameObject);
     }
 
     private void IgnorePlayerCollision()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        var player = GameObject.FindWithTag("Player");
         if (player != null)
         {
             Physics2D.IgnoreCollision(
@@ -38,18 +41,29 @@ public class Bullet : MonoBehaviour
 
     private void IgnoreConfinerCollision()
     {
-        GameObject confiner = GameObject.Find("CameraConfiner");
+        var confiner = GameObject.Find("CameraConfiner");
         if (confiner != null)
         {
-            Collider2D confinerCol = confiner.GetComponent<Collider2D>();
-            if (confinerCol != null)
+            var confCol = confiner.GetComponent<Collider2D>();
+            if (confCol != null)
             {
                 Physics2D.IgnoreCollision(
                     GetComponent<Collider2D>(),
-                    confinerCol,
+                    confCol,
                     true
                 );
             }
+        }
+    }
+
+    private void IgnoreAllAmmoCollisions()
+    {
+        var myCol = GetComponent<Collider2D>();
+        var ammos = GameObject.FindGameObjectsWithTag("Ammo");
+        foreach (var a in ammos)
+        {
+            var col = a.GetComponent<Collider2D>();
+            if (col != null) Physics2D.IgnoreCollision(myCol, col, true);
         }
     }
 }

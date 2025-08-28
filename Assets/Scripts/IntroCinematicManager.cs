@@ -23,7 +23,7 @@ public class IntroCinematicManager : MonoBehaviour
     [SerializeField] private AudioClip clipPedidosYa;
 
     private PlayerMovement playerMovement;
-    private GunController gunController;
+    private _GunController gunController;
     private PlayerInput playerInput;
 
     void Start()
@@ -34,7 +34,7 @@ public class IntroCinematicManager : MonoBehaviour
         ulCanvas.SetActive(false);
 
         playerMovement = player.GetComponent<PlayerMovement>();
-        gunController = player.GetComponent<GunController>();
+        gunController = player.GetComponent<_GunController>();
         playerInput = player.GetComponent<PlayerInput>();
 
         if (playerMovement != null)

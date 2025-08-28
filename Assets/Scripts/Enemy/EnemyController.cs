@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hit1, hit2, hit3;
     [SerializeField] private ParticleSystem hitEffect;
-    [SerializeField] bool gallo;
+    [SerializeField] bool bossChicken;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -43,6 +43,8 @@ public class EnemyController : MonoBehaviour
         {
             hitEffect = GetComponentInChildren<ParticleSystem>();
         }
+
+        SetBossAsTrue();
     }
 
     private void OnEnable()
@@ -72,6 +74,13 @@ public class EnemyController : MonoBehaviour
                 direction = Vector2.Lerp(direction, avoidanceDirection, 0.5f);
             }
 
+            if (direction.magnitude < 0.1f)
+            {
+                direction = (playerTransform.position - transform.position).normalized;
+            }
+
+            direction = direction.normalized;
+
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
             rb.MovePosition(newPosition);
 
@@ -79,6 +88,7 @@ public class EnemyController : MonoBehaviour
             spriteRenderer.flipX = distanceToPlayer < 0;
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -144,9 +154,10 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.red;
         collider.enabled = false;
-
-        if (gallo)
+        if (bossChicken) 
+        {
             animator.SetTrigger("GetHit");
+        }
 
         yield return new WaitForSeconds(0.1f);
 
@@ -209,5 +220,10 @@ public class EnemyController : MonoBehaviour
     {
         celebrating = true;
         animator.SetTrigger("Celebration");
+    }
+
+    private void SetBossAsTrue()
+    {
+        if (gameObject.CompareTag("Boss")) bossChicken = true;
     }
 }
