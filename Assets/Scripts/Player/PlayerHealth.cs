@@ -8,7 +8,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerabilityTime = 2f;
     [SerializeField] private float flashInterval = 0.1f;
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] AudioSource lifeUpSound;
+    [SerializeField] private AudioSource lifeUpSound;
+    [SerializeField] private AudioSource deathSound;
     [SerializeField] private AudioClip hit1, hit2, hit3;
     [SerializeField] private GameObject deathEffectPrefab;
 
@@ -51,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (deathEffectPrefab != null)
             {
+                PlayDeathSound(deathSound);
                 GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
                 ParticleSystem ps = effect.GetComponent<ParticleSystem>();
                 if (ps != null) ps.Play();
@@ -134,4 +136,13 @@ public class PlayerHealth : MonoBehaviour
             lifeUpSound.PlayOneShot(lifeUpSound.clip);
         }
     }
+
+    private void PlayDeathSound(AudioSource deathSound)
+    {
+        if (deathSound != null && deathSound.clip != null)
+        {
+            AudioSource.PlayClipAtPoint(deathSound.clip, transform.position);
+        }
+    }
+
 }

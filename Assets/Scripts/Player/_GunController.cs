@@ -17,7 +17,8 @@ public class _GunController : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
     PlayerMovement playerMovement;
-    Animator animator; UIAnimation uiAnimation;
+    Animator animator; 
+    UIAnimation uiAnimation;
 
     private float nextFireTime = 0f;
 
@@ -42,10 +43,10 @@ public class _GunController : MonoBehaviour
 
     private void FireBullet()
     {
-        PlayShotgunSound(shotgunAudioSource);
-
         if (bulletAmmo > 0)
         {
+            PlayShotgunSound(shotgunAudioSource);
+
             bulletAmmo--; ammoText.text = "Ammo: " + bulletAmmo.ToString(); 
             GameObject bullet = BulletPool.Instance.GetBullet(); 
             bullet.transform.position = firePoint.position; 
