@@ -750,6 +750,7 @@ MonoBehaviour:
   invulnerabilityTime: 2
   flashInterval: 0.1
   audioSource: {fileID: 6570595758939133404}
+  lifeUpSound: {fileID: 0}
   hit1: {fileID: 8300000, guid: f495fb32d24afa648aa77dbb0f3db3db, type: 3}
   hit2: {fileID: 8300000, guid: 5e983d906bd02a34f980ffe18a2d8c35, type: 3}
   hit3: {fileID: 8300000, guid: b78e7b205b2fd4f4498a01c5966c27f5, type: 3}
