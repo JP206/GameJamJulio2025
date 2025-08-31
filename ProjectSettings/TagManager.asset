@@ -11,6 +11,7 @@ TagManager:
   - Bucket
   - Boss
   - Building
+  - Life
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - CameraZone
   - Bucket
   - Building
-  - 
+  - Life
   - 
   - 
   - 

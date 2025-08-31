@@ -16,7 +16,6 @@ public class PlayerHealthUI : MonoBehaviour
 
     private void UpdateHealthBar(int current, int max)
     {
-        Debug.Log("Dentro de Player HP");
         healthSlider.maxValue = max;
         healthSlider.value = current;
     }

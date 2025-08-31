@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: f452175a2ced52a4b8e9e5dd7f06b836
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6680474137304741930
+    second: RAPPIBOY_shootQUIETO.gif_0
+  - first:
+      213: 8606800541770133126
+    second: RAPPIBOY_shootQUIETO.gif_1
+  - first:
+      213: -3623755892349106291
+    second: RAPPIBOY_shootQUIETO.gif_2
+  - first:
+      213: -7861975101012546941
+    second: RAPPIBOY_shootQUIETO.gif_3
+  - first:
+      213: -6864741468521213487
+    second: RAPPIBOY_shootQUIETO.gif_4
+  - first:
+      213: -566647830566891490
+    second: RAPPIBOY_shootQUIETO.gif_5
+  - first:
+      213: 7160426233737820476
+    second: RAPPIBOY_shootQUIETO.gif_6
+  - first:
+      213: 4901243695777286843
+    second: RAPPIBOY_shootQUIETO.gif_7
+  - first:
+      213: -4084715260624569836
+    second: RAPPIBOY_shootQUIETO.gif_8
+  - first:
+      213: -7852000435322823651
+    second: RAPPIBOY_shootQUIETO.gif_9
+  - first:
+      213: 8313317916612218479
+    second: RAPPIBOY_shootQUIETO.gif_10
+  - first:
+      213: -5650105173353731405
+    second: RAPPIBOY_shootQUIETO.gif_11
+  - first:
+      213: -2432498539910856691
+    second: RAPPIBOY_shootQUIETO.gif_12
+  - first:
+      213: 8969014996079880220
+    second: RAPPIBOY_shootQUIETO.gif_13
+  - first:
+      213: -642812100311193369
+    second: RAPPIBOY_shootQUIETO.gif_14
+  - first:
+      213: -6844008337374797501
+    second: RAPPIBOY_shootQUIETO.gif_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1621
+        width: 482
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28bb3d45dfc5bc50800000000000000
+      internalID: 6680474137304741930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1621
+        width: 464
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68e29d0fd7f717770800000000000000
+      internalID: 8606800541770133126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1621
+        width: 445
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d878dc32735d5bdc0800000000000000
+      internalID: -3623755892349106291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1621
+        width: 463
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a6e27dc47a4e290800000000000000
+      internalID: -7861975101012546941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1109
+        width: 479
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d156ed510a8bb0a0800000000000000
+      internalID: -6864741468521213487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_5
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1109
+        width: 466
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e109052ecccd228f0800000000000000
+      internalID: -566647830566891490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_6
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1109
+        width: 454
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39b456d8b1fe5360800000000000000
+      internalID: 7160426233737820476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1109
+        width: 469
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba8d646c27b40440800000000000000
+      internalID: 4901243695777286843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_8
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 597
+        width: 483
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41afad9bc1d2057c0800000000000000
+      internalID: -4084715260624569836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_9
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 597
+        width: 460
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cde5ca437180390800000000000000
+      internalID: -7852000435322823651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_10
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 597
+        width: 437
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ecf8c6996de5370800000000000000
+      internalID: 8313317916612218479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 597
+        width: 459
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ba67a6c74bc691b0800000000000000
+      internalID: -5650105173353731405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 85
+        width: 480
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0005f347770e3ed0800000000000000
+      internalID: -2432498539910856691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_13
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 85
+        width: 464
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c182e7a7e97587c70800000000000000
+      internalID: 8969014996079880220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_14
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 85
+        width: 447
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8e0afecc54417f0800000000000000
+      internalID: -642812100311193369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_shootQUIETO.gif_15
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 85
+        width: 454
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341a6f2ada23501a0800000000000000
+      internalID: -6844008337374797501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

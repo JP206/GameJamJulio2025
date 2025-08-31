@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 7ff9262f37e40e842a64b21379b65204
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5744336817434672576
+    second: RAPPIBOY_HOLYshootQUieto3.gif_0
+  - first:
+      213: -7284112061408688658
+    second: RAPPIBOY_HOLYshootQUieto3.gif_1
+  - first:
+      213: -6216694280527759291
+    second: RAPPIBOY_HOLYshootQUieto3.gif_2
+  - first:
+      213: 733701968372566101
+    second: RAPPIBOY_HOLYshootQUieto3.gif_3
+  - first:
+      213: 8067337166351995180
+    second: RAPPIBOY_HOLYshootQUieto3.gif_4
+  - first:
+      213: 4934224712393704306
+    second: RAPPIBOY_HOLYshootQUieto3.gif_5
+  - first:
+      213: 4130468528280616265
+    second: RAPPIBOY_HOLYshootQUieto3.gif_6
+  - first:
+      213: -8172548408914003204
+    second: RAPPIBOY_HOLYshootQUieto3.gif_7
+  - first:
+      213: -3677183200693483818
+    second: RAPPIBOY_HOLYshootQUieto3.gif_8
+  - first:
+      213: -3772161397438584161
+    second: RAPPIBOY_HOLYshootQUieto3.gif_9
+  - first:
+      213: -6414804057950069480
+    second: RAPPIBOY_HOLYshootQUieto3.gif_10
+  - first:
+      213: 1490630428111066717
+    second: RAPPIBOY_HOLYshootQUieto3.gif_11
+  - first:
+      213: 2940825592053733921
+    second: RAPPIBOY_HOLYshootQUieto3.gif_12
+  - first:
+      213: -4812769478686901287
+    second: RAPPIBOY_HOLYshootQUieto3.gif_13
+  - first:
+      213: 3258550995575364876
+    second: RAPPIBOY_HOLYshootQUieto3.gif_14
+  - first:
+      213: -4759017715190085533
+    second: RAPPIBOY_HOLYshootQUieto3.gif_15
+  - first:
+      213: -8703409656838621585
+    second: RAPPIBOY_HOLYshootQUieto3.gif_16
+  - first:
+      213: 4970067500972624323
+    second: RAPPIBOY_HOLYshootQUieto3.gif_17
+  - first:
+      213: 2980446126436641722
+    second: RAPPIBOY_HOLYshootQUieto3.gif_18
+  - first:
+      213: 3427170119224640771
+    second: RAPPIBOY_HOLYshootQUieto3.gif_19
+  - first:
+      213: 8902912740703576042
+    second: RAPPIBOY_HOLYshootQUieto3.gif_20
+  - first:
+      213: 2079160673134006773
+    second: RAPPIBOY_HOLYshootQUieto3.gif_21
+  - first:
+      213: -4002339586274088419
+    second: RAPPIBOY_HOLYshootQUieto3.gif_22
+  - first:
+      213: -154454295554081803
+    second: RAPPIBOY_HOLYshootQUieto3.gif_23
+  - first:
+      213: -8324253550758762722
+    second: RAPPIBOY_HOLYshootQUieto3.gif_24
+  - first:
+      213: -1751269152733536810
+    second: RAPPIBOY_HOLYshootQUieto3.gif_25
+  - first:
+      213: -904945355904119523
+    second: RAPPIBOY_HOLYshootQUieto3.gif_26
+  - first:
+      213: -1215255619614436487
+    second: RAPPIBOY_HOLYshootQUieto3.gif_27
+  - first:
+      213: -709505737154151739
+    second: RAPPIBOY_HOLYshootQUieto3.gif_28
+  - first:
+      213: 3182981762763980149
+    second: RAPPIBOY_HOLYshootQUieto3.gif_29
+  - first:
+      213: 7053087184675305488
+    second: RAPPIBOY_HOLYshootQUieto3.gif_30
+  - first:
+      213: -8951635090761051521
+    second: RAPPIBOY_HOLYshootQUieto3.gif_31
+  - first:
+      213: 1508746108520785076
+    second: RAPPIBOY_HOLYshootQUieto3.gif_32
+  - first:
+      213: 4069714921067831689
+    second: RAPPIBOY_HOLYshootQUieto3.gif_33
+  - first:
+      213: -6736717164470957171
+    second: RAPPIBOY_HOLYshootQUieto3.gif_34
+  - first:
+      213: 910455493331007839
+    second: RAPPIBOY_HOLYshootQUieto3.gif_35
+  - first:
+      213: 6843619327450243311
+    second: RAPPIBOY_HOLYshootQUieto3.gif_36
+  - first:
+      213: -4266426572911848837
+    second: RAPPIBOY_HOLYshootQUieto3.gif_37
+  - first:
+      213: 2052790131431708203
+    second: RAPPIBOY_HOLYshootQUieto3.gif_38
+  - first:
+      213: 1400013442110311877
+    second: RAPPIBOY_HOLYshootQUieto3.gif_39
+  - first:
+      213: 368029442784113569
+    second: RAPPIBOY_HOLYshootQUieto3.gif_40
+  - first:
+      213: 2598967848093573933
+    second: RAPPIBOY_HOLYshootQUieto3.gif_41
+  - first:
+      213: 8921506705340101123
+    second: RAPPIBOY_HOLYshootQUieto3.gif_42
+  - first:
+      213: 6010632953389667901
+    second: RAPPIBOY_HOLYshootQUieto3.gif_43
+  - first:
+      213: 9169390531386142200
+    second: RAPPIBOY_HOLYshootQUieto3.gif_44
+  - first:
+      213: 4073274289391833688
+    second: RAPPIBOY_HOLYshootQUieto3.gif_45
+  - first:
+      213: -8596681748758439632
+    second: RAPPIBOY_HOLYshootQUieto3.gif_46
+  - first:
+      213: 5511630340413621085
+    second: RAPPIBOY_HOLYshootQUieto3.gif_47
+  - first:
+      213: 1667987429389729436
+    second: RAPPIBOY_HOLYshootQUieto3.gif_48
+  - first:
+      213: 2052590748115520140
+    second: RAPPIBOY_HOLYshootQUieto3.gif_49
+  - first:
+      213: -8777086058696244718
+    second: RAPPIBOY_HOLYshootQUieto3.gif_50
+  - first:
+      213: 4387627654299108093
+    second: RAPPIBOY_HOLYshootQUieto3.gif_51
+  - first:
+      213: -6306883474493528029
+    second: RAPPIBOY_HOLYshootQUieto3.gif_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 3157
+        width: 482
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd346196ebf7bf40800000000000000
+      internalID: 5744336817434672576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_1
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 3157
+        width: 464
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee5c89b4ca2a9ea90800000000000000
+      internalID: -7284112061408688658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 3157
+        width: 445
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548b0f34d7dd9b9a0800000000000000
+      internalID: -6216694280527759291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 3157
+        width: 427
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5580adb8d02ae2a00800000000000000
+      internalID: 733701968372566101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 3157
+        width: 410
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2197b30960f4ff60800000000000000
+      internalID: 8067337166351995180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_5
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 3157
+        width: 410
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2734e28bb33e97440800000000000000
+      internalID: 4934224712393704306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_6
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 3157
+        width: 411
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94db8180e3f525930800000000000000
+      internalID: 4130468528280616265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_7
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 3157
+        width: 410
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa3ff8a586459e80800000000000000
+      internalID: -8172548408914003204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2645
+        width: 410
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d681ac8c5508fcc0800000000000000
+      internalID: -3677183200693483818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_9
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 2645
+        width: 411
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a6b3ed13796abc0800000000000000
+      internalID: -3772161397438584161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_10
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 2645
+        width: 399
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81dd62642b90af6a0800000000000000
+      internalID: -6414804057950069480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 2645
+        width: 387
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56d2f60a78cfa410800000000000000
+      internalID: 1490630428111066717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_12
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 2645
+        width: 379
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a9db87b49efc820800000000000000
+      internalID: 2940825592053733921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_13
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 2645
+        width: 372
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db760588ab953db0800000000000000
+      internalID: -4812769478686901287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_14
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 2645
+        width: 378
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0dd3cdadd2b83d20800000000000000
+      internalID: 3258550995575364876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_15
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 2645
+        width: 384
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368cd463a9294fdb0800000000000000
+      internalID: -4759017715190085533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2133
+        width: 375
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66fd6d9707473780800000000000000
+      internalID: -8703409656838621585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 2133
+        width: 369
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9cf214f0a39f440800000000000000
+      internalID: 4970067500972624323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_18
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 2133
+        width: 374
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbe17ef5fbac5920800000000000000
+      internalID: 2980446126436641722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_19
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 2133
+        width: 388
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305c735c011cf8f20800000000000000
+      internalID: 3427170119224640771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_20
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 2133
+        width: 379
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef9fefc7ff7d8b70800000000000000
+      internalID: 8902912740703576042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_21
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 2133
+        width: 372
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f15d19cd99aadc10800000000000000
+      internalID: 2079160673134006773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_22
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 2133
+        width: 378
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a26a10a55d478c0800000000000000
+      internalID: -4002339586274088419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_23
+      rect:
+        serializedVersion: 2
+        x: 3596
+        y: 2133
+        width: 385
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb3773f2a44bddf0800000000000000
+      internalID: -154454295554081803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_24
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1621
+        width: 383
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e176db6df7f4a7c80800000000000000
+      internalID: -8324253550758762722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_25
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1621
+        width: 381
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ddd735fbfd32b7e0800000000000000
+      internalID: -1751269152733536810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_26
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1621
+        width: 387
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d02305efcf073f0800000000000000
+      internalID: -904945355904119523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_27
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1621
+        width: 379
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9739591e37b822fe0800000000000000
+      internalID: -1215255619614436487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_28
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1621
+        width: 372
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ca33da8a445726f0800000000000000
+      internalID: -709505737154151739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_29
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 1621
+        width: 378
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57df7109c093c2c20800000000000000
+      internalID: 3182981762763980149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_30
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 1621
+        width: 385
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0187e64fc6991e160800000000000000
+      internalID: 7053087184675305488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_31
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 1621
+        width: 382
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f721440105765c380800000000000000
+      internalID: -8951635090761051521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1109
+        width: 381
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b462ae879420f410800000000000000
+      internalID: 1508746108520785076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_33
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1109
+        width: 376
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981ea5f88288a7830800000000000000
+      internalID: 4069714921067831689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_34
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 1109
+        width: 372
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b8e6b7e6f5282a0800000000000000
+      internalID: -6736717164470957171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_35
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1109
+        width: 433
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f593cc7827692ac00800000000000000
+      internalID: 910455493331007839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_36
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 1109
+        width: 492
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe06baee48b69fe50800000000000000
+      internalID: 6843619327450243311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_37
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1109
+        width: 492
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b725d4de2ab9ac4c0800000000000000
+      internalID: -4266426572911848837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_38
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 1109
+        width: 491
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b261a669fb9fc7c10800000000000000
+      internalID: 2052790131431708203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_39
+      rect:
+        serializedVersion: 2
+        x: 3593
+        y: 1109
+        width: 491
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdc1c9dec8dd6310800000000000000
+      internalID: 1400013442110311877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_40
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 597
+        width: 491
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3380c04d08b1500800000000000000
+      internalID: 368029442784113569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_41
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 597
+        width: 490
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d236748ec73611420800000000000000
+      internalID: 2598967848093573933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_42
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 597
+        width: 491
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302ff01941f8fcb70800000000000000
+      internalID: 8921506705340101123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_43
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 597
+        width: 493
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d365c0e43de0a6350800000000000000
+      internalID: 6010632953389667901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_44
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 597
+        width: 492
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fde9165b18304f70800000000000000
+      internalID: 9169390531386142200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_45
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 597
+        width: 490
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8529ee3926d278830800000000000000
+      internalID: 4073274289391833688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_46
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 597
+        width: 490
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0395b262f7372b880800000000000000
+      internalID: -8596681748758439632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_47
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 597
+        width: 489
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d538e9db79e3d7c40800000000000000
+      internalID: 5511630340413621085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_48
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 85
+        width: 487
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e779acab1e52710800000000000000
+      internalID: 1667987429389729436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_49
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 85
+        width: 486
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8acdaa09644c7c10800000000000000
+      internalID: 2052590748115520140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_50
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 85
+        width: 485
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212806c8bb6813680800000000000000
+      internalID: -8777086058696244718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_51
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 85
+        width: 483
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df2cd2dda1cf3ec30800000000000000
+      internalID: 4387627654299108093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAPPIBOY_HOLYshootQUieto3.gif_52
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 85
+        width: 482
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328280f25e27978a0800000000000000
+      internalID: -6306883474493528029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RAPPIBOY_HOLYshootQUieto3.gif_0: 5744336817434672576
+      RAPPIBOY_HOLYshootQUieto3.gif_1: -7284112061408688658
+      RAPPIBOY_HOLYshootQUieto3.gif_10: -6414804057950069480
+      RAPPIBOY_HOLYshootQUieto3.gif_11: 1490630428111066717
+      RAPPIBOY_HOLYshootQUieto3.gif_12: 2940825592053733921
+      RAPPIBOY_HOLYshootQUieto3.gif_13: -4812769478686901287
+      RAPPIBOY_HOLYshootQUieto3.gif_14: 3258550995575364876
+      RAPPIBOY_HOLYshootQUieto3.gif_15: -4759017715190085533
+      RAPPIBOY_HOLYshootQUieto3.gif_16: -8703409656838621585
+      RAPPIBOY_HOLYshootQUieto3.gif_17: 4970067500972624323
+      RAPPIBOY_HOLYshootQUieto3.gif_18: 2980446126436641722
+      RAPPIBOY_HOLYshootQUieto3.gif_19: 3427170119224640771
+      RAPPIBOY_HOLYshootQUieto3.gif_2: -6216694280527759291
+      RAPPIBOY_HOLYshootQUieto3.gif_20: 8902912740703576042
+      RAPPIBOY_HOLYshootQUieto3.gif_21: 2079160673134006773
+      RAPPIBOY_HOLYshootQUieto3.gif_22: -4002339586274088419
+      RAPPIBOY_HOLYshootQUieto3.gif_23: -154454295554081803
+      RAPPIBOY_HOLYshootQUieto3.gif_24: -8324253550758762722
+      RAPPIBOY_HOLYshootQUieto3.gif_25: -1751269152733536810
+      RAPPIBOY_HOLYshootQUieto3.gif_26: -904945355904119523
+      RAPPIBOY_HOLYshootQUieto3.gif_27: -1215255619614436487
+      RAPPIBOY_HOLYshootQUieto3.gif_28: -709505737154151739
+      RAPPIBOY_HOLYshootQUieto3.gif_29: 3182981762763980149
+      RAPPIBOY_HOLYshootQUieto3.gif_3: 733701968372566101
+      RAPPIBOY_HOLYshootQUieto3.gif_30: 7053087184675305488
+      RAPPIBOY_HOLYshootQUieto3.gif_31: -8951635090761051521
+      RAPPIBOY_HOLYshootQUieto3.gif_32: 1508746108520785076
+      RAPPIBOY_HOLYshootQUieto3.gif_33: 4069714921067831689
+      RAPPIBOY_HOLYshootQUieto3.gif_34: -6736717164470957171
+      RAPPIBOY_HOLYshootQUieto3.gif_35: 910455493331007839
+      RAPPIBOY_HOLYshootQUieto3.gif_36: 6843619327450243311
+      RAPPIBOY_HOLYshootQUieto3.gif_37: -4266426572911848837
+      RAPPIBOY_HOLYshootQUieto3.gif_38: 2052790131431708203
+      RAPPIBOY_HOLYshootQUieto3.gif_39: 1400013442110311877
+      RAPPIBOY_HOLYshootQUieto3.gif_4: 8067337166351995180
+      RAPPIBOY_HOLYshootQUieto3.gif_40: 368029442784113569
+      RAPPIBOY_HOLYshootQUieto3.gif_41: 2598967848093573933
+      RAPPIBOY_HOLYshootQUieto3.gif_42: 8921506705340101123
+      RAPPIBOY_HOLYshootQUieto3.gif_43: 6010632953389667901
+      RAPPIBOY_HOLYshootQUieto3.gif_44: 9169390531386142200
+      RAPPIBOY_HOLYshootQUieto3.gif_45: 4073274289391833688
+      RAPPIBOY_HOLYshootQUieto3.gif_46: -8596681748758439632
+      RAPPIBOY_HOLYshootQUieto3.gif_47: 5511630340413621085
+      RAPPIBOY_HOLYshootQUieto3.gif_48: 1667987429389729436
+      RAPPIBOY_HOLYshootQUieto3.gif_49: 2052590748115520140
+      RAPPIBOY_HOLYshootQUieto3.gif_5: 4934224712393704306
+      RAPPIBOY_HOLYshootQUieto3.gif_50: -8777086058696244718
+      RAPPIBOY_HOLYshootQUieto3.gif_51: 4387627654299108093
+      RAPPIBOY_HOLYshootQUieto3.gif_52: -6306883474493528029
+      RAPPIBOY_HOLYshootQUieto3.gif_6: 4130468528280616265
+      RAPPIBOY_HOLYshootQUieto3.gif_7: -8172548408914003204
+      RAPPIBOY_HOLYshootQUieto3.gif_8: -3677183200693483818
+      RAPPIBOY_HOLYshootQUieto3.gif_9: -3772161397438584161
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

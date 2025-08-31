@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerabilityTime = 2f;
     [SerializeField] private float flashInterval = 0.1f;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource lifeUpSound;
+    [SerializeField] private AudioSource deathSound;
     [SerializeField] private AudioClip hit1, hit2, hit3;
     [SerializeField] private GameObject deathEffectPrefab;
 
@@ -50,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
         {
             if (deathEffectPrefab != null)
             {
+                PlayDeathSound(deathSound);
                 GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
                 ParticleSystem ps = effect.GetComponent<ParticleSystem>();
                 if (ps != null) ps.Play();
@@ -113,4 +116,33 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         gameObject.SetActive(false);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Life"))
+        {
+            PlayLifeUpSound(lifeUpSound);
+
+            int healAmount = Mathf.RoundToInt(maxHealth * 0.15f);
+            currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
+
+            OnHealthChanged.Invoke(currentHealth, maxHealth);
+
+        }
+    }
+    private void PlayLifeUpSound(AudioSource lifeUpSound)
+    {
+        if (lifeUpSound != null && lifeUpSound.clip != null)
+        {
+            lifeUpSound.PlayOneShot(lifeUpSound.clip);
+        }
+    }
+
+    private void PlayDeathSound(AudioSource deathSound)
+    {
+        if (deathSound != null && deathSound.clip != null)
+        {
+            AudioSource.PlayClipAtPoint(deathSound.clip, transform.position);
+        }
+    }
+
 }
