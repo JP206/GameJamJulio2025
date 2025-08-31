@@ -72,8 +72,8 @@ public class _GunController : MonoBehaviour
             float projection = Vector2.Dot(playerVel, clampedDirection); 
             
             if (projection > 0) rb.linearVelocity = clampedDirection * (bulletSpeed + projection); 
-            else rb.linearVelocity = clampedDirection * bulletSpeed; 
-            
+            else rb.linearVelocity = clampedDirection * bulletSpeed;
+
             if (animator.GetBool("isRunning") || animator.GetBool("isRunningBackwards"))
             {
                 if (playerMovement.GetFacingForward())
@@ -85,6 +85,11 @@ public class _GunController : MonoBehaviour
                     animator.SetTrigger("FireBackwards");
                 }
             }
+            else
+            {
+                animator.SetTrigger("StaticFire");
+            }
+
 
             if (!spriteRenderer.flipX) 
             { 
