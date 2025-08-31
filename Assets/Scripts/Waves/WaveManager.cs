@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -6,19 +6,20 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] Transform[] spawnPoints;
     [SerializeField] TextMeshProUGUI roundText, roundTextShade, killCountText, killCountTextShade;
-    [SerializeField] AudioSource audioSource, musicSource;
+    [SerializeField] AudioSource audioSource, musicSource, holyCowSource;
     [SerializeField] AudioClip waveMusic, bossMusic;
+    [SerializeField] float waveTimeout = 240f;
+
 
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
     UIAnimation uiAnimation;
+    bool waveEnding = false;
 
     void Start()
     {
         enemyPool = GetComponent<EnemyPool>();
-
         uiAnimation = FindAnyObjectByType<UIAnimation>();
-
         StartWave();
     }
 
@@ -29,26 +30,21 @@ public class WaveManager : MonoBehaviour
         killCountText.text = "Kill count: " + killCount.ToString();
         killCountTextShade.text = killCountText.text;
         uiAnimation.Animation(killCountText, killCountTextShade);
-
-        if (deadEnemies == enemiesToSpawn)
+        if (killCount % 50 == 0 && killCount > 0)
         {
-            audioSource.Stop();
+            PlayHolyCowSound(holyCowSource);
+        }
 
-            if (!BossesAlive())
-            {
-                musicSource.Stop();
-            }
-
-            StartCoroutine(TimeBetweenWaves());
+        if (!waveEnding && deadEnemies == enemiesToSpawn)
+        {
+            EndWave();
         }
     }
 
     IEnumerator TimeBetweenWaves()
     {
         ScaleDifficulty();
-
         yield return new WaitForSeconds(3);
-
         StartWave();
     }
 
@@ -66,6 +62,8 @@ public class WaveManager : MonoBehaviour
     void StartWave()
     {
         deadEnemies = 0;
+        waveEnding = false;
+
         roundText.text = "Round: " + round.ToString();
         roundTextShade.text = roundText.text;
         uiAnimation.Animation(roundText, roundTextShade);
@@ -87,8 +85,8 @@ public class WaveManager : MonoBehaviour
                 bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
                 RandomizePosition(bossInstance.transform);
             }
-        
-            for (int i = 0; i < (int) (bossesToSpawn / 3); i++)
+
+            for (int i = 0; i < (int)(bossesToSpawn / 3); i++)
             {
                 GameObject galloInstance = enemyPool.GetGallo();
                 galloInstance.GetComponent<EnemyController>().SetWaveManager(this);
@@ -118,6 +116,32 @@ public class WaveManager : MonoBehaviour
         {
             audioSource.Play();
         }
+
+        StartCoroutine(WaveTimer());
+    }
+
+    IEnumerator WaveTimer()
+    {
+        yield return new WaitForSeconds(waveTimeout);
+
+        if (!waveEnding)
+        {
+            EndWave();
+        }
+    }
+
+    void EndWave()
+    {
+        waveEnding = true;
+
+        audioSource.Stop();
+
+        if (!BossesAlive())
+        {
+            musicSource.Stop();
+        }
+
+        StartCoroutine(TimeBetweenWaves());
     }
 
     void RandomizePosition(Transform transform)
@@ -141,5 +165,13 @@ public class WaveManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    private void PlayHolyCowSound(AudioSource source)
+    {
+        if (source != null && source.clip != null)
+        {
+            source.PlayOneShot(source.clip);
+        }
     }
 }

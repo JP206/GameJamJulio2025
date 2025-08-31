@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5487557102426500948}
   - component: {fileID: 1839507723747418342}
   - component: {fileID: 2457793125788117451}
-  - component: {fileID: 5885099108550492918}
+  - component: {fileID: 7257748618461977862}
   m_Layer: 10
   m_Name: Mesa
   m_TagString: Building
@@ -116,8 +116,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5885099108550492918
-BoxCollider2D:
+--- !u!60 &7257748618461977862
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,7 +150,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.77894723}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -160,5 +160,36 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.87, y: 1.4921052}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.93, y: -1.11}
+      - {x: 0.81, y: -0.95}
+      - {x: 0.45999998, y: -0.79999995}
+      - {x: 0.24, y: -0.78999996}
+      - {x: 0.24, y: 0.08}
+      - {x: 1.86, y: 0.08}
+      - {x: 1.9499999, y: 0.13}
+      - {x: 1.9499999, y: 1.52}
+      - {x: 1.9, y: 1.54}
+      - {x: 1.81, y: 1.54}
+      - {x: 1.8199999, y: 1.53}
+      - {x: -1.8, y: 1.53}
+      - {x: -1.8199999, y: 1.54}
+      - {x: -1.87, y: 1.54}
+      - {x: -1.9499999, y: 1.48}
+      - {x: -1.9499999, y: 0.14999999}
+      - {x: -1.86, y: 0.08}
+      - {x: -1.8199999, y: 0.08}
+      - {x: -0.22, y: -0.79999995}
+      - {x: -0.34, y: -0.79999995}
+      - {x: -0.63, y: -0.88}
+      - {x: -0.79999995, y: -0.96}
+      - {x: -0.90999997, y: -1.13}
+      - {x: -0.9, y: -1.24}
+      - {x: -0.76, y: -1.4}
+      - {x: -0.5, y: -1.54}
+      - {x: 0.39999998, y: -1.54}
+      - {x: 0.47, y: -1.52}
+      - {x: 0.76, y: -1.4}
+      - {x: 0.9, y: -1.27}
+  m_UseDelaunayMesh: 0

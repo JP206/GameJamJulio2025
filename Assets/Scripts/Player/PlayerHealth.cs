@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnerabilityTime = 2f;
     [SerializeField] private float flashInterval = 0.1f;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] AudioSource lifeUpSound;
     [SerializeField] private AudioClip hit1, hit2, hit3;
     [SerializeField] private GameObject deathEffectPrefab;
 
@@ -117,6 +118,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.CompareTag("Life"))
         {
+            PlayLifeUpSound(lifeUpSound);
+
             int healAmount = Mathf.RoundToInt(maxHealth * 0.15f);
             currentHealth = Mathf.Clamp(currentHealth + healAmount, 0, maxHealth);
 
@@ -124,5 +127,11 @@ public class PlayerHealth : MonoBehaviour
 
         }
     }
-
+    private void PlayLifeUpSound(AudioSource lifeUpSound)
+    {
+        if (lifeUpSound != null && lifeUpSound.clip != null)
+        {
+            lifeUpSound.PlayOneShot(lifeUpSound.clip);
+        }
+    }
 }
