@@ -7,15 +7,19 @@ public class _GunController : MonoBehaviour
     [SerializeField] private Transform firePoint; 
     [SerializeField] private float bulletSpeed = 15f, bulletAmmo; 
     [SerializeField] private float maxAngle = 45f; 
-    [SerializeField] TextMeshProUGUI ammoText, ammoTextShade; 
+    [SerializeField] private float fireRate = 0.2f;
+    [SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] TextMeshProUGUI ammoTextShade;
     [SerializeField] AudioClip emptyGunshot, eat1, eat2, eat3; 
     [SerializeField] AudioSource audioSource1, audioSource2, shotgunAudioSource; 
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f; 
-    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight; 
+    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight;
 
     SpriteRenderer spriteRenderer;
     PlayerMovement playerMovement;
     Animator animator; UIAnimation uiAnimation;
+
+    private float nextFireTime = 0f;
 
     private void Start() 
     {
@@ -28,11 +32,12 @@ public class _GunController : MonoBehaviour
     }
     private void Update() { 
         if (UICanvasManager.IsGamePausedOrOver) return; 
-        if (IntroCinematicManager.IsCinematicPlaying) return; 
-        if (Mouse.current.leftButton.wasPressedThisFrame) 
-        { 
+        if (IntroCinematicManager.IsCinematicPlaying) return;
+        if (Mouse.current.leftButton.isPressed && Time.time >= nextFireTime)
+        {
             FireBullet();
-        } 
+            nextFireTime = Time.time + fireRate;
+        }
     }
 
     private void FireBullet()

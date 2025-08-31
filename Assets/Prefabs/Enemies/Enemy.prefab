@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  invulnerabilityTime: 1
+  invulnerabilityTime: 0
   flashInterval: 0.1
   damage: 1
   maxHp: 1
