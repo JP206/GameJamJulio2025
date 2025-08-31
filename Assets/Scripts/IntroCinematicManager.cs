@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 public class IntroCinematicManager : MonoBehaviour
 {
     public static bool IsCinematicPlaying { get; private set; } = true;
+    
+    [Header("World Bounds")]
+    [SerializeField] private GameObject leftWall;
 
     [Header("References")]
     public GameObject player;
@@ -75,6 +78,9 @@ public class IntroCinematicManager : MonoBehaviour
 
         waveManager.SetActive(true);
         ulCanvas.SetActive(true);
+
+        if (leftWall != null)
+            leftWall.SetActive(true);
 
         if (playerMovement != null)
             playerMovement.enabled = true;
