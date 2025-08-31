@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      holy_aura_0: -4257809860351944403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
