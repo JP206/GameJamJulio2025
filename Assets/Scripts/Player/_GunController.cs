@@ -8,11 +8,12 @@ public class _GunController : MonoBehaviour
     [SerializeField] private float bulletSpeed = 15f, bulletAmmo; 
     [SerializeField] private float maxAngle = 45f; 
     [SerializeField] TextMeshProUGUI ammoText, ammoTextShade; 
-    [SerializeField] AudioClip gunshot1, emptyGunshot, eat1, eat2, eat3; 
-    [SerializeField] AudioSource audioSource1, audioSource2; 
+    [SerializeField] AudioClip emptyGunshot, eat1, eat2, eat3; 
+    [SerializeField] AudioSource audioSource1, audioSource2, shotgunAudioSource; 
     [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f; 
-    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight; SpriteRenderer spriteRenderer;
+    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight; 
 
+    SpriteRenderer spriteRenderer;
     PlayerMovement playerMovement;
     Animator animator; UIAnimation uiAnimation;
 
@@ -30,16 +31,16 @@ public class _GunController : MonoBehaviour
         if (IntroCinematicManager.IsCinematicPlaying) return; 
         if (Mouse.current.leftButton.wasPressedThisFrame) 
         { 
-            FireBullet(); 
+            FireBullet();
         } 
     }
 
     private void FireBullet()
     {
+        PlayShotgunSound(shotgunAudioSource);
+
         if (bulletAmmo > 0)
         {
-            audioSource1.PlayOneShot(gunshot1);
-
             bulletAmmo--; ammoText.text = "Ammo: " + bulletAmmo.ToString(); 
             GameObject bullet = BulletPool.Instance.GetBullet(); 
             bullet.transform.position = firePoint.position; 
@@ -114,5 +115,13 @@ public class _GunController : MonoBehaviour
             case 2: return eat3; 
         } 
         return null; 
+    }
+
+    private void PlayShotgunSound(AudioSource source)
+    {
+        if (source != null && source.clip != null)
+        {
+            source.PlayOneShot(source.clip);
+        }
     }
 }
