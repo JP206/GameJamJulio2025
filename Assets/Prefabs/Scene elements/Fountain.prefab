@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6052575745457530117}
   - component: {fileID: 1209227405499112186}
   - component: {fileID: 6485186823958596777}
+  - component: {fileID: 3814916392095700411}
   m_Layer: 10
   m_Name: Fountain
   m_TagString: Building
@@ -162,3 +163,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 19.94, y: 19.15}
   m_EdgeRadius: 0
+--- !u!114 &3814916392095700411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3736473067087356506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 10, y: -10}
+  m_UseGraphicAlpha: 1
