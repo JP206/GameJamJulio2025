@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c999851f2147192408f374159afccc14
+guid: 1c0e0b232014ccc4c96a4a1bbbf27a90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7281161743938003642
-    second: Fuente 1_0
+      213: -2956344353889557248
+    second: burned_zone02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fuente 1_0
+      name: burned_zone02_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 23
-        width: 1994
-        height: 1915
+        y: 21
+        width: 491
+        height: 491
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64d596c98fd14fa90800000000000000
-      internalID: -7281161743938003642
+      spriteID: 0056ea83974f8f6d0800000000000000
+      internalID: -2956344353889557248
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fuente 1_0: -7281161743938003642
+      burned_zone02_0: -2956344353889557248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
