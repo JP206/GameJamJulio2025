@@ -266,10 +266,10 @@ TextureImporter:
       name: Rapi_Idle_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 2645
-        width: 456
-        height: 340
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: Rapi_Idle_1
       rect:
         serializedVersion: 2
-        x: 540
-        y: 2645
-        width: 455
-        height: 341
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,10 +310,10 @@ TextureImporter:
       name: Rapi_Idle_2
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 2645
-        width: 456
-        height: 343
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: Rapi_Idle_3
       rect:
         serializedVersion: 2
-        x: 1563
-        y: 2645
-        width: 455
-        height: 344
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,10 +354,10 @@ TextureImporter:
       name: Rapi_Idle_4
       rect:
         serializedVersion: 2
-        x: 2074
-        y: 2645
-        width: 456
-        height: 345
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +376,10 @@ TextureImporter:
       name: Rapi_Idle_5
       rect:
         serializedVersion: 2
-        x: 2586
-        y: 2645
-        width: 455
-        height: 347
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,10 +398,10 @@ TextureImporter:
       name: Rapi_Idle_6
       rect:
         serializedVersion: 2
-        x: 3097
-        y: 2645
-        width: 456
-        height: 348
+        x: 3072
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,10 +420,10 @@ TextureImporter:
       name: Rapi_Idle_7
       rect:
         serializedVersion: 2
-        x: 25
-        y: 2133
-        width: 455
-        height: 349
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,10 +442,10 @@ TextureImporter:
       name: Rapi_Idle_8
       rect:
         serializedVersion: 2
-        x: 536
-        y: 2133
-        width: 456
-        height: 350
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,10 +464,10 @@ TextureImporter:
       name: Rapi_Idle_9
       rect:
         serializedVersion: 2
-        x: 1048
-        y: 2133
-        width: 455
-        height: 351
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,10 +486,10 @@ TextureImporter:
       name: Rapi_Idle_10
       rect:
         serializedVersion: 2
-        x: 1559
-        y: 2133
-        width: 456
-        height: 353
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,10 +508,10 @@ TextureImporter:
       name: Rapi_Idle_11
       rect:
         serializedVersion: 2
-        x: 2070
-        y: 2133
-        width: 456
-        height: 354
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,10 +530,10 @@ TextureImporter:
       name: Rapi_Idle_12
       rect:
         serializedVersion: 2
-        x: 2582
-        y: 2133
-        width: 456
-        height: 355
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,10 +552,10 @@ TextureImporter:
       name: Rapi_Idle_13
       rect:
         serializedVersion: 2
-        x: 3093
-        y: 2133
-        width: 456
-        height: 357
+        x: 3072
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -574,10 +574,10 @@ TextureImporter:
       name: Rapi_Idle_14
       rect:
         serializedVersion: 2
-        x: 24
-        y: 1621
-        width: 456
-        height: 356
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: Rapi_Idle_15
       rect:
         serializedVersion: 2
-        x: 539
-        y: 1621
-        width: 455
-        height: 354
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -618,10 +618,10 @@ TextureImporter:
       name: Rapi_Idle_16
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 1621
-        width: 454
-        height: 353
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,10 +640,10 @@ TextureImporter:
       name: Rapi_Idle_17
       rect:
         serializedVersion: 2
-        x: 1568
-        y: 1621
-        width: 455
-        height: 352
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,10 +662,10 @@ TextureImporter:
       name: Rapi_Idle_18
       rect:
         serializedVersion: 2
-        x: 2083
-        y: 1621
-        width: 454
-        height: 351
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,10 +684,10 @@ TextureImporter:
       name: Rapi_Idle_19
       rect:
         serializedVersion: 2
-        x: 2598
-        y: 1621
-        width: 453
-        height: 350
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,10 +706,10 @@ TextureImporter:
       name: Rapi_Idle_20
       rect:
         serializedVersion: 2
-        x: 3113
-        y: 1621
-        width: 453
-        height: 349
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,10 +728,10 @@ TextureImporter:
       name: Rapi_Idle_21
       rect:
         serializedVersion: 2
-        x: 44
-        y: 1109
-        width: 451
-        height: 348
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,10 +750,10 @@ TextureImporter:
       name: Rapi_Idle_22
       rect:
         serializedVersion: 2
-        x: 555
-        y: 1109
-        width: 452
-        height: 345
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,10 +772,10 @@ TextureImporter:
       name: Rapi_Idle_23
       rect:
         serializedVersion: 2
-        x: 1067
-        y: 1109
-        width: 452
-        height: 342
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,10 +794,10 @@ TextureImporter:
       name: Rapi_Idle_24
       rect:
         serializedVersion: 2
-        x: 1578
-        y: 1109
-        width: 453
-        height: 339
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,10 +816,10 @@ TextureImporter:
       name: Rapi_Idle_25
       rect:
         serializedVersion: 2
-        x: 2090
-        y: 1109
-        width: 452
-        height: 336
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,10 +838,10 @@ TextureImporter:
       name: Rapi_Idle_26
       rect:
         serializedVersion: 2
-        x: 2601
-        y: 1109
-        width: 453
-        height: 333
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,10 +860,10 @@ TextureImporter:
       name: Rapi_Idle_27
       rect:
         serializedVersion: 2
-        x: 3113
-        y: 1109
-        width: 452
-        height: 330
+        x: 3072
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,10 +882,10 @@ TextureImporter:
       name: Rapi_Idle_28
       rect:
         serializedVersion: 2
-        x: 39
-        y: 597
-        width: 453
-        height: 332
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,10 +904,10 @@ TextureImporter:
       name: Rapi_Idle_29
       rect:
         serializedVersion: 2
-        x: 549
-        y: 597
-        width: 453
-        height: 334
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -926,10 +926,10 @@ TextureImporter:
       name: Rapi_Idle_30
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 597
-        width: 453
-        height: 335
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -948,10 +948,10 @@ TextureImporter:
       name: Rapi_Idle_31
       rect:
         serializedVersion: 2
-        x: 1570
-        y: 597
-        width: 453
-        height: 337
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -970,10 +970,10 @@ TextureImporter:
       name: Rapi_Idle_32
       rect:
         serializedVersion: 2
-        x: 2081
-        y: 597
-        width: 453
-        height: 338
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -992,10 +992,10 @@ TextureImporter:
       name: Rapi_Idle_33
       rect:
         serializedVersion: 2
-        x: 2591
-        y: 597
-        width: 454
-        height: 340
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1014,10 +1014,10 @@ TextureImporter:
       name: Rapi_Idle_34
       rect:
         serializedVersion: 2
-        x: 3103
-        y: 597
-        width: 454
-        height: 340
+        x: 3072
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1036,10 +1036,10 @@ TextureImporter:
       name: Rapi_Idle_35
       rect:
         serializedVersion: 2
-        x: 30
-        y: 85
-        width: 454
-        height: 340
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: Rapi_Idle_36
       rect:
         serializedVersion: 2
-        x: 541
-        y: 85
-        width: 455
-        height: 340
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1080,10 +1080,10 @@ TextureImporter:
       name: Rapi_Idle_37
       rect:
         serializedVersion: 2
-        x: 1053
-        y: 85
-        width: 455
-        height: 340
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1102,7 +1102,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1e8ac497ac473fb4cb8f670e428b68d6
     internalID: 0
     vertices: []
     indices: 
