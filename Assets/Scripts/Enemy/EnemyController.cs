@@ -121,14 +121,18 @@ public class EnemyController : MonoBehaviour
         {
             if (!isDead)
             {
+                PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
                 PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-                if (playerHealth != null)
+
+                // Solo daña si no está rodando
+                if (playerMovement != null && !playerMovement.IsRolling && playerHealth != null)
                 {
                     animator.SetTrigger("Attack");
                     playerHealth.TakeDamage(damage);
                 }
             }
         }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
