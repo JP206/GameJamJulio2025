@@ -10,7 +10,6 @@ public class WaveManager : MonoBehaviour
     [SerializeField] AudioClip waveMusic, bossMusic;
     [SerializeField] float waveTimeout = 240f;
 
-
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
     UIAnimation uiAnimation;
@@ -30,6 +29,7 @@ public class WaveManager : MonoBehaviour
         killCountText.text = "Kill count: " + killCount.ToString();
         killCountTextShade.text = killCountText.text;
         uiAnimation.Animation(killCountText, killCountTextShade);
+
         if (killCount % 50 == 0 && killCount > 0)
         {
             PlayHolyCowSound(holyCowSource);
@@ -68,6 +68,7 @@ public class WaveManager : MonoBehaviour
         roundTextShade.text = roundText.text;
         uiAnimation.Animation(roundText, roundTextShade);
 
+        // spawn normales
         for (int i = 0; i < enemiesToSpawn; i++)
         {
             GameObject enemyInstance = enemyPool.GetEnemy();
@@ -76,6 +77,9 @@ public class WaveManager : MonoBehaviour
             RandomizePosition(enemyInstance.transform);
         }
 
+        int gallosToSpawn = 0;
+
+        // spawn bosses y gallos
         if (round % bossWaves == 0)
         {
             for (int i = 0; i < bossesToSpawn; i++)
@@ -86,30 +90,31 @@ public class WaveManager : MonoBehaviour
                 RandomizePosition(bossInstance.transform);
             }
 
-            for (int i = 0; i < (int)(bossesToSpawn / 3); i++)
+            gallosToSpawn = (int)(bossesToSpawn / 3);
+            for (int i = 0; i < gallosToSpawn; i++)
             {
                 GameObject galloInstance = enemyPool.GetGallo();
                 galloInstance.GetComponent<EnemyController>().SetWaveManager(this);
                 galloInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
                 RandomizePosition(galloInstance.transform);
             }
+        }
 
-            if (!musicSource.isPlaying)
+        if (gallosToSpawn > 0)
+        {
+            if (musicSource.clip != bossMusic)
             {
                 musicSource.clip = bossMusic;
+                musicSource.Play();
             }
         }
         else
         {
-            if (!musicSource.isPlaying)
+            if (musicSource.clip != waveMusic)
             {
                 musicSource.clip = waveMusic;
+                musicSource.Play();
             }
-        }
-
-        if (!musicSource.isPlaying)
-        {
-            musicSource.Play();
         }
 
         if (!audioSource.isPlaying)
@@ -135,11 +140,6 @@ public class WaveManager : MonoBehaviour
         waveEnding = true;
 
         audioSource.Stop();
-
-        if (!BossesAlive())
-        {
-            musicSource.Stop();
-        }
 
         StartCoroutine(TimeBetweenWaves());
     }

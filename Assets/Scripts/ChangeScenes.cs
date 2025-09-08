@@ -6,6 +6,7 @@ public class ChangeScenes : MonoBehaviour
 {
     [SerializeField] private float delayBeforeSceneChange = 1f;
     [SerializeField] private GameObject objectToActivateAfterAnimation;
+    [SerializeField] private GameObject optionsPanel;
 
     public void ChangeScene(string sceneName)
     {
@@ -67,4 +68,9 @@ public class ChangeScenes : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         buttonObject.transform.localScale = originalScale;
     }
+    public void CloseOptions()
+    {
+        optionsPanel.SetActive(false);
+    }
+
 }
