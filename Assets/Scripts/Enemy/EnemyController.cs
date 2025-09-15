@@ -92,30 +92,7 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet"))
-        {
-            if (!isInvulnerable && !isDead)
-            {
-                audioSource.PlayOneShot(GethitSound());
-                currentHp--;
-
-                if (hitEffect != null)
-                {
-                    hitEffect.gameObject.SetActive(true);
-                    hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-                    hitEffect.Play();
-                }
-
-                if (currentHp <= 0)
-                {
-                    StartCoroutine(Death());
-                }
-                else
-                {
-                    StartCoroutine(DamageFlashAndInvulnerability());
-                }
-            }
-        }
+        DoDamage(collision);
 
         if (collision.CompareTag("Player"))
         {
@@ -134,6 +111,43 @@ public class EnemyController : MonoBehaviour
         }
 
     }
+    private void DoDamage(Collider2D collision)
+    {
+        if (collision.CompareTag("Bullet"))
+        {
+            TakeDamage(1);
+        }
+        else if (collision.CompareTag("HolyBullet"))
+        {
+            TakeDamage(5);
+        }
+    }
+
+    private void TakeDamage(int amount)
+    {
+        if (!isInvulnerable && !isDead)
+        {
+            audioSource.PlayOneShot(GethitSound());
+            currentHp -= amount;
+
+            if (hitEffect != null)
+            {
+                hitEffect.gameObject.SetActive(true);
+                hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+                hitEffect.Play();
+            }
+
+            if (currentHp <= 0)
+            {
+                StartCoroutine(Death());
+            }
+            else
+            {
+                StartCoroutine(DamageFlashAndInvulnerability());
+            }
+        }
+    }
+
 
     private void OnTriggerStay2D(Collider2D collision)
     {
