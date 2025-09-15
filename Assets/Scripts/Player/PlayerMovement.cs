@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movementInput;
-    private Vector2 lastMoveDir = Vector2.right; // dirección por defecto (derecha)
+    private Vector2 lastMoveDir = Vector2.right;
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -22,8 +22,10 @@ public class PlayerMovement : MonoBehaviour
     private float nextRollTime = 0f;
     private TrailRenderer trail;
     private bool isRolling = false;
+    private bool isCastingHolyShot = false;
 
     public bool IsRolling => isRolling;
+    public bool IsCastingHolyShot => isCastingHolyShot;
 
     void Start()
     {
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         trail = GetComponent<TrailRenderer>();
 
         if (trail != null)
-            trail.emitting = false; // arrancamos apagado
+            trail.emitting = false;
     }
 
     void Update()
@@ -51,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (UICanvasManager.IsGamePausedOrOver) return;
 
-        if (!isRolling) // solo moverse si no está rodando
+        if (!isRolling && !isCastingHolyShot)
         {
             rb.linearVelocity = movementInput * moveSpeed;
         }
@@ -71,24 +73,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleRoll()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= nextRollTime)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= nextRollTime && !isCastingHolyShot)
         {
             nextRollTime = Time.time + rollCooldown;
 
-            // Trigger animación
             animator.SetTrigger("Rolling");
 
-            // Dirección de dash: actual o última conocida
             Vector2 dashDir = movementInput != Vector2.zero ? movementInput : lastMoveDir;
 
-            // Resetear velocidad y aplicar impulso
             rb.linearVelocity = Vector2.zero;
             rb.AddForce(dashDir * rollForce, ForceMode2D.Impulse);
 
-            // Bloquear movimiento normal durante el roll
             StartCoroutine(RollCoroutine());
 
-            // Activar Trail
             if (trail != null)
                 StartCoroutine(RollTrail());
         }
@@ -97,14 +94,14 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator RollCoroutine()
     {
         isRolling = true;
-        yield return new WaitForSeconds(0.5f); // duración del dash
+        yield return new WaitForSeconds(0.5f);
         isRolling = false;
     }
 
     private IEnumerator RollTrail()
     {
         trail.emitting = true;
-        yield return new WaitForSeconds(0.5f); // mismo tiempo que el dash
+        yield return new WaitForSeconds(0.5f);
         trail.emitting = false;
     }
 
@@ -149,5 +146,14 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 GetVelocity()
     {
         return rb.linearVelocity;
+    }
+
+    public void SetHolyShotState(bool state)
+    {
+        isCastingHolyShot = state;
+        if (state)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
     }
 }
