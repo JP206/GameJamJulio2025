@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 003ed045f9f721a4dbd871c5c7c3521c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7503849219366800684
+    second: POLLO-GALLO-NUEVO-golpe.gif_0
+  - first:
+      213: 212360844114964119
+    second: POLLO-GALLO-NUEVO-golpe.gif_1
+  - first:
+      213: -4697519477239074880
+    second: POLLO-GALLO-NUEVO-golpe.gif_2
+  - first:
+      213: -938350976630828757
+    second: POLLO-GALLO-NUEVO-golpe.gif_3
+  - first:
+      213: -1029312320265442547
+    second: POLLO-GALLO-NUEVO-golpe.gif_4
+  - first:
+      213: -8109042246198274386
+    second: POLLO-GALLO-NUEVO-golpe.gif_5
+  - first:
+      213: -3112205964448561003
+    second: POLLO-GALLO-NUEVO-golpe.gif_6
+  - first:
+      213: -9181458388097687077
+    second: POLLO-GALLO-NUEVO-golpe.gif_7
+  - first:
+      213: 1191864069027364010
+    second: POLLO-GALLO-NUEVO-golpe.gif_8
+  - first:
+      213: 4117396909441187715
+    second: POLLO-GALLO-NUEVO-golpe.gif_9
+  - first:
+      213: -2816566731996852924
+    second: POLLO-GALLO-NUEVO-golpe.gif_10
+  - first:
+      213: -6365402854671879755
+    second: POLLO-GALLO-NUEVO-golpe.gif_11
+  - first:
+      213: 26883511805150266
+    second: POLLO-GALLO-NUEVO-golpe.gif_12
+  - first:
+      213: -640013218127958186
+    second: POLLO-GALLO-NUEVO-golpe.gif_13
+  - first:
+      213: -7914476193016328515
+    second: POLLO-GALLO-NUEVO-golpe.gif_14
+  - first:
+      213: -634253582371154955
+    second: POLLO-GALLO-NUEVO-golpe.gif_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1652
+        width: 294
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d4370ab17032860800000000000000
+      internalID: 7503849219366800684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_1
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1639
+        width: 297
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79eaca5001572f200800000000000000
+      internalID: 212360844114964119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 1639
+        width: 296
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfafa98cee0fceb0800000000000000
+      internalID: -4697519477239074880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 1639
+        width: 296
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21574322ce4af2f0800000000000000
+      internalID: -938350976630828757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1127
+        width: 296
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b25a3f5e527b1f0800000000000000
+      internalID: -1029312320265442547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_5
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1127
+        width: 311
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea657b66a05e67f80800000000000000
+      internalID: -8109042246198274386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_6
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1124
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598013d1a293fc4d0800000000000000
+      internalID: -3112205964448561003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1124
+        width: 316
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd12861dd38e49080800000000000000
+      internalID: -9181458388097687077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1126
+        width: 318
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aac7de65e0a5a8010800000000000000
+      internalID: 1191864069027364010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 616
+        width: 319
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f788a9caee32930800000000000000
+      internalID: 4117396909441187715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 616
+        width: 427
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d0525ea7b89e8d0800000000000000
+      internalID: -2816566731996852924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_11
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 616
+        width: 274
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1760b34db89a7a0800000000000000
+      internalID: -6365402854671879755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 616
+        width: 273
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34067b59628f5000800000000000000
+      internalID: 26883511805150266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_13
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 104
+        width: 273
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fade97e573e17f0800000000000000
+      internalID: -640013218127958186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_14
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 104
+        width: 273
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbec9fbc5d12a2290800000000000000
+      internalID: -7914476193016328515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-golpe.gif_15
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 104
+        width: 273
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f39f3d2abda237f0800000000000000
+      internalID: -634253582371154955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      POLLO-GALLO-NUEVO-golpe.gif_0: 7503849219366800684
+      POLLO-GALLO-NUEVO-golpe.gif_1: 212360844114964119
+      POLLO-GALLO-NUEVO-golpe.gif_10: -2816566731996852924
+      POLLO-GALLO-NUEVO-golpe.gif_11: -6365402854671879755
+      POLLO-GALLO-NUEVO-golpe.gif_12: 26883511805150266
+      POLLO-GALLO-NUEVO-golpe.gif_13: -640013218127958186
+      POLLO-GALLO-NUEVO-golpe.gif_14: -7914476193016328515
+      POLLO-GALLO-NUEVO-golpe.gif_15: -634253582371154955
+      POLLO-GALLO-NUEVO-golpe.gif_2: -4697519477239074880
+      POLLO-GALLO-NUEVO-golpe.gif_3: -938350976630828757
+      POLLO-GALLO-NUEVO-golpe.gif_4: -1029312320265442547
+      POLLO-GALLO-NUEVO-golpe.gif_5: -8109042246198274386
+      POLLO-GALLO-NUEVO-golpe.gif_6: -3112205964448561003
+      POLLO-GALLO-NUEVO-golpe.gif_7: -9181458388097687077
+      POLLO-GALLO-NUEVO-golpe.gif_8: 1191864069027364010
+      POLLO-GALLO-NUEVO-golpe.gif_9: 4117396909441187715
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
