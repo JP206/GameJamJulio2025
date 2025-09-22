@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 5dec639c04bbdf64d952c8d23ef92d5e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1511108457313915273
+    second: Pollo Chico Tribuna_0
+  - first:
+      213: -7570910076086363498
+    second: Pollo Chico Tribuna_1
+  - first:
+      213: -6583778694290633184
+    second: Pollo Chico Tribuna_2
+  - first:
+      213: 8729224732164378549
+    second: Pollo Chico Tribuna_3
+  - first:
+      213: -4605753347541008519
+    second: Pollo Chico Tribuna_4
+  - first:
+      213: -6518118049713693750
+    second: Pollo Chico Tribuna_5
+  - first:
+      213: -8686728563145233334
+    second: Pollo Chico Tribuna_6
+  - first:
+      213: -247430097974688525
+    second: Pollo Chico Tribuna_7
+  - first:
+      213: 5454097831608155412
+    second: Pollo Chico Tribuna_8
+  - first:
+      213: 8911786083951430941
+    second: Pollo Chico Tribuna_9
+  - first:
+      213: -6882588201660862341
+    second: Pollo Chico Tribuna_10
+  - first:
+      213: -6957286626229111406
+    second: Pollo Chico Tribuna_11
+  - first:
+      213: -4943725654366993616
+    second: Pollo Chico Tribuna_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 809
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 981d84fb22988f410800000000000000
+      internalID: 1511108457313915273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 814
+        width: 117
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a5270f569bee690800000000000000
+      internalID: -7570910076086363498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 817
+        width: 114
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e850fe828b1a4a0800000000000000
+      internalID: -6583778694290633184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_3
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 820
+        width: 119
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf463df4af642970800000000000000
+      internalID: 8729224732164378549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 552
+        width: 160
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f70c49bb31510c0800000000000000
+      internalID: -4605753347541008519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 555
+        width: 233
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbd0c21b2efa85a0800000000000000
+      internalID: -6518118049713693750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_6
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 554
+        width: 216
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c2d75656a827780800000000000000
+      internalID: -8686728563145233334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_7
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 555
+        width: 190
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f48a7703a3f09cf0800000000000000
+      internalID: -247430097974688525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 299
+        width: 157
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d7b3fa419d0bb40800000000000000
+      internalID: 5454097831608155412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_9
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 297
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dc1380a360dab70800000000000000
+      internalID: 8911786083951430941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_10
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 291
+        width: 128
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70b5b00f722c70a0800000000000000
+      internalID: -6882588201660862341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_11
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 297
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295b90bbca0c27f90800000000000000
+      internalID: -6957286626229111406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pollo Chico Tribuna_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 41
+        width: 135
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0334878d5bb546bb0800000000000000
+      internalID: -4943725654366993616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pollo Chico Tribuna_0: 1511108457313915273
+      Pollo Chico Tribuna_1: -7570910076086363498
+      Pollo Chico Tribuna_10: -6882588201660862341
+      Pollo Chico Tribuna_11: -6957286626229111406
+      Pollo Chico Tribuna_12: -4943725654366993616
+      Pollo Chico Tribuna_2: -6583778694290633184
+      Pollo Chico Tribuna_3: 8729224732164378549
+      Pollo Chico Tribuna_4: -4605753347541008519
+      Pollo Chico Tribuna_5: -6518118049713693750
+      Pollo Chico Tribuna_6: -8686728563145233334
+      Pollo Chico Tribuna_7: -247430097974688525
+      Pollo Chico Tribuna_8: 5454097831608155412
+      Pollo Chico Tribuna_9: 8911786083951430941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
