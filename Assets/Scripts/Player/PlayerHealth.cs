@@ -30,26 +30,39 @@ public class PlayerHealth : MonoBehaviour
 
         if (OnHealthChanged == null)
             OnHealthChanged = new UnityEvent<int, int>();
+
+        Debug.Log("PlayerHealth Awake → maxHealth = " + maxHealth);
     }
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        Debug.Log("PlayerHealth Start → Animator asignado: " + (animator != null));
     }
 
     public void TakeDamage(int amount)
     {
-        if (isInvulnerable) return;
+        if (isInvulnerable)
+        {
+            Debug.Log("TakeDamage bloqueado → invulnerable activo");
+            return;
+        }
 
         audioSource.PlayOneShot(GethitSound());
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        Debug.Log("TakeDamage → daño recibido = " + amount + " | HP restante = " + currentHealth);
+
         animator.SetTrigger("GetHit");
+        Debug.Log("Trigger GetHit lanzado");
 
         OnHealthChanged.Invoke(currentHealth, maxHealth);
 
         if (currentHealth <= 0)
         {
+            Debug.Log("HP llegó a 0 → ejecutando muerte");
+
             if (deathEffectPrefab != null)
             {
                 PlayDeathSound(deathSound);
@@ -61,12 +74,16 @@ public class PlayerHealth : MonoBehaviour
             EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
             foreach (EnemyController enemy in enemies)
             {
+                Debug.Log("Notificando a enemigo para celebrar: " + enemy.name);
                 enemy.Celebrate();
             }
 
             UICanvasManager uiManager = Object.FindFirstObjectByType<UICanvasManager>();
             if (uiManager != null)
+            {
+                Debug.Log("Disparando Game Over en UI");
                 uiManager.TriggerGameOver();
+            }
 
             StartCoroutine(Death());
             return;
@@ -78,12 +95,12 @@ public class PlayerHealth : MonoBehaviour
     private IEnumerator DamageFlashAndInvulnerability()
     {
         isInvulnerable = true;
+        Debug.Log("Entrando en invulnerabilidad");
 
         _spriteRenderer.color = Color.red;
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
-
         while (elapsed < invulnerabilityTime)
         {
             _spriteRenderer.color = Color.white;
@@ -95,11 +112,13 @@ public class PlayerHealth : MonoBehaviour
 
         _spriteRenderer.color = Color.white;
         isInvulnerable = false;
+        Debug.Log("Invulnerabilidad terminada");
     }
 
     private AudioClip GethitSound()
     {
         int random = Random.Range(0, 3);
+        Debug.Log("Reproduciendo sonido de hit #" + random);
 
         switch (random)
         {
@@ -107,19 +126,23 @@ public class PlayerHealth : MonoBehaviour
             case 1: return hit2;
             case 2: return hit3;
         }
-
         return null;
     }
 
     private IEnumerator Death()
     {
+        Debug.Log("Corrutina Death iniciada");
         yield return new WaitForSeconds(0.1f);
+        Debug.Log("GameObject Player desactivado");
         gameObject.SetActive(false);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Life"))
         {
+            Debug.Log("Colisión con Life → curando");
+
             PlayLifeUpSound(lifeUpSound);
 
             int healAmount = Mathf.RoundToInt(maxHealth * 0.15f);
@@ -127,12 +150,15 @@ public class PlayerHealth : MonoBehaviour
 
             OnHealthChanged.Invoke(currentHealth, maxHealth);
 
+            Debug.Log("Curado → HP actual = " + currentHealth);
         }
     }
+
     private void PlayLifeUpSound(AudioSource lifeUpSound)
     {
         if (lifeUpSound != null && lifeUpSound.clip != null)
         {
+            Debug.Log("Reproduciendo sonido de vida extra");
             lifeUpSound.PlayOneShot(lifeUpSound.clip);
         }
     }
@@ -141,8 +167,8 @@ public class PlayerHealth : MonoBehaviour
     {
         if (deathSound != null && deathSound.clip != null)
         {
+            Debug.Log("Reproduciendo sonido de muerte");
             AudioSource.PlayClipAtPoint(deathSound.clip, transform.position);
         }
     }
-
 }

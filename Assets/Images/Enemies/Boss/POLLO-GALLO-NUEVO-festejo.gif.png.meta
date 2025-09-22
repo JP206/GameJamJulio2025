@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 1687fdeef3bb31a4199ccc1cd35bc80d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2009378786126744660
+    second: POLLO-GALLO-NUEVO-festejo.gif_0
+  - first:
+      213: 7755195943650447278
+    second: POLLO-GALLO-NUEVO-festejo.gif_1
+  - first:
+      213: -7119297526669883458
+    second: POLLO-GALLO-NUEVO-festejo.gif_2
+  - first:
+      213: -8934899331353813931
+    second: POLLO-GALLO-NUEVO-festejo.gif_3
+  - first:
+      213: 5865872033229463708
+    second: POLLO-GALLO-NUEVO-festejo.gif_4
+  - first:
+      213: 2615051508871792532
+    second: POLLO-GALLO-NUEVO-festejo.gif_5
+  - first:
+      213: -7549867726776755956
+    second: POLLO-GALLO-NUEVO-festejo.gif_6
+  - first:
+      213: -4910939246161540755
+    second: POLLO-GALLO-NUEVO-festejo.gif_7
+  - first:
+      213: -1772776894610221889
+    second: POLLO-GALLO-NUEVO-festejo.gif_8
+  - first:
+      213: 5263270693401105252
+    second: POLLO-GALLO-NUEVO-festejo.gif_9
+  - first:
+      213: -4953433695144381875
+    second: POLLO-GALLO-NUEVO-festejo.gif_10
+  - first:
+      213: -934744451038745005
+    second: POLLO-GALLO-NUEVO-festejo.gif_11
+  - first:
+      213: -8767085992452490209
+    second: POLLO-GALLO-NUEVO-festejo.gif_12
+  - first:
+      213: 9115738745568525273
+    second: POLLO-GALLO-NUEVO-festejo.gif_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_0
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2150
+        width: 332
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3b5b1e3a04d14e0800000000000000
+      internalID: -2009378786126744660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_1
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2155
+        width: 312
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafc5d83f9dff9b60800000000000000
+      internalID: 7755195943650447278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2158
+        width: 299
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb746808e9c233d90800000000000000
+      internalID: -7119297526669883458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 2142
+        width: 343
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cd7c2b56cd00480800000000000000
+      internalID: -8934899331353813931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 2141
+        width: 436
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c906a861983c76150800000000000000
+      internalID: 5865872033229463708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1629
+        width: 401
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49707affd778a4420800000000000000
+      internalID: 2615051508871792532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_6
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1629
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09194cad4b793790800000000000000
+      internalID: -7549867726776755956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1629
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69440f56c6d8dbb0800000000000000
+      internalID: -4910939246161540755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_8
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1629
+        width: 377
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4dcb29ec4d567e0800000000000000
+      internalID: -1772776894610221889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 1629
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46395e44fc4ea0940800000000000000
+      internalID: 5263270693401105252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_10
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1117
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42f7767c4ed14bb0800000000000000
+      internalID: -4953433695144381875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_11
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1117
+        width: 377
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e6110dfde1703f0800000000000000
+      internalID: -934744451038745005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1117
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cf0986dbd055680800000000000000
+      internalID: -8767085992452490209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-festejo.gif_13
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 1117
+        width: 376
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9db70e2871c918e70800000000000000
+      internalID: 9115738745568525273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      POLLO-GALLO-NUEVO-festejo.gif_0: -2009378786126744660
+      POLLO-GALLO-NUEVO-festejo.gif_1: 7755195943650447278
+      POLLO-GALLO-NUEVO-festejo.gif_10: -4953433695144381875
+      POLLO-GALLO-NUEVO-festejo.gif_11: -934744451038745005
+      POLLO-GALLO-NUEVO-festejo.gif_12: -8767085992452490209
+      POLLO-GALLO-NUEVO-festejo.gif_13: 9115738745568525273
+      POLLO-GALLO-NUEVO-festejo.gif_2: -7119297526669883458
+      POLLO-GALLO-NUEVO-festejo.gif_3: -8934899331353813931
+      POLLO-GALLO-NUEVO-festejo.gif_4: 5865872033229463708
+      POLLO-GALLO-NUEVO-festejo.gif_5: 2615051508871792532
+      POLLO-GALLO-NUEVO-festejo.gif_6: -7549867726776755956
+      POLLO-GALLO-NUEVO-festejo.gif_7: -4910939246161540755
+      POLLO-GALLO-NUEVO-festejo.gif_8: -1772776894610221889
+      POLLO-GALLO-NUEVO-festejo.gif_9: 5263270693401105252
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

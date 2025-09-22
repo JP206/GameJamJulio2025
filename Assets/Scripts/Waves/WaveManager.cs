@@ -9,6 +9,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] AudioSource audioSource, musicSource, holyCowSource;
     [SerializeField] AudioClip waveMusic, bossMusic;
     [SerializeField] float waveTimeout = 240f;
+    [SerializeField] private int bossWaveThreshold;
 
     EnemyPool enemyPool;
     int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
@@ -68,7 +69,27 @@ public class WaveManager : MonoBehaviour
         roundTextShade.text = roundText.text;
         uiAnimation.Animation(roundText, roundTextShade);
 
-        // spawn normales
+        if (round == bossWaveThreshold)
+        {
+            GameObject bossInstance = enemyPool.GetPolloLoco();
+            bossInstance.GetComponent<EnemyController>().SetWaveManager(this);
+            bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+            RandomizePosition(bossInstance.transform);
+
+            if (musicSource.clip != bossMusic)
+            {
+                musicSource.clip = bossMusic;
+                musicSource.Play();
+            }
+
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+
+            return;
+        }
+
         for (int i = 0; i < enemiesToSpawn; i++)
         {
             GameObject enemyInstance = enemyPool.GetEnemy();
@@ -79,7 +100,6 @@ public class WaveManager : MonoBehaviour
 
         int gallosToSpawn = 0;
 
-        // spawn bosses y gallos
         if (round % bossWaves == 0)
         {
             for (int i = 0; i < bossesToSpawn; i++)
@@ -138,8 +158,12 @@ public class WaveManager : MonoBehaviour
     void EndWave()
     {
         waveEnding = true;
-
         audioSource.Stop();
+
+        if (round == bossWaveThreshold)
+        {
+            return;
+        }
 
         StartCoroutine(TimeBetweenWaves());
     }
@@ -150,21 +174,6 @@ public class WaveManager : MonoBehaviour
         float randomY = Random.Range(0, 3f);
 
         transform.position = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
-    }
-
-    bool BossesAlive()
-    {
-        EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
-
-        foreach (EnemyController enemy in enemies)
-        {
-            if (enemy.tag.Equals("Boss"))
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     private void PlayHolyCowSound(AudioSource source)

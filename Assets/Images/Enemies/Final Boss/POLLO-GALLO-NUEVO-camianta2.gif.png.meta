@@ -188,6 +188,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -195,10 +208,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_0
       rect:
         serializedVersion: 2
-        x: 138
-        y: 2156
-        width: 294
-        height: 326
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +230,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_1
       rect:
         serializedVersion: 2
-        x: 653
-        y: 2159
-        width: 291
-        height: 323
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +252,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_2
       rect:
         serializedVersion: 2
-        x: 1165
-        y: 2159
-        width: 291
-        height: 323
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +274,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_3
       rect:
         serializedVersion: 2
-        x: 1648
-        y: 2145
-        width: 325
-        height: 324
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +296,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_4
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 2140
-        width: 332
-        height: 323
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +318,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_5
       rect:
         serializedVersion: 2
-        x: 89
-        y: 1628
-        width: 333
-        height: 320
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +340,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1628
-        width: 332
-        height: 320
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +362,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_7
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 1628
-        width: 332
-        height: 320
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +384,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_8
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1633
-        width: 353
-        height: 330
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +406,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_9
       rect:
         serializedVersion: 2
-        x: 2129
-        y: 1638
-        width: 356
-        height: 330
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +428,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_10
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1128
-        width: 355
-        height: 330
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +450,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_11
       rect:
         serializedVersion: 2
-        x: 592
-        y: 1128
-        width: 356
-        height: 330
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +472,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_12
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 1131
-        width: 359
-        height: 327
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +494,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_13
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 1133
-        width: 362
-        height: 325
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +516,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_14
       rect:
         serializedVersion: 2
-        x: 2125
-        y: 1132
-        width: 361
-        height: 321
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +538,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_15
       rect:
         serializedVersion: 2
-        x: 82
-        y: 613
-        width: 357
-        height: 324
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +560,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_16
       rect:
         serializedVersion: 2
-        x: 599
-        y: 608
-        width: 349
-        height: 325
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +582,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_17
       rect:
         serializedVersion: 2
-        x: 1115
-        y: 604
-        width: 339
-        height: 324
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +604,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_18
       rect:
         serializedVersion: 2
-        x: 1631
-        y: 602
-        width: 325
-        height: 322
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -613,10 +626,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_19
       rect:
         serializedVersion: 2
-        x: 2171
-        y: 602
-        width: 316
-        height: 335
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,10 +648,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_20
       rect:
         serializedVersion: 2
-        x: 133
-        y: 91
-        width: 303
-        height: 340
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,10 +670,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_21
       rect:
         serializedVersion: 2
-        x: 649
-        y: 94
-        width: 296
-        height: 339
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -679,10 +692,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-camianta2.gif_22
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 100
-        width: 294
-        height: 334
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,7 +714,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4e8c9829b7625204f8bf62372c0b0030
     internalID: 0
     vertices: []
     indices: 

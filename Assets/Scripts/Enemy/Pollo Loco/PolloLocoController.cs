@@ -1,30 +1,32 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class PolloLocoController : MonoBehaviour
 {
-    [SerializeField] float speed, invulnerabilityTime = 2f, flashInterval = 0.1f;
+    [SerializeField] float speed, invulnerabilityTime, flashInterval;
     [SerializeField] int damage, maxHp, currentHp;
+    [SerializeField] float attackRange;
+    [SerializeField] float attackCooldown;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hit1, hit2, hit3;
     [SerializeField] private ParticleSystem hitEffect;
-    [SerializeField] bool bossChicken;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
-    private bool isInvulnerable = false, isDead = false, celebrating = false;
+    private bool isInvulnerable = false, isDead = false, celebrating = false, isAttacking = false;
     private Animator animator;
     private WaveManager waveManager;
-    private Collider2D collider;
+    private Collider2D myCollider;
     private Rigidbody2D rb;
 
     private Vector2 avoidanceDirection = Vector2.zero;
+    private float lastAttackTime;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        collider = GetComponent<Collider2D>();
+        myCollider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
 
         if (rb != null)
@@ -43,14 +45,14 @@ public class EnemyController : MonoBehaviour
         {
             hitEffect = GetComponentInChildren<ParticleSystem>();
         }
-
-        SetBossAsTrue();
     }
 
     private void OnEnable()
     {
         isDead = false;
         currentHp = maxHp;
+        lastAttackTime = -attackCooldown;
+        isAttacking = false;
 
         if (hitEffect != null)
         {
@@ -80,27 +82,27 @@ public class EnemyController : MonoBehaviour
             }
 
             direction = direction.normalized;
-
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
 
             float movementMagnitude = (newPosition - rb.position).magnitude;
-
-            if (animator != null && HasParameter(animator, "isMoving"))
-            {
-                animator.SetBool("isMoving", movementMagnitude > 0.01f);
-            }
+            animator.SetBool("isMoving", movementMagnitude > 0.01f);
 
             rb.MovePosition(newPosition);
 
             float xDiff = transform.position.x - playerTransform.position.x;
             spriteRenderer.flipX = xDiff < 0;
+
+            float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
+            if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown && !isAttacking)
+            {
+                animator.SetTrigger("Attack");
+                isAttacking = true;
+                lastAttackTime = Time.time;
+            }
         }
         else
         {
-            if (animator != null && HasParameter(animator, "isMoving"))
-            {
-                animator.SetBool("isMoving", false);
-            }
+            animator.SetBool("isMoving", false);
         }
     }
 
@@ -108,23 +110,35 @@ public class EnemyController : MonoBehaviour
     {
         DoDamage(collision);
 
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !isDead)
         {
-            if (!isDead)
+            PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
+            if (playerMovement != null && !playerMovement.IsRolling && !isAttacking)
             {
-                PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
-                PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
-
-                if (playerMovement != null && !playerMovement.IsRolling && playerHealth != null)
-                {
-                    if (animator != null && HasParameter(animator, "Attack"))
-                    {
-                        animator.SetTrigger("Attack");
-                    }
-                    playerHealth.TakeDamage(damage);
-                }
+                animator.SetTrigger("Attack");
+                isAttacking = true;
+                lastAttackTime = Time.time;
             }
         }
+    }
+
+    public void DealDamageToPlayer()
+    {
+        if (isDead) return;
+
+        if (playerTransform != null)
+        {
+            PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+        }
+    }
+
+    public void EndAttack()
+    {
+        isAttacking = false;
     }
 
     private void DoDamage(Collider2D collision)
@@ -184,19 +198,13 @@ public class EnemyController : MonoBehaviour
     private IEnumerator DamageFlashAndInvulnerability()
     {
         isInvulnerable = true;
-
         spriteRenderer.color = Color.red;
-        collider.enabled = false;
-
-        if (bossChicken && animator != null && HasParameter(animator, "GetHit"))
-        {
-            animator.SetTrigger("GetHit");
-        }
+        myCollider.enabled = false;
+        animator.SetTrigger("GetHit");
 
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
-
         while (elapsed < invulnerabilityTime)
         {
             spriteRenderer.color = Color.white;
@@ -208,22 +216,13 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.white;
         isInvulnerable = false;
-        collider.enabled = true;
+        myCollider.enabled = true;
     }
 
     private IEnumerator Death()
     {
         isDead = true;
-
-        if (waveManager != null)
-        {
-            waveManager.NotifyDeath();
-        }
-
-        if (animator != null && HasParameter(animator, "Death"))
-        {
-            animator.SetTrigger("Death");
-        }
+        animator.SetTrigger("Death");
 
         if (transform.childCount > 0)
         {
@@ -238,7 +237,7 @@ public class EnemyController : MonoBehaviour
         }
 
         yield return null;
-        yield return new WaitForSeconds(animator != null ? animator.GetCurrentAnimatorStateInfo(0).length : 0f);
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
         if (hitEffect != null)
         {
@@ -251,39 +250,18 @@ public class EnemyController : MonoBehaviour
     private AudioClip GethitSound()
     {
         int random = Random.Range(0, 3);
-
-        switch (random)
+        return random switch
         {
-            case 0: return hit1;
-            case 1: return hit2;
-            case 2: return hit3;
-        }
-
-        return null;
+            0 => hit1,
+            1 => hit2,
+            2 => hit3,
+            _ => null
+        };
     }
 
     public void Celebrate()
     {
         celebrating = true;
-        if (animator != null && HasParameter(animator, "Celebration"))
-        {
-            animator.SetTrigger("Celebration");
-        }
-    }
-
-    private void SetBossAsTrue()
-    {
-        if (gameObject.CompareTag("Boss")) bossChicken = true;
-    }
-
-    // Helper para evitar warnings si faltan parámetros en el Animator
-    private bool HasParameter(Animator anim, string paramName)
-    {
-        foreach (var param in anim.parameters)
-        {
-            if (param.name == paramName)
-                return true;
-        }
-        return false;
+        animator.SetTrigger("Celebration");
     }
 }

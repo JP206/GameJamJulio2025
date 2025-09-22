@@ -1,76 +1,76 @@
 fileFormatVersion: 2
-guid: e89157379c4b45040b4a44433e4828b1
+guid: ee26a49a52f1c744aae705168b0058bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8900636851265796138
-    second: POLLO-GALLO-NUEVO-muerte.gif_0
+      213: -1431334149709109681
+    second: POLLO-GALLO-NUEVO-camianta2.gif_0
   - first:
-      213: -364537712560743293
-    second: POLLO-GALLO-NUEVO-muerte.gif_1
+      213: 7927338236763883746
+    second: POLLO-GALLO-NUEVO-camianta2.gif_1
   - first:
-      213: -3130790616627744977
-    second: POLLO-GALLO-NUEVO-muerte.gif_2
+      213: -4952460209783070870
+    second: POLLO-GALLO-NUEVO-camianta2.gif_2
   - first:
-      213: 3700991456106481005
-    second: POLLO-GALLO-NUEVO-muerte.gif_3
+      213: 8210702951121550876
+    second: POLLO-GALLO-NUEVO-camianta2.gif_3
   - first:
-      213: -7774388363550240400
-    second: POLLO-GALLO-NUEVO-muerte.gif_4
+      213: 6674478942466611134
+    second: POLLO-GALLO-NUEVO-camianta2.gif_4
   - first:
-      213: 5153047458532788694
-    second: POLLO-GALLO-NUEVO-muerte.gif_5
+      213: 6090916316950749871
+    second: POLLO-GALLO-NUEVO-camianta2.gif_5
   - first:
-      213: -1399634383776989132
-    second: POLLO-GALLO-NUEVO-muerte.gif_6
+      213: 5119803602013059460
+    second: POLLO-GALLO-NUEVO-camianta2.gif_6
   - first:
-      213: -1493860954759414035
-    second: POLLO-GALLO-NUEVO-muerte.gif_7
+      213: -622098797561848481
+    second: POLLO-GALLO-NUEVO-camianta2.gif_7
   - first:
-      213: -3770375973238959076
-    second: POLLO-GALLO-NUEVO-muerte.gif_8
+      213: 8094320957664488256
+    second: POLLO-GALLO-NUEVO-camianta2.gif_8
   - first:
-      213: 6890982555662346632
-    second: POLLO-GALLO-NUEVO-muerte.gif_9
+      213: 14530306745587869
+    second: POLLO-GALLO-NUEVO-camianta2.gif_9
   - first:
-      213: -1237195030619984581
-    second: POLLO-GALLO-NUEVO-muerte.gif_10
+      213: -4748919883048069139
+    second: POLLO-GALLO-NUEVO-camianta2.gif_10
   - first:
-      213: -922076286907776675
-    second: POLLO-GALLO-NUEVO-muerte.gif_11
+      213: -146983115849713969
+    second: POLLO-GALLO-NUEVO-camianta2.gif_11
   - first:
-      213: -1499592520000414718
-    second: POLLO-GALLO-NUEVO-muerte.gif_12
+      213: 22305417095966282
+    second: POLLO-GALLO-NUEVO-camianta2.gif_12
   - first:
-      213: 1446397806523055329
-    second: POLLO-GALLO-NUEVO-muerte.gif_13
+      213: -8714757348408254970
+    second: POLLO-GALLO-NUEVO-camianta2.gif_13
   - first:
-      213: 3316489778671759498
-    second: POLLO-GALLO-NUEVO-muerte.gif_14
+      213: 4208048271455835863
+    second: POLLO-GALLO-NUEVO-camianta2.gif_14
   - first:
-      213: 1457757792651020926
-    second: POLLO-GALLO-NUEVO-muerte.gif_15
+      213: 134951623687944381
+    second: POLLO-GALLO-NUEVO-camianta2.gif_15
   - first:
-      213: -8701068523560092756
-    second: POLLO-GALLO-NUEVO-muerte.gif_16
+      213: 296167783732389683
+    second: POLLO-GALLO-NUEVO-camianta2.gif_16
   - first:
-      213: -8611965722284810234
-    second: POLLO-GALLO-NUEVO-muerte.gif_17
+      213: -5942928906505630859
+    second: POLLO-GALLO-NUEVO-camianta2.gif_17
   - first:
-      213: 7587916673051219678
-    second: POLLO-GALLO-NUEVO-muerte.gif_18
+      213: -3547393126049899116
+    second: POLLO-GALLO-NUEVO-camianta2.gif_18
   - first:
-      213: -5472768842974705728
-    second: POLLO-GALLO-NUEVO-muerte.gif_19
+      213: 9006227377140687192
+    second: POLLO-GALLO-NUEVO-camianta2.gif_19
   - first:
-      213: -2586304912825027939
-    second: POLLO-GALLO-NUEVO-muerte.gif_20
+      213: -7570199126979510059
+    second: POLLO-GALLO-NUEVO-camianta2.gif_20
   - first:
-      213: -5467504147418857015
-    second: POLLO-GALLO-NUEVO-muerte.gif_21
+      213: 6405370298642222809
+    second: POLLO-GALLO-NUEVO-camianta2.gif_21
   - first:
-      213: 6593970686691112719
-    second: POLLO-GALLO-NUEVO-muerte.gif_22
+      213: -263934177690875152
+    second: POLLO-GALLO-NUEVO-camianta2.gif_22
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -141,7 +141,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,6 +151,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -188,30 +201,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_0
+      name: POLLO-GALLO-NUEVO-camianta2.gif_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 512
-        height: 512
+        x: 138
+        y: 2156
+        width: 294
+        height: 326
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,20 +220,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a28f2720f0a658b70800000000000000
-      internalID: 8900636851265796138
+      spriteID: f46e3b3ac21e22ce0800000000000000
+      internalID: -1431334149709109681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_1
+      name: POLLO-GALLO-NUEVO-camianta2.gif_1
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 512
-        height: 512
+        x: 653
+        y: 2159
+        width: 291
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38c559fb1e6e0faf0800000000000000
-      internalID: -364537712560743293
+      spriteID: 2e8cea02020930e60800000000000000
+      internalID: 7927338236763883746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_2
+      name: POLLO-GALLO-NUEVO-camianta2.gif_2
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 512
-        height: 512
+        x: 1165
+        y: 2159
+        width: 291
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,20 +264,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2fe6c595823d84d0800000000000000
-      internalID: -3130790616627744977
+      spriteID: a6f9f9fada3554bb0800000000000000
+      internalID: -4952460209783070870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_3
+      name: POLLO-GALLO-NUEVO-camianta2.gif_3
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 512
-        height: 512
+        x: 1648
+        y: 2145
+        width: 325
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d658bf1ee109c5330800000000000000
-      internalID: 3700991456106481005
+      spriteID: c1ef9d5f4d642f170800000000000000
+      internalID: 8210702951121550876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_4
+      name: POLLO-GALLO-NUEVO-camianta2.gif_4
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1536
-        width: 512
-        height: 512
+        x: 2143
+        y: 2140
+        width: 332
+        height: 323
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07158ac49f2db1490800000000000000
-      internalID: -7774388363550240400
+      spriteID: eb71c8a3c3380ac50800000000000000
+      internalID: 6674478942466611134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_5
+      name: POLLO-GALLO-NUEVO-camianta2.gif_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 512
-        height: 512
+        x: 89
+        y: 1628
+        width: 333
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d9839c8c5d438740800000000000000
-      internalID: 5153047458532788694
+      spriteID: fa2ea748e18478450800000000000000
+      internalID: 6090916316950749871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_6
+      name: POLLO-GALLO-NUEVO-camianta2.gif_6
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 512
-        height: 512
+        x: 600
+        y: 1628
+        width: 332
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 430cc8b81ff739ce0800000000000000
-      internalID: -1399634383776989132
+      spriteID: 489f0c900423d0740800000000000000
+      internalID: 5119803602013059460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_7
+      name: POLLO-GALLO-NUEVO-camianta2.gif_7
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
-        width: 512
-        height: 512
+        x: 1112
+        y: 1628
+        width: 332
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,20 +374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dee3dbf506db44be0800000000000000
-      internalID: -1493860954759414035
+      spriteID: f5dd02c807cdd57f0800000000000000
+      internalID: -622098797561848481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_8
+      name: POLLO-GALLO-NUEVO-camianta2.gif_8
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 1024
-        width: 512
-        height: 512
+        x: 1620
+        y: 1633
+        width: 353
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,20 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c149c65570fecabc0800000000000000
-      internalID: -3770375973238959076
+      spriteID: 04b6793860ec45070800000000000000
+      internalID: 8094320957664488256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_9
+      name: POLLO-GALLO-NUEVO-camianta2.gif_9
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 1024
-        width: 512
-        height: 512
+        x: 2129
+        y: 1638
+        width: 356
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 889eaa7df10b1af50800000000000000
-      internalID: 6890982555662346632
+      spriteID: d985c0cac3f933000800000000000000
+      internalID: 14530306745587869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_10
+      name: POLLO-GALLO-NUEVO-camianta2.gif_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 512
-        height: 512
+        x: 81
+        y: 1128
+        width: 355
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,20 +440,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3d6402bca994dee0800000000000000
-      internalID: -1237195030619984581
+      spriteID: de75128f682781eb0800000000000000
+      internalID: -4748919883048069139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_11
+      name: POLLO-GALLO-NUEVO-camianta2.gif_11
       rect:
         serializedVersion: 2
-        x: 512
-        y: 512
-        width: 512
-        height: 512
+        x: 592
+        y: 1128
+        width: 356
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,20 +462,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d510d0f90802433f0800000000000000
-      internalID: -922076286907776675
+      spriteID: fc63cc782afc5fdf0800000000000000
+      internalID: -146983115849713969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_12
+      name: POLLO-GALLO-NUEVO-camianta2.gif_12
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 512
-        width: 512
-        height: 512
+        x: 1100
+        y: 1131
+        width: 359
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,20 +484,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20cda895c80603be0800000000000000
-      internalID: -1499592520000414718
+      spriteID: a4e629e98ae3f4000800000000000000
+      internalID: 22305417095966282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_13
+      name: POLLO-GALLO-NUEVO-camianta2.gif_13
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 512
-        width: 512
-        height: 512
+        x: 1608
+        y: 1133
+        width: 362
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,20 +506,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ecf5b54423a21410800000000000000
-      internalID: 1446397806523055329
+      spriteID: 60e96684d56fe0780800000000000000
+      internalID: -8714757348408254970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_14
+      name: POLLO-GALLO-NUEVO-camianta2.gif_14
       rect:
         serializedVersion: 2
-        x: 2048
-        y: 512
-        width: 512
-        height: 512
+        x: 2125
+        y: 1132
+        width: 361
+        height: 321
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,20 +528,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a80b1f6d1e9860e20800000000000000
-      internalID: 3316489778671759498
+      spriteID: 7d652d19b9df56a30800000000000000
+      internalID: 4208048271455835863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_15
+      name: POLLO-GALLO-NUEVO-camianta2.gif_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 512
+        x: 82
+        y: 613
+        width: 357
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,20 +550,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7a85872dfefa3410800000000000000
-      internalID: 1457757792651020926
+      spriteID: db838c769c17fd100800000000000000
+      internalID: 134951623687944381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_16
+      name: POLLO-GALLO-NUEVO-camianta2.gif_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 512
-        height: 512
+        x: 599
+        y: 608
+        width: 349
+        height: 325
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,20 +572,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cab3ede27489f3780800000000000000
-      internalID: -8701068523560092756
+      spriteID: 337a847b7033c1400800000000000000
+      internalID: 296167783732389683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_17
+      name: POLLO-GALLO-NUEVO-camianta2.gif_17
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 512
+        x: 1115
+        y: 604
+        width: 339
+        height: 324
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 600af51cdc62c7880800000000000000
-      internalID: -8611965722284810234
+      spriteID: 57bc45285a9768da0800000000000000
+      internalID: -5942928906505630859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_18
+      name: POLLO-GALLO-NUEVO-camianta2.gif_18
       rect:
         serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 512
+        x: 1631
+        y: 602
+        width: 325
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,8 +616,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed65b7af202bd4960800000000000000
-      internalID: 7587916673051219678
+      spriteID: 49d122b2fb025cec0800000000000000
+      internalID: -3547393126049899116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-camianta2.gif_19
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 602
+        width: 316
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8516edc151c8cfc70800000000000000
+      internalID: 9006227377140687192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-camianta2.gif_20
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 91
+        width: 303
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d00a6da00041f690800000000000000
+      internalID: -7570199126979510059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-camianta2.gif_21
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 94
+        width: 296
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de4869795274e850800000000000000
+      internalID: 6405370298642222809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POLLO-GALLO-NUEVO-camianta2.gif_22
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 100
+        width: 294
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa86a68341565cf0800000000000000
+      internalID: -263934177690875152
       vertices: []
       indices: 
       edges: []
@@ -626,7 +714,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dc83468fcd4e7c140956615269a4a9fa
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -636,25 +724,29 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      POLLO-GALLO-NUEVO-muerte.gif_0: 8900636851265796138
-      POLLO-GALLO-NUEVO-muerte.gif_1: -364537712560743293
-      POLLO-GALLO-NUEVO-muerte.gif_10: -1237195030619984581
-      POLLO-GALLO-NUEVO-muerte.gif_11: -922076286907776675
-      POLLO-GALLO-NUEVO-muerte.gif_12: -1499592520000414718
-      POLLO-GALLO-NUEVO-muerte.gif_13: 1446397806523055329
-      POLLO-GALLO-NUEVO-muerte.gif_14: 3316489778671759498
-      POLLO-GALLO-NUEVO-muerte.gif_15: 1457757792651020926
-      POLLO-GALLO-NUEVO-muerte.gif_16: -8701068523560092756
-      POLLO-GALLO-NUEVO-muerte.gif_17: -8611965722284810234
-      POLLO-GALLO-NUEVO-muerte.gif_18: 7587916673051219678
-      POLLO-GALLO-NUEVO-muerte.gif_2: -3130790616627744977
-      POLLO-GALLO-NUEVO-muerte.gif_3: 3700991456106481005
-      POLLO-GALLO-NUEVO-muerte.gif_4: -7774388363550240400
-      POLLO-GALLO-NUEVO-muerte.gif_5: 5153047458532788694
-      POLLO-GALLO-NUEVO-muerte.gif_6: -1399634383776989132
-      POLLO-GALLO-NUEVO-muerte.gif_7: -1493860954759414035
-      POLLO-GALLO-NUEVO-muerte.gif_8: -3770375973238959076
-      POLLO-GALLO-NUEVO-muerte.gif_9: 6890982555662346632
+      POLLO-GALLO-NUEVO-camianta2.gif_0: -1431334149709109681
+      POLLO-GALLO-NUEVO-camianta2.gif_1: 7927338236763883746
+      POLLO-GALLO-NUEVO-camianta2.gif_10: -4748919883048069139
+      POLLO-GALLO-NUEVO-camianta2.gif_11: -146983115849713969
+      POLLO-GALLO-NUEVO-camianta2.gif_12: 22305417095966282
+      POLLO-GALLO-NUEVO-camianta2.gif_13: -8714757348408254970
+      POLLO-GALLO-NUEVO-camianta2.gif_14: 4208048271455835863
+      POLLO-GALLO-NUEVO-camianta2.gif_15: 134951623687944381
+      POLLO-GALLO-NUEVO-camianta2.gif_16: 296167783732389683
+      POLLO-GALLO-NUEVO-camianta2.gif_17: -5942928906505630859
+      POLLO-GALLO-NUEVO-camianta2.gif_18: -3547393126049899116
+      POLLO-GALLO-NUEVO-camianta2.gif_19: 9006227377140687192
+      POLLO-GALLO-NUEVO-camianta2.gif_2: -4952460209783070870
+      POLLO-GALLO-NUEVO-camianta2.gif_20: -7570199126979510059
+      POLLO-GALLO-NUEVO-camianta2.gif_21: 6405370298642222809
+      POLLO-GALLO-NUEVO-camianta2.gif_22: -263934177690875152
+      POLLO-GALLO-NUEVO-camianta2.gif_3: 8210702951121550876
+      POLLO-GALLO-NUEVO-camianta2.gif_4: 6674478942466611134
+      POLLO-GALLO-NUEVO-camianta2.gif_5: 6090916316950749871
+      POLLO-GALLO-NUEVO-camianta2.gif_6: 5119803602013059460
+      POLLO-GALLO-NUEVO-camianta2.gif_7: -622098797561848481
+      POLLO-GALLO-NUEVO-camianta2.gif_8: 8094320957664488256
+      POLLO-GALLO-NUEVO-camianta2.gif_9: 14530306745587869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
