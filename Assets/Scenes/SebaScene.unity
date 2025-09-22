@@ -36517,6 +36517,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1860156536}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
+      propertyPath: bossWaveThreshold
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: killCountTextShade
       value: 
       objectReference: {fileID: 700836149}
@@ -36616,6 +36620,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8063222203238278744, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
+      propertyPath: polloLocoPrefab
+      value: 
+      objectReference: {fileID: 7502458001669622197, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

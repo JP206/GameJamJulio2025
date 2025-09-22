@@ -3,12 +3,13 @@ using UnityEngine;
 
 public class EnemyPool : MonoBehaviour
 {
-    [SerializeField] GameObject enemyPrefab, bossPrefab, galloPrefab;
+    [SerializeField] GameObject enemyPrefab, bossPrefab, galloPrefab, polloLocoPrefab;
 
     int poolSize = 10;
     List<GameObject> enemyPool = new();
     List<GameObject> bossPool = new();
     List<GameObject> galloPool = new();
+    List<GameObject> polloLocoPool = new();
 
     void Start()
     {
@@ -30,6 +31,10 @@ public class EnemyPool : MonoBehaviour
             GameObject galloInstance = Instantiate(galloPrefab);
             galloInstance.SetActive(false);
             galloPool.Add(galloInstance);
+
+            GameObject polloLocoInstance = Instantiate(polloLocoPrefab);
+            polloLocoInstance.SetActive(false);
+            polloLocoPool.Add(polloLocoInstance);
         }
     }
 
@@ -44,7 +49,6 @@ public class EnemyPool : MonoBehaviour
             }
         }
 
-        // Si sale del for y no encuentra enemigo, se agrega uno a la pool
         GameObject enemyInstance = Instantiate(enemyPrefab);
         enemyPool.Add(enemyInstance);
         return enemyInstance;
@@ -61,7 +65,6 @@ public class EnemyPool : MonoBehaviour
             }
         }
 
-        // Si sale del for y no encuentra enemigo, se agrega uno a la pool
         GameObject bossInstance = Instantiate(bossPrefab);
         bossPool.Add(bossInstance);
         return bossInstance;
@@ -78,9 +81,24 @@ public class EnemyPool : MonoBehaviour
             }
         }
 
-        // Si sale del for y no encuentra enemigo, se agrega uno a la pool
         GameObject galloInstance = Instantiate(galloPrefab);
-        bossPool.Add(galloInstance);
+        galloPool.Add(galloInstance);
         return galloInstance;
+    }
+
+    public GameObject GetPolloLoco()
+    {
+        foreach (GameObject pollo in polloLocoPool)
+        {
+            if (!pollo.activeSelf)
+            {
+                pollo.SetActive(true);
+                return pollo;
+            }
+        }
+
+        GameObject polloInstance = Instantiate(polloLocoPrefab);
+        polloLocoPool.Add(polloInstance);
+        return polloInstance;
     }
 }
