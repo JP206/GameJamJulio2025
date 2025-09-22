@@ -235,7 +235,7 @@ MonoBehaviour:
   invulnerabilityTime: 2
   flashInterval: 0.1
   damage: 1
-  maxHp: 50
+  maxHp: 1
   currentHp: 0
   attackRange: 4
   attackCooldown: 5

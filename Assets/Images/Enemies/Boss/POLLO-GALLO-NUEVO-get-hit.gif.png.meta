@@ -473,7 +473,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      POLLO-GALLO-NUEVO-get-hit.gif_0: -4380889673696819014
+      POLLO-GALLO-NUEVO-get-hit.gif_1: 3156826239326984527
+      POLLO-GALLO-NUEVO-get-hit.gif_10: -3401257055966733279
+      POLLO-GALLO-NUEVO-get-hit.gif_11: 8217912757160984495
+      POLLO-GALLO-NUEVO-get-hit.gif_12: 3444473887320267926
+      POLLO-GALLO-NUEVO-get-hit.gif_2: 5214237606545303109
+      POLLO-GALLO-NUEVO-get-hit.gif_3: 3373912396068793478
+      POLLO-GALLO-NUEVO-get-hit.gif_4: -4621310275525253767
+      POLLO-GALLO-NUEVO-get-hit.gif_5: -7400434649900850974
+      POLLO-GALLO-NUEVO-get-hit.gif_6: 1613530713464515740
+      POLLO-GALLO-NUEVO-get-hit.gif_7: -7647205064263564143
+      POLLO-GALLO-NUEVO-get-hit.gif_8: 2645549642598688446
+      POLLO-GALLO-NUEVO-get-hit.gif_9: 326376758381307987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

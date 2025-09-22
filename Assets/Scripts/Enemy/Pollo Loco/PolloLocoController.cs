@@ -222,7 +222,6 @@ public class PolloLocoController : MonoBehaviour
     private IEnumerator Death()
     {
         isDead = true;
-        waveManager.NotifyDeath();
         animator.SetTrigger("Death");
 
         if (transform.childCount > 0)

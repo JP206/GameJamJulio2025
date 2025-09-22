@@ -83,19 +83,24 @@ public class EnemyController : MonoBehaviour
 
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
 
-            // Animación de movimiento
             float movementMagnitude = (newPosition - rb.position).magnitude;
-            animator.SetBool("isMoving", movementMagnitude > 0.01f);
+
+            if (animator != null && HasParameter(animator, "isMoving"))
+            {
+                animator.SetBool("isMoving", movementMagnitude > 0.01f);
+            }
 
             rb.MovePosition(newPosition);
 
-            // Flip para mirar al player
             float xDiff = transform.position.x - playerTransform.position.x;
             spriteRenderer.flipX = xDiff < 0;
         }
         else
         {
-            animator.SetBool("isMoving", false);
+            if (animator != null && HasParameter(animator, "isMoving"))
+            {
+                animator.SetBool("isMoving", false);
+            }
         }
     }
 
@@ -110,10 +115,12 @@ public class EnemyController : MonoBehaviour
                 PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
                 PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
 
-                // Solo daña si el player no está rodando
                 if (playerMovement != null && !playerMovement.IsRolling && playerHealth != null)
                 {
-                    animator.SetTrigger("Attack");
+                    if (animator != null && HasParameter(animator, "Attack"))
+                    {
+                        animator.SetTrigger("Attack");
+                    }
                     playerHealth.TakeDamage(damage);
                 }
             }
@@ -180,7 +187,8 @@ public class EnemyController : MonoBehaviour
 
         spriteRenderer.color = Color.red;
         collider.enabled = false;
-        if (bossChicken)
+
+        if (bossChicken && animator != null && HasParameter(animator, "GetHit"))
         {
             animator.SetTrigger("GetHit");
         }
@@ -206,9 +214,21 @@ public class EnemyController : MonoBehaviour
     private IEnumerator Death()
     {
         isDead = true;
-        waveManager.NotifyDeath();
-        animator.SetTrigger("Death");
-        transform.GetChild(0).gameObject.SetActive(false);
+
+        if (waveManager != null)
+        {
+            waveManager.NotifyDeath();
+        }
+
+        if (animator != null && HasParameter(animator, "Death"))
+        {
+            animator.SetTrigger("Death");
+        }
+
+        if (transform.childCount > 0)
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+        }
 
         if (hitEffect != null)
         {
@@ -218,7 +238,7 @@ public class EnemyController : MonoBehaviour
         }
 
         yield return null;
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+        yield return new WaitForSeconds(animator != null ? animator.GetCurrentAnimatorStateInfo(0).length : 0f);
 
         if (hitEffect != null)
         {
@@ -245,11 +265,25 @@ public class EnemyController : MonoBehaviour
     public void Celebrate()
     {
         celebrating = true;
-        animator.SetTrigger("Celebration");
+        if (animator != null && HasParameter(animator, "Celebration"))
+        {
+            animator.SetTrigger("Celebration");
+        }
     }
 
     private void SetBossAsTrue()
     {
         if (gameObject.CompareTag("Boss")) bossChicken = true;
+    }
+
+    // Helper para evitar warnings si faltan parámetros en el Animator
+    private bool HasParameter(Animator anim, string paramName)
+    {
+        foreach (var param in anim.parameters)
+        {
+            if (param.name == paramName)
+                return true;
+        }
+        return false;
     }
 }

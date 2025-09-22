@@ -188,6 +188,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -195,10 +208,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_0
       rect:
         serializedVersion: 2
-        x: 73
-        y: 1642
-        width: 332
-        height: 346
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -217,10 +230,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_1
       rect:
         serializedVersion: 2
-        x: 587
-        y: 1647
-        width: 312
-        height: 349
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +252,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_2
       rect:
         serializedVersion: 2
-        x: 1098
-        y: 1651
-        width: 320
-        height: 350
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +274,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_3
       rect:
         serializedVersion: 2
-        x: 1602
-        y: 1651
-        width: 344
-        height: 347
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,10 +296,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_4
       rect:
         serializedVersion: 2
-        x: 2112
-        y: 1651
-        width: 313
-        height: 347
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +318,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_5
       rect:
         serializedVersion: 2
-        x: 2482
-        y: 1898
-        width: 32
-        height: 14
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +340,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_6
       rect:
         serializedVersion: 2
-        x: 1894
-        y: 1871
-        width: 55
-        height: 24
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -349,10 +362,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_7
       rect:
         serializedVersion: 2
-        x: 2459
-        y: 1792
-        width: 31
-        height: 8
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,10 +384,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_8
       rect:
         serializedVersion: 2
-        x: 2415
-        y: 1719
-        width: 12
-        height: 7
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -393,10 +406,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_9
       rect:
         serializedVersion: 2
-        x: 116
-        y: 1129
-        width: 303
-        height: 365
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,10 +428,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_10
       rect:
         serializedVersion: 2
-        x: 628
-        y: 1131
-        width: 300
-        height: 360
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +450,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_11
       rect:
         serializedVersion: 2
-        x: 1117
-        y: 1132
-        width: 351
-        height: 310
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -459,10 +472,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_12
       rect:
         serializedVersion: 2
-        x: 1599
-        y: 1127
-        width: 388
-        height: 245
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +494,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_13
       rect:
         serializedVersion: 2
-        x: 2053
-        y: 1086
-        width: 484
-        height: 232
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -503,10 +516,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_14
       rect:
         serializedVersion: 2
-        x: 23
-        y: 575
-        width: 463
-        height: 208
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,10 +538,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_15
       rect:
         serializedVersion: 2
-        x: 547
-        y: 609
-        width: 439
-        height: 182
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,10 +560,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_16
       rect:
         serializedVersion: 2
-        x: 1087
-        y: 615
-        width: 388
-        height: 245
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,10 +582,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_17
       rect:
         serializedVersion: 2
-        x: 1603
-        y: 615
-        width: 391
-        height: 250
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -591,10 +604,10 @@ TextureImporter:
       name: POLLO-GALLO-NUEVO-muerte.gif_18
       rect:
         serializedVersion: 2
-        x: 2118
-        y: 615
-        width: 394
-        height: 254
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,99 +622,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_19
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 98
-        width: 439
-        height: 189
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c7caa8bbb1dc04b0800000000000000
-      internalID: -5472768842974705728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_20
-      rect:
-        serializedVersion: 2
-        x: 535
-        y: 80
-        width: 463
-        height: 214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d92773672699b1cd0800000000000000
-      internalID: -2586304912825027939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_21
-      rect:
-        serializedVersion: 2
-        x: 1055
-        y: 81
-        width: 447
-        height: 169
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c1cf1d22f58f14b0800000000000000
-      internalID: -5467504147418857015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: POLLO-GALLO-NUEVO-muerte.gif_22
-      rect:
-        serializedVersion: 2
-        x: 1575
-        y: 82
-        width: 432
-        height: 139
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f07ff87376d728b50800000000000000
-      internalID: 6593970686691112719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: dc83468fcd4e7c140956615269a4a9fa
     internalID: 0
     vertices: []
     indices: 
@@ -722,11 +647,7 @@ TextureImporter:
       POLLO-GALLO-NUEVO-muerte.gif_16: -8701068523560092756
       POLLO-GALLO-NUEVO-muerte.gif_17: -8611965722284810234
       POLLO-GALLO-NUEVO-muerte.gif_18: 7587916673051219678
-      POLLO-GALLO-NUEVO-muerte.gif_19: -5472768842974705728
       POLLO-GALLO-NUEVO-muerte.gif_2: -3130790616627744977
-      POLLO-GALLO-NUEVO-muerte.gif_20: -2586304912825027939
-      POLLO-GALLO-NUEVO-muerte.gif_21: -5467504147418857015
-      POLLO-GALLO-NUEVO-muerte.gif_22: 6593970686691112719
       POLLO-GALLO-NUEVO-muerte.gif_3: 3700991456106481005
       POLLO-GALLO-NUEVO-muerte.gif_4: -7774388363550240400
       POLLO-GALLO-NUEVO-muerte.gif_5: 5153047458532788694
