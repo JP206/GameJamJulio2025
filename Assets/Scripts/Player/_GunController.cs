@@ -19,6 +19,7 @@ public class _GunController : MonoBehaviour
     [SerializeField] ParticleSystem bloomParticleLeft, lightRayParticleLeft;
 
     [Header("Holy Bullet Settings")]
+    [SerializeField] private ParticleSystem holyAuraPS;
     [SerializeField] private GameObject holyBulletPrefab;
     [SerializeField] private Transform holyBulletSpawnPointRight;
     [SerializeField] private Transform holyBulletSpawnPointLeft;
@@ -43,6 +44,7 @@ public class _GunController : MonoBehaviour
         lightRayParticleRight.Stop();
         bloomParticleLeft.Stop();
         lightRayParticleLeft.Stop();
+        holyAuraPS.Stop();
     }
 
     private void Update()
@@ -137,7 +139,7 @@ public class _GunController : MonoBehaviour
 
         yield return null;
         while (animator.GetCurrentAnimatorStateInfo(0).IsName("HolyShot"))
-            yield return null;
+        yield return null;
 
         playerMovement.SetHolyShotState(false);
         isChargingHolyShot = false;
@@ -158,7 +160,6 @@ public class _GunController : MonoBehaviour
             bullet.transform.localScale = scale;
         }
     }
-
 
     public void PlayHolyShotParticle()
     {
@@ -212,5 +213,16 @@ public class _GunController : MonoBehaviour
         {
             source.PlayOneShot(source.clip);
         }
+    }
+    public void PlayAura()
+    {
+        if (holyAuraPS != null) holyAuraPS.Play();
+        Debug.Log("Ejecute holy chot");
+    }
+
+    public void StopAura()
+    {
+        if (holyAuraPS != null) holyAuraPS.Stop();
+        Debug.Log("Pare holy chot");
     }
 }
