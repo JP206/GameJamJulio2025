@@ -71146,6 +71146,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 662284378}
     - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: lengthInSec
       value: 0.5
       objectReference: {fileID: 0}
