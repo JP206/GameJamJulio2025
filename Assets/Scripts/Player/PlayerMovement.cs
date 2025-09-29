@@ -37,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (trail != null)
             trail.emitting = false;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
