@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SebaScene.unity
     guid: 979396b24b0a98c4b9ed27459b9c12b6
+  - enabled: 1
+    path: Assets/Scenes/Final Boss.unity
+    guid: 6ed5f0862afdbdc43b83f6c09cf002e5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
