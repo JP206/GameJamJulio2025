@@ -71169,14 +71169,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1496190197362317361, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
-      propertyPath: moveSpeed
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496190197362317361, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
-      propertyPath: rollForce
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3012564143706964398, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: ammoText
       value: 
@@ -71189,13 +71181,25 @@ PrefabInstance:
       propertyPath: ammoTextShade
       value: 
       objectReference: {fileID: 662284378}
-    - target: {fileID: 3194644512056071504, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+    - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: lengthInSec
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4230112930663011865, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4789491274191468846, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6409284759071084016, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: deathEffectPrefab
@@ -71204,6 +71208,14 @@ PrefabInstance:
     - target: {fileID: 8200593909756485446, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499090288986168210, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499090288986168210, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

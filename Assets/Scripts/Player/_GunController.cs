@@ -9,19 +9,21 @@ public class _GunController : MonoBehaviour
     [SerializeField] private float bulletSpeed = 15f, bulletAmmo;
     [SerializeField] private float maxAngle = 45f;
     [SerializeField] private float fireRate = 0.2f;
-    [SerializeField] TextMeshProUGUI ammoText;
-    [SerializeField] TextMeshProUGUI ammoTextShade;
-    [SerializeField] AudioClip emptyGunshot, eat1, eat2, eat3;
-    [SerializeField] AudioSource audioSource1, audioSource2, shotgunAudioSource;
-    [SerializeField] float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
-    [SerializeField] ParticleSystem shootParticlesLeft, shootParticlesRight;
-    [SerializeField] ParticleSystem bloomParticleRight, lightRayParticleRight;
-    [SerializeField] ParticleSystem bloomParticleLeft, lightRayParticleLeft;
+    [SerializeField] private TextMeshProUGUI ammoText;
+    [SerializeField] private TextMeshProUGUI ammoTextShade;
+    [SerializeField] private AudioClip emptyGunshot, eat1, eat2, eat3;
+    [SerializeField] private AudioSource audioSource1, audioSource2, shotgunAudioSource;
+    [SerializeField] private float chickenRangeOrigin = 0.2f, chickenRangeEnd = 0.4f;
+    [SerializeField] private ParticleSystem shootParticlesLeft, shootParticlesRight;
+    [SerializeField] private ParticleSystem bloomParticleRight, lightRayParticleRight;
+    [SerializeField] private ParticleSystem bloomParticleLeft, lightRayParticleLeft;
 
     [Header("Holy Bullet Settings")]
+    [SerializeField] private ParticleSystem holyAuraPS;
     [SerializeField] private GameObject holyBulletPrefab;
     [SerializeField] private Transform holyBulletSpawnPointRight;
     [SerializeField] private Transform holyBulletSpawnPointLeft;
+    [SerializeField] private AudioSource holyShotSource;
 
     SpriteRenderer spriteRenderer;
     PlayerMovement playerMovement;
@@ -43,6 +45,7 @@ public class _GunController : MonoBehaviour
         lightRayParticleRight.Stop();
         bloomParticleLeft.Stop();
         lightRayParticleLeft.Stop();
+        holyAuraPS.Stop();
     }
 
     private void Update()
@@ -137,7 +140,7 @@ public class _GunController : MonoBehaviour
 
         yield return null;
         while (animator.GetCurrentAnimatorStateInfo(0).IsName("HolyShot"))
-            yield return null;
+        yield return null;
 
         playerMovement.SetHolyShotState(false);
         isChargingHolyShot = false;
@@ -158,7 +161,6 @@ public class _GunController : MonoBehaviour
             bullet.transform.localScale = scale;
         }
     }
-
 
     public void PlayHolyShotParticle()
     {
@@ -212,5 +214,28 @@ public class _GunController : MonoBehaviour
         {
             source.PlayOneShot(source.clip);
         }
+    }
+
+    private void PlayHolySound(AudioSource source)
+    {
+        if (source != null && source.clip != null)
+        {
+            source.PlayOneShot(source.clip);
+        }
+    }
+
+    public void PlayAura()
+    {
+        if (holyAuraPS != null) holyAuraPS.Play();
+        PlayHolySound(holyShotSource);
+    }
+
+    public void StopAura()
+    {
+        if (holyAuraPS != null) holyAuraPS.Stop();
+    }
+    public void PlayShotgunSoundEvent()
+    {
+        PlayShotgunSound(shotgunAudioSource);
     }
 }
