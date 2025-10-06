@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class IntroCinematicManager : MonoBehaviour
 {
     public static bool IsCinematicPlaying { get; private set; } = true;
-    
+
     [Header("World Bounds")]
     [SerializeField] private GameObject leftWall;
 
@@ -28,6 +28,7 @@ public class IntroCinematicManager : MonoBehaviour
     private PlayerMovement playerMovement;
     private _GunController gunController;
     private PlayerInput playerInput;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class IntroCinematicManager : MonoBehaviour
         playerMovement = player.GetComponent<PlayerMovement>();
         gunController = player.GetComponent<_GunController>();
         playerInput = player.GetComponent<PlayerInput>();
+        spriteRenderer = player.GetComponent<SpriteRenderer>();
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -53,6 +55,9 @@ public class IntroCinematicManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
 
         player.transform.position = entryPoint.position;
+
+        if (spriteRenderer != null)
+            spriteRenderer.flipX = false;
 
         StartCoroutine(PlayCinematic());
     }
@@ -104,6 +109,9 @@ public class IntroCinematicManager : MonoBehaviour
     {
         while (Vector3.Distance(obj.position, targetPos) > 0.05f)
         {
+            if (spriteRenderer != null)
+                spriteRenderer.flipX = false;
+
             obj.position = Vector3.MoveTowards(obj.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
