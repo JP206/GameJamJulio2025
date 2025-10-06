@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 75a6dfc49485c0f41b2cdd9dd7fba20c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 204821975352244204
+    second: sillazo.gif_0
+  - first:
+      213: 2197825274161869590
+    second: sillazo.gif_1
+  - first:
+      213: -5128906148767330028
+    second: sillazo.gif_2
+  - first:
+      213: -3860109230512494714
+    second: sillazo.gif_3
+  - first:
+      213: 5430496381213178425
+    second: sillazo.gif_4
+  - first:
+      213: 4527223600377042256
+    second: sillazo.gif_5
+  - first:
+      213: 7561893992846947479
+    second: sillazo.gif_6
+  - first:
+      213: -7566170594107696516
+    second: sillazo.gif_7
+  - first:
+      213: -3305033196703989228
+    second: sillazo.gif_8
+  - first:
+      213: 3104703870131315347
+    second: sillazo.gif_9
+  - first:
+      213: -6963376862910782662
+    second: sillazo.gif_10
+  - first:
+      213: 2428558151735235576
+    second: sillazo.gif_11
+  - first:
+      213: 955669611361815991
+    second: sillazo.gif_12
+  - first:
+      213: -4893351338467208621
+    second: sillazo.gif_13
+  - first:
+      213: 2806849240317793145
+    second: sillazo.gif_14
+  - first:
+      213: 155201258012552208
+    second: sillazo.gif_15
+  - first:
+      213: 464337389768348291
+    second: sillazo.gif_16
+  - first:
+      213: 1294184138607993659
+    second: sillazo.gif_17
+  - first:
+      213: 6447201205326416236
+    second: sillazo.gif_18
+  - first:
+      213: 870762282770796127
+    second: sillazo.gif_19
+  - first:
+      213: -518537015470590808
+    second: sillazo.gif_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sillazo.gif_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1946
+        width: 383
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7701b508ca7d200800000000000000
+      internalID: 204821975352244204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_1
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1921
+        width: 344
+        height: 358
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6133bc8317e308e10800000000000000
+      internalID: 2197825274161869590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_2
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1906
+        width: 311
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4111864280772d8b0800000000000000
+      internalID: -5128906148767330028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_3
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1894
+        width: 281
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 687a8194b132e6ac0800000000000000
+      internalID: -3860109230512494714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_4
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 1887
+        width: 261
+        height: 476
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a714ccfaffc5b40800000000000000
+      internalID: 5430496381213178425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1279
+        width: 366
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0551d37d0ede3de30800000000000000
+      internalID: 4527223600377042256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_6
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 1276
+        width: 375
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7947dc8958e31f860800000000000000
+      internalID: 7561893992846947479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_7
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1242
+        width: 371
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a54349eef8ff690800000000000000
+      internalID: -7566170594107696516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_8
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1238
+        width: 369
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412c59381d92222d0800000000000000
+      internalID: -3305033196703989228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_9
+      rect:
+        serializedVersion: 2
+        x: 2586
+        y: 1311
+        width: 319
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39225ff68bf161b20800000000000000
+      internalID: 3104703870131315347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 738
+        width: 349
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33670103ad1d5f90800000000000000
+      internalID: -6963376862910782662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_11
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 745
+        width: 353
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3de8e95c8f3b120800000000000000
+      internalID: 2428558151735235576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_12
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 747
+        width: 347
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd4bdbb278334d00800000000000000
+      internalID: 955669611361815991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_13
+      rect:
+        serializedVersion: 2
+        x: 1891
+        y: 754
+        width: 379
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352da7d32e2571cb0800000000000000
+      internalID: -4893351338467208621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_14
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 763
+        width: 376
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9739733438ee3f620800000000000000
+      internalID: 2806849240317793145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_15
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 757
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c288cc8b2672200800000000000000
+      internalID: 155201258012552208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 160
+        width: 361
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38213155568a17600800000000000000
+      internalID: 464337389768348291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_17
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 162
+        width: 347
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b33acaffd9dd5f110800000000000000
+      internalID: 1294184138607993659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_18
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 162
+        width: 341
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6983f6665f097950800000000000000
+      internalID: 6447201205326416236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_19
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 143
+        width: 351
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e8c54cea1951c00800000000000000
+      internalID: 870762282770796127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sillazo.gif_20
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 136
+        width: 349
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4fbfde459cdc8f0800000000000000
+      internalID: -518537015470590808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sillazo.gif_0: 204821975352244204
+      sillazo.gif_1: 2197825274161869590
+      sillazo.gif_10: -6963376862910782662
+      sillazo.gif_11: 2428558151735235576
+      sillazo.gif_12: 955669611361815991
+      sillazo.gif_13: -4893351338467208621
+      sillazo.gif_14: 2806849240317793145
+      sillazo.gif_15: 155201258012552208
+      sillazo.gif_16: 464337389768348291
+      sillazo.gif_17: 1294184138607993659
+      sillazo.gif_18: 6447201205326416236
+      sillazo.gif_19: 870762282770796127
+      sillazo.gif_2: -5128906148767330028
+      sillazo.gif_20: -518537015470590808
+      sillazo.gif_3: -3860109230512494714
+      sillazo.gif_4: 5430496381213178425
+      sillazo.gif_5: 4527223600377042256
+      sillazo.gif_6: 7561893992846947479
+      sillazo.gif_7: -7566170594107696516
+      sillazo.gif_8: -3305033196703989228
+      sillazo.gif_9: 3104703870131315347
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
