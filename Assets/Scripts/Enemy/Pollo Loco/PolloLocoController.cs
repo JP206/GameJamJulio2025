@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class PolloLocoController : MonoBehaviour
 {
     [SerializeField] float speed, invulnerabilityTime, flashInterval;
     [SerializeField] int damage, maxHp, currentHp;
     [SerializeField] float attackRange;
-    [SerializeField] float attackCooldown;
+    [SerializeField] float attackCooldown = 1.8f;
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip hit1, hit2, hit3;
     [SerializeField] private ParticleSystem hitEffect;
@@ -18,9 +18,22 @@ public class PolloLocoController : MonoBehaviour
     private WaveManager waveManager;
     private Collider2D myCollider;
     private Rigidbody2D rb;
-
     private Vector2 avoidanceDirection = Vector2.zero;
     private float lastAttackTime;
+
+    [Header("Area Attack Settings")]
+    [SerializeField] private float areaJumpDuration = 1f;
+    [SerializeField] private float areaJumpMaxDistance = 8f;
+    [SerializeField] private float areaJumpHeight = 1.5f;
+    [SerializeField] private float areaImpactRadius = 1.5f;
+    [SerializeField, Tooltip("Distancia mínima para que el panzazo se ejecute")]
+    private float minAreaAttackDistance = 3f;
+    [SerializeField, Tooltip("Qué tan corto cae respecto al jugador (0 = exacto encima, 0.2 = 20% antes)")]
+    private float landingOffsetFactor = 0.15f;
+
+    private bool isAreaJumping = false;
+    private Vector2 jumpStartPos, jumpEndPos;
+    private float jumpElapsed;
 
     void Start()
     {
@@ -53,6 +66,7 @@ public class PolloLocoController : MonoBehaviour
         currentHp = maxHp;
         lastAttackTime = -attackCooldown;
         isAttacking = false;
+        isAreaJumping = false;
 
         if (hitEffect != null)
         {
@@ -67,37 +81,68 @@ public class PolloLocoController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isAreaJumping)
+        {
+            jumpElapsed += Time.fixedDeltaTime;
+            float t = Mathf.Clamp01(jumpElapsed / areaJumpDuration);
+
+            if (playerTransform != null)
+            {
+                Vector2 dir = ((Vector2)playerTransform.position - jumpStartPos).normalized;
+                float dist = Mathf.Min(Vector2.Distance(jumpStartPos, playerTransform.position), areaJumpMaxDistance);
+                dist *= (1f - landingOffsetFactor);
+                jumpEndPos = jumpStartPos + dir * dist;
+            }
+
+            float accel = t * t;
+            Vector2 pos = Vector2.Lerp(jumpStartPos, jumpEndPos, accel);
+            float heightOffset = Mathf.Sin(t * Mathf.PI) * areaJumpHeight;
+            rb.MovePosition(pos + Vector2.up * heightOffset);
+
+            if (t >= 1f)
+            {
+                rb.MovePosition(jumpEndPos);
+                isAreaJumping = false;
+                isAttacking = false;
+                jumpElapsed = 0f;
+                ExecuteAreaImpact();
+            }
+            return;
+        }
+
         if (playerTransform && !isDead && !celebrating && rb != null)
         {
             Vector2 direction = (playerTransform.position - transform.position).normalized;
 
             if (avoidanceDirection != Vector2.zero)
-            {
                 direction = Vector2.Lerp(direction, avoidanceDirection, 0.5f);
-            }
-
-            if (direction.magnitude < 0.1f)
-            {
-                direction = (playerTransform.position - transform.position).normalized;
-            }
 
             direction = direction.normalized;
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
-
-            float movementMagnitude = (newPosition - rb.position).magnitude;
-            animator.SetBool("isMoving", movementMagnitude > 0.01f);
-
+            animator.SetBool("isMoving", true);
             rb.MovePosition(newPosition);
 
-            float xDiff = transform.position.x - playerTransform.position.x;
-            spriteRenderer.flipX = xDiff < 0;
+            spriteRenderer.flipX = (transform.position.x - playerTransform.position.x) < 0;
 
             float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
-            if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown && !isAttacking)
+
+            // lógica de ataque: decide entre ataque normal y panzazo
+            if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
             {
-                animator.SetTrigger("Attack");
-                isAttacking = true;
-                lastAttackTime = Time.time;
+                if (distanceToPlayer <= attackRange)
+                {
+                    // Ataque normal
+                    animator.SetTrigger("Attack");
+                    isAttacking = true;
+                    lastAttackTime = Time.time;
+                }
+                else if (distanceToPlayer > minAreaAttackDistance && distanceToPlayer <= areaJumpMaxDistance)
+                {
+                    // Ataque de área (panzazo)
+                    isAttacking = true;
+                    lastAttackTime = Time.time;
+                    StartCoroutine(PrepareAreaAttack());
+                }
             }
         }
         else
@@ -106,8 +151,24 @@ public class PolloLocoController : MonoBehaviour
         }
     }
 
+    private IEnumerator PrepareAreaAttack()
+    {
+        float originalSpeed = speed;
+        speed = 0f;
+        animator.SetBool("isMoving", false);
+        yield return new WaitForSeconds(0.2f);
+
+        animator.SetTrigger("AreaAttack");
+        yield return new WaitForSeconds(0.05f);
+
+        yield return new WaitUntil(() => !isAreaJumping);
+        speed = originalSpeed;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isAreaJumping) return;
+
         DoDamage(collision);
 
         if (collision.CompareTag("Player") && !isDead)
@@ -131,6 +192,7 @@ public class PolloLocoController : MonoBehaviour
             PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
+                playerHealth.RegisterAttacker(gameObject);
                 playerHealth.TakeDamage(damage);
             }
         }
@@ -225,9 +287,7 @@ public class PolloLocoController : MonoBehaviour
         animator.SetTrigger("Death");
 
         if (transform.childCount > 0)
-        {
             transform.GetChild(0).gameObject.SetActive(false);
-        }
 
         if (hitEffect != null)
         {
@@ -240,9 +300,7 @@ public class PolloLocoController : MonoBehaviour
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
 
         if (hitEffect != null)
-        {
             yield return new WaitForSeconds(hitEffect.main.duration);
-        }
 
         gameObject.SetActive(false);
     }
@@ -261,7 +319,51 @@ public class PolloLocoController : MonoBehaviour
 
     public void Celebrate()
     {
+        if (isDead || celebrating) return;
+
         celebrating = true;
+        isAttacking = false;
+        isAreaJumping = false;
+
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        animator.SetBool("isMoving", false);
+        animator.ResetTrigger("Attack");
+        animator.ResetTrigger("AreaAttack");
         animator.SetTrigger("Celebration");
+    }
+
+    public void AreaAttack_Begin()
+    {
+        if (isDead || playerTransform == null) return;
+
+        jumpStartPos = rb.position;
+        Vector2 dir = (playerTransform.position - transform.position).normalized;
+        float dist = Mathf.Min(Vector2.Distance(playerTransform.position, transform.position), areaJumpMaxDistance);
+
+        dist *= (1f - landingOffsetFactor);
+        jumpEndPos = jumpStartPos + dir * dist;
+
+        isAreaJumping = true;
+        isAttacking = true;
+        jumpElapsed = 0f;
+    }
+
+    private void ExecuteAreaImpact()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, areaImpactRadius);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                PlayerHealth playerHealth = hit.GetComponent<PlayerHealth>();
+                if (playerHealth != null)
+                {
+                    playerHealth.RegisterAttacker(gameObject);
+                    playerHealth.TakeDamage(damage * 2);
+                }
+            }
+        }
     }
 }

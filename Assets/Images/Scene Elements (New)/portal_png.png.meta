@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3cf65ee97a358194fa779d1ace8bab73
+guid: 9d02a743d451b0041902221f3a9dafa8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7237514639999782916
-    second: fantasy-game-cartoon-magic-portal-ancient-door_8071-62397 (1)_0
+      213: 1873316148974178756
+    second: portal_png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -97,6 +97,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,30 +135,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fantasy-game-cartoon-magic-portal-ancient-door_8071-62397 (1)_0
+      name: portal_png_0
       rect:
         serializedVersion: 2
-        x: 116
-        y: 113
-        width: 394
-        height: 400
+        x: 0
+        y: 0
+        width: 589
+        height: 589
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cffaf1ae7ce2f8b90800000000000000
-      internalID: -7237514639999782916
+      spriteID: 4c1db9bbc1b5ff910800000000000000
+      internalID: 1873316148974178756
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fantasy-game-cartoon-magic-portal-ancient-door_8071-62397 (1)_0: -7237514639999782916
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
