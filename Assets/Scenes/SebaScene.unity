@@ -16389,7 +16389,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71203,7 +71203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6409284759071084016, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: maxHealth
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6409284759071084016, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
       propertyPath: deathEffectPrefab
@@ -71319,11 +71319,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515574349496401184, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.47
+      value: -55.7
       objectReference: {fileID: 0}
     - target: {fileID: 3515574349496401184, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.17
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 3515574349496401184, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -71356,6 +71356,14 @@ PrefabInstance:
     - target: {fileID: 3515574349496401184, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130922759320933587, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
+      propertyPath: delaySymbols
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130922759320933587, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
+      propertyPath: triangleDelay
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

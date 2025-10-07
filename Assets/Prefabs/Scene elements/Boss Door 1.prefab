@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3515574349496401184}
   - component: {fileID: 8978481780994151451}
   - component: {fileID: 7273132317382649550}
+  - component: {fileID: 4130922759320933587}
   - component: {fileID: 7307073401152928240}
   - component: {fileID: 3010622783348217176}
   m_Layer: 0
@@ -45,7 +46,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057550720336786656}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -82,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1955448553306655712, guid: 7982f11f32780334199042ba94572084, type: 3}
+  m_Sprite: {fileID: -8824092472634981094, guid: 4649eb2b5e24bb848ad704f5d4888afe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +108,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scenename: Final Boss
   Collider2D: {fileID: 7307073401152928240}
+--- !u!114 &4130922759320933587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057550720336786656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf285c6a2133d26439ad23d31ba08ddc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorAnimator: {fileID: 3010622783348217176}
+  portalAnimator: {fileID: 4553143299099121052}
+  portalObject: {fileID: 2887458542491639733}
+  squareObject: {fileID: 5490646459793507723}
+  triangleObject: {fileID: 9105888494050340006}
+  delayPortal: 0.5
+  delaySymbols: 0.6
+  fadeDuration: 1
+  triangleDelay: 0.1
 --- !u!61 &7307073401152928240
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +136,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057550720336786656}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -145,7 +167,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.34, y: 6.57}
+    oldSize: {x: 5.96, y: 7.7}
     newSize: {x: 5.36, y: 6.59}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -187,12 +209,12 @@ GameObject:
   - component: {fileID: 9131346996149431267}
   - component: {fileID: 4553143299099121052}
   m_Layer: 0
-  m_Name: portal_png_0
+  m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7979092043518457002
 Transform:
   m_ObjectHideFlags: 0
@@ -301,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8119148430736868807
 Transform:
   m_ObjectHideFlags: 0
@@ -388,7 +410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &643373141575161199
 Transform:
   m_ObjectHideFlags: 0
