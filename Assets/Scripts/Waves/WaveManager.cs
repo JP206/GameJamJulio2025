@@ -71,22 +71,24 @@ public class WaveManager : MonoBehaviour
 
         if (round == bossWaveThreshold)
         {
-            GameObject bossInstance = enemyPool.GetPolloLoco();
-            bossInstance.GetComponent<EnemyController>().SetWaveManager(this);
-            bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
-            RandomizePosition(bossInstance.transform);
+            //GameObject bossInstance = enemyPool.GetPolloLoco();
+            //bossInstance.GetComponent<EnemyController>().SetWaveManager(this);
+            //bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+            //RandomizePosition(bossInstance.transform);
 
-            if (musicSource.clip != bossMusic)
-            {
-                musicSource.clip = bossMusic;
-                musicSource.Play();
-            }
+            //if (musicSource.clip != bossMusic)
+            //{
+            //    musicSource.clip = bossMusic;
+            //    musicSource.Play();
+            //}
 
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            //if (!audioSource.isPlaying)
+            //{
+            //    audioSource.Play();
+            //}
 
+            UIFinalDoor finalDoor = FindAnyObjectByType<UIFinalDoor>(FindObjectsInactive.Include);
+            if (finalDoor != null) finalDoor.ShowFinalDoor();
             return;
         }
 

@@ -248,6 +248,7 @@ MonoBehaviour:
   areaJumpMaxDistance: 20
   areaJumpHeight: 5
   areaImpactRadius: 3
+  minAreaAttackDistance: 3
   landingOffsetFactor: 0.1
 --- !u!50 &-7334447666295787246
 Rigidbody2D:
