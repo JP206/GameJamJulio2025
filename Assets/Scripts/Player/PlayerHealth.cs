@@ -27,12 +27,23 @@ public class PlayerHealth : MonoBehaviour
 
     private void Awake()
     {
-        currentHealth = maxHealth;
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
         if (OnHealthChanged == null)
             OnHealthChanged = new UnityEvent<int, int>();
+
+        if (GameManager.Instance == null || GameManager.Instance.playerHealth <= 0)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth = GameManager.Instance.playerHealth;
+            Debug.Log($"💾 Restaurando HP desde GameManager: {currentHealth}");
+        }
     }
+
+
 
     private void Start()
     {
@@ -140,6 +151,12 @@ public class PlayerHealth : MonoBehaviour
 
             OnHealthChanged.Invoke(currentHealth, maxHealth);
         }
+    }
+
+    public void SetCurrentHealth(int value)
+    {
+        currentHealth = Mathf.Clamp(value, 0, maxHealth);
+        OnHealthChanged.Invoke(currentHealth, maxHealth);
     }
 
     private void PlayLifeUpSound(AudioSource lifeUpSound)
