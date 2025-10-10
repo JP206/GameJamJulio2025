@@ -6,8 +6,20 @@ public class PlayerHealthUI : MonoBehaviour
     [SerializeField] private Slider healthSlider;
     [SerializeField] private PlayerHealth playerHealth;
 
+    private void OnEnable()
+    {
+        if (playerHealth != null)
+        {
+            healthSlider.maxValue = playerHealth.MaxHealth;
+            healthSlider.value = playerHealth.CurrentHealth;
+        }
+    }
+
     private void Start()
     {
+        if (playerHealth == null)
+            playerHealth = FindAnyObjectByType<PlayerHealth>();
+
         healthSlider.maxValue = playerHealth.MaxHealth;
         healthSlider.value = playerHealth.CurrentHealth;
 

@@ -72,7 +72,12 @@ public class _GunController : MonoBehaviour
             PlayShotgunSound(shotgunAudioSource);
 
             bulletAmmo--;
+            if (GameManager.Instance != null)
+                GameManager.Instance.playerAmmo = bulletAmmo;
+
             ammoText.text = "Ammo: " + bulletAmmo.ToString();
+            ammoTextShade.text = ammoText.text;
+
             GameObject bullet = BulletPool.Instance.GetBullet();
             bullet.transform.position = firePoint.position;
 
@@ -140,7 +145,7 @@ public class _GunController : MonoBehaviour
 
         yield return null;
         while (animator.GetCurrentAnimatorStateInfo(0).IsName("HolyShot"))
-        yield return null;
+            yield return null;
 
         playerMovement.SetHolyShotState(false);
         isChargingHolyShot = false;
@@ -191,6 +196,10 @@ public class _GunController : MonoBehaviour
             bulletAmmo += 10;
             ammoText.text = "Ammo: " + bulletAmmo.ToString();
             ammoTextShade.text = ammoText.text;
+
+            if (GameManager.Instance != null)
+                GameManager.Instance.playerAmmo = bulletAmmo;
+
             uiAnimation.Animation(ammoText, ammoTextShade);
             audioSource2.PlayOneShot(GetEatSound());
         }
@@ -206,6 +215,25 @@ public class _GunController : MonoBehaviour
             case 2: return eat3;
         }
         return null;
+    }
+
+    public float GetAmmo()
+    {
+        return bulletAmmo;
+    }
+
+    public void SetAmmo(float amount)
+    {
+        bulletAmmo = amount;
+
+        if (ammoText != null)
+            ammoText.text = "Ammo: " + bulletAmmo.ToString();
+
+        if (ammoTextShade != null)
+            ammoTextShade.text = ammoText.text;
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.playerAmmo = bulletAmmo;
     }
 
     private void PlayShotgunSound(AudioSource source)
@@ -234,8 +262,22 @@ public class _GunController : MonoBehaviour
     {
         if (holyAuraPS != null) holyAuraPS.Stop();
     }
+
     public void PlayShotgunSoundEvent()
     {
         PlayShotgunSound(shotgunAudioSource);
+    }
+
+    public void RefreshAmmoUI()
+    {
+        if (ammoText != null)
+        {
+            ammoText.text = "Ammo: " + bulletAmmo.ToString();
+        }
+
+        if (ammoTextShade != null)
+        {
+            ammoTextShade.text = ammoText.text;
+        }
     }
 }

@@ -14,11 +14,6 @@ public class UICamera : MonoBehaviour
 
     void Start()
     {
-        if (player == null)
-        {
-            Debug.LogError("No se encontró el Player. Asegúrate de asignarlo en el Inspector.");
-        }
-
         transform.position = GetTargetPosition();
     }
 
