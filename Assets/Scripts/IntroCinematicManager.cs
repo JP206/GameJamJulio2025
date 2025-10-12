@@ -20,6 +20,7 @@ public class IntroCinematicManager : MonoBehaviour
     [Header("Cinematic Settings")]
     public float moveSpeed = 10f;
     public float delayBeforeEnable = 2f;
+    public float delayBeforeStartMove = 0.5f; // ⏱ nuevo: espera antes de iniciar movimiento
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSourcePedidosYa;
@@ -29,6 +30,7 @@ public class IntroCinematicManager : MonoBehaviour
     private _GunController gunController;
     private PlayerInput playerInput;
     private SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     void Start()
     {
@@ -41,6 +43,7 @@ public class IntroCinematicManager : MonoBehaviour
         gunController = player.GetComponent<_GunController>();
         playerInput = player.GetComponent<PlayerInput>();
         spriteRenderer = player.GetComponent<SpriteRenderer>();
+        animator = player.GetComponent<Animator>();
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -62,23 +65,29 @@ public class IntroCinematicManager : MonoBehaviour
         StartCoroutine(PlayCinematic());
     }
 
-    IEnumerator PlayCinematic()
+    private IEnumerator PlayCinematic()
     {
-        Animator animator = player.GetComponent<Animator>();
+        // Espera inicial antes de empezar movimiento
+        yield return new WaitForSeconds(delayBeforeStartMove);
+
+        // Activa animación justo antes de moverse
         if (animator != null)
             animator.SetBool("isRunning", true);
 
-        yield return new WaitForSeconds(0.5f);
+        // Audio de entrada
         if (audioSourcePedidosYa != null && clipPedidosYa != null)
         {
             audioSourcePedidosYa.PlayOneShot(clipPedidosYa);
         }
 
+        // Movimiento hacia el punto destino
         yield return MoveToPosition(player.transform, targetPoint.position);
 
+        // Al llegar, detener animación
         if (animator != null)
             animator.SetBool("isRunning", false);
 
+        // Pequeña pausa antes de activar gameplay
         yield return new WaitForSeconds(delayBeforeEnable);
 
         waveManager.SetActive(true);
@@ -105,7 +114,7 @@ public class IntroCinematicManager : MonoBehaviour
         Destroy(gameObject);
     }
 
-    IEnumerator MoveToPosition(Transform obj, Vector3 targetPos)
+    private IEnumerator MoveToPosition(Transform obj, Vector3 targetPos)
     {
         while (Vector3.Distance(obj.position, targetPos) > 0.05f)
         {

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIFinalDoor : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class UIFinalDoor : MonoBehaviour
     [SerializeField] private float delaySymbols = 1.5f;
     [SerializeField] private float fadeDuration = 1f;
     [SerializeField] private float triangleDelay = 0.5f;
+    [SerializeField] private float delayBeforeSceneLoad = 2.5f;
 
     private bool isActive = false;
     private BoxCollider2D doorCollider;
@@ -36,23 +38,27 @@ public class UIFinalDoor : MonoBehaviour
 
     private IEnumerator Sequence()
     {
-        // Puerta
+        // --- Puerta ---
         EnableDoorRenderer();
         if (doorAnimator != null) doorAnimator.Play("emerge", 0, 0f);
 
-        // fade-in antes de habilitar el collider
+        // Fade-in antes de habilitar el collider
         yield return StartCoroutine(FadeInSprite(GetComponent<SpriteRenderer>(), 2f));
 
         if (doorCollider != null)
             doorCollider.enabled = true;
 
-        // Portal
+        // --- Portal ---
         yield return new WaitForSeconds(delayPortal);
         ActivatePortal();
 
-        // Símbolos
+        // --- Símbolos ---
         yield return new WaitForSeconds(delaySymbols);
-        StartCoroutine(ActivateSymbols());
+        yield return StartCoroutine(ActivateSymbols());
+
+        // --- Transición a la escena del Boss ---
+        yield return new WaitForSeconds(delayBeforeSceneLoad);
+        SaveAndLoadBossScene();
     }
 
     private void EnableDoorRenderer()
@@ -130,5 +136,34 @@ public class UIFinalDoor : MonoBehaviour
         Color color = sr.color;
         color.a = alpha;
         sr.color = color;
+    }
+
+    private void SaveAndLoadBossScene()
+    {
+        StartCoroutine(SaveAndLoadBossSceneRoutine());
+    }
+
+    private IEnumerator SaveAndLoadBossSceneRoutine()
+    {
+        yield return new WaitForEndOfFrame(); // 🔸 Espera a que todo esté inicializado
+
+        var playerHealth = FindAnyObjectByType<PlayerHealth>();
+        var gun = FindAnyObjectByType<_GunController>();
+
+        if (playerHealth != null && gun != null)
+        {
+            GameManager.Instance.SavePlayerData(playerHealth, gun);
+            Debug.Log($"💾 Datos guardados antes del cambio de escena → Ammo: {gun.GetAmmo()} | HP: {playerHealth.CurrentHealth}");
+        }
+        else
+        {
+            Debug.LogWarning($"⚠️ No se encontraron referencias al Player antes del cambio de escena. health={playerHealth}, gun={gun}");
+        }
+
+        // 🔹 Espera mínima para que se procese el guardado
+        yield return new WaitForSeconds(0.1f);
+
+        Debug.Log("➡️ Cargando escena FinalBoss...");
+        SceneManager.LoadScene("FinalBoss");
     }
 }
