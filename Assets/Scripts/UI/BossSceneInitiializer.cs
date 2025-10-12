@@ -113,11 +113,12 @@ public class BossSceneInitializer : MonoBehaviour
 
                     playerHealth.OnHealthChanged.AddListener((current, max) =>
                     {
-                        slider.value = (float)current / max;
+                        slider.maxValue = max;
+                        slider.value = current;
                     });
 
-                    slider.value = (float)playerHealth.CurrentHealth / playerHealth.MaxHealth;
-
+                    slider.maxValue = playerHealth.MaxHealth;
+                    slider.value = playerHealth.CurrentHealth;
                     break;
                 }
             }
