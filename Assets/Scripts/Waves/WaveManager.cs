@@ -5,19 +5,42 @@ using UnityEngine.SceneManagement;
 
 public class WaveManager : MonoBehaviour
 {
-    [SerializeField] Transform[] spawnPoints;
-    [SerializeField] TextMeshProUGUI roundText, roundTextShade, killCountText, killCountTextShade;
-    [SerializeField] AudioSource audioSource, musicSource, holyCowSource;
-    [SerializeField] AudioClip waveMusic, bossMusic;
-    [SerializeField] float waveTimeout = 240f;
-    [SerializeField] private int bossWaveThreshold;
+    [Header("Spawn & References")]
+    [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private BoxCollider2D topBound;
+    [SerializeField] private BoxCollider2D bottomBound;
+    [SerializeField] private BoxCollider2D leftBound;
+    [SerializeField] private BoxCollider2D rightBound;
 
-    EnemyPool enemyPool;
-    int round = 1, enemiesToSpawn = 5, bossesToSpawn = 1, deadEnemies = 0, bossWaves = 3, killCount = 0;
-    UIAnimation uiAnimation;
-    bool waveEnding = false;
+    [Header("UI References")]
+    [SerializeField] private TextMeshProUGUI roundText;
+    [SerializeField] private TextMeshProUGUI roundTextShade;
+    [SerializeField] private TextMeshProUGUI killCountText;
+    [SerializeField] private TextMeshProUGUI killCountTextShade;
 
-    void Start()
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource holyCowSource;
+    [SerializeField] private AudioClip waveMusic;
+    [SerializeField] private AudioClip bossMusic;
+
+    [Header("Wave Settings")]
+    [SerializeField] private float waveTimeout = 240f;
+    [SerializeField] private int bossWaveThreshold = 5;
+
+    private EnemyPool enemyPool;
+    private UIAnimation uiAnimation;
+
+    private int round = 1;
+    private int enemiesToSpawn = 5;
+    private int bossesToSpawn = 1;
+    private int deadEnemies = 0;
+    private int bossWaves = 3;
+    private int killCount = 0;
+    private bool waveEnding = false;
+
+    private void Start()
     {
         enemyPool = GetComponent<EnemyPool>();
         uiAnimation = FindAnyObjectByType<UIAnimation>();
@@ -43,14 +66,14 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    IEnumerator TimeBetweenWaves()
+    private IEnumerator TimeBetweenWaves()
     {
         ScaleDifficulty();
         yield return new WaitForSeconds(3);
         StartWave();
     }
 
-    void ScaleDifficulty()
+    private void ScaleDifficulty()
     {
         enemiesToSpawn += 3;
         round++;
@@ -61,7 +84,7 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    void StartWave()
+    private void StartWave()
     {
         deadEnemies = 0;
         waveEnding = false;
@@ -70,31 +93,45 @@ public class WaveManager : MonoBehaviour
         roundTextShade.text = roundText.text;
         uiAnimation.Animation(roundText, roundTextShade);
 
+        // --- Cinemática del jefe ---
         if (round == bossWaveThreshold)
         {
-            UIFinalDoor finalDoor = FindAnyObjectByType<UIFinalDoor>(FindObjectsInactive.Include);
-            if (finalDoor != null) finalDoor.ShowFinalDoor();
+            var doorCinematic = FindAnyObjectByType<FinalDoorCinematic>();
+            if (doorCinematic != null)
+            {
+                doorCinematic.PlayCinematicToDoor();
+            }
             return;
         }
 
+        // --- Spawnear enemigos normales ---
         for (int i = 0; i < enemiesToSpawn; i++)
         {
             GameObject enemyInstance = enemyPool.GetEnemy();
             enemyInstance.GetComponent<EnemyController>().SetWaveManager(this);
-            enemyInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
-            RandomizePosition(enemyInstance.transform);
+
+            Vector2 spawnPos = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+            spawnPos = RandomizePosition(spawnPos);
+            spawnPos = GetValidSpawnPosition(spawnPos);
+
+            enemyInstance.transform.position = spawnPos;
         }
 
         int gallosToSpawn = 0;
 
+        // --- Spawnear bosses y gallos ---
         if (round % bossWaves == 0)
         {
             for (int i = 0; i < bossesToSpawn; i++)
             {
                 GameObject bossInstance = enemyPool.GetBoss();
                 bossInstance.GetComponent<EnemyController>().SetWaveManager(this);
-                bossInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
-                RandomizePosition(bossInstance.transform);
+
+                Vector2 spawnPos = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+                spawnPos = RandomizePosition(spawnPos);
+                spawnPos = GetValidSpawnPosition(spawnPos);
+
+                bossInstance.transform.position = spawnPos;
             }
 
             gallosToSpawn = (int)(bossesToSpawn / 3);
@@ -102,11 +139,16 @@ public class WaveManager : MonoBehaviour
             {
                 GameObject galloInstance = enemyPool.GetGallo();
                 galloInstance.GetComponent<EnemyController>().SetWaveManager(this);
-                galloInstance.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
-                RandomizePosition(galloInstance.transform);
+
+                Vector2 spawnPos = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+                spawnPos = RandomizePosition(spawnPos);
+                spawnPos = GetValidSpawnPosition(spawnPos);
+
+                galloInstance.transform.position = spawnPos;
             }
         }
 
+        // --- Música dinámica ---
         if (gallosToSpawn > 0)
         {
             if (musicSource.clip != bossMusic)
@@ -132,7 +174,7 @@ public class WaveManager : MonoBehaviour
         StartCoroutine(WaveTimer());
     }
 
-    IEnumerator WaveTimer()
+    private IEnumerator WaveTimer()
     {
         yield return new WaitForSeconds(waveTimeout);
 
@@ -142,7 +184,7 @@ public class WaveManager : MonoBehaviour
         }
     }
 
-    void EndWave()
+    private void EndWave()
     {
         waveEnding = true;
         audioSource.Stop();
@@ -155,12 +197,33 @@ public class WaveManager : MonoBehaviour
         StartCoroutine(TimeBetweenWaves());
     }
 
-    void RandomizePosition(Transform transform)
+    // --- Generar pequeña variación de posición ---
+    private Vector2 RandomizePosition(Vector2 position)
     {
-        float randomX = Random.Range(0, 3f);
-        float randomY = Random.Range(0, 3f);
+        float randomX = Random.Range(0f, 3f);
+        float randomY = Random.Range(0f, 3f);
+        return new Vector2(position.x + randomX, position.y + randomY);
+    }
 
-        transform.position = new Vector2(transform.position.x + randomX, transform.position.y + randomY);
+    // --- Corregir posición si está fuera del área de juego ---
+    private Vector2 GetValidSpawnPosition(Vector2 proposedPosition)
+    {
+        Vector2 corrected = proposedPosition;
+        float margin = 1.5f; // distancia desde el borde interior
+
+        if (rightBound && proposedPosition.x > rightBound.bounds.min.x)
+            corrected.x = rightBound.bounds.min.x - margin;
+
+        if (leftBound && proposedPosition.x < leftBound.bounds.max.x)
+            corrected.x = leftBound.bounds.max.x + margin;
+
+        if (topBound && proposedPosition.y > topBound.bounds.min.y)
+            corrected.y = topBound.bounds.min.y - margin;
+
+        if (bottomBound && proposedPosition.y < bottomBound.bounds.max.y)
+            corrected.y = bottomBound.bounds.max.y + margin;
+
+        return corrected;
     }
 
     private void PlayHolyCowSound(AudioSource source)

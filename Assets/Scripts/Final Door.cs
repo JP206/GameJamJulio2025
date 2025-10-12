@@ -12,9 +12,10 @@ public class FinalDoor : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(Scenename);
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(Scenename);
+        }
     }
-
-
 }
 
