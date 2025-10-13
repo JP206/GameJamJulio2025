@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
-using UnityEngine.UI; // 👈 para la barra de vida
+using UnityEngine.UI;
 
 public class BossSceneInitializer : MonoBehaviour
 {
@@ -39,7 +39,7 @@ public class BossSceneInitializer : MonoBehaviour
         if (sprite != null)
         {
             sprite.flipX = !faceRightOnSpawn;
-            sprite.sortingOrder = 1;
+            sprite.sortingOrder = 4;
         }
 
         // --- Restaurar datos ---
@@ -123,7 +123,15 @@ public class BossSceneInitializer : MonoBehaviour
                 }
             }
         }
+
+        // --- Ajustar el sorting layer del Trail Renderer del Player ---
+        var trail = mainPlayer.GetComponent<TrailRenderer>();
+        if (trail != null)
+        {
+            trail.sortingOrder = 1;
+        }
     }
+
     private IEnumerator ApplyPlayerDataDelayed(PlayerHealth health, _GunController gun)
     {
         if (GameManager.Instance != null)

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PolloLocoController : MonoBehaviour
 {
@@ -34,6 +35,9 @@ public class PolloLocoController : MonoBehaviour
     private bool isAreaJumping = false;
     private Vector2 jumpStartPos, jumpEndPos;
     private float jumpElapsed;
+
+    [Header("UI")]
+    [SerializeField] private Slider bossHealthSlider;
 
     void Start()
     {
@@ -71,6 +75,12 @@ public class PolloLocoController : MonoBehaviour
         if (hitEffect != null)
         {
             hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        }
+
+        if (bossHealthSlider != null)
+        {
+            bossHealthSlider.maxValue = maxHp;
+            bossHealthSlider.value = currentHp;
         }
     }
 
@@ -126,19 +136,16 @@ public class PolloLocoController : MonoBehaviour
 
             float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
 
-            // lógica de ataque: decide entre ataque normal y panzazo
             if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
             {
                 if (distanceToPlayer <= attackRange)
                 {
-                    // Ataque normal
                     animator.SetTrigger("Attack");
                     isAttacking = true;
                     lastAttackTime = Time.time;
                 }
                 else if (distanceToPlayer > minAreaAttackDistance && distanceToPlayer <= areaJumpMaxDistance)
                 {
-                    // Ataque de área (panzazo)
                     isAttacking = true;
                     lastAttackTime = Time.time;
                     StartCoroutine(PrepareAreaAttack());
@@ -205,6 +212,9 @@ public class PolloLocoController : MonoBehaviour
 
     private void DoDamage(Collider2D collision)
     {
+        if (collision.transform.root == transform)
+            return;
+
         if (collision.CompareTag("Bullet"))
         {
             TakeDamage(1);
@@ -215,12 +225,18 @@ public class PolloLocoController : MonoBehaviour
         }
     }
 
+
     private void TakeDamage(int amount)
     {
         if (!isInvulnerable && !isDead)
         {
             audioSource.PlayOneShot(GethitSound());
             currentHp -= amount;
+
+            if (bossHealthSlider != null)
+            {
+                bossHealthSlider.value = currentHp;
+            }
 
             if (hitEffect != null)
             {
