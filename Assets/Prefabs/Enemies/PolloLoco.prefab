@@ -109,7 +109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6138134679833968185
 Transform:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.72, y: -1.2, z: 0.022008251}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1.88865, y: 1.8271499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1296622817936422389}
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1431334149709109681, guid: ee26a49a52f1c744aae705168b0058bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -216,8 +216,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.5022435, y: -0.20089802}
-  m_Size: {x: 1.9696596, y: 2.717446}
+  m_Offset: {x: -0.42491966, y: -0.31770185}
+  m_Size: {x: 2.069921, y: 2.1395924}
   m_Direction: 1
 --- !u!114 &4922717361226243617
 MonoBehaviour:
@@ -244,6 +244,7 @@ MonoBehaviour:
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 8111620041780958951}
+  hpSlider: {fileID: 0}
   areaJumpDuration: 1
   areaJumpMaxDistance: 20
   areaJumpHeight: 5

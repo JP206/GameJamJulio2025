@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c101b52c860d53b40ba6a8eeba70be62
+guid: b4c243cb175d66f4bb71f9e101fa8e28
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7962205666483707469
-    second: portal_floor_light_0
+      213: 6219021990352352370
+    second: Recurso_94pollo_loco_barra_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: portal_floor_light_0
+      name: Recurso_94pollo_loco_barra_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 58
-        width: 460
-        height: 249
+        x: 0
+        y: 0
+        width: 4701
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b1e2a4c120908190800000000000000
-      internalID: -7962205666483707469
+      spriteID: 2747b49ec876e4650800000000000000
+      internalID: 6219021990352352370
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      portal_floor_light_0: -7962205666483707469
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

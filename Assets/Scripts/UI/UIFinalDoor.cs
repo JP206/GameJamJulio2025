@@ -145,7 +145,7 @@ public class UIFinalDoor : MonoBehaviour
 
     private IEnumerator SaveAndLoadBossSceneRoutine()
     {
-        yield return new WaitForEndOfFrame(); // 🔸 Espera a que todo esté inicializado
+        yield return new WaitForEndOfFrame(); // Espera a que todo esté inicializado
 
         var playerHealth = FindAnyObjectByType<PlayerHealth>();
         var gun = FindAnyObjectByType<_GunController>();
@@ -153,17 +153,11 @@ public class UIFinalDoor : MonoBehaviour
         if (playerHealth != null && gun != null)
         {
             GameManager.Instance.SavePlayerData(playerHealth, gun);
-            Debug.Log($"💾 Datos guardados antes del cambio de escena → Ammo: {gun.GetAmmo()} | HP: {playerHealth.CurrentHealth}");
-        }
-        else
-        {
-            Debug.LogWarning($"⚠️ No se encontraron referencias al Player antes del cambio de escena. health={playerHealth}, gun={gun}");
         }
 
-        // 🔹 Espera mínima para que se procese el guardado
+        // Espera mínima para que se procese el guardado
         yield return new WaitForSeconds(0.1f);
 
-        Debug.Log("➡️ Cargando escena FinalBoss...");
         SceneManager.LoadScene("FinalBoss");
     }
 }
