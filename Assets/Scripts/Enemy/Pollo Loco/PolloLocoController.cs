@@ -39,6 +39,10 @@ public class PolloLocoController : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Slider bossHealthSlider;
 
+    // 🔸 NUEVO: Control cinematográfico
+    [Header("Cinematic Control")]
+    public bool isCinematicMode = false;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -91,6 +95,18 @@ public class PolloLocoController : MonoBehaviour
 
     void FixedUpdate()
     {
+        // 🔹 Bloquea toda la IA mientras está en modo cinemática
+        if (isCinematicMode)
+        {
+            if (animator != null)
+                animator.SetBool("isMoving", false);
+
+            if (rb != null)
+                rb.linearVelocity = Vector2.zero;
+
+            return;
+        }
+
         if (isAreaJumping)
         {
             jumpElapsed += Time.fixedDeltaTime;
@@ -225,7 +241,6 @@ public class PolloLocoController : MonoBehaviour
         }
     }
 
-
     private void TakeDamage(int amount)
     {
         if (!isInvulnerable && !isDead)
@@ -253,23 +268,6 @@ public class PolloLocoController : MonoBehaviour
             {
                 StartCoroutine(DamageFlashAndInvulnerability());
             }
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Building"))
-        {
-            Vector2 awayFromBuilding = (transform.position - collision.transform.position).normalized;
-            avoidanceDirection = awayFromBuilding;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Building"))
-        {
-            avoidanceDirection = Vector2.zero;
         }
     }
 

@@ -244,13 +244,13 @@ MonoBehaviour:
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 8111620041780958951}
-  hpSlider: {fileID: 0}
   areaJumpDuration: 1
   areaJumpMaxDistance: 20
   areaJumpHeight: 5
   areaImpactRadius: 3
   minAreaAttackDistance: 3
   landingOffsetFactor: 0.1
+  bossHealthSlider: {fileID: 0}
 --- !u!50 &-7334447666295787246
 Rigidbody2D:
   serializedVersion: 5

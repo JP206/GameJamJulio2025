@@ -10829,11 +10829,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3135735698374859630, guid: 573faf35b7a5a0243b56e44b9465a6c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: -38.97
       objectReference: {fileID: 0}
     - target: {fileID: 3135735698374859630, guid: 573faf35b7a5a0243b56e44b9465a6c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 34.1
+      value: 41.4
       objectReference: {fileID: 0}
     - target: {fileID: 3135735698374859630, guid: 573faf35b7a5a0243b56e44b9465a6c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16562,7 +16562,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22702,7 +22702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.14366667, y: 0.09148148}
-  m_AnchoredPosition: {x: -25.700073, y: -21.399994}
+  m_AnchoredPosition: {x: -25.700073, y: -21.399963}
   m_SizeDelta: {x: -174.254, y: -75.520004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697269362
