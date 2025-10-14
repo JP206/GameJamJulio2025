@@ -251,6 +251,7 @@ MonoBehaviour:
   minAreaAttackDistance: 3
   landingOffsetFactor: 0.1
   bossHealthSlider: {fileID: 0}
+  isCinematicMode: 0
 --- !u!50 &-7334447666295787246
 Rigidbody2D:
   serializedVersion: 5

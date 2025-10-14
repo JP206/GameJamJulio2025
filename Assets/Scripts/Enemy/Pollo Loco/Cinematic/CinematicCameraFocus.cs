@@ -29,11 +29,9 @@ public class CinematicCameraFocus : MonoBehaviour
         if (cineCam == null || bossFocusPoint == null)
             yield break;
 
-        // 🔸 Desactivar cursor durante la cinemática
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        // Guardar estado inicial
         originalFollow = cineCam.Follow;
         originalZoom = cineCam.Lens.OrthographicSize;
         originalPosition = cineCam.transform.position;
@@ -50,7 +48,6 @@ public class CinematicCameraFocus : MonoBehaviour
             cineCam.transform.position.z
         );
 
-        // 🔹 Movimiento suave + callback cuando el boss entra en cuadro
         while (elapsed < focusDuration)
         {
             elapsed += Time.deltaTime * lerpSpeed;
@@ -67,16 +64,12 @@ public class CinematicCameraFocus : MonoBehaviour
             yield return null;
         }
 
-        // 🔸 Cámara fija sobre el boss
         cineCam.transform.position = targetPos;
 
-        // 🔹 Aplicar shake
         yield return StartCoroutine(ShakeCamera(targetPos));
 
-        // 🔹 Esperar un momento sobre el boss
         yield return new WaitForSeconds(waitOnBoss);
 
-        // 🔹 Regresar al jugador
         elapsed = 0f;
         while (elapsed < focusDuration)
         {
@@ -86,12 +79,10 @@ public class CinematicCameraFocus : MonoBehaviour
             yield return null;
         }
 
-        // Restaurar cámara
         cineCam.Follow = originalFollow;
         cineCam.Lens.OrthographicSize = originalZoom;
         cineCam.transform.position = originalPosition;
 
-        // 🔸 Restaurar cursor después de la cinemática
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

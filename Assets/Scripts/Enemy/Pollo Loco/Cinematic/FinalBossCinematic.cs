@@ -28,44 +28,32 @@ public class FinalBossCinematic : MonoBehaviour
 
     private IEnumerator Start()
     {
-        // Buscar el Player persistente
         player = GameObject.FindGameObjectWithTag("Player");
         if (player == null) yield break;
 
-        // Esperar un momento para que BossSceneInitializer termine de configurar todo
         yield return new WaitForSeconds(1f);
 
-        // 🔹 Desactivar control completo del jugador
         playerController.DisablePlayer(player);
 
-        // 🔹 Mostrar barras cinematográficas
         if (barsController != null)
             yield return StartCoroutine(barsController.ShowBars());
 
-        // 🔹 Esperar antes de caminar
         yield return new WaitForSeconds(delayBeforeWalk);
 
-        // 🔹 Caminar automáticamente hasta el punto
         yield return StartCoroutine(playerController.PlayerWalk(player));
 
-        // 🔹 Cerrar símbolos / portal / puerta
         yield return StartCoroutine(CloseSequence());
 
-        // 🔹 Esperar antes del boss
         yield return new WaitForSeconds(delayBeforeBossActive);
 
-        // 🔹 Activar boss + cámara + UI
         if (bossIntro != null)
             yield return StartCoroutine(bossIntro.PlayBossIntro(cameraFocus, uiManager));
 
-        // 🔹 Ocultar barras negras
         if (barsController != null)
             yield return StartCoroutine(barsController.HideBars());
 
-        // 🔹 Reactivar control del jugador al final
         playerController.EnablePlayer(player);
     }
-
     private IEnumerator CloseSequence()
     {
         if (triangleObject)
