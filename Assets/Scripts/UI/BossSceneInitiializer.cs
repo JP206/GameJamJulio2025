@@ -46,51 +46,14 @@ public class BossSceneInitializer : MonoBehaviour
 
         var cineCam = FindAnyObjectByType<CinemachineCamera>();
         if (cineCam != null)
-        {
             cineCam.Follow = mainPlayer.transform;
-        }
 
         var uiCam = FindAnyObjectByType<UICamera>();
         if (uiCam != null)
         {
-            var playerField = typeof(UICamera).GetField("player", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            var playerField = typeof(UICamera).GetField("player",
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             playerField.SetValue(uiCam, mainPlayer.transform);
-        }
-
-        var gunController = FindAnyObjectByType<_GunController>();
-        if (gunController != null)
-        {
-            var uiTexts = FindObjectsByType<TMPro.TextMeshProUGUI>(FindObjectsSortMode.None);
-            TMPro.TextMeshProUGUI ammoText = null;
-            TMPro.TextMeshProUGUI ammoShade = null;
-
-            foreach (var text in uiTexts)
-            {
-                if (text.name.ToLower().Contains("ammo text") && !text.name.ToLower().Contains("shade"))
-                    ammoText = text;
-
-                if (text.name.ToLower().Contains("ammo text shade"))
-                    ammoShade = text;
-            }
-
-            if (ammoText != null)
-            {
-                gunController.GetType().GetField("ammoText", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                    ?.SetValue(gunController, ammoText);
-            }
-
-            if (ammoShade != null)
-            {
-                gunController.GetType().GetField("ammoTextShade", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
-                    ?.SetValue(gunController, ammoShade);
-            }
-
-            var ammoValue = gunController.GetAmmo();
-            if (ammoText != null)
-                ammoText.text = "Ammo: " + ammoValue.ToString();
-            if (ammoShade != null)
-                ammoShade.text = ammoText.text;
-
         }
 
         var playerHealth = mainPlayer.GetComponent<PlayerHealth>();
@@ -118,28 +81,48 @@ public class BossSceneInitializer : MonoBehaviour
 
         var trail = mainPlayer.GetComponent<TrailRenderer>();
         if (trail != null)
-        {
             trail.sortingOrder = 1;
-        }
     }
 
     private IEnumerator ApplyPlayerDataDelayed(PlayerHealth health, _GunController gun)
     {
         if (GameManager.Instance != null)
-        {
             GameManager.Instance.LoadPlayerData(health, gun);
+
+        bool assigned = false;
+
+        while (!assigned)
+        {
+            var uiTexts = FindObjectsByType<TMPro.TextMeshProUGUI>(FindObjectsSortMode.None);
+            TMPro.TextMeshProUGUI ammoText = null;
+            TMPro.TextMeshProUGUI ammoShade = null;
+
+            foreach (var text in uiTexts)
+            {
+                string name = text.name.ToLower();
+                if (name.Contains("ammo text") && !name.Contains("shade"))
+                    ammoText = text;
+                if (name.Contains("ammo text shade"))
+                    ammoShade = text;
+            }
+
+            if (ammoText != null && ammoShade != null)
+            {
+                var fieldText = gun.GetType().GetField("ammoText", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var fieldShade = gun.GetType().GetField("ammoTextShade", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
+                fieldText?.SetValue(gun, ammoText);
+                fieldShade?.SetValue(gun, ammoShade);
+
+                gun.RefreshAmmoUI();
+
+                assigned = true;
+            }
+
+            yield return new WaitForSeconds(0.2f);
         }
 
         var slider = FindAnyObjectByType<UnityEngine.UI.Slider>();
-        if (slider != null && health != null)
-        {
-            slider.maxValue = health.MaxHealth;
-            slider.value = health.CurrentHealth;
-        }
-
-        yield return null;
-
-        slider = FindAnyObjectByType<UnityEngine.UI.Slider>();
         if (slider != null && health != null)
         {
             slider.maxValue = health.MaxHealth;
