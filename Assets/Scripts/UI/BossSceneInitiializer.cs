@@ -9,10 +9,26 @@ public class BossSceneInitializer : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private bool faceRightOnSpawn = true;
 
+    private PlayerMovement mainPlayer;
+    private PlayerHealth playerHealth;
+    private _GunController gunController;
+
     private IEnumerator Start()
     {
         yield return null;
 
+        SetupPlayerInstance();
+        SetupPlayerPosition();
+        SetupCameraFollow();
+        SetupUICamera();
+        SetupPlayerHealthUI();
+        SetupTrailRenderer();
+
+        yield return StartCoroutine(LoadPlayerDataAndUI());
+    }
+
+    private void SetupPlayerInstance()
+    {
         var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         if (players.Length > 1)
         {
@@ -23,11 +39,19 @@ public class BossSceneInitializer : MonoBehaviour
             }
         }
 
-        var mainPlayer = FindAnyObjectByType<PlayerMovement>();
+        mainPlayer = FindAnyObjectByType<PlayerMovement>();
         if (mainPlayer == null)
         {
-            yield break;
+            return;
         }
+
+        playerHealth = mainPlayer.GetComponent<PlayerHealth>();
+        gunController = mainPlayer.GetComponent<_GunController>();
+    }
+
+    private void SetupPlayerPosition()
+    {
+        if (mainPlayer == null) return;
 
         if (spawnPoint != null)
             mainPlayer.transform.position = spawnPoint.position;
@@ -38,56 +62,72 @@ public class BossSceneInitializer : MonoBehaviour
             sprite.flipX = !faceRightOnSpawn;
             sprite.sortingOrder = 4;
         }
+    }
 
-        var health = mainPlayer.GetComponent<PlayerHealth>();
-        var gun = mainPlayer.GetComponent<_GunController>();
-        if (GameManager.Instance != null)
-            StartCoroutine(ApplyPlayerDataDelayed(health, gun));
-
+    private void SetupCameraFollow()
+    {
         var cineCam = FindAnyObjectByType<CinemachineCamera>();
-        if (cineCam != null)
+        if (cineCam != null && mainPlayer != null)
+        {
             cineCam.Follow = mainPlayer.transform;
+        }
+    }
 
+    private void SetupUICamera()
+    {
         var uiCam = FindAnyObjectByType<UICamera>();
-        if (uiCam != null)
+        if (uiCam != null && mainPlayer != null)
         {
             var playerField = typeof(UICamera).GetField("player",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             playerField.SetValue(uiCam, mainPlayer.transform);
         }
+    }
 
-        var playerHealth = mainPlayer.GetComponent<PlayerHealth>();
-        if (playerHealth != null)
+    private void SetupPlayerHealthUI()
+    {
+        if (playerHealth == null) return;
+
+        var sliders = FindObjectsByType<Slider>(FindObjectsSortMode.None);
+        foreach (var slider in sliders)
         {
-            var sliders = FindObjectsByType<Slider>(FindObjectsSortMode.None);
-            foreach (var slider in sliders)
+            if (slider.name.ToLower().Contains("hp") || slider.name.ToLower().Contains("health"))
             {
-                if (slider.name.ToLower().Contains("hp") || slider.name.ToLower().Contains("health"))
+                playerHealth.OnHealthChanged.RemoveAllListeners();
+
+                playerHealth.OnHealthChanged.AddListener((current, max) =>
                 {
-                    playerHealth.OnHealthChanged.RemoveAllListeners();
+                    slider.maxValue = max;
+                    slider.value = current;
+                });
 
-                    playerHealth.OnHealthChanged.AddListener((current, max) =>
-                    {
-                        slider.maxValue = max;
-                        slider.value = current;
-                    });
-
-                    slider.maxValue = playerHealth.MaxHealth;
-                    slider.value = playerHealth.CurrentHealth;
-                    break;
-                }
+                slider.maxValue = playerHealth.MaxHealth;
+                slider.value = playerHealth.CurrentHealth;
+                break;
             }
         }
+    }
+
+    private void SetupTrailRenderer()
+    {
+        if (mainPlayer == null) return;
 
         var trail = mainPlayer.GetComponent<TrailRenderer>();
         if (trail != null)
             trail.sortingOrder = 1;
     }
 
-    private IEnumerator ApplyPlayerDataDelayed(PlayerHealth health, _GunController gun)
+    private IEnumerator LoadPlayerDataAndUI()
     {
         if (GameManager.Instance != null)
-            GameManager.Instance.LoadPlayerData(health, gun);
+            GameManager.Instance.LoadPlayerData(playerHealth, gunController);
+
+        yield return StartCoroutine(WaitForHUDAndAssignAmmo());
+    }
+
+    private IEnumerator WaitForHUDAndAssignAmmo()
+    {
+        if (gunController == null) yield break;
 
         bool assigned = false;
 
@@ -108,25 +148,17 @@ public class BossSceneInitializer : MonoBehaviour
 
             if (ammoText != null && ammoShade != null)
             {
-                var fieldText = gun.GetType().GetField("ammoText", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-                var fieldShade = gun.GetType().GetField("ammoTextShade", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var fieldText = gunController.GetType().GetField("ammoText", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+                var fieldShade = gunController.GetType().GetField("ammoTextShade", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
-                fieldText?.SetValue(gun, ammoText);
-                fieldShade?.SetValue(gun, ammoShade);
+                fieldText?.SetValue(gunController, ammoText);
+                fieldShade?.SetValue(gunController, ammoShade);
 
-                gun.RefreshAmmoUI();
-
+                gunController.RefreshAmmoUI();
                 assigned = true;
             }
 
             yield return new WaitForSeconds(0.2f);
-        }
-
-        var slider = FindAnyObjectByType<UnityEngine.UI.Slider>();
-        if (slider != null && health != null)
-        {
-            slider.maxValue = health.MaxHealth;
-            slider.value = health.CurrentHealth;
         }
     }
 }
