@@ -13,7 +13,6 @@ public class BossSceneInitializer : MonoBehaviour
     {
         yield return null;
 
-        // --- Eliminar Player duplicado ---
         var players = FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None);
         if (players.Length > 1)
         {
@@ -24,14 +23,12 @@ public class BossSceneInitializer : MonoBehaviour
             }
         }
 
-        // --- Obtener Player persistente ---
         var mainPlayer = FindAnyObjectByType<PlayerMovement>();
         if (mainPlayer == null)
         {
             yield break;
         }
 
-        // --- Reposicionar y orientar ---
         if (spawnPoint != null)
             mainPlayer.transform.position = spawnPoint.position;
 
@@ -42,20 +39,17 @@ public class BossSceneInitializer : MonoBehaviour
             sprite.sortingOrder = 4;
         }
 
-        // --- Restaurar datos ---
         var health = mainPlayer.GetComponent<PlayerHealth>();
         var gun = mainPlayer.GetComponent<_GunController>();
         if (GameManager.Instance != null)
             StartCoroutine(ApplyPlayerDataDelayed(health, gun));
 
-        // --- Vincular Cinemachine ---
         var cineCam = FindAnyObjectByType<CinemachineCamera>();
         if (cineCam != null)
         {
             cineCam.Follow = mainPlayer.transform;
         }
 
-        // --- Vincular UICamera ---
         var uiCam = FindAnyObjectByType<UICamera>();
         if (uiCam != null)
         {
@@ -63,7 +57,6 @@ public class BossSceneInitializer : MonoBehaviour
             playerField.SetValue(uiCam, mainPlayer.transform);
         }
 
-        // --- Reconectar textos de Ammo ---
         var gunController = FindAnyObjectByType<_GunController>();
         if (gunController != null)
         {
@@ -100,7 +93,6 @@ public class BossSceneInitializer : MonoBehaviour
 
         }
 
-        // --- Reconectar barra de vida ---
         var playerHealth = mainPlayer.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
@@ -124,7 +116,6 @@ public class BossSceneInitializer : MonoBehaviour
             }
         }
 
-        // --- Ajustar el sorting layer del Trail Renderer del Player ---
         var trail = mainPlayer.GetComponent<TrailRenderer>();
         if (trail != null)
         {

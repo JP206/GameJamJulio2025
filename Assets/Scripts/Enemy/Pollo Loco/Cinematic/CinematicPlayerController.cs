@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem; // para manejar el PlayerInput moderno
+using UnityEngine.InputSystem;
 
 public class CinematicPlayerController : MonoBehaviour
 {
@@ -9,7 +9,6 @@ public class CinematicPlayerController : MonoBehaviour
 
     private bool isFrozen = false;
 
-    // 🔸 Desactiva absolutamente todo el control del jugador
     public void DisablePlayer(GameObject player)
     {
         isFrozen = true;
@@ -22,7 +21,6 @@ public class CinematicPlayerController : MonoBehaviour
         if (gun) gun.enabled = false;
         if (input) input.enabled = false;
 
-        // 🔹 Si tiene Rigidbody2D, congelar su movimiento físico
         var rb = player.GetComponent<Rigidbody2D>();
         if (rb)
         {
@@ -31,7 +29,6 @@ public class CinematicPlayerController : MonoBehaviour
         }
     }
 
-    // 🔸 Restaura todos los scripts e inputs al estado normal
     public void EnablePlayer(GameObject player)
     {
         isFrozen = false;
@@ -44,7 +41,6 @@ public class CinematicPlayerController : MonoBehaviour
         if (gun) gun.enabled = true;
         if (input) input.enabled = true;
 
-        // 🔹 Reactivar físicas si estaban deshabilitadas
         var rb = player.GetComponent<Rigidbody2D>();
         if (rb)
         {
@@ -52,7 +48,6 @@ public class CinematicPlayerController : MonoBehaviour
         }
     }
 
-    // 🔸 Camina automáticamente hasta el punto objetivo con animación
     public IEnumerator PlayerWalk(GameObject player)
     {
         if (player == null || !playerTargetPoint)
@@ -61,7 +56,6 @@ public class CinematicPlayerController : MonoBehaviour
         Vector3 start = player.transform.position;
         Vector3 end = playerTargetPoint.position;
 
-        // Pequeña espera antes de arrancar la caminata
         yield return new WaitForSeconds(0.15f);
 
         Animator anim = player.GetComponent<Animator>();
@@ -81,7 +75,6 @@ public class CinematicPlayerController : MonoBehaviour
             anim.SetBool("isRunning", false);
     }
 
-    // 🔸 Por si querés comprobar desde otros scripts si el jugador está bloqueado
     public bool IsPlayerFrozen()
     {
         return isFrozen;

@@ -39,7 +39,6 @@ public class PolloLocoController : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Slider bossHealthSlider;
 
-    // 🔸 NUEVO: Control cinematográfico
     [Header("Cinematic Control")]
     public bool isCinematicMode = false;
 
@@ -95,7 +94,6 @@ public class PolloLocoController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // 🔹 Bloquea toda la IA mientras está en modo cinemática
         if (isCinematicMode)
         {
             if (animator != null)
