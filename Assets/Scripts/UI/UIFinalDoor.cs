@@ -11,6 +11,9 @@ public class UIFinalDoor : MonoBehaviour
     [SerializeField] private GameObject squareObject;
     [SerializeField] private GameObject triangleObject;
 
+    [Header("External Colliders")]
+    [SerializeField] private GameObject doorExternalColliders; // 🔹 hijo con el PolygonCollider2D
+
     [Header("Timings")]
     [SerializeField] private float delayPortal = 1.5f;
     [SerializeField] private float delaySymbols = 1.5f;
@@ -27,6 +30,10 @@ public class UIFinalDoor : MonoBehaviour
         doorCollider = GetComponent<BoxCollider2D>();
         if (doorCollider != null)
             doorCollider.enabled = false;
+
+        // 🔹 aseguramos que el hijo con los colliders externos empiece desactivado
+        if (doorExternalColliders != null)
+            doorExternalColliders.SetActive(false);
     }
 
     public void ShowFinalDoor()
@@ -47,6 +54,12 @@ public class UIFinalDoor : MonoBehaviour
 
         if (doorCollider != null)
             doorCollider.enabled = true;
+
+        // 🔹 activar el collider del hijo cuando se activa el principal
+        if (doorExternalColliders != null)
+        {
+            doorExternalColliders.SetActive(true);;
+        }
 
         // --- Portal ---
         yield return new WaitForSeconds(delayPortal);

@@ -4177,7 +4177,7 @@ MonoBehaviour:
   waitOnBoss: 1
   shakeMagnitude: 0.25
   shakeFrequency: 25
-  shakeDuration: 1
+  shakeDuration: 1.5
 --- !u!114 &1304402228
 MonoBehaviour:
   m_ObjectHideFlags: 0
