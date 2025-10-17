@@ -764,8 +764,8 @@ Transform:
   m_GameObject: {fileID: 237755018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.0752, y: 31.6311, z: 0}
-  m_LocalScale: {x: 2.0481625, y: 2.0481625, z: 2.0481625}
+  m_LocalPosition: {x: 11.3689995, y: 26.315199, z: 0}
+  m_LocalScale: {x: 1.6113127, y: 1.6113127, z: 1.6113127}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 149730292}
@@ -5137,23 +5137,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.583757
+      value: 2.032671
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.583757
+      value: 2.032671
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.583757
+      value: 2.032671
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9526
+      value: -3.6
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.6496
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 6268086728240777024, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5187,6 +5187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8784040598869558826, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a5bf3aa4434014b41a566cea5dcf65ff, type: 3}
     m_RemovedComponents:
     - {fileID: 4019595610955424407, guid: d305623f686bdeb429dcf95a7d91caa3, type: 3}
     m_RemovedGameObjects: []
