@@ -12,7 +12,11 @@ public class UIFinalDoor : MonoBehaviour
     [SerializeField] private GameObject triangleObject;
 
     [Header("External Colliders")]
-    [SerializeField] private GameObject doorExternalColliders; // 🔹 hijo con el PolygonCollider2D
+    [SerializeField] private GameObject doorExternalColliders;
+
+    [Header("Particles")]
+    [SerializeField] private GameObject particleSystemA;
+    [SerializeField] private GameObject particleSystemB;
 
     [Header("Timings")]
     [SerializeField] private float delayPortal = 1.5f;
@@ -23,17 +27,29 @@ public class UIFinalDoor : MonoBehaviour
 
     private bool isActive = false;
     private BoxCollider2D doorCollider;
+    private ParticleSystem psA;
+    private ParticleSystem psB;
 
     private void Awake()
     {
-        // Cache del collider y lo desactivamos al inicio
         doorCollider = GetComponent<BoxCollider2D>();
         if (doorCollider != null)
             doorCollider.enabled = false;
 
-        // 🔹 aseguramos que el hijo con los colliders externos empiece desactivado
         if (doorExternalColliders != null)
             doorExternalColliders.SetActive(false);
+
+        if (particleSystemA != null)
+        {
+            psA = particleSystemA.GetComponent<ParticleSystem>();
+            particleSystemA.SetActive(false);
+        }
+
+        if (particleSystemB != null)
+        {
+            psB = particleSystemB.GetComponent<ParticleSystem>();
+            particleSystemB.SetActive(false);
+        }
     }
 
     public void ShowFinalDoor()
@@ -45,33 +61,48 @@ public class UIFinalDoor : MonoBehaviour
 
     private IEnumerator Sequence()
     {
-        // --- Puerta ---
         EnableDoorRenderer();
-        if (doorAnimator != null) doorAnimator.Play("emerge", 0, 0f);
 
-        // Fade-in antes de habilitar el collider
+        if (doorAnimator != null)
+            doorAnimator.Play("emerge", 0, 0f);
+
+        if (particleSystemA != null)
+        {
+            particleSystemA.SetActive(true);
+            psA.Play();
+        }
+
+        if (particleSystemB != null)
+        {
+            particleSystemB.SetActive(true);
+            psB.Play();
+        }
+
         yield return StartCoroutine(FadeInSprite(GetComponent<SpriteRenderer>(), 2f));
 
         if (doorCollider != null)
             doorCollider.enabled = true;
 
-        // 🔹 activar el collider del hijo cuando se activa el principal
         if (doorExternalColliders != null)
-        {
-            doorExternalColliders.SetActive(true);;
-        }
+            doorExternalColliders.SetActive(true);
 
-        // --- Portal ---
         yield return new WaitForSeconds(delayPortal);
         ActivatePortal();
 
-        // --- Símbolos ---
         yield return new WaitForSeconds(delaySymbols);
         yield return StartCoroutine(ActivateSymbols());
 
-        // --- Transición a la escena del Boss ---
         yield return new WaitForSeconds(delayBeforeSceneLoad);
         SaveAndLoadBossScene();
+    }
+
+    public void StopParticles()
+    {
+        if (psA != null)
+            psA.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+
+        if (psB != null)
+            psB.Stop(true, ParticleSystemStopBehavior.StopEmitting);
     }
 
     private void EnableDoorRenderer()
@@ -158,19 +189,15 @@ public class UIFinalDoor : MonoBehaviour
 
     private IEnumerator SaveAndLoadBossSceneRoutine()
     {
-        yield return new WaitForEndOfFrame(); // Espera a que todo esté inicializado
+        yield return new WaitForEndOfFrame();
 
         var playerHealth = FindAnyObjectByType<PlayerHealth>();
         var gun = FindAnyObjectByType<_GunController>();
 
         if (playerHealth != null && gun != null)
-        {
             GameManager.Instance.SavePlayerData(playerHealth, gun);
-        }
 
-        // Espera mínima para que se procese el guardado
         yield return new WaitForSeconds(0.1f);
-
         SceneManager.LoadScene("FinalBoss");
     }
 }
