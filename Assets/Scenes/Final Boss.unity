@@ -1463,7 +1463,7 @@ PrefabInstance:
       objectReference: {fileID: 1588196707}
     - target: {fileID: 4922717361226243617, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
       propertyPath: landingOffsetFactor
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5704575739653423768, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
       propertyPath: m_FlipX

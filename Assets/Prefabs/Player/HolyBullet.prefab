@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.0481, y: 1.4121, z: 0}
-  m_LocalScale: {x: 0.43494126, y: 0.45585543, z: 1.8508139}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.8508139}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,9 +97,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0016739012, y: 0.002402407}
-  m_Size: {x: 0.16191177, y: 0.17184153}
-  m_Direction: 0
+  m_Offset: {x: -0.058821455, y: -0.22847222}
+  m_Size: {x: 4.003266, y: 2.1169145}
+  m_Direction: 1
 --- !u!114 &991470592985427640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,8 +112,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edcecfc940d462468c17d4507c07992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 12
-  lifeTime: 5
+  speed: 50
+  lifeTime: 0.2
+  animator: {fileID: 1899643102327315734}
+  travelStateName: Travel
+  explosionTrigger: Explode
+  hitCollider: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!95 &1899643102327315734
 Animator:
   serializedVersion: 7
@@ -179,7 +184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: bdba189e7d490d245bbc4e051c4ccfb2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
