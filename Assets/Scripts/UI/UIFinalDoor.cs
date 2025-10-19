@@ -36,6 +36,11 @@ public class UIFinalDoor : MonoBehaviour
     private ParticleSystem psA;
     private ParticleSystem psB;
 
+    // === Audio control flags ===
+    private bool hasPlayedEmerge = false;
+    private bool hasPlayedPortal = false;
+    private bool hasPlayedSymbols = false;
+
     private void Awake()
     {
         doorCollider = GetComponent<BoxCollider2D>();
@@ -83,6 +88,9 @@ public class UIFinalDoor : MonoBehaviour
             particleSystemB.SetActive(true);
             psB.Play();
         }
+
+        // 🔊 Sonido de aparición
+        PlayEmergeSound();
 
         yield return StartCoroutine(FadeInSprite(GetComponent<SpriteRenderer>(), 2f));
 
@@ -136,9 +144,9 @@ public class UIFinalDoor : MonoBehaviour
         if (portalAnimator != null)
             portalAnimator.Play("Portal", 0, 0f);
 
+        // 🔊 Sonido del portal
         PlayPortalSound();
     }
-
 
     private IEnumerator ActivateSymbols()
     {
@@ -165,6 +173,9 @@ public class UIFinalDoor : MonoBehaviour
                 StartCoroutine(FadeInSprite(sr, fadeDuration));
             }
         }
+
+        // 🔊 Sonido de símbolos
+        PlaySymbolsSound();
     }
 
     private IEnumerator FadeInSprite(SpriteRenderer sr, float duration)
@@ -210,8 +221,13 @@ public class UIFinalDoor : MonoBehaviour
         SceneManager.LoadScene("FinalBoss");
     }
 
+    // === AUDIO SYSTEM ===
+
     public void PlayEmergeSound()
     {
+        if (hasPlayedEmerge) return;
+        hasPlayedEmerge = true;
+
         StopCurrentSound();
         if (audioSource != null && emergeClip != null)
             audioSource.PlayOneShot(emergeClip);
@@ -219,12 +235,18 @@ public class UIFinalDoor : MonoBehaviour
 
     public void PlayPortalSound()
     {
-        StartCoroutine(CrossfadeToClip(portalClip, 1.0f, 0.8f));
+        if (hasPlayedPortal) return;
+        hasPlayedPortal = true;
+
+        StartCoroutine(CrossfadeToClip(portalClip, 1.2f, 0.6f));
     }
 
     public void PlaySymbolsSound()
     {
-        StartCoroutine(CrossfadeToClip(symbolsClip, 1.0f, 0.8f));
+        if (hasPlayedSymbols) return;
+        hasPlayedSymbols = true;
+
+        StartCoroutine(CrossfadeToClip(symbolsClip, 1.2f, 0.6f));
     }
 
     public void StopCurrentSound()
@@ -247,6 +269,7 @@ public class UIFinalDoor : MonoBehaviour
         tempSource.playOnAwake = false;
         tempSource.loop = false;
         tempSource.spatialBlend = audioSource.spatialBlend;
+        tempSource.outputAudioMixerGroup = audioSource.outputAudioMixerGroup;
 
         tempSource.Play();
 
@@ -255,18 +278,26 @@ public class UIFinalDoor : MonoBehaviour
         {
             time += Time.deltaTime;
             float t = time / fadeInDuration;
+
             audioSource.volume = Mathf.Lerp(startVolume, 0f, t);
             tempSource.volume = Mathf.Lerp(0f, startVolume, t);
             yield return null;
         }
 
-        // 🚫 En lugar de destruir el source original, lo dejamos vivo y listo para el siguiente sonido
+        // 🚫 Dejamos que el nuevo clip siga sonando sin reiniciarlo
         audioSource.Stop();
-        audioSource.clip = newClip;
-        audioSource.volume = tempSource.volume;
-        audioSource.Play();
+        audioSource.clip = null;
+        audioSource.volume = startVolume;
 
-        Destroy(tempSource); // solo destruimos el temporal
+        // 🔁 Transferimos referencia al nuevo source como principal
+        Destroy(audioSource);
+        audioSource = tempSource;
+
+        yield return new WaitForSeconds(tempSource.clip.length - fadeInDuration);
+
+        // 🔇 Limpieza automática al terminar
+        if (audioSource != null && !audioSource.isPlaying)
+            Destroy(audioSource);
     }
 
 }

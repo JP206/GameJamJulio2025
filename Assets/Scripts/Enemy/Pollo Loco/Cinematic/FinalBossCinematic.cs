@@ -16,6 +16,10 @@ public class FinalBossCinematic : MonoBehaviour
     [SerializeField] private GameObject portalObject;
     [SerializeField] private GameObject bossDoor;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource bossMusic;
+    [SerializeField] private float musicFadeInTime = 2f;
+
     [Header("Timings")]
     [SerializeField] private float delayBeforeWalk = 1f;
     [SerializeField] private float delayTriangle = 0.5f;
@@ -25,39 +29,93 @@ public class FinalBossCinematic : MonoBehaviour
     [SerializeField] private float delayBeforeBossActive = 1f;
 
     private GameObject player;
+    private PlayerAim playerAim;
+    private UICanvasManager uiManagerInstance;
 
     private IEnumerator Start()
     {
-        // Bloquear mouse desde el inicio
+        // Bloquear mouse
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
+        // Buscar al jugador
         player = GameObject.FindGameObjectWithTag("Player");
         if (player == null) yield break;
 
+        // Desactivar rotación del mouse
+        playerAim = player.GetComponentInChildren<PlayerAim>(true);
+        if (playerAim != null)
+            playerAim.enabled = false;
+
         yield return new WaitForSeconds(1f);
 
+        // Desactivar control del jugador
         playerController.DisablePlayer(player);
 
+        // Desactivar UI Manager global (evita que se abra el menú de pausa)
+        uiManagerInstance = FindFirstObjectByType<UICanvasManager>();
+        if (uiManagerInstance != null)
+            uiManagerInstance.enabled = false;
+
+        // Mostrar barras cinematográficas
         if (barsController != null)
             yield return StartCoroutine(barsController.ShowBars());
 
         yield return new WaitForSeconds(delayBeforeWalk);
 
+        // Movimiento automático del jugador
         yield return StartCoroutine(playerController.PlayerWalk(player));
 
+        // Secuencia de cierre (símbolos, portal, puerta)
         yield return StartCoroutine(CloseSequence());
 
         yield return new WaitForSeconds(delayBeforeBossActive);
 
+        // Intro del jefe
         if (bossIntro != null)
             yield return StartCoroutine(bossIntro.PlayBossIntro(cameraFocus, uiManager));
 
+        // Ocultar barras
         if (barsController != null)
             yield return StartCoroutine(barsController.HideBars());
 
+        // Reactivar control del jugador
         playerController.EnablePlayer(player);
+
+        // Reactivar rotación del mouse
+        if (playerAim != null)
+            playerAim.enabled = true;
+
+        // Reactivar UI Manager (permite pausa y menús nuevamente)
+        if (uiManagerInstance != null)
+            uiManagerInstance.enabled = true;
+
+        // Reproducir música del boss con fade-in
+        if (bossMusic != null)
+            StartCoroutine(FadeInMusic(bossMusic, musicFadeInTime));
+
+        // Restaurar cursor
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
+
+    // === Fading suave de música ===
+    private IEnumerator FadeInMusic(AudioSource music, float duration)
+    {
+        music.volume = 0f;
+        music.Play();
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            music.volume = Mathf.Lerp(0f, 1f, elapsed / duration);
+            yield return null;
+        }
+
+        music.volume = 1f;
+    }
+
     private IEnumerator CloseSequence()
     {
         if (triangleObject)

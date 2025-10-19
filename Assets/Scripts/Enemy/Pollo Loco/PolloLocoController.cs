@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class PolloLocoController : MonoBehaviour
 {
@@ -62,7 +63,8 @@ public class PolloLocoController : MonoBehaviour
     [Header("Audio Settings")]
     [SerializeField] private AudioClip throwChairClip;
     [SerializeField] private float throwChairVolume = 1f;
-
+    [SerializeField] private AudioClip animationEventClip;
+    [SerializeField] private float animationEventVolume = 1f;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -438,9 +440,12 @@ public class PolloLocoController : MonoBehaviour
             }
 
             if (currentHp <= 0)
+            {
+                TriggerInstantDefeat();
                 StartCoroutine(Death());
-            else
-                StartCoroutine(DamageFlashAndInvulnerability());
+            }
+
+            else { StartCoroutine(DamageFlashAndInvulnerability()); }               
         }
     }
 
@@ -487,7 +492,41 @@ public class PolloLocoController : MonoBehaviour
         if (hitEffect != null)
             yield return new WaitForSeconds(hitEffect.main.duration);
 
+        // 🔹 Iniciar el desvanecimiento visual
+        yield return StartCoroutine(FadeOutSprite(1.2f));
+
+        // 🔹 Llamar a la secuencia final del boss
+        TriggerDefeatSequence();
+
+        // 🔹 Finalmente desactivamos el objeto
         gameObject.SetActive(false);
+
+        // 🎥 Después de que el boss está completamente deshabilitado, enfocar al jugador
+        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
+        if (defeatSequence != null)
+        {
+            defeatSequence.FocusOnPlayerAfterBossDefeated();
+        }
+
+    }
+    private IEnumerator FadeOutSprite(float duration)
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr == null)
+            yield break;
+
+        Color startColor = sr.color;
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, elapsed / duration);
+            sr.color = new Color(startColor.r, startColor.g, startColor.b, alpha);
+            yield return null;
+        }
+
+        sr.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
     }
 
     private AudioClip GethitSound()
@@ -535,4 +574,71 @@ public class PolloLocoController : MonoBehaviour
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, areaDamageRadius);
     }
+
+    public void PlayAnimationEventSound()
+    {
+        if (audioSource != null && animationEventClip != null)
+            audioSource.PlayOneShot(animationEventClip, animationEventVolume);
+    }
+
+    private void TriggerDefeatSequence()
+    {
+        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
+        if (defeatSequence != null)
+        {
+            defeatSequence.StartDefeatSequence();
+        }
+    }
+
+    private void TriggerInstantDefeat()
+    {
+        // Evitar ejecución múltiple
+        if (isDead) return;
+
+        isDead = true;
+
+        // 🔹 Forzar al Player a estado Idle y cortar control
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            var move = player.GetComponent<PlayerMovement>();
+            var gun = player.GetComponent<_GunController>();
+            var input = player.GetComponent<PlayerInput>();
+            var audio = player.GetComponent<AudioSource>();
+
+            if (move) move.enabled = false;
+            if (gun) gun.enabled = false;
+            if (input) input.enabled = false;
+            if (audio) audio.Stop();
+
+            // Forzar Idle instantáneo
+            var playerAnimator = player.GetComponent<Animator>();
+            if (playerAnimator != null)
+            {
+                playerAnimator.ResetTrigger("isRunning");
+                playerAnimator.SetBool("isMoving", false);
+                playerAnimator.Play("Idle", 0, 0f);
+            }
+
+            // Detener Rigidbody
+            var rb = player.GetComponent<Rigidbody2D>();
+            if (rb)
+            {
+                rb.linearVelocity = Vector2.zero;
+                rb.bodyType = RigidbodyType2D.Kinematic;
+            }
+        }
+
+        // 🔹 Llamar al sistema de cámara y victoria de inmediato
+        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
+        if (defeatSequence != null)
+        {
+            defeatSequence.StartDefeatSequence();
+        }
+
+        // 🔹 Cortar todos los sonidos del Pollo Loco salvo la música
+        if (audioSource != null)
+            audioSource.Stop();
+    }
+
 }
