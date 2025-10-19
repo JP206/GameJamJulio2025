@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: 3ff6d876da79850408b9f0355101c183
   - enabled: 1
+    path: Assets/Scenes/DIARY CUT.unity
+    guid: 2d5ffcc06b302e74eb6aa9d4107e9b30
+  - enabled: 1
     path: Assets/Scenes/RoyalScene.unity
     guid: 979396b24b0a98c4b9ed27459b9c12b6
   - enabled: 1
