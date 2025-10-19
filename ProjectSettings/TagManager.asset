@@ -13,6 +13,9 @@ TagManager:
   - Building
   - Life
   - HolyBullet
+  - PolloLoco
+  - Fire
+  - GoldenChair
   layers:
   - Default
   - TransparentFX
@@ -27,7 +30,7 @@ TagManager:
   - Building
   - Life
   - HolyBullet
-  - 
+  - Fire
   - 
   - 
   - 

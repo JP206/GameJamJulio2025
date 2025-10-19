@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 955669567430385087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4219, y: -1.6008, z: -0.022008251}
-  m_LocalScale: {x: 1.8475081, y: 0.54889035, z: 1}
+  m_LocalPosition: {x: -0.15, y: -1.6354, z: -0.022008251}
+  m_LocalScale: {x: 2.0801094, y: 0.6179957, z: 1.1259}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6138134679833968185}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.7019608}
   m_FlipX: 0
@@ -98,7 +98,9 @@ GameObject:
   - component: {fileID: 6138134679833968185}
   - component: {fileID: 5704575739653423768}
   - component: {fileID: 1269774455772050079}
+  - component: {fileID: -1543034437225410565}
   - component: {fileID: 4922717361226243617}
+  - component: {fileID: 4642833035473307696}
   - component: {fileID: -7334447666295787246}
   - component: {fileID: 7270359552864832264}
   - component: {fileID: -5584958404233878911}
@@ -170,7 +172,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1431334149709109681, guid: ee26a49a52f1c744aae705168b0058bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -216,9 +218,29 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.42491966, y: -0.31770185}
-  m_Size: {x: 2.069921, y: 2.1395924}
-  m_Direction: 1
+  m_Offset: {x: -0.20297073, y: -0.014276254}
+  m_Size: {x: 2.6570146, y: 2.746447}
+  m_Direction: 0
+--- !u!114 &-1543034437225410565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502458001669622197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a56ea4a0f4e9748ab47fee884a20bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPause: 0.2
+  dashSpeed: 15
+  dashDuration: 0.6
+  counterDashMultiplier: 1.2
+  counterDashRecovery: 0.7
+  areaJumpSpeed: 18
+  areaJumpDuration: 0.8
+  areaJumpHeightBoost: 4
 --- !u!114 &4922717361226243617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,24 +256,61 @@ MonoBehaviour:
   speed: 4
   invulnerabilityTime: 2
   flashInterval: 0.1
-  damage: 1
+  damage: 2
   maxHp: 50
   currentHp: 0
   attackRange: 4
-  attackCooldown: 5
+  attackCooldown: 2
   audioSource: {fileID: 7270359552864832264}
   hit1: {fileID: 8300000, guid: c1e5ad2597af11a45921cc2ed387f4ad, type: 3}
   hit2: {fileID: 8300000, guid: 1e48f44d01722874c8dcb30355cfc2e4, type: 3}
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 8111620041780958951}
-  areaJumpDuration: 1
-  areaJumpMaxDistance: 20
-  areaJumpHeight: 5
-  areaImpactRadius: 3
-  minAreaAttackDistance: 3
-  landingOffsetFactor: 0.1
   bossHealthSlider: {fileID: 0}
   isCinematicMode: 0
+  detectionRange: 15
+  closeAttackRange: 5
+  comboPause: 0
+  postDashDelay: 0
+  normalPushForce: 6
+  attackPushForce: 10
+  knockbackDuration: 0.25
+  meleeRange: 4
+  rangeAttackDistance: 8
+  areaAttackDistance: 10
+  dashSpeed: 15
+  dashDuration: 0.6
+  areaAttackCooldown: 3
+  areaDamageRadius: 6
+  hitsToTriggerDash: 2
+  hitResetTime: 1
+  counterDashMultiplier: 1.2
+  counterDashRecovery: 0.7
+  chairAttackDistance: 15
+  chairAttackCooldown: 7
+  chairPrefab: {fileID: 3295384446024702919, guid: 21ee81f894f8c544f80adf3c007c17bd, type: 3}
+  chairThrowForce: 30
+  hitsWhileClose: 0
+  lastAttackTime: 0
+  lastDashTime: 0
+  lastAreaAttackTime: 0
+  lastChairAttackTime: 0
+  lastHitTime: 0
+  lastKnownPlayerPos: {x: 0, y: 0}
+--- !u!114 &4642833035473307696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502458001669622197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2fbec4b14a1bf9448c212f4c2251d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ringTransform: {fileID: 0}
+  offset: 2
 --- !u!50 &-7334447666295787246
 Rigidbody2D:
   serializedVersion: 5
@@ -275,10 +334,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!82 &7270359552864832264
 AudioSource:
   m_ObjectHideFlags: 0

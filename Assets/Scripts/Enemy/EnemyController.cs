@@ -20,6 +20,16 @@ public class EnemyController : MonoBehaviour
 
     private Vector2 avoidanceDirection = Vector2.zero;
 
+    // === Ajustes del Raycast ===
+    [Header("Detection Settings")]
+    [SerializeField] private float detectionDistance = 5f; // aumento de distancia
+    [SerializeField] private float rayAngle = 30f;
+    [SerializeField] private LayerMask obstacleMask;
+
+    // === Estado de evasión ===
+    private bool isAvoiding = false;
+    private float avoidTimer = 0f;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -67,28 +77,40 @@ public class EnemyController : MonoBehaviour
     {
         if (playerTransform && !isDead && !celebrating && rb != null)
         {
-            Vector2 direction = (playerTransform.position - transform.position).normalized;
+            Vector2 direction;
 
-            if (avoidanceDirection != Vector2.zero)
+            // 🧭 Si está esquivando, no mirar al jugador
+            if (isAvoiding)
             {
-                direction = Vector2.Lerp(direction, avoidanceDirection, 0.5f);
+                direction = avoidanceDirection;
+                avoidTimer -= Time.fixedDeltaTime;
+                if (avoidTimer <= 0f)
+                {
+                    isAvoiding = false;
+                    avoidanceDirection = Vector2.zero;
+                }
             }
-
-            if (direction.magnitude < 0.1f)
+            else
             {
                 direction = (playerTransform.position - transform.position).normalized;
             }
 
-            direction = direction.normalized;
+            // Aplicar una pequeña mezcla si hay dirección de evasión activa
+            if (avoidanceDirection != Vector2.zero && !isAvoiding)
+            {
+                direction = Vector2.Lerp(direction, avoidanceDirection, 0.4f);
+            }
 
+            // Detectar obstáculos por raycast
+            DetectObstacles(ref direction);
+
+            direction = direction.normalized;
             Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
 
             float movementMagnitude = (newPosition - rb.position).magnitude;
 
             if (animator != null && HasParameter(animator, "isMoving"))
-            {
                 animator.SetBool("isMoving", movementMagnitude > 0.01f);
-            }
 
             rb.MovePosition(newPosition);
 
@@ -98,9 +120,48 @@ public class EnemyController : MonoBehaviour
         else
         {
             if (animator != null && HasParameter(animator, "isMoving"))
-            {
                 animator.SetBool("isMoving", false);
-            }
+        }
+    }
+
+    private void DetectObstacles(ref Vector2 direction)
+    {
+        Vector2 origin = transform.position;
+
+        Vector2 forwardDir = direction.normalized;
+        Vector2 leftDir = Quaternion.Euler(0, 0, rayAngle) * forwardDir;
+        Vector2 rightDir = Quaternion.Euler(0, 0, -rayAngle) * forwardDir;
+
+        RaycastHit2D hitFront = Physics2D.Raycast(origin, forwardDir, detectionDistance, obstacleMask);
+        RaycastHit2D hitLeft = Physics2D.Raycast(origin, leftDir, detectionDistance, obstacleMask);
+        RaycastHit2D hitRight = Physics2D.Raycast(origin, rightDir, detectionDistance, obstacleMask);
+
+        // Debug visual
+        Debug.DrawRay(origin, forwardDir * detectionDistance, hitFront.collider ? Color.red : Color.green);
+        Debug.DrawRay(origin, leftDir * detectionDistance, hitLeft.collider ? Color.yellow : Color.green);
+        Debug.DrawRay(origin, rightDir * detectionDistance, hitRight.collider ? Color.cyan : Color.green);
+
+        // === LÓGICA DE EVASIÓN ===
+        if (hitFront.collider != null && (hitFront.collider.CompareTag("Building") || hitFront.collider.CompareTag("Fire")))
+        {
+            bool leftFree = hitLeft.collider == null;
+            bool rightFree = hitRight.collider == null;
+
+            Vector2 avoidDir = Vector2.zero;
+
+            if (leftFree && !rightFree)
+                avoidDir = leftDir;
+            else if (rightFree && !leftFree)
+                avoidDir = rightDir;
+            else if (leftFree && rightFree)
+                avoidDir = rightDir; // preferir derecha
+            else
+                avoidDir = Quaternion.Euler(0, 0, -rayAngle * 1.5f) * forwardDir; // giro fuerte
+
+            // 💡 Guardamos dirección de evasión y activamos modo evitar
+            avoidanceDirection = avoidDir.normalized;
+            isAvoiding = true;
+            avoidTimer = 0.9f; // duración del modo evasión
         }
     }
 
@@ -118,9 +179,8 @@ public class EnemyController : MonoBehaviour
                 if (playerMovement != null && !playerMovement.IsRolling && playerHealth != null)
                 {
                     if (animator != null && HasParameter(animator, "Attack"))
-                    {
                         animator.SetTrigger("Attack");
-                    }
+
                     playerHealth.TakeDamage(damage);
                 }
             }
@@ -130,13 +190,9 @@ public class EnemyController : MonoBehaviour
     private void DoDamage(Collider2D collision)
     {
         if (collision.CompareTag("Bullet"))
-        {
             TakeDamage(1);
-        }
         else if (collision.CompareTag("HolyBullet"))
-        {
             TakeDamage(5);
-        }
     }
 
     private void TakeDamage(int amount)
@@ -154,49 +210,24 @@ public class EnemyController : MonoBehaviour
             }
 
             if (currentHp <= 0)
-            {
                 StartCoroutine(Death());
-            }
             else
-            {
                 StartCoroutine(DamageFlashAndInvulnerability());
-            }
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Building"))
-        {
-            Vector2 awayFromBuilding = (transform.position - collision.transform.position).normalized;
-            avoidanceDirection = awayFromBuilding;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Building"))
-        {
-            avoidanceDirection = Vector2.zero;
         }
     }
 
     private IEnumerator DamageFlashAndInvulnerability()
     {
         isInvulnerable = true;
-
         spriteRenderer.color = Color.red;
         collider.enabled = false;
 
         if (bossChicken && animator != null && HasParameter(animator, "GetHit"))
-        {
             animator.SetTrigger("GetHit");
-        }
 
         yield return new WaitForSeconds(0.1f);
 
         float elapsed = 0f;
-
         while (elapsed < invulnerabilityTime)
         {
             spriteRenderer.color = Color.white;
@@ -216,19 +247,13 @@ public class EnemyController : MonoBehaviour
         isDead = true;
 
         if (waveManager != null)
-        {
             waveManager.NotifyDeath();
-        }
 
         if (animator != null && HasParameter(animator, "Death"))
-        {
             animator.SetTrigger("Death");
-        }
 
         if (transform.childCount > 0)
-        {
             transform.GetChild(0).gameObject.SetActive(false);
-        }
 
         if (hitEffect != null)
         {
@@ -241,9 +266,7 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(animator != null ? animator.GetCurrentAnimatorStateInfo(0).length : 0f);
 
         if (hitEffect != null)
-        {
             yield return new WaitForSeconds(hitEffect.main.duration);
-        }
 
         gameObject.SetActive(false);
     }
@@ -251,14 +274,12 @@ public class EnemyController : MonoBehaviour
     private AudioClip GethitSound()
     {
         int random = Random.Range(0, 3);
-
         switch (random)
         {
             case 0: return hit1;
             case 1: return hit2;
             case 2: return hit3;
         }
-
         return null;
     }
 
@@ -266,17 +287,15 @@ public class EnemyController : MonoBehaviour
     {
         celebrating = true;
         if (animator != null && HasParameter(animator, "Celebration"))
-        {
             animator.SetTrigger("Celebration");
-        }
     }
 
     private void SetBossAsTrue()
     {
-        if (gameObject.CompareTag("Boss")) bossChicken = true;
+        if (gameObject.CompareTag("Boss"))
+            bossChicken = true;
     }
 
-    // Helper para evitar warnings si faltan parámetros en el Animator
     private bool HasParameter(Animator anim, string paramName)
     {
         foreach (var param in anim.parameters)

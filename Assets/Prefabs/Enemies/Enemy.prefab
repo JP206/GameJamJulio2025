@@ -128,8 +128,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.2999998, y: 1.6599998}
+  m_Offset: {x: 0.00000034059798, y: -0.020321524}
+  m_Size: {x: 1.4463146, y: 1.7819281}
   m_Direction: 0
 --- !u!114 &917844903494238440
 MonoBehaviour:
@@ -155,6 +155,11 @@ MonoBehaviour:
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 5681052743055253591, guid: b3fa057189c41cc43aeba44ef06354c0, type: 3}
   bossChicken: 0
+  detectionDistance: 3
+  rayAngle: 25
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 9216
 --- !u!50 &2073909550683481424
 Rigidbody2D:
   serializedVersion: 5

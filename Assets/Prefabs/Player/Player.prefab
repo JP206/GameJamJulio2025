@@ -1255,6 +1255,8 @@ MonoBehaviour:
   movementAudio: {fileID: 3719874449319423518}
   rollForce: 20
   rollCooldown: 1
+  rollDistance: 3
+  rollDuration: 0.2
 --- !u!114 &3012564143706964398
 MonoBehaviour:
   m_ObjectHideFlags: 0

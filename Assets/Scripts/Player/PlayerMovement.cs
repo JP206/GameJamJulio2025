@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Roll Settings")]
     [SerializeField] private float rollForce = 10f;
     [SerializeField] private float rollCooldown = 2f;
+    [SerializeField] private float rollDistance = 3f;
+    [SerializeField] private float rollDuration = 0.2f;
 
     private float nextRollTime = 0f;
     private TrailRenderer trail;
@@ -26,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsRolling => isRolling;
     public bool IsCastingHolyShot => isCastingHolyShot;
+
+    // === Nueva bandera para knockback ===
+    public bool IsKnockedBack { get; set; }
 
     void Start()
     {
@@ -55,10 +60,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (UICanvasManager.IsGamePausedOrOver) return;
 
-        if (!isRolling && !isCastingHolyShot)
-        {
-            rb.linearVelocity = movementInput * moveSpeed;
-        }
+        // Evita moverse si está siendo empujado o está casteando
+        if (IsKnockedBack || isRolling || isCastingHolyShot)
+            return;
+
+        rb.linearVelocity = movementInput * moveSpeed;
     }
 
     private void HandleInput()
@@ -78,33 +84,32 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && Time.time >= nextRollTime && !isCastingHolyShot)
         {
             nextRollTime = Time.time + rollCooldown;
-
             animator.SetTrigger("Rolling");
 
             Vector2 dashDir = movementInput != Vector2.zero ? movementInput : lastMoveDir;
-
-            rb.linearVelocity = Vector2.zero;
-            rb.AddForce(dashDir * rollForce, ForceMode2D.Impulse);
-
-            StartCoroutine(RollCoroutine());
-
-            if (trail != null)
-                StartCoroutine(RollTrail());
+            StartCoroutine(RollCoroutine(dashDir));
         }
     }
 
-    private IEnumerator RollCoroutine()
+    private IEnumerator RollCoroutine(Vector2 dashDir)
     {
         isRolling = true;
-        yield return new WaitForSeconds(0.5f);
-        isRolling = false;
-    }
+        float elapsed = 0f;
+        Vector2 startPos = transform.position;
+        Vector2 targetPos = startPos + dashDir.normalized * rollDistance;
 
-    private IEnumerator RollTrail()
-    {
-        trail.emitting = true;
-        yield return new WaitForSeconds(0.5f);
-        trail.emitting = false;
+        if (trail != null) trail.emitting = true;
+
+        while (elapsed < rollDuration)
+        {
+            transform.position = Vector2.Lerp(startPos, targetPos, elapsed / rollDuration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = targetPos;
+        isRolling = false;
+        if (trail != null) trail.emitting = false;
     }
 
     public void HandleAnimation()
