@@ -104,4 +104,61 @@ public class CinematicCameraFocus : MonoBehaviour
 
         cineCam.transform.position = center;
     }
+
+    public IEnumerator FocusOnPlayer()
+    {
+        if (cineCam == null)
+            yield break;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+            yield break;
+
+        // Guardamos estado original
+        Transform originalFollow = cineCam.Follow;
+        float originalZoom = cineCam.Lens.OrthographicSize;
+        Vector3 originalPosition = cineCam.transform.position;
+
+        cineCam.Follow = null;
+
+        // === 1️⃣ Transición hasta el jugador ===
+        Vector3 startPos = cineCam.transform.position;
+        Vector3 targetPos = new Vector3(
+            player.transform.position.x,
+            player.transform.position.y,
+            cineCam.transform.position.z
+        );
+
+        float startZoom = cineCam.Lens.OrthographicSize;
+        float elapsed = 0f;
+        float duration = focusDuration; // usa el mismo tiempo que el boss
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime * lerpSpeed;
+            cineCam.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / duration);
+            cineCam.Lens.OrthographicSize = Mathf.Lerp(startZoom, startZoom - zoomAmount, elapsed / duration);
+            yield return null;
+        }
+
+        cineCam.transform.position = targetPos;
+        cineCam.Lens.OrthographicSize = startZoom - zoomAmount;
+
+        // === 2️⃣ Shake y pausa en la posición del jugador ===
+        yield return StartCoroutine(ShakeCamera(targetPos));
+        yield return new WaitForSeconds(waitOnBoss);
+
+        // === 3️⃣ Mostrar Canvas WIN aquí mismo ===
+        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
+        if (defeatSequence != null && defeatSequence.canvasWin != null)
+        {
+            defeatSequence.canvasWin.SetActive(true);
+        }
+
+        // 🔹 Mantenemos la cámara centrada en el jugador (no vuelve atrás)
+        cineCam.Follow = null;
+        cineCam.transform.position = targetPos;
+        cineCam.Lens.OrthographicSize = startZoom - zoomAmount;
+    }
+
 }
