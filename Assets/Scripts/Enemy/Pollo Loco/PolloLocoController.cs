@@ -400,9 +400,19 @@ public class PolloLocoController : MonoBehaviour
     private void DoDamage(Collider2D collision)
     {
         if (collision.transform.root == transform) return;
-        if (collision.CompareTag("Bullet")) TakeDamage(1);
-        else if (collision.CompareTag("HolyBullet")) TakeDamage(5);
+
+        if (collision.CompareTag("Bullet"))
+        {
+            TakeDamage(1);
+            Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("HolyBullet"))
+        {
+            TakeDamage(5);
+            Destroy(collision.gameObject);
+        }
     }
+
 
     private void TakeDamage(int amount)
     {
@@ -645,10 +655,9 @@ public class PolloLocoController : MonoBehaviour
     {
         if (plumaImpactEffect == null) return;
 
-        // Si está desactivado, lo activamos y lo reproducimos desde el inicio
-        plumaImpactEffect.gameObject.SetActive(true);
+        // 🔹 Reinicia y reproduce
         plumaImpactEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-        plumaImpactEffect.Play();
+        plumaImpactEffect.Clear(true);
+        plumaImpactEffect.Play(true);
     }
-
 }

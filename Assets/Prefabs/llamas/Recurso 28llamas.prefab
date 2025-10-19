@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a72f216b373b44eaceb03e5ff3ff22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
   damageInterval: 0.5
 --- !u!1 &8157278484024460814
 GameObject:
