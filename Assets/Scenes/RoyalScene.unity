@@ -36755,7 +36755,7 @@ PrefabInstance:
       objectReference: {fileID: 1860156536}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: bossWaveThreshold
-      value: 12
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: killCountTextShade
