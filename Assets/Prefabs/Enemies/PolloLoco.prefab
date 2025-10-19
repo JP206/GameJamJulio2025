@@ -292,6 +292,8 @@ MonoBehaviour:
   chairThrowForce: 30
   throwChairClip: {fileID: 8300000, guid: 44a205923e88bc64c9cc464c5975d453, type: 3}
   throwChairVolume: 1
+  animationEventClip: {fileID: 8300000, guid: 6c597746596d99c4489118671f6aa3b5, type: 3}
+  animationEventVolume: 2
   hitsWhileClose: 0
   lastAttackTime: 0
   lastDashTime: 0
@@ -353,7 +355,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 7c5910d8d359c3047bd2e630ed8afe58, type: 3}
   m_Resource: {fileID: 8300000, guid: 7c5910d8d359c3047bd2e630ed8afe58, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.33
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -450,7 +452,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

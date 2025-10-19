@@ -62,7 +62,8 @@ public class PolloLocoController : MonoBehaviour
     [Header("Audio Settings")]
     [SerializeField] private AudioClip throwChairClip;
     [SerializeField] private float throwChairVolume = 1f;
-
+    [SerializeField] private AudioClip animationEventClip;
+    [SerializeField] private float animationEventVolume = 1f;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -534,5 +535,11 @@ public class PolloLocoController : MonoBehaviour
 
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, areaDamageRadius);
+    }
+
+    public void PlayAnimationEventSound()
+    {
+        if (audioSource != null && animationEventClip != null)
+            audioSource.PlayOneShot(animationEventClip, animationEventVolume);
     }
 }

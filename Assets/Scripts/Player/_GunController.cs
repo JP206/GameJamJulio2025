@@ -59,7 +59,7 @@ public class _GunController : MonoBehaviour
             nextFireTime = Time.time + fireRate;
         }
 
-        if (Keyboard.current.zKey.wasPressedThisFrame && !isChargingHolyShot)
+        if (Mouse.current.rightButton.wasPressedThisFrame && !isChargingHolyShot)
         {
             StartCoroutine(FireHolyShot());
         }
