@@ -59,6 +59,12 @@ public class PolloLocoController : MonoBehaviour
     [SerializeField] public GameObject chairPrefab;
     [SerializeField] public float chairThrowForce = 15f;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioClip throwChairClip;
+    [SerializeField] private float throwChairVolume = 1f;
+    [SerializeField] private AudioClip animationEventClip;
+    [SerializeField] private float animationEventVolume = 1f;
+
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
@@ -269,8 +275,6 @@ public class PolloLocoController : MonoBehaviour
         yield return new WaitForSeconds(1f); // duración total de la animación
         OnAttackEnd();
     }
-
-
     public void ThrowChair()
     {
         if (chairPrefab == null || playerTransform == null) return;
@@ -296,6 +300,9 @@ public class PolloLocoController : MonoBehaviour
             float finalForce = chairThrowForce * 1.6f;
             chairRb.AddForce(launchDir * finalForce, ForceMode2D.Impulse);
         }
+
+        if (audioSource != null && throwChairClip != null)
+            audioSource.PlayOneShot(throwChairClip, throwChairVolume);
     }
 
     public void DoAreaDamage()
@@ -305,7 +312,7 @@ public class PolloLocoController : MonoBehaviour
 
     private IEnumerator DelayedAreaDamage()
     {
-        // 🔹 Esperamos a que el Rigidbody termine su movimiento antes de calcular el área
+        // Esperamos a que el Rigidbody termine su movimiento antes de calcular el área
         yield return new WaitForFixedUpdate();
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, areaDamageRadius);
@@ -319,12 +326,12 @@ public class PolloLocoController : MonoBehaviour
 
                 if (playerHealth != null && playerRb != null)
                 {
-                    // 🔹 Calculamos dirección de empuje y daño
+                    // Calculamos dirección de empuje y daño
                     Vector2 knockDir = (playerHealth.transform.position - transform.position).normalized;
                     int finalDamage = Mathf.RoundToInt(damage * 1.8f);
                     float pushForce = attackPushForce;
 
-                    // 🔹 Aplicamos daño y empuje
+                    // Aplicamos daño y empuje
                     playerHealth.RegisterAttacker(gameObject);
                     playerHealth.TakeDamage(finalDamage);
                     StartCoroutine(ApplyKnockback(playerRb, knockDir, pushForce));
@@ -528,5 +535,11 @@ public class PolloLocoController : MonoBehaviour
 
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, areaDamageRadius);
+    }
+
+    public void PlayAnimationEventSound()
+    {
+        if (audioSource != null && animationEventClip != null)
+            audioSource.PlayOneShot(animationEventClip, animationEventVolume);
     }
 }

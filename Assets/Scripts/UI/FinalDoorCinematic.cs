@@ -22,6 +22,9 @@ public class FinalDoorCinematic : MonoBehaviour
     [SerializeField] private float shakeFrequency = 25f;
     [SerializeField] private float shakeDuration = 1.5f;
 
+    [Header("Audio")]
+    [SerializeField] private float globalFadeOutDuration = 1.0f; 
+
     // Internos
     private PlayerMovement playerMovement;
     private _GunController gunController;
@@ -60,6 +63,8 @@ public class FinalDoorCinematic : MonoBehaviour
     {
         IsPlaying = true;
 
+        StartCoroutine(FadeOutAllAudio(globalFadeOutDuration));
+
         bool uiWasActive = uiCanvas != null && uiCanvas.activeSelf;
         if (uiCanvas != null) uiCanvas.SetActive(false);
 
@@ -74,9 +79,7 @@ public class FinalDoorCinematic : MonoBehaviour
         }
 
         if (playerAnimator != null)
-        {
-            playerAnimator.SetBool("isRunning", false);
-        }
+            StartCoroutine(SmoothTransitionToIdle());
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -104,7 +107,6 @@ public class FinalDoorCinematic : MonoBehaviour
             finalDoor.ShowFinalDoor();
 
         Vector3 basePos = camTarget.position;
-
         float shakeTime = 0f;
         while (shakeTime < shakeDuration)
         {
@@ -134,5 +136,65 @@ public class FinalDoorCinematic : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         IsPlaying = false;
+    }
+
+    private IEnumerator FadeOutAllAudio(float duration)
+    {
+        AudioSource[] allSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+        float time = 0f;
+
+        var initialVolumes = new float[allSources.Length];
+        for (int i = 0; i < allSources.Length; i++)
+            initialVolumes[i] = allSources[i].volume;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            float t = time / duration;
+
+            for (int i = 0; i < allSources.Length; i++)
+            {
+                if (allSources[i] != null)
+                    allSources[i].volume = Mathf.Lerp(initialVolumes[i], 0f, t);
+            }
+
+            yield return null;
+        }
+
+        foreach (var src in allSources)
+        {
+            if (src != null)
+            {
+                src.Stop();
+                src.volume = 1f;
+            }
+        }
+    }
+
+    private IEnumerator SmoothTransitionToIdle(float transitionTime = 0.25f)
+    {
+        if (playerAnimator == null)
+            yield break;
+
+        float elapsed = 0f;
+        float startH = playerAnimator.GetFloat("Horizontal");
+        float startV = playerAnimator.GetFloat("Vertical");
+
+        while (elapsed < transitionTime)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / transitionTime;
+
+            playerAnimator.SetFloat("Horizontal", Mathf.Lerp(startH, 0f, t));
+            playerAnimator.SetFloat("Vertical", Mathf.Lerp(startV, 0f, t));
+
+            yield return null;
+        }
+
+        // Forzar Idle final
+        playerAnimator.SetBool("isRunning", false);
+        playerAnimator.SetFloat("Horizontal", 0f);
+        playerAnimator.SetFloat("Vertical", 0f);
+        playerAnimator.Play("Idle", 0, 0f);
     }
 }

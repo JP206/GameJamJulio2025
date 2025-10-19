@@ -6,17 +6,18 @@ public class CinematicBossIntro : MonoBehaviour
     [SerializeField] private GameObject bossObject;
     [SerializeField] private string idleAnimationName = "PolloLocoIdle";
     [SerializeField] private string warCryAnimationName = "PolloLocoWarCry";
-    [SerializeField] private string moveAnimationName = "PolloLocoMovement"; // 🔹 movimiento base real
+    [SerializeField] private string moveAnimationName = "PolloLocoMovement";
     [SerializeField] private float delayAfterHPFill = 1f;
+
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip warCryClip;
+    [SerializeField] private float warCryVolume = 1f;
 
     public IEnumerator PlayBossIntro(CinematicCameraFocus cameraFocus, CinematicUIManager uiManager)
     {
         if (bossObject == null)
             yield break;
-
-        // 🔒 Bloquear mouse desde el inicio
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
 
         bossObject.SetActive(true);
 
@@ -26,11 +27,11 @@ public class CinematicBossIntro : MonoBehaviour
         if (bossController != null)
             bossController.isCinematicMode = true;
 
-        // 🔸 Empieza en Idle
+        // Empieza en Idle
         if (anim != null && !string.IsNullOrEmpty(idleAnimationName))
             anim.Play(idleAnimationName, 0, 0f);
 
-        // 🔸 Enfoque de cámara → WarCry cuando el boss entra en cuadro
+        // Enfoque de cámara → WarCry cuando el boss entra en cuadro
         if (cameraFocus != null)
         {
             bool warCryPlayed = false;
@@ -41,29 +42,32 @@ public class CinematicBossIntro : MonoBehaviour
                 {
                     anim.Play(warCryAnimationName, 0, 0f);
                     warCryPlayed = true;
+
+                    if (audioSource != null && warCryClip != null)
+                        audioSource.PlayOneShot(warCryClip, warCryVolume);
                 }
             }));
         }
 
-        // 🔸 Llenado de barra de HP
+        // Llenado de barra de HP
         if (uiManager != null)
             yield return StartCoroutine(uiManager.FillBossHP());
 
-        // 🔸 🔹 Al terminar el HP Fill → vuelve a Idle antes del movimiento real
+        // Al terminar el HP Fill → vuelve a Idle antes del movimiento real
         if (anim != null && !string.IsNullOrEmpty(idleAnimationName))
             anim.Play(idleAnimationName, 0, 0f);
 
-        // 🔸 Espera y luego arranca la animación de movimiento
+        // Espera y luego arranca la animación de movimiento
         yield return new WaitForSeconds(delayAfterHPFill);
 
         if (anim != null && !string.IsNullOrEmpty(moveAnimationName))
             anim.Play(moveAnimationName, 0, 0f);
 
-        // 🔸 Reactivar IA
+        // Reactivar IA
         if (bossController != null)
             bossController.isCinematicMode = false;
 
-        // 🔓 Restaurar mouse
+        // Restaurar mouse
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }

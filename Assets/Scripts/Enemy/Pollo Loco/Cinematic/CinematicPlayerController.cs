@@ -6,6 +6,7 @@ public class CinematicPlayerController : MonoBehaviour
 {
     [SerializeField] private Transform playerTargetPoint;
     [SerializeField] private float walkDuration = 1.5f;
+    [SerializeField] private float stepFadeOutTime = 0.8f; // 🕓 duración del fade-out del sonido de pasos
 
     private bool isFrozen = false;
 
@@ -59,8 +60,17 @@ public class CinematicPlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
 
         Animator anim = player.GetComponent<Animator>();
+        AudioSource stepAudio = player.GetComponent<AudioSource>();
         if (anim != null)
             anim.SetBool("isRunning", true);
+
+        // 🎵 Iniciar pasos si hay clip asignado
+        if (stepAudio != null && stepAudio.clip != null)
+        {
+            stepAudio.loop = true;
+            stepAudio.volume = 1f;
+            stepAudio.Play();
+        }
 
         float elapsed = 0f;
         while (elapsed < walkDuration)
@@ -71,8 +81,32 @@ public class CinematicPlayerController : MonoBehaviour
             yield return null;
         }
 
+        // 🛑 Detener pasos con fade-out y animación
         if (anim != null)
             anim.SetBool("isRunning", false);
+
+        if (stepAudio != null && stepAudio.isPlaying)
+            yield return StartCoroutine(FadeOutAudio(stepAudio, stepFadeOutTime));
+    }
+
+    // 🔈 Fade-out progresivo del audio
+    private IEnumerator FadeOutAudio(AudioSource source, float duration)
+    {
+        float startVolume = source.volume;
+        float elapsed = 0f;
+
+        while (elapsed < duration && source != null)
+        {
+            elapsed += Time.deltaTime;
+            source.volume = Mathf.Lerp(startVolume, 0f, elapsed / duration);
+            yield return null;
+        }
+
+        if (source != null)
+        {
+            source.Stop();
+            source.volume = startVolume;
+        }
     }
 
     public bool IsPlayerFrozen()

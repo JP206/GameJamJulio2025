@@ -95,19 +95,20 @@ public class PlayerMovement : MonoBehaviour
     {
         isRolling = true;
         float elapsed = 0f;
-        Vector2 startPos = transform.position;
+        Vector2 startPos = rb.position;
         Vector2 targetPos = startPos + dashDir.normalized * rollDistance;
 
         if (trail != null) trail.emitting = true;
 
         while (elapsed < rollDuration)
         {
-            transform.position = Vector2.Lerp(startPos, targetPos, elapsed / rollDuration);
+            Vector2 newPos = Vector2.Lerp(startPos, targetPos, elapsed / rollDuration);
+            rb.MovePosition(newPos);
             elapsed += Time.deltaTime;
             yield return null;
         }
 
-        transform.position = targetPos;
+        rb.MovePosition(targetPos);
         isRolling = false;
         if (trail != null) trail.emitting = false;
     }

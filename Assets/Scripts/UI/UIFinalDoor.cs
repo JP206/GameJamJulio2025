@@ -25,6 +25,12 @@ public class UIFinalDoor : MonoBehaviour
     [SerializeField] private float triangleDelay = 0.5f;
     [SerializeField] private float delayBeforeSceneLoad = 2.5f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip emergeClip;
+    [SerializeField] private AudioClip portalClip;
+    [SerializeField] private AudioClip symbolsClip;
+
     private bool isActive = false;
     private BoxCollider2D doorCollider;
     private ParticleSystem psA;
@@ -129,7 +135,10 @@ public class UIFinalDoor : MonoBehaviour
 
         if (portalAnimator != null)
             portalAnimator.Play("Portal", 0, 0f);
+
+        PlayPortalSound();
     }
+
 
     private IEnumerator ActivateSymbols()
     {
@@ -200,4 +209,64 @@ public class UIFinalDoor : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("FinalBoss");
     }
+
+    public void PlayEmergeSound()
+    {
+        StopCurrentSound();
+        if (audioSource != null && emergeClip != null)
+            audioSource.PlayOneShot(emergeClip);
+    }
+
+    public void PlayPortalSound()
+    {
+        StartCoroutine(CrossfadeToClip(portalClip, 1.0f, 0.8f));
+    }
+
+    public void PlaySymbolsSound()
+    {
+        StartCoroutine(CrossfadeToClip(symbolsClip, 1.0f, 0.8f));
+    }
+
+    public void StopCurrentSound()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+            audioSource.Stop();
+    }
+
+    private IEnumerator CrossfadeToClip(AudioClip newClip, float fadeInDuration, float overlapDuration)
+    {
+        if (audioSource == null || newClip == null)
+            yield break;
+
+        float startVolume = audioSource.volume;
+
+        // 🔊 Creamos un segundo AudioSource temporal para el crossfade
+        AudioSource tempSource = gameObject.AddComponent<AudioSource>();
+        tempSource.clip = newClip;
+        tempSource.volume = 0f;
+        tempSource.playOnAwake = false;
+        tempSource.loop = false;
+        tempSource.spatialBlend = audioSource.spatialBlend;
+
+        tempSource.Play();
+
+        float time = 0f;
+        while (time < fadeInDuration)
+        {
+            time += Time.deltaTime;
+            float t = time / fadeInDuration;
+            audioSource.volume = Mathf.Lerp(startVolume, 0f, t);
+            tempSource.volume = Mathf.Lerp(0f, startVolume, t);
+            yield return null;
+        }
+
+        // 🚫 En lugar de destruir el source original, lo dejamos vivo y listo para el siguiente sonido
+        audioSource.Stop();
+        audioSource.clip = newClip;
+        audioSource.volume = tempSource.volume;
+        audioSource.Play();
+
+        Destroy(tempSource); // solo destruimos el temporal
+    }
+
 }
