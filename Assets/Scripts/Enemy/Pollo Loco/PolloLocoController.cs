@@ -4,43 +4,83 @@ using UnityEngine.UI;
 
 public class PolloLocoController : MonoBehaviour
 {
-    [SerializeField] float speed, invulnerabilityTime, flashInterval;
-    [SerializeField] int damage, maxHp, currentHp;
-    [SerializeField] float attackRange;
-    [SerializeField] float attackCooldown = 1.8f;
-    [SerializeField] AudioSource audioSource;
-    [SerializeField] AudioClip hit1, hit2, hit3;
-    [SerializeField] private ParticleSystem hitEffect;
+    [Header("Stats")]
+    [SerializeField] public float speed = 4f;
+    [SerializeField] public float invulnerabilityTime = 2f;
+    [SerializeField] public float flashInterval = 0.1f;
+    [SerializeField] public int damage = 5;
+    [SerializeField] public int maxHp = 50;
+    [SerializeField] public int currentHp;
+    [SerializeField] public float attackRange = 4f;
+    [SerializeField] public float attackCooldown = 0.6f;
+
+    [Header("Audio & FX")]
+    [SerializeField] public AudioSource audioSource;
+    [SerializeField] public AudioClip hit1;
+    [SerializeField] public AudioClip hit2;
+    [SerializeField] public AudioClip hit3;
+    [SerializeField] public ParticleSystem hitEffect;
+
+    [Header("UI")]
+    [SerializeField] public Slider bossHealthSlider;
+
+    [Header("Cinematic Control")]
+    [SerializeField] public bool isCinematicMode = false;
+
+    [Header("Boss Behavior")]
+    [SerializeField] public float detectionRange = 15f;
+    [SerializeField] public float closeAttackRange = 1.5f;
+    [SerializeField] public float comboPause = 0.25f;
+    [SerializeField] public float postDashDelay = 0.4f;
+
+    [Header("Knockback Settings")]
+    [SerializeField] public float normalPushForce = 8f;
+    [SerializeField] public float attackPushForce = 14f;
+    [SerializeField] public float knockbackDuration = 0.25f;
+
+    [Header("Attack Decision Settings")]
+    [SerializeField] public float meleeRange = 2.5f;
+    [SerializeField] public float rangeAttackDistance = 6f;
+    [SerializeField] public float areaAttackDistance = 10f;
+    [SerializeField] public float dashSpeed = 20f;
+    [SerializeField] public float dashDuration = 0.18f;
+    [SerializeField] public float areaAttackCooldown = 4f;
+    [SerializeField] public float areaDamageRadius = 3.5f;
+
+    [Header("Counter Dash Settings")]
+    [SerializeField] public int hitsToTriggerDash = 2;
+    [SerializeField] public float hitResetTime = 1f;
+    [SerializeField] public float counterDashMultiplier = 1.2f;
+    [SerializeField] public float counterDashRecovery = 0.7f;
+
+    [Header("Chair Attack Settings")]
+    [SerializeField] public float chairAttackDistance = 15f;
+    [SerializeField] public float chairAttackCooldown = 10f;
+    [SerializeField] public GameObject chairPrefab;
+    [SerializeField] public float chairThrowForce = 15f;
 
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
-    private bool isInvulnerable = false, isDead = false, celebrating = false, isAttacking = false;
     private Animator animator;
-    private WaveManager waveManager;
     private Collider2D myCollider;
     private Rigidbody2D rb;
-    private Vector2 avoidanceDirection = Vector2.zero;
-    private float lastAttackTime;
+    private PolloLocoAttackHandler attackHandler;
 
-    [Header("Area Attack Settings")]
-    [SerializeField] private float areaJumpDuration = 1f;
-    [SerializeField] private float areaJumpMaxDistance = 8f;
-    [SerializeField] private float areaJumpHeight = 1.5f;
-    [SerializeField] private float areaImpactRadius = 1.5f;
-    [SerializeField, Tooltip("Distancia mínima para que el panzazo se ejecute")]
-    private float minAreaAttackDistance = 3f;
-    [SerializeField, Tooltip("Qué tan corto cae respecto al jugador (0 = exacto encima, 0.2 = 20% antes)")]
-    private float landingOffsetFactor = 0.15f;
+    private bool isInvulnerable = false;
+    private bool isDead = false;
+    private bool celebrating = false;
+    private bool isAttacking = false;
+    private bool isDashing = false;
+    private bool canDealDamage = false;
+    private bool hasAttackedInRange = false;
 
-    private bool isAreaJumping = false;
-    private Vector2 jumpStartPos, jumpEndPos;
-    private float jumpElapsed;
-
-    [Header("UI")]
-    [SerializeField] private Slider bossHealthSlider;
-
-    [Header("Cinematic Control")]
-    public bool isCinematicMode = false;
+    [SerializeField] private int hitsWhileClose = 0;
+    [SerializeField] private float lastAttackTime;
+    [SerializeField] private float lastDashTime;
+    [SerializeField] private float lastAreaAttackTime;
+    [SerializeField] private float lastChairAttackTime;
+    [SerializeField] private float lastHitTime;
+    [SerializeField] private Vector2 lastKnownPlayerPos;
 
     void Start()
     {
@@ -48,6 +88,10 @@ public class PolloLocoController : MonoBehaviour
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
+        attackHandler = GetComponent<PolloLocoAttackHandler>();
+
+        if (attackHandler != null)
+            attackHandler.Initialize(animator, rb, myCollider, this);
 
         if (rb != null)
         {
@@ -57,14 +101,10 @@ public class PolloLocoController : MonoBehaviour
 
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player)
-        {
             playerTransform = player.transform;
-        }
 
         if (hitEffect == null)
-        {
             hitEffect = GetComponentInChildren<ParticleSystem>();
-        }
     }
 
     private void OnEnable()
@@ -72,13 +112,14 @@ public class PolloLocoController : MonoBehaviour
         isDead = false;
         currentHp = maxHp;
         lastAttackTime = -attackCooldown;
+        lastDashTime = -2f;
+        lastAreaAttackTime = -areaAttackCooldown;
+        lastChairAttackTime = -chairAttackCooldown;
         isAttacking = false;
-        isAreaJumping = false;
+        isDashing = false;
 
         if (hitEffect != null)
-        {
             hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
-        }
 
         if (bossHealthSlider != null)
         {
@@ -87,156 +128,271 @@ public class PolloLocoController : MonoBehaviour
         }
     }
 
-    public void SetWaveManager(WaveManager _waveManager)
-    {
-        waveManager = _waveManager;
-    }
-
     void FixedUpdate()
     {
+        if (isAttacking || isDashing) return;
+
         if (isCinematicMode)
         {
-            if (animator != null)
-                animator.SetBool("isMoving", false);
-
-            if (rb != null)
-                rb.linearVelocity = Vector2.zero;
-
-            return;
-        }
-
-        if (isAreaJumping)
-        {
-            jumpElapsed += Time.fixedDeltaTime;
-            float t = Mathf.Clamp01(jumpElapsed / areaJumpDuration);
-
-            if (playerTransform != null)
-            {
-                Vector2 dir = ((Vector2)playerTransform.position - jumpStartPos).normalized;
-                float dist = Mathf.Min(Vector2.Distance(jumpStartPos, playerTransform.position), areaJumpMaxDistance);
-                dist *= (1f - landingOffsetFactor);
-                jumpEndPos = jumpStartPos + dir * dist;
-            }
-
-            float accel = t * t;
-            Vector2 pos = Vector2.Lerp(jumpStartPos, jumpEndPos, accel);
-            float heightOffset = Mathf.Sin(t * Mathf.PI) * areaJumpHeight;
-            rb.MovePosition(pos + Vector2.up * heightOffset);
-
-            if (t >= 1f)
-            {
-                rb.MovePosition(jumpEndPos);
-                isAreaJumping = false;
-                isAttacking = false;
-                jumpElapsed = 0f;
-                ExecuteAreaImpact();
-            }
-            return;
-        }
-
-        if (playerTransform && !isDead && !celebrating && rb != null)
-        {
-            Vector2 direction = (playerTransform.position - transform.position).normalized;
-
-            if (avoidanceDirection != Vector2.zero)
-                direction = Vector2.Lerp(direction, avoidanceDirection, 0.5f);
-
-            direction = direction.normalized;
-            Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
-            animator.SetBool("isMoving", true);
-            rb.MovePosition(newPosition);
-
-            spriteRenderer.flipX = (transform.position.x - playerTransform.position.x) < 0;
-
-            float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
-
-            if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
-            {
-                if (distanceToPlayer <= attackRange)
-                {
-                    animator.SetTrigger("Attack");
-                    isAttacking = true;
-                    lastAttackTime = Time.time;
-                }
-                else if (distanceToPlayer > minAreaAttackDistance && distanceToPlayer <= areaJumpMaxDistance)
-                {
-                    isAttacking = true;
-                    lastAttackTime = Time.time;
-                    StartCoroutine(PrepareAreaAttack());
-                }
-            }
-        }
-        else
-        {
             animator.SetBool("isMoving", false);
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
+        if (playerTransform == null || isDead || celebrating) return;
+
+        Vector2 direction = (playerTransform.position - transform.position).normalized;
+        Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
+
+        if (!isDashing && !isAttacking)
+        {
+            rb.MovePosition(newPosition);
+            animator.SetBool("isMoving", true);
+        }
+
+        spriteRenderer.flipX = (transform.position.x - playerTransform.position.x) < 0;
+        lastKnownPlayerPos = playerTransform.position;
+
+        float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
+
+        if (hitsWhileClose > 0 && Time.time - lastHitTime > hitResetTime)
+            hitsWhileClose = 0;
+
+        // ====== DECISIÓN DE ATAQUE ======
+        if (!isAttacking && !isDashing && Time.time >= lastAttackTime + attackCooldown)
+        {
+            // --- Melee ---
+            if (distanceToPlayer <= closeAttackRange && Time.time >= lastDashTime + postDashDelay)
+            {
+                StartCoroutine(DoCloseAttack());
+            }
+            // --- Dash ---
+            else if (distanceToPlayer > closeAttackRange &&
+                     distanceToPlayer <= rangeAttackDistance &&
+                     Time.time >= lastDashTime + postDashDelay)
+            {
+                StartCoroutine(DoInstantDashAttack());
+            }
+            // --- Area ---
+            else if (distanceToPlayer > rangeAttackDistance &&
+                     distanceToPlayer <= areaAttackDistance &&
+                     Time.time >= lastAreaAttackTime + areaAttackCooldown &&
+                     !hasAttackedInRange)
+            {
+                hasAttackedInRange = true;
+                StartCoroutine(DoAreaAttack());
+            }
+            // --- Chair Attack ---
+            else if (distanceToPlayer > areaAttackDistance &&
+                     distanceToPlayer <= chairAttackDistance &&
+                     Time.time >= lastChairAttackTime + chairAttackCooldown)
+            {
+                StartCoroutine(DoChairAttack());
+            }
+
+            // Reset de la flag cuando el jugador sale del rango total del área
+            if (distanceToPlayer > areaAttackDistance)
+            {
+                hasAttackedInRange = false;
+            }
         }
     }
 
-    private IEnumerator PrepareAreaAttack()
+    private IEnumerator DoCloseAttack()
     {
-        float originalSpeed = speed;
-        speed = 0f;
-        animator.SetBool("isMoving", false);
-        yield return new WaitForSeconds(0.2f);
-
-        animator.SetTrigger("AreaAttack");
-        yield return new WaitForSeconds(0.05f);
-
-        yield return new WaitUntil(() => !isAreaJumping);
-        speed = originalSpeed;
+        if (playerTransform == null || isDead || attackHandler == null) yield break;
+        isAttacking = true;
+        yield return StartCoroutine(attackHandler.MeleeAttack(OnAttackEnd));
     }
+
+    private IEnumerator DoInstantDashAttack()
+    {
+        if (isDead || isAttacking || playerTransform == null || attackHandler == null) yield break;
+        isAttacking = true;
+        isDashing = true;
+        lastDashTime = Time.time;
+        Vector2 dashDir = (lastKnownPlayerPos - (Vector2)transform.position).normalized;
+        yield return StartCoroutine(attackHandler.DashAttack(dashDir, OnAttackEnd));
+    }
+
+    private IEnumerator DoCounterDashAttack()
+    {
+        if (isDead || isAttacking || playerTransform == null || attackHandler == null) yield break;
+        isAttacking = true;
+        isDashing = true;
+        lastDashTime = Time.time;
+        Vector2 dashDir = (lastKnownPlayerPos - (Vector2)transform.position).normalized;
+        yield return StartCoroutine(attackHandler.CounterDash(dashDir, OnAttackEnd));
+    }
+
+    private IEnumerator DoAreaAttack()
+    {
+        if (isDead || isAttacking || isDashing || playerTransform == null || attackHandler == null)
+        {
+            yield break;
+        }
+
+        // 🔹 Entramos en modo ataque
+        isAttacking = true;
+        isDashing = true;
+        hasAttackedInRange = true;
+
+        // 🔹 Capturamos la posición actual del jugador justo antes del salto
+        lastKnownPlayerPos = playerTransform.position;
+        Vector2 jumpDir = (lastKnownPlayerPos - (Vector2)transform.position).normalized;
+
+        // 🔹 Ejecutamos el salto (sin depender del evento)
+        yield return StartCoroutine(attackHandler.AreaAttack(jumpDir, null));
+
+        // 🔹 Esperamos el tiempo de la animación completa (seguridad)
+        yield return new WaitForSeconds(0.5f);
+
+        // 🔹 Reiniciamos los flags aunque el Animator no haya avisado
+        isAttacking = false;
+        isDashing = false;
+        lastAreaAttackTime = Time.time;
+
+    }
+
+
+
+    // === NUEVO ATAQUE DE SILLA ===
+    private IEnumerator DoChairAttack()
+    {
+        if (isDead || isAttacking || isDashing || attackHandler == null) yield break;
+
+        isAttacking = true;
+        lastChairAttackTime = Time.time;
+
+        animator.SetTrigger("Chair");
+
+        yield return new WaitForSeconds(1f); // duración total de la animación
+        OnAttackEnd();
+    }
+
+
+    public void ThrowChair()
+    {
+        if (chairPrefab == null || playerTransform == null) return;
+
+        Vector2 startPos = transform.position;
+        Vector2 targetPos = playerTransform.position;
+
+        // Dirección general
+        Vector2 direction = (targetPos - startPos).normalized;
+
+        // Aumentamos fuerza y agregamos un leve ángulo de elevación
+        Vector2 launchDir = (direction + Vector2.up * 0.25f).normalized;
+
+        GameObject chair = Instantiate(chairPrefab, startPos, Quaternion.identity);
+        Rigidbody2D chairRb = chair.GetComponent<Rigidbody2D>();
+
+        if (chairRb != null)
+        {
+            chairRb.bodyType = RigidbodyType2D.Dynamic;
+            chairRb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+            // Mayor impulso total
+            float finalForce = chairThrowForce * 1.6f;
+            chairRb.AddForce(launchDir * finalForce, ForceMode2D.Impulse);
+        }
+    }
+
+    public void DoAreaDamage()
+    {
+        StartCoroutine(DelayedAreaDamage());
+    }
+
+    private IEnumerator DelayedAreaDamage()
+    {
+        // 🔹 Esperamos a que el Rigidbody termine su movimiento antes de calcular el área
+        yield return new WaitForFixedUpdate();
+
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, areaDamageRadius);
+
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.CompareTag("Player") || hit.transform.root.CompareTag("Player"))
+            {
+                PlayerHealth playerHealth = hit.GetComponentInParent<PlayerHealth>();
+                Rigidbody2D playerRb = hit.GetComponentInParent<Rigidbody2D>();
+
+                if (playerHealth != null && playerRb != null)
+                {
+                    // 🔹 Calculamos dirección de empuje y daño
+                    Vector2 knockDir = (playerHealth.transform.position - transform.position).normalized;
+                    int finalDamage = Mathf.RoundToInt(damage * 1.8f);
+                    float pushForce = attackPushForce;
+
+                    // 🔹 Aplicamos daño y empuje
+                    playerHealth.RegisterAttacker(gameObject);
+                    playerHealth.TakeDamage(finalDamage);
+                    StartCoroutine(ApplyKnockback(playerRb, knockDir, pushForce));
+                }
+            }
+        }
+    }
+
+
+    public void OnAttackEnd()
+    {
+        isAttacking = false;
+        isDashing = false;
+        lastAttackTime = Time.time;
+        hasAttackedInRange = true;
+    }
+
+    public void StartAttackHitbox() => canDealDamage = true;
+    public void EndAttackHitbox() => canDealDamage = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isAreaJumping) return;
-
         DoDamage(collision);
 
         if (collision.CompareTag("Player") && !isDead)
         {
-            PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
-            if (playerMovement != null && !playerMovement.IsRolling && !isAttacking)
-            {
-                animator.SetTrigger("Attack");
-                isAttacking = true;
-                lastAttackTime = Time.time;
-            }
-        }
-    }
+            PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
+            Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
 
-    public void DealDamageToPlayer()
-    {
-        if (isDead) return;
-
-        if (playerTransform != null)
-        {
-            PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
+            if (playerHealth != null && playerRb != null)
             {
+                Vector2 knockDir = (playerHealth.transform.position - transform.position).normalized;
+                int finalDamage = damage;
+                float pushForce = normalPushForce;
+
+                if (canDealDamage || isAttacking)
+                {
+                    finalDamage = Mathf.RoundToInt(damage * 1.5f);
+                    pushForce = attackPushForce;
+                }
+
                 playerHealth.RegisterAttacker(gameObject);
-                playerHealth.TakeDamage(damage);
+                playerHealth.TakeDamage(finalDamage);
+                StartCoroutine(ApplyKnockback(playerRb, knockDir, pushForce));
             }
         }
     }
 
-    public void EndAttack()
+    private IEnumerator ApplyKnockback(Rigidbody2D playerRb, Vector2 direction, float force)
     {
-        isAttacking = false;
+        PlayerMovement move = playerRb.GetComponent<PlayerMovement>();
+        if (move != null) move.IsKnockedBack = true;
+
+        playerRb.linearVelocity = Vector2.zero;
+        Vector2 knockVector = (direction.normalized + Vector2.up * 0.2f).normalized * force;
+        playerRb.AddForce(knockVector, ForceMode2D.Impulse);
+
+        yield return new WaitForSeconds(knockbackDuration);
+
+        playerRb.linearVelocity = Vector2.zero;
+        if (move != null) move.IsKnockedBack = false;
     }
 
     private void DoDamage(Collider2D collision)
     {
-        if (collision.transform.root == transform)
-            return;
-
-        if (collision.CompareTag("Bullet"))
-        {
-            TakeDamage(1);
-        }
-        else if (collision.CompareTag("HolyBullet"))
-        {
-            TakeDamage(5);
-        }
+        if (collision.transform.root == transform) return;
+        if (collision.CompareTag("Bullet")) TakeDamage(1);
+        else if (collision.CompareTag("HolyBullet")) TakeDamage(5);
     }
 
     private void TakeDamage(int amount)
@@ -247,9 +403,7 @@ public class PolloLocoController : MonoBehaviour
             currentHp -= amount;
 
             if (bossHealthSlider != null)
-            {
                 bossHealthSlider.value = currentHp;
-            }
 
             if (hitEffect != null)
             {
@@ -258,14 +412,29 @@ public class PolloLocoController : MonoBehaviour
                 hitEffect.Play();
             }
 
+            if (playerTransform != null)
+            {
+                float distanceToPlayer = Vector2.Distance(playerTransform.position, transform.position);
+
+                if (distanceToPlayer <= closeAttackRange + 0.5f)
+                {
+                    hitsWhileClose++;
+                    lastHitTime = Time.time;
+
+                    if (hitsWhileClose >= hitsToTriggerDash && !isAttacking && !isDashing && !isDead)
+                    {
+                        hitsWhileClose = 0;
+                        StopAllCoroutines();
+                        StartCoroutine(DoCounterDashAttack());
+                        return;
+                    }
+                }
+            }
+
             if (currentHp <= 0)
-            {
                 StartCoroutine(Death());
-            }
             else
-            {
                 StartCoroutine(DamageFlashAndInvulnerability());
-            }
         }
     }
 
@@ -273,7 +442,6 @@ public class PolloLocoController : MonoBehaviour
     {
         isInvulnerable = true;
         spriteRenderer.color = Color.red;
-        myCollider.enabled = false;
         animator.SetTrigger("GetHit");
 
         yield return new WaitForSeconds(0.1f);
@@ -290,7 +458,6 @@ public class PolloLocoController : MonoBehaviour
 
         spriteRenderer.color = Color.white;
         isInvulnerable = false;
-        myCollider.enabled = true;
     }
 
     private IEnumerator Death()
@@ -335,47 +502,31 @@ public class PolloLocoController : MonoBehaviour
 
         celebrating = true;
         isAttacking = false;
-        isAreaJumping = false;
+        isDashing = false;
 
         if (rb != null)
             rb.linearVelocity = Vector2.zero;
 
         animator.SetBool("isMoving", false);
         animator.ResetTrigger("Attack");
-        animator.ResetTrigger("AreaAttack");
         animator.SetTrigger("Celebration");
     }
 
-    public void AreaAttack_Begin()
+    private void OnDrawGizmosSelected()
     {
-        if (isDead || playerTransform == null) return;
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, closeAttackRange);
 
-        jumpStartPos = rb.position;
-        Vector2 dir = (playerTransform.position - transform.position).normalized;
-        float dist = Mathf.Min(Vector2.Distance(playerTransform.position, transform.position), areaJumpMaxDistance);
+        Gizmos.color = new Color(1f, 0.5f, 0f);
+        Gizmos.DrawWireSphere(transform.position, rangeAttackDistance);
 
-        dist *= (1f - landingOffsetFactor);
-        jumpEndPos = jumpStartPos + dir * dist;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, areaAttackDistance);
 
-        isAreaJumping = true;
-        isAttacking = true;
-        jumpElapsed = 0f;
-    }
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, chairAttackDistance);
 
-    private void ExecuteAreaImpact()
-    {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, areaImpactRadius);
-        foreach (var hit in hits)
-        {
-            if (hit.CompareTag("Player"))
-            {
-                PlayerHealth playerHealth = hit.GetComponent<PlayerHealth>();
-                if (playerHealth != null)
-                {
-                    playerHealth.RegisterAttacker(gameObject);
-                    playerHealth.TakeDamage(damage * 2);
-                }
-            }
-        }
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireSphere(transform.position, areaDamageRadius);
     }
 }
