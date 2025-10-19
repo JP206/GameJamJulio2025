@@ -243,8 +243,8 @@ MonoBehaviour:
   hit3: {fileID: 8300000, guid: 9a4c6ecc31b051647a35f10595964c9d, type: 3}
   hitEffect: {fileID: 8111620041780958951}
   bossChicken: 0
-  detectionDistance: 2
-  rayAngle: 25
+  detectionDistance: 5
+  rayAngle: 30
   obstacleMask:
     serializedVersion: 2
     m_Bits: 9216

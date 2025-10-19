@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
 
     // === Ajustes del Raycast ===
     [Header("Detection Settings")]
-    [SerializeField] private float detectionDistance = 5f; // aumento de distancia
+    [SerializeField] private float detectionDistance = 5f;
     [SerializeField] private float rayAngle = 30f;
     [SerializeField] private LayerMask obstacleMask;
 
@@ -79,10 +79,13 @@ public class EnemyController : MonoBehaviour
         {
             Vector2 direction;
 
-            // 🧭 Si está esquivando, no mirar al jugador
+            // === MODO EVASIÓN ===
             if (isAvoiding)
             {
-                direction = avoidanceDirection;
+                // Combina la evasión con un porcentaje de dirección hacia el jugador
+                Vector2 toPlayer = (playerTransform.position - transform.position).normalized;
+                direction = (avoidanceDirection * 0.7f + toPlayer * 0.3f).normalized;
+
                 avoidTimer -= Time.fixedDeltaTime;
                 if (avoidTimer <= 0f)
                 {
@@ -95,25 +98,41 @@ public class EnemyController : MonoBehaviour
                 direction = (playerTransform.position - transform.position).normalized;
             }
 
-            // Aplicar una pequeña mezcla si hay dirección de evasión activa
-            if (avoidanceDirection != Vector2.zero && !isAvoiding)
-            {
-                direction = Vector2.Lerp(direction, avoidanceDirection, 0.4f);
-            }
-
-            // Detectar obstáculos por raycast
+            // Detectar obstáculos
             DetectObstacles(ref direction);
 
             direction = direction.normalized;
-            Vector2 newPosition = rb.position + direction * speed * Time.fixedDeltaTime;
+            Vector2 moveDelta = direction * speed * Time.fixedDeltaTime;
 
-            float movementMagnitude = (newPosition - rb.position).magnitude;
+            // --- Prevención de atravesar obstáculos ---
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, moveDelta.normalized, moveDelta.magnitude + 0.1f, obstacleMask);
+
+            if (hit.collider == null)
+            {
+                // No hay colisión → moverse normal
+                rb.MovePosition(rb.position + moveDelta);
+            }
+            else
+            {
+                // Si hay colisión → deslizarse sobre el obstáculo
+                Vector2 slideDir = Vector2.Perpendicular(hit.normal).normalized;
+                Vector2 slideMove = slideDir * speed * 0.5f * Time.fixedDeltaTime;
+                rb.MovePosition(rb.position + slideMove);
+            }
+
+            float movementMagnitude = moveDelta.magnitude;
 
             if (animator != null && HasParameter(animator, "isMoving"))
                 animator.SetBool("isMoving", movementMagnitude > 0.01f);
 
-            rb.MovePosition(newPosition);
+            // 🧠 Si el enemigo casi no se movió, salir de evasión
+            if (movementMagnitude < 0.01f)
+            {
+                isAvoiding = false;
+                avoidanceDirection = Vector2.zero;
+            }
 
+            // Flip visual según posición del jugador
             float xDiff = transform.position.x - playerTransform.position.x;
             spriteRenderer.flipX = xDiff < 0;
         }
@@ -158,10 +177,13 @@ public class EnemyController : MonoBehaviour
             else
                 avoidDir = Quaternion.Euler(0, 0, -rayAngle * 1.5f) * forwardDir; // giro fuerte
 
-            // 💡 Guardamos dirección de evasión y activamos modo evitar
-            avoidanceDirection = avoidDir.normalized;
-            isAvoiding = true;
-            avoidTimer = 0.9f; // duración del modo evasión
+            // 💡 Solo iniciar evasión si no estaba ya evitando
+            if (!isAvoiding)
+            {
+                avoidanceDirection = avoidDir.normalized;
+                isAvoiding = true;
+                avoidTimer = 1.2f; // más tiempo para rodear
+            }
         }
     }
 

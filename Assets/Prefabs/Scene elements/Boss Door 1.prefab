@@ -286,8 +286,8 @@ MonoBehaviour:
   triangleDelay: 0.05
   delayBeforeSceneLoad: 2.5
   audioSource: {fileID: 6816926754567806842}
-  emergeClip: {fileID: 8300000, guid: 2dea7547ef9b7244a972818a8f0554b7, type: 3}
-  portalClip: {fileID: 8300000, guid: 7cfd968cd821e8b40863af8928f7e356, type: 3}
+  emergeClip: {fileID: 8300000, guid: ea0588c7316cfd44cb66e9b180761ef6, type: 3}
+  portalClip: {fileID: 8300000, guid: f9dfb046615e39d4d9353662f3109435, type: 3}
   symbolsClip: {fileID: 8300000, guid: 48b54cf6781789e4397518187af7538d, type: 3}
 --- !u!61 &7307073401152928240
 BoxCollider2D:
@@ -596,8 +596,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2dea7547ef9b7244a972818a8f0554b7, type: 3}
-  m_Resource: {fileID: 8300000, guid: 2dea7547ef9b7244a972818a8f0554b7, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
