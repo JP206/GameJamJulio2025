@@ -35301,7 +35301,7 @@ PrefabInstance:
       objectReference: {fileID: 1860156536}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: bossWaveThreshold
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: killCountTextShade
@@ -66695,30 +66695,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4130922759320933587, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: emergeClip
-      value: 
-      objectReference: {fileID: 8300000, guid: ea0588c7316cfd44cb66e9b180761ef6, type: 3}
-    - target: {fileID: 4130922759320933587, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: portalClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 48b54cf6781789e4397518187af7538d, type: 3}
-    - target: {fileID: 4130922759320933587, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: symbolsClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f9dfb046615e39d4d9353662f3109435, type: 3}
     - target: {fileID: 6816926754567806842, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: m_Resource
+      propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816926754567806842, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816926754567806842, guid: 14bb88e788c3a4b4094bfef009ceea2b, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3800117323306006595, guid: 9a08cb5f830c2b740af17ce662c63e0a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
