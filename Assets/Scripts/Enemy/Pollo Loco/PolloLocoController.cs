@@ -47,6 +47,7 @@ public class PolloLocoController : MonoBehaviour
     [SerializeField] public float dashDuration = 0.18f;
     [SerializeField] public float areaAttackCooldown = 4f;
     [SerializeField] public float areaDamageRadius = 3.5f;
+    [SerializeField] private ParticleSystem plumaImpactEffect;
 
     [Header("Counter Dash Settings")]
     [SerializeField] public int hitsToTriggerDash = 2;
@@ -639,6 +640,15 @@ public class PolloLocoController : MonoBehaviour
         // 🔹 Cortar todos los sonidos del Pollo Loco salvo la música
         if (audioSource != null)
             audioSource.Stop();
+    }
+    public void PlayPlumaImpact()
+    {
+        if (plumaImpactEffect == null) return;
+
+        // Si está desactivado, lo activamos y lo reproducimos desde el inicio
+        plumaImpactEffect.gameObject.SetActive(true);
+        plumaImpactEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        plumaImpactEffect.Play();
     }
 
 }
