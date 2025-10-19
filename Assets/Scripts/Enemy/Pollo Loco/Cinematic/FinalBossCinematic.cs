@@ -28,6 +28,10 @@ public class FinalBossCinematic : MonoBehaviour
 
     private IEnumerator Start()
     {
+        // Bloquear mouse desde el inicio
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         player = GameObject.FindGameObjectWithTag("Player");
         if (player == null) yield break;
 

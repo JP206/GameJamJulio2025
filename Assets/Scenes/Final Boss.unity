@@ -1598,6 +1598,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7502458001669622197, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
   m_PrefabInstance: {fileID: 385447076}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &385447079 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7270359552864832264, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
+  m_PrefabInstance: {fileID: 385447076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &388614723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5226,9 +5231,9 @@ MonoBehaviour:
   cineCam: {fileID: 261568420}
   bossFocusPoint: {fileID: 385447077}
   lerpSpeed: 2
-  focusDuration: 2.5
+  focusDuration: 2
   zoomAmount: 2
-  waitOnBoss: 0.8
+  waitOnBoss: 0.6
   shakeMagnitude: 0.25
   shakeFrequency: 25
   shakeDuration: 1.5
@@ -5249,6 +5254,9 @@ MonoBehaviour:
   warCryAnimationName: PolloLocoWarCry
   moveAnimationName: PolloLocoMovement
   delayAfterHPFill: 0.5
+  audioSource: {fileID: 385447079}
+  warCryClip: {fileID: 8300000, guid: 5453c390c30eb4049aa5d6ee0297a6f5, type: 3}
+  warCryVolume: 1
 --- !u!114 &1304402229
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -290,6 +290,8 @@ MonoBehaviour:
   chairAttackCooldown: 7
   chairPrefab: {fileID: 3295384446024702919, guid: 21ee81f894f8c544f80adf3c007c17bd, type: 3}
   chairThrowForce: 30
+  throwChairClip: {fileID: 8300000, guid: 44a205923e88bc64c9cc464c5975d453, type: 3}
+  throwChairVolume: 1
   hitsWhileClose: 0
   lastAttackTime: 0
   lastDashTime: 0
