@@ -1,13 +1,17 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     [SerializeField] float lifeTime = 2f;
+    private HolyMeterController holyMeterController;
 
     private void OnEnable()
     {
         CancelInvoke();
         Invoke(nameof(Disable), lifeTime);
+
+        if (holyMeterController == null)
+            holyMeterController = FindAnyObjectByType<HolyMeterController>();
 
         IgnorePlayerCollision();
         IgnoreConfinerCollision();
@@ -23,8 +27,16 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Ammo")) return;
 
+        if (other.CompareTag("Enemy") || other.CompareTag("Boss") || other.CompareTag("PolloLoco"))
+        {
+            if (holyMeterController != null)
+                holyMeterController.RegisterEnemyHit(other.tag);
+        }
+
         BulletPool.Instance.ReturnBullet(gameObject);
     }
+
+    // ---- funciones de colisión iguales que antes ----
 
     private void IgnorePlayerCollision()
     {
@@ -46,13 +58,7 @@ public class Bullet : MonoBehaviour
         {
             var confCol = confiner.GetComponent<Collider2D>();
             if (confCol != null)
-            {
-                Physics2D.IgnoreCollision(
-                    GetComponent<Collider2D>(),
-                    confCol,
-                    true
-                );
-            }
+                Physics2D.IgnoreCollision(GetComponent<Collider2D>(), confCol, true);
         }
     }
 
@@ -63,7 +69,8 @@ public class Bullet : MonoBehaviour
         foreach (var a in ammos)
         {
             var col = a.GetComponent<Collider2D>();
-            if (col != null) Physics2D.IgnoreCollision(myCol, col, true);
+            if (col != null)
+                Physics2D.IgnoreCollision(myCol, col, true);
         }
     }
 }

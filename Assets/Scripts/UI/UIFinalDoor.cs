@@ -213,13 +213,19 @@ public class UIFinalDoor : MonoBehaviour
 
         var playerHealth = FindAnyObjectByType<PlayerHealth>();
         var gun = FindAnyObjectByType<_GunController>();
+        var holy = FindAnyObjectByType<HolyMeterController>();
 
-        if (playerHealth != null && gun != null)
-            GameManager.Instance.SavePlayerData(playerHealth, gun);
+        if (playerHealth != null && gun != null && holy != null)
+        {
+            // 🔹 Guardamos el progreso actual del medidor
+            GameManager.Instance.holyCharge = holy.GetCurrentCharge();
+            GameManager.Instance.SavePlayerData(playerHealth, gun, holy);
+        }
 
         yield return new WaitForSeconds(0.1f);
         SceneManager.LoadScene("FinalBoss");
     }
+
 
     // === AUDIO SYSTEM ===
 
@@ -299,5 +305,4 @@ public class UIFinalDoor : MonoBehaviour
         if (audioSource != null && !audioSource.isPlaying)
             Destroy(audioSource);
     }
-
 }
