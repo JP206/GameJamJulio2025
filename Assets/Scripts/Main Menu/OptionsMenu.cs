@@ -25,6 +25,15 @@ public class OptionsMenu : MonoBehaviour
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);
     }
 
+    private void Update()
+    {
+        // Si el jugador presiona Escape, cierra el menú de opciones
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     public void SetMusicVolume(float value)
     {
         audioMixer.SetFloat("MusicVolume", Mathf.Log10(Mathf.Clamp(value, 0.0001f, 1f)) * 20);
