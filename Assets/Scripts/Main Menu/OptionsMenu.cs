@@ -27,7 +27,6 @@ public class OptionsMenu : MonoBehaviour
 
     private void Update()
     {
-        // Si el jugador presiona Escape, cierra el menú de opciones
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             gameObject.SetActive(false);

@@ -2,6 +2,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Reflection;
 
 public class WaveManager : MonoBehaviour
 {
@@ -93,9 +94,12 @@ public class WaveManager : MonoBehaviour
         roundTextShade.text = roundText.text;
         uiAnimation.Animation(roundText, roundTextShade);
 
-        // --- Cinemática del jefe ---
+        // --- CINEMÁTICA DEL JEFE ---
         if (round == bossWaveThreshold)
         {
+            // 💀 Mata instantáneamente a TODOS los enemigos y bosses activos
+            KillAllEnemiesInstantly();
+
             var doorCinematic = FindAnyObjectByType<FinalDoorCinematic>();
             if (doorCinematic != null)
             {
@@ -209,7 +213,7 @@ public class WaveManager : MonoBehaviour
     private Vector2 GetValidSpawnPosition(Vector2 proposedPosition)
     {
         Vector2 corrected = proposedPosition;
-        float margin = 1.5f; // distancia desde el borde interior
+        float margin = 1.5f;
 
         if (rightBound && proposedPosition.x > rightBound.bounds.min.x)
             corrected.x = rightBound.bounds.min.x - margin;
@@ -231,6 +235,41 @@ public class WaveManager : MonoBehaviour
         if (source != null && source.clip != null)
         {
             source.PlayOneShot(source.clip);
+        }
+    }
+
+    // 💀 --- NUEVO MÉTODO: Mata instantáneamente a TODOS los enemigos y bosses ---
+    private void KillAllEnemiesInstantly()
+    {
+        // Método privado "TakeDamage" de EnemyController
+        MethodInfo takeDamageMethod = typeof(EnemyController).GetMethod("TakeDamage", BindingFlags.NonPublic | BindingFlags.Instance);
+
+        if (takeDamageMethod == null)
+        {
+            Debug.LogError("No se encontró el método TakeDamage en EnemyController.");
+            return;
+        }
+
+        // --- Enemigos normales ---
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            var controller = enemy.GetComponent<EnemyController>();
+            if (controller != null)
+            {
+                takeDamageMethod.Invoke(controller, new object[] { 999 });
+            }
+        }
+
+        // --- Bosses ---
+        GameObject[] bosses = GameObject.FindGameObjectsWithTag("Boss");
+        foreach (GameObject boss in bosses)
+        {
+            var controller = boss.GetComponent<EnemyController>();
+            if (controller != null)
+            {
+                takeDamageMethod.Invoke(controller, new object[] { 999 });
+            }
         }
     }
 }
