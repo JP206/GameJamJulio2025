@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  lifeTime: 0.2
+  lifeTime: 0.6
   animator: {fileID: 1899643102327315734}
   travelStateName: Travel
   explosionTrigger: Explode

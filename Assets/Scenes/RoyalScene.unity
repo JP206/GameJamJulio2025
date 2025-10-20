@@ -35381,7 +35381,7 @@ PrefabInstance:
       objectReference: {fileID: 1723401778}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: waveTimeout
-      value: 9999999
+      value: 999999
       objectReference: {fileID: 0}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: killCountText
@@ -35393,7 +35393,7 @@ PrefabInstance:
       objectReference: {fileID: 1860156536}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: bossWaveThreshold
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1066050167702054462, guid: 78148a3163d497c4ea391059169f0ea3, type: 3}
       propertyPath: killCountTextShade

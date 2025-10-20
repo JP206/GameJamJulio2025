@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforeSceneChange: 1
-  objectToActivateAfterAnimation: {fileID: 0}
+  objectToActivateAfterAnimation: {fileID: 2585280045522196476}
   optionsPanel: {fileID: 0}
 --- !u!82 &8182841852970292181
 AudioSource:
