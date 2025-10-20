@@ -1531,6 +1531,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4922717361226243617, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
+      propertyPath: bossHealthSlider
+      value: 
+      objectReference: {fileID: 1588196707}
+    - target: {fileID: 5502127239711936090, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6138134679833968185, guid: 5de89f0981c24bc4591e22857d781f74, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.51
@@ -5437,13 +5445,13 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: d1e36b8e4bfbaee459398b9a84d306bf, type: 3}
   m_Resource: {fileID: 8300000, guid: d1e36b8e4bfbaee459398b9a84d306bf, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_Volume: 0.255
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 120
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

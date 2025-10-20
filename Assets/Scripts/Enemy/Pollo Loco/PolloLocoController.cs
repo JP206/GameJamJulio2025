@@ -47,6 +47,7 @@ public class PolloLocoController : MonoBehaviour
     [SerializeField] public float dashDuration = 0.18f;
     [SerializeField] public float areaAttackCooldown = 4f;
     [SerializeField] public float areaDamageRadius = 3.5f;
+    [SerializeField] private ParticleSystem plumaImpactEffect;
 
     [Header("Counter Dash Settings")]
     [SerializeField] public int hitsToTriggerDash = 2;
@@ -399,9 +400,19 @@ public class PolloLocoController : MonoBehaviour
     private void DoDamage(Collider2D collision)
     {
         if (collision.transform.root == transform) return;
-        if (collision.CompareTag("Bullet")) TakeDamage(1);
-        else if (collision.CompareTag("HolyBullet")) TakeDamage(5);
+
+        if (collision.CompareTag("Bullet"))
+        {
+            TakeDamage(1);
+            Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("HolyBullet"))
+        {
+            TakeDamage(5);
+            Destroy(collision.gameObject);
+        }
     }
+
 
     private void TakeDamage(int amount)
     {
@@ -640,5 +651,13 @@ public class PolloLocoController : MonoBehaviour
         if (audioSource != null)
             audioSource.Stop();
     }
+    public void PlayPlumaImpact()
+    {
+        if (plumaImpactEffect == null) return;
 
+        // 🔹 Reinicia y reproduce
+        plumaImpactEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        plumaImpactEffect.Clear(true);
+        plumaImpactEffect.Play(true);
+    }
 }
