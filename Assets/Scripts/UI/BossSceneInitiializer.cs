@@ -41,9 +41,7 @@ public class BossSceneInitializer : MonoBehaviour
 
         mainPlayer = FindAnyObjectByType<PlayerMovement>();
         if (mainPlayer == null)
-        {
             return;
-        }
 
         playerHealth = mainPlayer.GetComponent<PlayerHealth>();
         gunController = mainPlayer.GetComponent<_GunController>();
@@ -68,9 +66,7 @@ public class BossSceneInitializer : MonoBehaviour
     {
         var cineCam = FindAnyObjectByType<CinemachineCamera>();
         if (cineCam != null && mainPlayer != null)
-        {
             cineCam.Follow = mainPlayer.transform;
-        }
     }
 
     private void SetupUICamera()
@@ -80,7 +76,7 @@ public class BossSceneInitializer : MonoBehaviour
         {
             var playerField = typeof(UICamera).GetField("player",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            playerField.SetValue(uiCam, mainPlayer.transform);
+            playerField?.SetValue(uiCam, mainPlayer.transform);
         }
     }
 
@@ -117,14 +113,26 @@ public class BossSceneInitializer : MonoBehaviour
             trail.sortingOrder = 1;
     }
 
+    // ============================================================
+    // 🔹 Carga de datos persistentes del GameManager
+    // ============================================================
     private IEnumerator LoadPlayerDataAndUI()
     {
+        // Espera un frame para asegurar que todo esté cargado
+        yield return null;
+
         if (GameManager.Instance != null)
-            GameManager.Instance.LoadPlayerData(playerHealth, gunController);
+        {
+            var holyMeter = FindAnyObjectByType<HolyMeterController>();
+            GameManager.Instance.LoadPlayerData(playerHealth, gunController, holyMeter);
+        }
 
         yield return StartCoroutine(WaitForHUDAndAssignAmmo());
     }
 
+    // ============================================================
+    // 🔹 Vincula la UI de munición (TextMeshPro) al GunController
+    // ============================================================
     private IEnumerator WaitForHUDAndAssignAmmo()
     {
         if (gunController == null) yield break;
@@ -161,4 +169,6 @@ public class BossSceneInitializer : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
     }
+
+
 }

@@ -25,6 +25,10 @@ public class _GunController : MonoBehaviour
     [SerializeField] private Transform holyBulletSpawnPointLeft;
     [SerializeField] private AudioSource holyShotSource;
 
+    // 🔹 Cooldown configurable
+    [SerializeField] private float holyBulletInterval = 10f;
+    private bool canFireHoly = true;
+
     SpriteRenderer spriteRenderer;
     PlayerMovement playerMovement;
     Animator animator;
@@ -53,16 +57,26 @@ public class _GunController : MonoBehaviour
         if (UICanvasManager.IsGamePausedOrOver) return;
         if (IntroCinematicManager.IsCinematicPlaying) return;
 
+        // 🔹 Disparo normal (clic izquierdo)
         if (Mouse.current.leftButton.isPressed && Time.time >= nextFireTime && !isChargingHolyShot)
         {
             FireBullet();
             nextFireTime = Time.time + fireRate;
         }
 
-        if (Mouse.current.rightButton.wasPressedThisFrame && !isChargingHolyShot)
+        // 🔹 Holy Shot con cooldown (clic derecho)
+        if (Mouse.current.rightButton.wasPressedThisFrame && !isChargingHolyShot && canFireHoly)
         {
             StartCoroutine(FireHolyShot());
+            StartCoroutine(HolyShotCooldown());
         }
+    }
+
+    private IEnumerator HolyShotCooldown()
+    {
+        canFireHoly = false;
+        yield return new WaitForSeconds(holyBulletInterval);
+        canFireHoly = true;
     }
 
     private void FireBullet()
