@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 97661d786dcf1ab488bc2bf011be2cbc
   - enabled: 1
-    path: Assets/Scenes/BigNews.unity
+    path: Assets/Scenes/DIARY CUT.unity
     guid: 043b33218bf63a44d808cbf1bcff482f
   - enabled: 1
     path: Assets/Scenes/Loading.unity
