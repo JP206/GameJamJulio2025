@@ -1613,6 +1613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 726476971}
   faceRightOnSpawn: 1
+  playerPrefab: {fileID: 8200593909756485446, guid: 2c90e52b8cda9cb4e8fb2ef720d17320, type: 3}
 --- !u!1001 &385447076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7754,7 +7755,7 @@ MonoBehaviour:
   cinematicCameraFocus: {fileID: 1304402227}
   uiManager: {fileID: 1516145971}
   canvasWin: {fileID: 1465066977}
-  focusDelay: 2
+  focusOnBossDelay: 1.5
 --- !u!4 &2081828131
 Transform:
   m_ObjectHideFlags: 0
