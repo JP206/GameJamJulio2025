@@ -25,7 +25,8 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ammo")) return;
+        // Ignorar munición y fuego
+        if (other.CompareTag("Ammo") || other.CompareTag("Fire")) return;
 
         if (other.CompareTag("Enemy") || other.CompareTag("Boss") || other.CompareTag("PolloLoco"))
         {

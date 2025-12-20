@@ -71,6 +71,13 @@ public class PlayerHealth : MonoBehaviour
         {
             isDead = true;
 
+            // Limpiar estado del player inmediatamente (trail, roll, etc.)
+            PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.ResetPlayerState();
+            }
+
             if (deathEffectPrefab != null)
             {
                 PlayDeathSound(deathSound);
@@ -79,13 +86,12 @@ public class PlayerHealth : MonoBehaviour
                 if (ps != null) ps.Play();
             }
 
-            if (lastAttacker != null)
-            {
-                PolloLocoController pollo = lastAttacker.GetComponent<PolloLocoController>();
-                if (pollo != null)
-                    pollo.Celebrate();
-            }
+            // 🔹 Buscar y celebrar al PolloLoco DIRECTAMENTE (no depender de lastAttacker)
+            PolloLocoController polloLoco = FindAnyObjectByType<PolloLocoController>();
+            if (polloLoco != null)
+                polloLoco.Celebrate();
 
+            // También hacer celebrar a los enemigos normales
             EnemyController[] enemies = FindObjectsByType<EnemyController>(FindObjectsSortMode.None);
             foreach (EnemyController enemy in enemies)
                 enemy.Celebrate();
@@ -157,6 +163,24 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(value, 0, maxHealth);
         OnHealthChanged.Invoke(currentHealth, maxHealth);
+    }
+
+    /// <summary>
+    /// Resetea completamente el estado de salud del player (útil al reiniciar)
+    /// </summary>
+    public void ResetHealthState()
+    {
+        StopAllCoroutines();
+        
+        isDead = false;
+        isInvulnerable = false;
+        currentHealth = maxHealth;
+        lastAttacker = null;
+        
+        if (_spriteRenderer != null)
+            _spriteRenderer.color = Color.white;
+        
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 
     private void PlayLifeUpSound(AudioSource lifeUpSound)

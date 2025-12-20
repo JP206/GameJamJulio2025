@@ -8,10 +8,47 @@ public class BossSceneInitializer : MonoBehaviour
     [Header("Player Spawn")]
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private bool faceRightOnSpawn = true;
+    
+    [Header("Player Prefab (para Retry)")]
+    [SerializeField] private GameObject playerPrefab;
 
     private PlayerMovement mainPlayer;
     private PlayerHealth playerHealth;
     private _GunController gunController;
+
+    // 🔹 Datos originales del jugador al entrar a la escena (para Retry)
+    public static int originalPlayerHealth;
+    public static float originalPlayerAmmo;
+    public static float originalHolyCharge;
+    public static bool hasOriginalData = false;
+    
+    // 🔹 Flag para indicar si es un Retry (saltar cinemática)
+    public static bool isRetry = false;
+
+    /// <summary>
+    /// Restaura los datos originales al GameManager (llamado antes de Retry)
+    /// </summary>
+    public static void RestoreOriginalData()
+    {
+        if (hasOriginalData && GameManager.Instance != null)
+        {
+            GameManager.Instance.playerHealth = originalPlayerHealth;
+            GameManager.Instance.playerAmmo = originalPlayerAmmo;
+            GameManager.Instance.holyCharge = originalHolyCharge;
+        }
+    }
+
+    /// <summary>
+    /// Resetea los datos originales (llamado al salir de la escena)
+    /// </summary>
+    public static void ResetOriginalData()
+    {
+        hasOriginalData = false;
+        isRetry = false;
+        originalPlayerHealth = 0;
+        originalPlayerAmmo = 0;
+        originalHolyCharge = 0;
+    }
 
     private IEnumerator Start()
     {
@@ -25,6 +62,20 @@ public class BossSceneInitializer : MonoBehaviour
         SetupTrailRenderer();
 
         yield return StartCoroutine(LoadPlayerDataAndUI());
+        
+        // 🔹 Si es un Retry, forzar habilitación de controles después de todo
+        if (isRetry)
+        {
+            yield return new WaitForSeconds(0.5f); // Esperar a que FinalBossCinematic termine su setup
+            
+            // Forzar todas las cinemáticas a FALSE
+            UICanvasManager.ForceDisableAllCinematics();
+            
+            // Forzar controles del player
+            UICanvasManager.ForceEnablePlayerControls();
+            
+            Debug.Log("🔄 BossSceneInitializer: Cinemáticas desactivadas y controles forzados para Retry");
+        }
     }
 
     private void SetupPlayerInstance()
@@ -40,11 +91,90 @@ public class BossSceneInitializer : MonoBehaviour
         }
 
         mainPlayer = FindAnyObjectByType<PlayerMovement>();
+        
+        // 🔹 Si no hay Player (caso Retry), instanciar uno nuevo desde el prefab
+        if (mainPlayer == null && playerPrefab != null)
+        {
+            Debug.Log("🔄 No hay Player - Instanciando desde prefab para Retry");
+            Vector3 spawnPos = spawnPoint != null ? spawnPoint.position : Vector3.zero;
+            GameObject newPlayer = Instantiate(playerPrefab, spawnPos, Quaternion.identity);
+            DontDestroyOnLoad(newPlayer);
+            mainPlayer = newPlayer.GetComponent<PlayerMovement>();
+        }
+        
         if (mainPlayer == null)
+        {
+            Debug.LogError("❌ No se pudo encontrar ni crear un Player!");
             return;
+        }
 
         playerHealth = mainPlayer.GetComponent<PlayerHealth>();
         gunController = mainPlayer.GetComponent<_GunController>();
+        
+        // 🔹 Resetear el estado del player (por si viene de un Game Over)
+        ResetPlayerState();
+    }
+    
+    private void ResetPlayerState()
+    {
+        if (mainPlayer == null) return;
+        
+        // Reactivar el GameObject si estaba desactivado
+        mainPlayer.gameObject.SetActive(true);
+        
+        // Resetear PlayerMovement
+        mainPlayer.ResetPlayerState();
+        mainPlayer.enabled = true;
+        
+        // Resetear PlayerHealth
+        if (playerHealth != null)
+        {
+            playerHealth.ResetHealthState();
+        }
+        
+        // Resetear GunController
+        if (gunController != null)
+        {
+            gunController.enabled = true;
+            gunController.ResetHolyShotState();
+        }
+        
+        // Resetear PlayerInput
+        var playerInput = mainPlayer.GetComponent<UnityEngine.InputSystem.PlayerInput>();
+        if (playerInput != null)
+            playerInput.enabled = true;
+        
+        // Resetear Rigidbody
+        var rb = mainPlayer.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.linearVelocity = Vector2.zero;
+        }
+        
+        // Resetear SpriteRenderer
+        var sprite = mainPlayer.GetComponent<SpriteRenderer>();
+        if (sprite != null)
+        {
+            sprite.color = Color.white;
+            sprite.enabled = true;
+        }
+        
+        // Resetear Animator
+        var animator = mainPlayer.GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningBackwards", false);
+            animator.Play("Player_Idle", 0, 0f);
+        }
+        
+        // Resetear PlayerAim
+        var playerAim = mainPlayer.GetComponentInChildren<PlayerAim>(true);
+        if (playerAim != null)
+            playerAim.enabled = true;
+        
+        Debug.Log("✅ Estado del Player reseteado completamente");
     }
 
     private void SetupPlayerPosition()
@@ -123,6 +253,16 @@ public class BossSceneInitializer : MonoBehaviour
 
         if (GameManager.Instance != null)
         {
+            // 🔹 Guardar los datos originales la PRIMERA vez (para Retry)
+            if (!hasOriginalData)
+            {
+                originalPlayerHealth = GameManager.Instance.playerHealth;
+                originalPlayerAmmo = GameManager.Instance.playerAmmo;
+                originalHolyCharge = GameManager.Instance.holyCharge;
+                hasOriginalData = true;
+                Debug.Log($"💾 Datos originales guardados: HP={originalPlayerHealth}, Ammo={originalPlayerAmmo}");
+            }
+
             var holyMeter = FindAnyObjectByType<HolyMeterController>();
             GameManager.Instance.LoadPlayerData(playerHealth, gunController, holyMeter);
         }

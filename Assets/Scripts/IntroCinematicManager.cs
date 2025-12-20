@@ -6,6 +6,14 @@ public class IntroCinematicManager : MonoBehaviour
 {
     public static bool IsCinematicPlaying { get; private set; } = true;
 
+    /// <summary>
+    /// Resetea el estado de la cinemática. Llamar antes de recargar la escena.
+    /// </summary>
+    public static void ResetCinematicState()
+    {
+        IsCinematicPlaying = true;
+    }
+
     [Header("World Bounds")]
     [SerializeField] private GameObject leftWall;
 
@@ -27,6 +35,7 @@ public class IntroCinematicManager : MonoBehaviour
     [SerializeField] private AudioClip clipPedidosYa;
 
     private PlayerMovement playerMovement;
+    private PlayerHealth playerHealth;
     private _GunController gunController;
     private PlayerInput playerInput;
     private SpriteRenderer spriteRenderer;
@@ -40,6 +49,7 @@ public class IntroCinematicManager : MonoBehaviour
         ulCanvas.SetActive(false);
 
         playerMovement = player.GetComponent<PlayerMovement>();
+        playerHealth = player.GetComponent<PlayerHealth>();
         gunController = player.GetComponent<_GunController>();
         playerInput = player.GetComponent<PlayerInput>();
         spriteRenderer = player.GetComponent<SpriteRenderer>();

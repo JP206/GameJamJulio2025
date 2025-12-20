@@ -24,6 +24,89 @@ public class CinematicCameraFocus : MonoBehaviour
     private Transform originalFollow;
     private Vector3 originalPosition;
 
+    /// <summary>
+    /// Focus simple en el boss - solo mueve la cámara, sin efectos
+    /// </summary>
+    public IEnumerator SimpleFocusOnBoss()
+    {
+        if (cineCam == null || bossFocusPoint == null)
+            yield break;
+
+        // Guardar estado original
+        originalFollow = cineCam.Follow;
+        originalZoom = cineCam.Lens.OrthographicSize;
+        originalPosition = cineCam.transform.position;
+
+        cineCam.Follow = null;
+
+        Vector3 targetPos = new Vector3(
+            bossFocusPoint.position.x,
+            bossFocusPoint.position.y,
+            cineCam.transform.position.z
+        );
+
+        // Mover cámara al boss con zoom
+        float elapsed = 0f;
+        float startZoom = originalZoom;
+
+        while (elapsed < focusDuration)
+        {
+            elapsed += Time.deltaTime * lerpSpeed;
+            cineCam.transform.position = Vector3.Lerp(originalPosition, targetPos, elapsed / focusDuration);
+            cineCam.Lens.OrthographicSize = Mathf.Lerp(startZoom, startZoom - zoomAmount, elapsed / focusDuration);
+            yield return null;
+        }
+
+        cineCam.transform.position = targetPos;
+        cineCam.Lens.OrthographicSize = startZoom - zoomAmount;
+    }
+
+    /// <summary>
+    /// Focus en el jugador CON todos los efectos (shake, zoom) y la cámara lo sigue al final
+    /// </summary>
+    public IEnumerator FocusOnPlayerWithEffects()
+    {
+        if (cineCam == null)
+            yield break;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null)
+            yield break;
+
+        Vector3 startPos = cineCam.transform.position;
+        Vector3 targetPos = new Vector3(
+            player.transform.position.x,
+            player.transform.position.y,
+            cineCam.transform.position.z
+        );
+
+        float startZoom = cineCam.Lens.OrthographicSize;
+        float elapsed = 0f;
+
+        // 1️⃣ Mover cámara hacia el jugador
+        while (elapsed < focusDuration)
+        {
+            elapsed += Time.deltaTime * lerpSpeed;
+            cineCam.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / focusDuration);
+            yield return null;
+        }
+
+        cineCam.transform.position = targetPos;
+
+        // 2️⃣ Shake en la posición del jugador
+        yield return StartCoroutine(ShakeCamera(targetPos));
+
+        // 3️⃣ Esperar un momento
+        yield return new WaitForSeconds(waitOnBoss);
+
+        // 4️⃣ Restaurar zoom y hacer que la cámara siga al jugador
+        cineCam.Lens.OrthographicSize = originalZoom;
+        cineCam.Follow = player.transform;
+    }
+
+    /// <summary>
+    /// Focus completo en el boss con callback (usado en intro del boss)
+    /// </summary>
     public IEnumerator FocusOnBoss(Action onBossCentered = null)
     {
         if (cineCam == null || bossFocusPoint == null)
@@ -105,6 +188,9 @@ public class CinematicCameraFocus : MonoBehaviour
         cineCam.transform.position = center;
     }
 
+    /// <summary>
+    /// Focus simple en el jugador (usado en otros contextos)
+    /// </summary>
     public IEnumerator FocusOnPlayer()
     {
         if (cineCam == null)
@@ -114,14 +200,8 @@ public class CinematicCameraFocus : MonoBehaviour
         if (player == null)
             yield break;
 
-        // Guardamos estado original
-        Transform originalFollow = cineCam.Follow;
-        float originalZoom = cineCam.Lens.OrthographicSize;
-        Vector3 originalPosition = cineCam.transform.position;
-
         cineCam.Follow = null;
 
-        // === 1️⃣ Transición hasta el jugador ===
         Vector3 startPos = cineCam.transform.position;
         Vector3 targetPos = new Vector3(
             player.transform.position.x,
@@ -129,36 +209,20 @@ public class CinematicCameraFocus : MonoBehaviour
             cineCam.transform.position.z
         );
 
-        float startZoom = cineCam.Lens.OrthographicSize;
         float elapsed = 0f;
-        float duration = focusDuration; // usa el mismo tiempo que el boss
 
-        while (elapsed < duration)
+        while (elapsed < focusDuration)
         {
             elapsed += Time.deltaTime * lerpSpeed;
-            cineCam.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / duration);
-            cineCam.Lens.OrthographicSize = Mathf.Lerp(startZoom, startZoom - zoomAmount, elapsed / duration);
+            cineCam.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / focusDuration);
             yield return null;
         }
 
         cineCam.transform.position = targetPos;
-        cineCam.Lens.OrthographicSize = startZoom - zoomAmount;
+        
+        yield return new WaitForSeconds(waitOnBoss * 0.5f);
 
-        // === 2️⃣ Shake y pausa en la posición del jugador ===
-        yield return StartCoroutine(ShakeCamera(targetPos));
-        yield return new WaitForSeconds(waitOnBoss);
-
-        // === 3️⃣ Mostrar Canvas WIN aquí mismo ===
-        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
-        if (defeatSequence != null && defeatSequence.canvasWin != null)
-        {
-            defeatSequence.canvasWin.SetActive(true);
-        }
-
-        // 🔹 Mantenemos la cámara centrada en el jugador (no vuelve atrás)
-        cineCam.Follow = null;
-        cineCam.transform.position = targetPos;
-        cineCam.Lens.OrthographicSize = startZoom - zoomAmount;
+        cineCam.Follow = player.transform;
+        cineCam.Lens.OrthographicSize = originalZoom;
     }
-
 }

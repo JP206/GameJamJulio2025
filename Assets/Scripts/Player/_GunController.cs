@@ -43,19 +43,118 @@ public class _GunController : MonoBehaviour
         uiAnimation = FindAnyObjectByType<UIAnimation>();
         playerMovement = GetComponent<PlayerMovement>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        shootParticlesLeft.Stop();
-        shootParticlesRight.Stop();
-        bloomParticleRight.Stop();
-        lightRayParticleRight.Stop();
-        bloomParticleLeft.Stop();
-        lightRayParticleLeft.Stop();
-        holyAuraPS.Stop();
+        // Desactivar todos los particle systems por defecto
+        if (shootParticlesLeft != null)
+        {
+            shootParticlesLeft.Stop();
+            shootParticlesLeft.gameObject.SetActive(false);
+        }
+        if (shootParticlesRight != null)
+        {
+            shootParticlesRight.Stop();
+            shootParticlesRight.gameObject.SetActive(false);
+        }
+        if (bloomParticleRight != null)
+        {
+            bloomParticleRight.Stop();
+            bloomParticleRight.gameObject.SetActive(false);
+        }
+        if (lightRayParticleRight != null)
+        {
+            lightRayParticleRight.Stop();
+            lightRayParticleRight.gameObject.SetActive(false);
+        }
+        if (bloomParticleLeft != null)
+        {
+            bloomParticleLeft.Stop();
+            bloomParticleLeft.gameObject.SetActive(false);
+        }
+        if (lightRayParticleLeft != null)
+        {
+            lightRayParticleLeft.Stop();
+            lightRayParticleLeft.gameObject.SetActive(false);
+        }
+        if (holyAuraPS != null)
+        {
+            holyAuraPS.Stop();
+            holyAuraPS.gameObject.SetActive(false);
+        }
+        
+        // Resetear estado de HolyShot al iniciar (evita bug después de Retry)
+        ResetHolyShotState();
+    }
+
+    /// <summary>
+    /// Resetea el estado de HolyShot. Útil después de Retry.
+    /// </summary>
+    public void ResetHolyShotState()
+    {
+        // Detener cualquier corrutina de HolyShot en progreso
+        StopAllCoroutines();
+        
+        isChargingHolyShot = false;
+        canFireHoly = true;
+        
+        if (animator != null)
+        {
+            // Resetear TODOS los triggers pendientes
+            animator.ResetTrigger("HolyShot");
+            animator.ResetTrigger("fire");
+            animator.ResetTrigger("FireBackwards");
+            animator.ResetTrigger("StaticFire");
+            
+            // Forzar al animator a ir al estado Idle inmediatamente
+            animator.Play("Player_Idle", 0, 0f);
+        }
+        
+        // Desactivar todos los particle systems
+        if (holyAuraPS != null)
+        {
+            holyAuraPS.Stop();
+            holyAuraPS.gameObject.SetActive(false);
+        }
+        if (bloomParticleRight != null)
+        {
+            bloomParticleRight.Stop();
+            bloomParticleRight.gameObject.SetActive(false);
+        }
+        if (lightRayParticleRight != null)
+        {
+            lightRayParticleRight.Stop();
+            lightRayParticleRight.gameObject.SetActive(false);
+        }
+        if (bloomParticleLeft != null)
+        {
+            bloomParticleLeft.Stop();
+            bloomParticleLeft.gameObject.SetActive(false);
+        }
+        if (lightRayParticleLeft != null)
+        {
+            lightRayParticleLeft.Stop();
+            lightRayParticleLeft.gameObject.SetActive(false);
+        }
+        if (shootParticlesRight != null)
+        {
+            shootParticlesRight.Stop();
+            shootParticlesRight.gameObject.SetActive(false);
+        }
+        if (shootParticlesLeft != null)
+        {
+            shootParticlesLeft.Stop();
+            shootParticlesLeft.gameObject.SetActive(false);
+        }
+        
+        // Asegurar que el playerMovement no esté en estado de HolyShot
+        if (playerMovement != null)
+        {
+            playerMovement.SetHolyShotState(false);
+        }
     }
 
     private void Update()
     {
         if (UICanvasManager.IsGamePausedOrOver) return;
-        if (IntroCinematicManager.IsCinematicPlaying) return;
+        if (PlayerMovement.IsAnyCinematicPlaying()) return;
 
         // 🔹 Disparo normal (clic izquierdo)
         if (Mouse.current.leftButton.isPressed && Time.time >= nextFireTime && !isChargingHolyShot)
@@ -136,13 +235,21 @@ public class _GunController : MonoBehaviour
 
             if (!spriteRenderer.flipX)
             {
-                shootParticlesRight.Stop();
-                shootParticlesRight.Play();
+                if (shootParticlesRight != null)
+                {
+                    shootParticlesRight.gameObject.SetActive(true);
+                    shootParticlesRight.Stop();
+                    shootParticlesRight.Play();
+                }
             }
             else
             {
-                shootParticlesLeft.Stop();
-                shootParticlesLeft.Play();
+                if (shootParticlesLeft != null)
+                {
+                    shootParticlesLeft.gameObject.SetActive(true);
+                    shootParticlesLeft.Stop();
+                    shootParticlesLeft.Play();
+                }
             }
         }
         else
@@ -185,22 +292,54 @@ public class _GunController : MonoBehaviour
     {
         if (!spriteRenderer.flipX)
         {
-            bloomParticleRight.Play();
-            lightRayParticleRight.Play();
+            if (bloomParticleRight != null)
+            {
+                bloomParticleRight.gameObject.SetActive(true);
+                bloomParticleRight.Play();
+            }
+            if (lightRayParticleRight != null)
+            {
+                lightRayParticleRight.gameObject.SetActive(true);
+                lightRayParticleRight.Play();
+            }
         }
         else
         {
-            bloomParticleLeft.Play();
-            lightRayParticleLeft.Play();
+            if (bloomParticleLeft != null)
+            {
+                bloomParticleLeft.gameObject.SetActive(true);
+                bloomParticleLeft.Play();
+            }
+            if (lightRayParticleLeft != null)
+            {
+                lightRayParticleLeft.gameObject.SetActive(true);
+                lightRayParticleLeft.Play();
+            }
         }
     }
 
     public void StopHolyShotParticle()
     {
-        bloomParticleRight.Stop();
-        lightRayParticleRight.Stop();
-        bloomParticleLeft.Stop();
-        lightRayParticleLeft.Stop();
+        if (bloomParticleRight != null)
+        {
+            bloomParticleRight.Stop();
+            bloomParticleRight.gameObject.SetActive(false);
+        }
+        if (lightRayParticleRight != null)
+        {
+            lightRayParticleRight.Stop();
+            lightRayParticleRight.gameObject.SetActive(false);
+        }
+        if (bloomParticleLeft != null)
+        {
+            bloomParticleLeft.Stop();
+            bloomParticleLeft.gameObject.SetActive(false);
+        }
+        if (lightRayParticleLeft != null)
+        {
+            lightRayParticleLeft.Stop();
+            lightRayParticleLeft.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -268,13 +407,21 @@ public class _GunController : MonoBehaviour
 
     public void PlayAura()
     {
-        if (holyAuraPS != null) holyAuraPS.Play();
+        if (holyAuraPS != null)
+        {
+            holyAuraPS.gameObject.SetActive(true);
+            holyAuraPS.Play();
+        }
         PlayHolySound(holyShotSource);
     }
 
     public void StopAura()
     {
-        if (holyAuraPS != null) holyAuraPS.Stop();
+        if (holyAuraPS != null)
+        {
+            holyAuraPS.Stop();
+            holyAuraPS.gameObject.SetActive(false);
+        }
     }
 
     public void PlayShotgunSoundEvent()

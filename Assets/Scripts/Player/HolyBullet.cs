@@ -75,6 +75,9 @@ public class HolyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Ignorar fuego
+        if (other.CompareTag("Fire")) return;
+
         if (!hasExploded && other.CompareTag("Building"))
         {
             TriggerExplosion();

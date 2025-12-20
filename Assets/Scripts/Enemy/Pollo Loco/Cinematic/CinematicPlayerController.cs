@@ -17,10 +17,18 @@ public class CinematicPlayerController : MonoBehaviour
         var move = player.GetComponent<PlayerMovement>();
         var gun = player.GetComponent<_GunController>();
         var input = player.GetComponent<PlayerInput>();
+        var animator = player.GetComponent<Animator>();
 
         if (move) move.enabled = false;
         if (gun) gun.enabled = false;
         if (input) input.enabled = false;
+
+        // Forzar animación Idle inmediatamente (evita que isRunning quede activo)
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningBackwards", false);
+        }
 
         var rb = player.GetComponent<Rigidbody2D>();
         if (rb)

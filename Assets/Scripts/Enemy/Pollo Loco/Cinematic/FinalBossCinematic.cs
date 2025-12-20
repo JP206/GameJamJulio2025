@@ -3,6 +3,16 @@ using UnityEngine;
 
 public class FinalBossCinematic : MonoBehaviour
 {
+    public static bool IsPlaying { get; private set; } = false;
+
+    /// <summary>
+    /// Resetea el flag de cinemática (necesario para Retry en Final Boss)
+    /// </summary>
+    public static void ResetCinematicState()
+    {
+        IsPlaying = false;
+    }
+
     [Header("References")]
     [SerializeField] private CinematicPlayerController playerController;
     [SerializeField] private CinematicBarsController barsController;
@@ -34,23 +44,42 @@ public class FinalBossCinematic : MonoBehaviour
 
     private IEnumerator Start()
     {
+        // 🔹 Esperar un frame para que BossSceneInitializer configure el player primero
+        yield return null;
+        
+        // Buscar al jugador
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) 
+        {
+            Debug.LogError("❌ FinalBossCinematic: No se encontró el Player!");
+            yield break;
+        }
+
+        // 🔹 Si es un RETRY, saltar la cinemática e ir directo a la pelea
+        if (BossSceneInitializer.isRetry)
+        {
+            Debug.Log("🔄 Retry detectado - Saltando cinemática, iniciando pelea directa");
+            yield return StartCoroutine(SetupRetryMode());
+            yield break;
+        }
+
+        // === CINEMÁTICA NORMAL (primera vez) ===
+        IsPlaying = true;
+
         // Bloquear mouse
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-
-        // Buscar al jugador
-        player = GameObject.FindGameObjectWithTag("Player");
-        if (player == null) yield break;
 
         // Desactivar rotación del mouse
         playerAim = player.GetComponentInChildren<PlayerAim>(true);
         if (playerAim != null)
             playerAim.enabled = false;
 
-        yield return new WaitForSeconds(1f);
-
-        // Desactivar control del jugador
+        // INMEDIATAMENTE bloquear al jugador para que no se mueva durante la espera
         playerController.DisablePlayer(player);
+
+        // Esperar en el punto de spawn (sin movimiento)
+        yield return new WaitForSeconds(1f);
 
         // Desactivar UI Manager global (evita que se abra el menú de pausa)
         uiManagerInstance = FindFirstObjectByType<UICanvasManager>();
@@ -97,6 +126,102 @@ public class FinalBossCinematic : MonoBehaviour
         // Restaurar cursor
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        IsPlaying = false;
+    }
+
+    /// <summary>
+    /// Configura la escena para Retry: sin cinemática, directo a la pelea
+    /// </summary>
+    private IEnumerator SetupRetryMode()
+    {
+        IsPlaying = false; // No hay cinemática
+        
+        // 🔹 CRÍTICO: Forzar TODAS las cinemáticas a FALSE
+        UICanvasManager.ForceDisableAllCinematics();
+
+        // 🔹 Desactivar objetos del portal inmediatamente
+        if (triangleObject) triangleObject.SetActive(false);
+        if (squareObject) squareObject.SetActive(false);
+        if (portalObject) portalObject.SetActive(false);
+        if (bossDoor) bossDoor.SetActive(false);
+
+        // 🔹 Activar el boss y configurarlo para pelea
+        if (bossIntro != null)
+        {
+            // Obtener referencia al boss desde bossIntro usando reflection
+            var bossObjectField = bossIntro.GetType().GetField("bossObject", 
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            
+            if (bossObjectField != null)
+            {
+                GameObject bossObject = bossObjectField.GetValue(bossIntro) as GameObject;
+                if (bossObject != null)
+                {
+                    bossObject.SetActive(true);
+                    
+                    PolloLocoController bossController = bossObject.GetComponent<PolloLocoController>();
+                    Animator bossAnim = bossObject.GetComponent<Animator>();
+                    
+                    if (bossController != null)
+                    {
+                        bossController.isCinematicMode = false; // Listo para pelear
+                    }
+                    
+                    if (bossAnim != null)
+                    {
+                        bossAnim.Play("PolloLocoMovement", 0, 0f);
+                    }
+                }
+            }
+        }
+
+        // 🔹 Configurar UI del boss (barra de HP llena)
+        if (uiManager != null)
+        {
+            // Activar canvas de UI
+            var canvasField = uiManager.GetType().GetField("uiCanvas", 
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            if (canvasField != null)
+            {
+                Canvas uiCanvas = canvasField.GetValue(uiManager) as Canvas;
+                if (uiCanvas != null)
+                    uiCanvas.gameObject.SetActive(true);
+            }
+            
+            // Llenar barra de HP inmediatamente
+            var sliderField = uiManager.GetType().GetField("enemyHpBar", 
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+            if (sliderField != null)
+            {
+                UnityEngine.UI.Slider hpBar = sliderField.GetValue(uiManager) as UnityEngine.UI.Slider;
+                if (hpBar != null)
+                {
+                    hpBar.value = hpBar.maxValue;
+                }
+            }
+        }
+
+        // 🔹 Habilitar UICanvasManager (necesario para pausa y menús)
+        uiManagerInstance = FindFirstObjectByType<UICanvasManager>();
+        if (uiManagerInstance != null)
+            uiManagerInstance.enabled = true;
+
+        // 🔹 Habilitar controles del player COMPLETAMENTE usando método estático
+        UICanvasManager.ForceEnablePlayerControls();
+
+        // 🔹 Iniciar música del boss
+        if (bossMusic != null)
+        {
+            bossMusic.volume = 1f;
+            bossMusic.Play();
+        }
+
+        // 🔹 Esperar un frame y resetear el flag de retry
+        yield return null;
+        BossSceneInitializer.isRetry = false;
+        
+        Debug.Log("✅ Modo Retry configurado - Pelea iniciada");
     }
 
     // === Fading suave de música ===

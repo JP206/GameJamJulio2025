@@ -40,8 +40,12 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         trail = GetComponent<TrailRenderer>();
 
+        // TrailRenderer debe estar desactivado por defecto (se activa solo en roll)
         if (trail != null)
-            trail.emitting = false;
+        {
+            trail.Clear();
+            trail.enabled = false;
+        }
 
         DontDestroyOnLoad(gameObject);
     }
@@ -49,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if (UICanvasManager.IsGamePausedOrOver) return;
+        if (IsAnyCinematicPlaying()) return;
 
         HandleInput();
         HandleSpriteFlip();
@@ -59,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (UICanvasManager.IsGamePausedOrOver) return;
+        if (IsAnyCinematicPlaying()) return;
 
         // Evita moverse si está siendo empujado o está casteando
         if (IsKnockedBack || isRolling || isCastingHolyShot)
@@ -98,7 +104,12 @@ public class PlayerMovement : MonoBehaviour
         Vector2 startPos = rb.position;
         Vector2 targetPos = startPos + dashDir.normalized * rollDistance;
 
-        if (trail != null) trail.emitting = true;
+        // Activar trail solo durante el roll
+        if (trail != null)
+        {
+            trail.Clear();
+            trail.enabled = true;
+        }
 
         while (elapsed < rollDuration)
         {
@@ -110,7 +121,12 @@ public class PlayerMovement : MonoBehaviour
 
         rb.MovePosition(targetPos);
         isRolling = false;
-        if (trail != null) trail.emitting = false;
+        
+        // Desactivar trail al terminar
+        if (trail != null)
+        {
+            trail.enabled = false;
+        }
     }
 
     public void HandleAnimation()
@@ -133,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandleSpriteFlip()
     {
-        if (IntroCinematicManager.IsCinematicPlaying) return;
+        if (IsAnyCinematicPlaying()) return;
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         spriteRenderer.flipX = mousePos.x < transform.position.x;
@@ -162,6 +178,70 @@ public class PlayerMovement : MonoBehaviour
         if (state)
         {
             rb.linearVelocity = Vector2.zero;
+        }
+    }
+
+    /// <summary>
+    /// Verifica si alguna cinemática está reproduciéndose
+    /// </summary>
+    public static bool IsAnyCinematicPlaying()
+    {
+        return IntroCinematicManager.IsCinematicPlaying 
+            || FinalDoorCinematic.IsPlaying 
+            || FinalBossCinematic.IsPlaying;
+    }
+
+    /// <summary>
+    /// Resetea el estado del player (útil al reiniciar o iniciar cinemáticas)
+    /// </summary>
+    public void ResetPlayerState()
+    {
+        // Detener cualquier roll en progreso
+        StopAllCoroutines();
+        isRolling = false;
+        isCastingHolyShot = false;
+        IsKnockedBack = false;
+        
+        // Desactivar trail renderer completamente
+        if (trail == null)
+            trail = GetComponent<TrailRenderer>();
+            
+        if (trail != null)
+        {
+            trail.Clear();
+            trail.enabled = false;
+        }
+        
+        // Detener velocidad
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
+            
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+        
+        // Resetear input
+        movementInput = Vector2.zero;
+        
+        // Detener audio de movimiento
+        if (movementAudio == null)
+            movementAudio = GetComponent<AudioSource>();
+            
+        if (movementAudio != null && movementAudio.isPlaying)
+        {
+            movementAudio.Stop();
+        }
+        
+        // Resetear animaciones
+        if (animator == null)
+            animator = GetComponent<Animator>();
+            
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningBackwards", false);
+            animator.ResetTrigger("Rolling");
         }
     }
 }

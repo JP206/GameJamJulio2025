@@ -68,7 +68,12 @@ public class FinalDoorCinematic : MonoBehaviour
         bool uiWasActive = uiCanvas != null && uiCanvas.activeSelf;
         if (uiCanvas != null) uiCanvas.SetActive(false);
 
-        if (playerMovement != null) playerMovement.enabled = false;
+        // Resetear estado del jugador INMEDIATAMENTE (animaciones, trail, audio, etc.)
+        if (playerMovement != null)
+        {
+            playerMovement.ResetPlayerState();
+            playerMovement.enabled = false;
+        }
         if (gunController != null) gunController.enabled = false;
         if (playerInput != null) playerInput.enabled = false;
 
@@ -78,8 +83,13 @@ public class FinalDoorCinematic : MonoBehaviour
             rb.angularVelocity = 0f;
         }
 
+        // Forzar animación Idle inmediatamente
         if (playerAnimator != null)
-            StartCoroutine(SmoothTransitionToIdle());
+        {
+            playerAnimator.SetBool("isRunning", false);
+            playerAnimator.SetBool("isRunningBackwards", false);
+            playerAnimator.Play("Player_Idle", 0, 0f);
+        }
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -171,30 +181,4 @@ public class FinalDoorCinematic : MonoBehaviour
         }
     }
 
-    private IEnumerator SmoothTransitionToIdle(float transitionTime = 0.25f)
-    {
-        if (playerAnimator == null)
-            yield break;
-
-        float elapsed = 0f;
-        float startH = playerAnimator.GetFloat("Horizontal");
-        float startV = playerAnimator.GetFloat("Vertical");
-
-        while (elapsed < transitionTime)
-        {
-            elapsed += Time.deltaTime;
-            float t = elapsed / transitionTime;
-
-            playerAnimator.SetFloat("Horizontal", Mathf.Lerp(startH, 0f, t));
-            playerAnimator.SetFloat("Vertical", Mathf.Lerp(startV, 0f, t));
-
-            yield return null;
-        }
-
-        // Forzar Idle final
-        playerAnimator.SetBool("isRunning", false);
-        playerAnimator.SetFloat("Horizontal", 0f);
-        playerAnimator.SetFloat("Vertical", 0f);
-        playerAnimator.Play("Idle", 0, 0f);
-    }
 }

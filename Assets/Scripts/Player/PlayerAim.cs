@@ -14,11 +14,17 @@ public class PlayerAim : MonoBehaviour
 
     void Update()
     {
+        // No rotar durante cinemáticas o pausa
+        if (PlayerMovement.IsAnyCinematicPlaying()) return;
+        if (UICanvasManager.IsGamePausedOrOver) return;
+
         AimAtMouse();
     }
 
     private void AimAtMouse()
     {
+        if (Camera.main == null) return;
+
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 aimDirection = mousePos - (Vector2)transform.position;
 

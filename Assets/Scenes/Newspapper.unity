@@ -168,10 +168,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Play button
       objectReference: {fileID: 0}
-    - target: {fileID: 2585280045522196476, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -203,18 +199,6 @@ PrefabInstance:
     - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
       propertyPath: m_SizeDelta.y
       value: 11.6349945
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 11.735493
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 11.735493
-      objectReference: {fileID: 0}
-    - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 11.735493
       objectReference: {fileID: 0}
     - target: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -267,43 +251,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2585280045522196476, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 471346417}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
 --- !u!224 &471346415 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3555157657171889296, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
   m_PrefabInstance: {fileID: 471346414}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &471346416 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2585280045522196476, guid: a6250b43cebca1a41a58c51e22f17a5c, type: 3}
-  m_PrefabInstance: {fileID: 471346414}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &471346417
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471346416}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a7ff6d9b6e525ca41bd392d613262d7e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &482366874
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +345,7 @@ GameObject:
   - component: {fileID: 548468815}
   - component: {fileID: 548468814}
   m_Layer: 0
-  m_Name: AUDIO
+  m_Name: Newspapper Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

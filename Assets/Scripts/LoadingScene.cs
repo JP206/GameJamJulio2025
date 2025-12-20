@@ -5,7 +5,7 @@ using System.Collections;
 
 public class LoadingScene : MonoBehaviour
 {
-    public string nombreEscenaJuego = "Nivel1"; // La escena a la que irá después
+    public string nombreEscenaJuego = "RoyalScene"; // La escena a la que irá después
     public Slider barraProgreso; // Opcional, si quieres una barra
 
     void Start()

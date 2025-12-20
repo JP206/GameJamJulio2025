@@ -8,6 +8,20 @@ public class CinematicUIManager : MonoBehaviour
     [SerializeField] private Slider enemyHpBar;
     [SerializeField] private float fillDuration = 2f;
 
+    private void Start()
+    {
+        // 🔹 Asegurar que la barra empiece en 0 al inicio de la escena
+        ResetBossHP();
+    }
+
+    public void ResetBossHP()
+    {
+        if (enemyHpBar != null)
+        {
+            enemyHpBar.value = 0f;
+        }
+    }
+
     public IEnumerator FillBossHP()
     {
         if (uiCanvas) uiCanvas.gameObject.SetActive(true);

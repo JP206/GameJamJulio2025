@@ -117,14 +117,50 @@ public class PolloLocoController : MonoBehaviour
 
     private void OnEnable()
     {
+        // 🔹 Resetear TODOS los estados del boss
         isDead = false;
+        celebrating = false;
+        isCinematicMode = true; // Empieza en modo cinemática hasta que PlayBossIntro lo active
         currentHp = maxHp;
+        
+        // Resetear estados de ataque
+        isAttacking = false;
+        isDashing = false;
+        canDealDamage = false;
+        hasAttackedInRange = false;
+        hitsWhileClose = 0;
+        
+        // Resetear cooldowns
         lastAttackTime = -attackCooldown;
         lastDashTime = -2f;
         lastAreaAttackTime = -areaAttackCooldown;
         lastChairAttackTime = -chairAttackCooldown;
-        isAttacking = false;
-        isDashing = false;
+        lastHitTime = 0f;
+        
+        // Resetear Rigidbody
+        if (rb != null)
+        {
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            rb.linearVelocity = Vector2.zero;
+        }
+        
+        // Resetear SpriteRenderer
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.white;
+        }
+        
+        // Resetear Animator
+        if (animator != null)
+        {
+            animator.ResetTrigger("Attack");
+            animator.ResetTrigger("Chair");
+            animator.ResetTrigger("AreaAttack");
+            animator.ResetTrigger("GetHit");
+            animator.ResetTrigger("Death");
+            animator.ResetTrigger("Celebration");
+            animator.SetBool("isMoving", false);
+        }
 
         if (hitEffect != null)
             hitEffect.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
@@ -134,6 +170,11 @@ public class PolloLocoController : MonoBehaviour
             bossHealthSlider.maxValue = maxHp;
             bossHealthSlider.value = currentHp;
         }
+        
+        // Resetear invulnerabilidad
+        isInvulnerable = false;
+        
+        Debug.Log("✅ PolloLoco reseteado completamente");
     }
 
     void FixedUpdate()
@@ -452,7 +493,9 @@ public class PolloLocoController : MonoBehaviour
 
             if (currentHp <= 0)
             {
-                TriggerInstantDefeat();
+                // 🔹 INMEDIATAMENTE iniciar cinemática de victoria
+                TriggerDefeatSequence();
+                // 🔹 La animación de muerte del boss corre en paralelo
                 StartCoroutine(Death());
             }
 
@@ -485,6 +528,10 @@ public class PolloLocoController : MonoBehaviour
     private IEnumerator Death()
     {
         isDead = true;
+        
+        // 🔹 Bloquear al jugador inmediatamente
+        StopPlayerControls();
+        
         animator.SetTrigger("Death");
 
         if (transform.childCount > 0)
@@ -506,20 +553,54 @@ public class PolloLocoController : MonoBehaviour
         // 🔹 Iniciar el desvanecimiento visual
         yield return StartCoroutine(FadeOutSprite(1.2f));
 
-        // 🔹 Llamar a la secuencia final del boss
-        TriggerDefeatSequence();
-
         // 🔹 Finalmente desactivamos el objeto
         gameObject.SetActive(false);
-
-        // 🎥 Después de que el boss está completamente deshabilitado, enfocar al jugador
-        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
-        if (defeatSequence != null)
-        {
-            defeatSequence.FocusOnPlayerAfterBossDefeated();
-        }
-
     }
+    
+    private void StopPlayerControls()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
+        
+        var move = player.GetComponent<PlayerMovement>();
+        var gun = player.GetComponent<_GunController>();
+        var input = player.GetComponent<PlayerInput>();
+        var audio = player.GetComponent<AudioSource>();
+        var animator = player.GetComponent<Animator>();
+        var rb = player.GetComponent<Rigidbody2D>();
+        var playerAim = player.GetComponentInChildren<PlayerAim>(true);
+        
+        if (move != null)
+        {
+            move.ResetPlayerState();
+            move.enabled = false;
+        }
+        if (gun) gun.enabled = false;
+        if (input) input.enabled = false;
+        if (audio) audio.Stop();
+        
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isRunningBackwards", false);
+            animator.Play("Player_Idle", 0, 0f);
+        }
+        
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+        
+        // 🔹 Bloquear rotación del sprite con mouse
+        if (playerAim != null)
+            playerAim.enabled = false;
+        
+        // 🔹 Bloquear cursor
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+    
     private IEnumerator FadeOutSprite(float duration)
     {
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
@@ -554,18 +635,66 @@ public class PolloLocoController : MonoBehaviour
 
     public void Celebrate()
     {
-        if (isDead || celebrating) return;
+        if (isDead) return;
+        if (celebrating) return;
 
+        // 🔹 DETENER TODAS LAS CORRUTINAS inmediatamente (ataques en progreso)
+        StopAllCoroutines();
+        
+        // 🔹 TAMBIÉN detener las corrutinas del AttackHandler
+        if (attackHandler != null)
+        {
+            attackHandler.StopAllAttacks();
+        }
+        
         celebrating = true;
         isAttacking = false;
         isDashing = false;
+        canDealDamage = false;
+        hasAttackedInRange = false;
 
         if (rb != null)
+        {
             rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.bodyType = RigidbodyType2D.Kinematic; // Evitar cualquier movimiento físico
+        }
 
+        // 🔹 Resetear TODOS los triggers de animación
         animator.SetBool("isMoving", false);
         animator.ResetTrigger("Attack");
-        animator.SetTrigger("Celebration");
+        animator.ResetTrigger("Chair");
+        animator.ResetTrigger("AreaAttack");
+        animator.ResetTrigger("GetHit");
+        animator.ResetTrigger("Death");
+        animator.ResetTrigger("Celebration");
+        
+        // 🔹 Iniciar corrutina para la celebración (necesita esperar un frame)
+        StartCoroutine(PlayCelebrationAnimation());
+    }
+    
+    private IEnumerator PlayCelebrationAnimation()
+    {
+        // Esperar un frame para que el animator procese los resets
+        yield return null;
+        
+        Debug.Log("🎉 Pollo Loco celebrando victoria!");
+        
+        // 🔹 Loop infinito de celebración
+        while (celebrating && !isDead)
+        {
+            // Forzar la animación de celebración desde el inicio
+            animator.Play("PolloLocoWins", 0, 0f);
+            
+            // Esperar a que termine la animación (obtener duración)
+            yield return null; // Esperar un frame para que el animator actualice
+            
+            AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+            float animationLength = stateInfo.length;
+            
+            // Esperar la duración de la animación
+            yield return new WaitForSeconds(animationLength);
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -601,56 +730,6 @@ public class PolloLocoController : MonoBehaviour
         }
     }
 
-    private void TriggerInstantDefeat()
-    {
-        // Evitar ejecución múltiple
-        if (isDead) return;
-
-        isDead = true;
-
-        // 🔹 Forzar al Player a estado Idle y cortar control
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            var move = player.GetComponent<PlayerMovement>();
-            var gun = player.GetComponent<_GunController>();
-            var input = player.GetComponent<PlayerInput>();
-            var audio = player.GetComponent<AudioSource>();
-
-            if (move) move.enabled = false;
-            if (gun) gun.enabled = false;
-            if (input) input.enabled = false;
-            if (audio) audio.Stop();
-
-            // Forzar Idle instantáneo
-            var playerAnimator = player.GetComponent<Animator>();
-            if (playerAnimator != null)
-            {
-                playerAnimator.ResetTrigger("isRunning");
-                playerAnimator.SetBool("isMoving", false);
-                playerAnimator.Play("Idle", 0, 0f);
-            }
-
-            // Detener Rigidbody
-            var rb = player.GetComponent<Rigidbody2D>();
-            if (rb)
-            {
-                rb.linearVelocity = Vector2.zero;
-                rb.bodyType = RigidbodyType2D.Kinematic;
-            }
-        }
-
-        // 🔹 Llamar al sistema de cámara y victoria de inmediato
-        var defeatSequence = FindAnyObjectByType<BossDefeatSequence>();
-        if (defeatSequence != null)
-        {
-            defeatSequence.StartDefeatSequence();
-        }
-
-        // 🔹 Cortar todos los sonidos del Pollo Loco salvo la música
-        if (audioSource != null)
-            audioSource.Stop();
-    }
     public void PlayPlumaImpact()
     {
         if (plumaImpactEffect == null) return;

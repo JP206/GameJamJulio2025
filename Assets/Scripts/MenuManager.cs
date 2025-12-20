@@ -5,6 +5,6 @@ public class MenuManager : MonoBehaviour
 {
     public void Jugar()
     {
-        SceneManager.LoadScene("Loading");
+        SceneManager.LoadScene("Newspapper");
     }
 }

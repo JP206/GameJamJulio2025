@@ -28,6 +28,26 @@ public class PolloLocoAttackHandler : MonoBehaviour
 
     public bool IsDashing => isDashing;
 
+    /// <summary>
+    /// Detiene todos los ataques en progreso (llamado desde Celebrate)
+    /// </summary>
+    public void StopAllAttacks()
+    {
+        StopAllCoroutines();
+        isDashing = false;
+        canDealDamage = false;
+        
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+        
+        if (hitbox != null)
+        {
+            hitbox.enabled = true; // Mantener hitbox pero sin daño
+        }
+    }
+
     public void Initialize(Animator anim, Rigidbody2D body, Collider2D hit, PolloLocoController ctrl)
     {
         animator = anim;
